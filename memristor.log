@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.10.22)  29 OCT 2026 20:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.10.22)  29 OCT 2026 22:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -703,7 +703,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 43.
 
-<./images/pickett.png, id=110, 240.9pt x 311.66437pt>
+<./images/pickett.png, id=115, 240.9pt x 311.66437pt>
 File: ./images/pickett.png Graphic file (type png)
 <use ./images/pickett.png>
 Package pdftex.def Info: ./images/pickett.png  used on input line 47.
@@ -746,12 +746,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [4 <./images/pickett.png (PNG copy)>]
-<./images/joglekar.png, id=139, 341.77687pt x 213.79875pt>
+<./images/joglekar.png, id=144, 341.77687pt x 213.79875pt>
 File: ./images/joglekar.png Graphic file (type png)
 <use ./images/joglekar.png>
 Package pdftex.def Info: ./images/joglekar.png  used on input line 62.
 (pdftex.def)             Requested size: 341.77603pt x 213.79822pt.
-<./images/spice.png, id=144, 304.13625pt x 417.81094pt>
+<./images/spice.png, id=149, 304.13625pt x 417.81094pt>
 File: ./images/spice.png Graphic file (type png)
 <use ./images/spice.png>
 Package pdftex.def Info: ./images/spice.png  used on input line 82.
@@ -777,7 +777,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [6 <./images/spice.png (PNG copy)>]
-<./images/pcm.png, id=163, 748.29562pt x 300.3722pt>
+<./images/pcm.png, id=169, 748.29562pt x 300.3722pt>
 File: ./images/pcm.png Graphic file (type png)
 <use ./images/pcm.png>
 Package pdftex.def Info: ./images/pcm.png  used on input line 92.
@@ -819,30 +819,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package rerunfilecheck Warning: File `memristor.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `memristor.out':
-(rerunfilecheck)             Before: 195CB8B6696CCC16A5BC04666C984D98;2943
-(rerunfilecheck)             After:  D6DAEC271BEF43B6291FEFF06F618B6A;3051.
-
-Package biblatex Warning: Please rerun LaTeX.
-
+Package rerunfilecheck Info: File `memristor.out' has not changed.
+(rerunfilecheck)             Checksum: D6DAEC271BEF43B6291FEFF06F618B6A;3051.
 Package logreq Info: Writing requests to 'memristor.run.xml'.
 \openout1 = `memristor.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17553 strings out of 475322
- 306586 string characters out of 5771093
- 1145129 words of memory out of 5000000
- 40191 multiletter control sequences out of 15000+600000
+ 17554 strings out of 475322
+ 306598 string characters out of 5771093
+ 1144800 words of memory out of 5000000
+ 40192 multiletter control sequences out of 15000+600000
  565227 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,13n,81p,2437b,1401s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -863,10 +850,10 @@ b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb>
-Output written on memristor.pdf (10 pages, 499104 bytes).
+Output written on memristor.pdf (10 pages, 501067 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 277 compressed objects within 3 object streams
+ 341 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
  51 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
