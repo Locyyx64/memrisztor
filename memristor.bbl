@@ -1,0 +1,872 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global/global}
+    \entry{mauro1961}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c8cb444ff2a8fb253bca253f8808a79f}{%
+           family={Mauro},
+           familyi={M\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8cb444ff2a8fb253bca253f8808a79f}
+      \strng{fullhash}{c8cb444ff2a8fb253bca253f8808a79f}
+      \strng{fullhashraw}{c8cb444ff2a8fb253bca253f8808a79f}
+      \strng{bibnamehash}{c8cb444ff2a8fb253bca253f8808a79f}
+      \strng{authorbibnamehash}{c8cb444ff2a8fb253bca253f8808a79f}
+      \strng{authornamehash}{c8cb444ff2a8fb253bca253f8808a79f}
+      \strng{authorfullhash}{c8cb444ff2a8fb253bca253f8808a79f}
+      \strng{authorfullhashraw}{c8cb444ff2a8fb253bca253f8808a79f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0006-3495}
+      \field{journaltitle}{Biophysical Journal}
+      \field{number}{4}
+      \field{title}{Anomalous Impedance, A Phenomenological Property of Time-Variant Resistance: An Analytic Review}
+      \field{volume}{1}
+      \field{year}{1961}
+      \field{pages}{353\bibrangedash 372}
+      \range{pages}{20}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0006-3495(61)86894-X
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S000634956186894X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S000634956186894X
+      \endverb
+    \endentry
+    \entry{chua}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=63e0785bf72df205130a6325c329c6ba}{%
+           family={Chua},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{63e0785bf72df205130a6325c329c6ba}
+      \strng{fullhash}{63e0785bf72df205130a6325c329c6ba}
+      \strng{fullhashraw}{63e0785bf72df205130a6325c329c6ba}
+      \strng{bibnamehash}{63e0785bf72df205130a6325c329c6ba}
+      \strng{authorbibnamehash}{63e0785bf72df205130a6325c329c6ba}
+      \strng{authornamehash}{63e0785bf72df205130a6325c329c6ba}
+      \strng{authorfullhash}{63e0785bf72df205130a6325c329c6ba}
+      \strng{authorfullhashraw}{63e0785bf72df205130a6325c329c6ba}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Circuit Theory}
+      \field{number}{5}
+      \field{title}{Memristor-The missing circuit element}
+      \field{volume}{18}
+      \field{year}{1971}
+      \field{pages}{507\bibrangedash 519}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/TCT.1971.1083337
+      \endverb
+      \keyw{RLC circuits;Memristors;Electromagnetic fields;Maxwell equations;Resistors;Active inductors;Capacitors;Power supplies;Laboratories;Active circuits}
+    \endentry
+    \entry{chuakang1976}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=52f3f513219994c030cd766ea6b651d1}{%
+           family={Chua},
+           familyi={C\bibinitperiod},
+           given={L.O.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7dce31d4d9d7ffa932415697c3328ad1}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Sung\bibnamedelima Mo},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c10e1fe79a11f6bc1aa4cd7af6b09174}
+      \strng{fullhash}{c10e1fe79a11f6bc1aa4cd7af6b09174}
+      \strng{fullhashraw}{c10e1fe79a11f6bc1aa4cd7af6b09174}
+      \strng{bibnamehash}{c10e1fe79a11f6bc1aa4cd7af6b09174}
+      \strng{authorbibnamehash}{c10e1fe79a11f6bc1aa4cd7af6b09174}
+      \strng{authornamehash}{c10e1fe79a11f6bc1aa4cd7af6b09174}
+      \strng{authorfullhash}{c10e1fe79a11f6bc1aa4cd7af6b09174}
+      \strng{authorfullhashraw}{c10e1fe79a11f6bc1aa4cd7af6b09174}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{number}{2}
+      \field{title}{Memristive devices and systems}
+      \field{volume}{64}
+      \field{year}{1976}
+      \field{pages}{209\bibrangedash 223}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/PROC.1976.10092
+      \endverb
+      \keyw{Memristors;Thermistors;Resistors;Equations;Voltage;Temperature;Hysteresis;Frequency;Biomembranes;VHF circuits}
+    \endentry
+    \entry{strukov2008}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=f8639a07115f63c271c63002200016fd}{%
+           family={Strukov\bibnamedelima D.},
+           familyi={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Stewart\bibnamedelimb D.\bibnamedelimi et\bibnamedelima al.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           suffix={Snider\bibnamedelima G.},
+           suffixi={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature}%
+      }
+      \strng{namehash}{f8639a07115f63c271c63002200016fd}
+      \strng{fullhash}{f8639a07115f63c271c63002200016fd}
+      \strng{fullhashraw}{f8639a07115f63c271c63002200016fd}
+      \strng{bibnamehash}{f8639a07115f63c271c63002200016fd}
+      \strng{authorbibnamehash}{f8639a07115f63c271c63002200016fd}
+      \strng{authornamehash}{f8639a07115f63c271c63002200016fd}
+      \strng{authorfullhash}{f8639a07115f63c271c63002200016fd}
+      \strng{authorfullhashraw}{f8639a07115f63c271c63002200016fd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The missing memristor found}
+      \field{volume}{453}
+      \field{year}{2008}
+      \field{pages}{80\bibrangedash 83}
+      \range{pages}{4}
+      \verb{doi}
+      \verb https://doi.org/10.1038/nature06932
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nature06932
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nature06932
+      \endverb
+    \endentry
+    \entry{joglekar2009}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=571b452df35e0325c11d2bdf478816aa}{%
+           family={Joglekar},
+           familyi={J\bibinitperiod},
+           given={Yogesh\bibnamedelima N},
+           giveni={Y\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=127e1fb958ee2cfaafc2d4c158f5c19c}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Stephen\bibnamedelima J},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{fab9bccf123bee9ac9ac656a0edbba3d}
+      \strng{fullhash}{fab9bccf123bee9ac9ac656a0edbba3d}
+      \strng{fullhashraw}{fab9bccf123bee9ac9ac656a0edbba3d}
+      \strng{bibnamehash}{fab9bccf123bee9ac9ac656a0edbba3d}
+      \strng{authorbibnamehash}{fab9bccf123bee9ac9ac656a0edbba3d}
+      \strng{authornamehash}{fab9bccf123bee9ac9ac656a0edbba3d}
+      \strng{authorfullhash}{fab9bccf123bee9ac9ac656a0edbba3d}
+      \strng{authorfullhashraw}{fab9bccf123bee9ac9ac656a0edbba3d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1361-6404}
+      \field{journaltitle}{European Journal of Physics}
+      \field{number}{4}
+      \field{title}{The elusive memristor: properties of basic electrical circuits}
+      \field{volume}{30}
+      \field{year}{2009}
+      \field{pages}{661\bibrangedash 675}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1088/0143-0807/30/4/001
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1088/0143-0807/30/4/001
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1088/0143-0807/30/4/001
+      \endverb
+    \endentry
+    \entry{pickett2009}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=29cf6d4f47dde5569d02359b370f469c}{%
+           family={Pickett},
+           familyi={P\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=165140a2ceaaf89bc0aa71af802e6a2d}{%
+           family={Strukov},
+           familyi={S\bibinitperiod},
+           given={Dmitri},
+           giveni={D\bibinitperiod}}}%
+        {{hash=21ddbac40674d0ad5a2282c60f73ca1d}{%
+           family={Borghetti},
+           familyi={B\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=af6a10d2ee7565e2b4974a71a80cb8fe}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jianhua\bibnamedelima Joshua},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1248f74a051aa6432211c30939d14eed}{%
+           family={Snider},
+           familyi={S\bibinitperiod},
+           given={Gregory},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ed3956a340c1393eefb5960a0287c9ea}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={Duncan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=86b3d126f4501d8025cde318b2c7b2b2}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Stan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e7ffb4080d30162da5d7207e151cd53f}
+      \strng{fullhash}{9eb70742fa5143b5e3620a1cbbc1161f}
+      \strng{fullhashraw}{9eb70742fa5143b5e3620a1cbbc1161f}
+      \strng{bibnamehash}{e7ffb4080d30162da5d7207e151cd53f}
+      \strng{authorbibnamehash}{e7ffb4080d30162da5d7207e151cd53f}
+      \strng{authornamehash}{e7ffb4080d30162da5d7207e151cd53f}
+      \strng{authorfullhash}{9eb70742fa5143b5e3620a1cbbc1161f}
+      \strng{authorfullhashraw}{9eb70742fa5143b5e3620a1cbbc1161f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Applied Physics}
+      \field{month}{11}
+      \field{title}{Switching dynamics in titanium dioxide memristive devices}
+      \field{volume}{106}
+      \field{year}{2009}
+      \field{pages}{074508\bibrangedash 074508}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.3236506
+      \endverb
+    \endentry
+    \entry{biolek2013}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=1fd037a25ecb0ca3712c2c23f26ac6c5}{%
+           family={Biolek},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e9e99369222e19c5643a1a3576cf5881}{%
+           family={Ventra},
+           familyi={V\bibinitperiod},
+           given={M.\bibnamedelimi Di},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=b42b42492d9b72e8335ad1929d8878b0}{%
+           family={Pershin},
+           familyi={P\bibinitperiod},
+           given={Y.\bibnamedelimi V.},
+           giveni={Y\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0851a1cdbc79f8e5eaee22ce4d38c41}
+      \strng{fullhash}{c0851a1cdbc79f8e5eaee22ce4d38c41}
+      \strng{fullhashraw}{c0851a1cdbc79f8e5eaee22ce4d38c41}
+      \strng{bibnamehash}{c0851a1cdbc79f8e5eaee22ce4d38c41}
+      \strng{authorbibnamehash}{c0851a1cdbc79f8e5eaee22ce4d38c41}
+      \strng{authornamehash}{c0851a1cdbc79f8e5eaee22ce4d38c41}
+      \strng{authorfullhash}{c0851a1cdbc79f8e5eaee22ce4d38c41}
+      \strng{authorfullhashraw}{c0851a1cdbc79f8e5eaee22ce4d38c41}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{physics.comp-ph}
+      \field{eprinttype}{arXiv}
+      \field{title}{Reliable SPICE Simulations of Memristors, Memcapacitors and Meminductors}
+      \field{year}{2013}
+      \verb{eprint}
+      \verb 1307.2717
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1307.2717
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1307.2717
+      \endverb
+    \endentry
+    \entry{kvatinsky2013}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=b702c4c9ccebc9149ea9f2a93b9c53de}{%
+           family={Kvatinsky},
+           familyi={K\bibinitperiod},
+           given={Shahar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d8783caf7d315ac851ca41a972ca4352}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Eby\bibnamedelima G.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=883282875d69316f7f01d5ecd7b82c5e}{%
+           family={Kolodny},
+           familyi={K\bibinitperiod},
+           given={Avinoam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eb0c6e099d2e8383b4931d8f8ac8e17a}{%
+           family={Weiser},
+           familyi={W\bibinitperiod},
+           given={Uri\bibnamedelima C.},
+           giveni={U\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{6654002682a136a96984e3ce57af9a39}
+      \strng{fullhash}{23b5e017bec6849bb5607d47e73bab19}
+      \strng{fullhashraw}{23b5e017bec6849bb5607d47e73bab19}
+      \strng{bibnamehash}{6654002682a136a96984e3ce57af9a39}
+      \strng{authorbibnamehash}{6654002682a136a96984e3ce57af9a39}
+      \strng{authornamehash}{6654002682a136a96984e3ce57af9a39}
+      \strng{authorfullhash}{23b5e017bec6849bb5607d47e73bab19}
+      \strng{authorfullhashraw}{23b5e017bec6849bb5607d47e73bab19}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Circuits and Systems I: Regular Papers}
+      \field{number}{1}
+      \field{title}{TEAM: ThrEshold Adaptive Memristor Model}
+      \field{volume}{60}
+      \field{year}{2013}
+      \field{pages}{211\bibrangedash 221}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/TCSI.2012.2215714
+      \endverb
+      \keyw{Mathematical model;Computational modeling;Integrated circuit modeling;Adaptation models;Memristors;Resistance;Semiconductor process modeling;Memristive systems;memristor;SPICE;window function}
+    \endentry
+    \entry{szot2014}{incollection}{}{}
+      \name{author}{3}{}{%
+        {{hash=53d385c40b6080cd3978231e823e9a86}{%
+           family={Szot},
+           familyi={S\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod}}}%
+        {{hash=cbb84fc7ede315b9bf9666fa5f1ffbaf}{%
+           family={Bihlmayer},
+           familyi={B\bibinitperiod},
+           given={Gustav},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3517c9cc157a59025bb0118ad3d0da6d}{%
+           family={Speier},
+           familyi={S\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=4430ffe7d092114c629c1acf5129a3d2}{%
+           family={Camley},
+           familyi={C\bibinitperiod},
+           given={Robert\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=0fd46d053351f0b7cf1fff8ce643058e}{%
+           family={Stamps},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{4a8ba58be3c0a651d03b253c3aec234b}
+      \strng{fullhash}{4a8ba58be3c0a651d03b253c3aec234b}
+      \strng{fullhashraw}{4a8ba58be3c0a651d03b253c3aec234b}
+      \strng{bibnamehash}{4a8ba58be3c0a651d03b253c3aec234b}
+      \strng{authorbibnamehash}{4a8ba58be3c0a651d03b253c3aec234b}
+      \strng{authornamehash}{4a8ba58be3c0a651d03b253c3aec234b}
+      \strng{authorfullhash}{4a8ba58be3c0a651d03b253c3aec234b}
+      \strng{authorfullhashraw}{4a8ba58be3c0a651d03b253c3aec234b}
+      \strng{editorbibnamehash}{476b6d49b4f906c1719590835d2fdd04}
+      \strng{editornamehash}{476b6d49b4f906c1719590835d2fdd04}
+      \strng{editorfullhash}{476b6d49b4f906c1719590835d2fdd04}
+      \strng{editorfullhashraw}{476b6d49b4f906c1719590835d2fdd04}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0081-1947}
+      \field{series}{Solid State Physics}
+      \field{title}{Chapter Four - Nature of the Resistive Switching Phenomena in TiO2 and SrTiO3: Origin of the Reversible Insulator–Metal Transition}
+      \field{volume}{65}
+      \field{year}{2014}
+      \field{pages}{353\bibrangedash 559}
+      \range{pages}{207}
+      \verb{doi}
+      \verb https://doi.org/10.1016/B978-0-12-800175-2.00004-2
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780128001752000042
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780128001752000042
+      \endverb
+      \keyw{Resistive RAM,Transition-metal oxide,Extended defect,Insulator–metal transition,Electronic transport,Electrodegradation,Resistive switching}
+    \endentry
+    \entry{kolka2015}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=81cdf6cd5d579e096e737a566d6a7f02}{%
+           family={Z.\bibnamedelimi Kolka},
+           familyi={Z\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={V.\bibnamedelimi Biolkova},
+           giveni={V\bibinitperiod\bibinitdelim B\bibinitperiod},
+           suffix={D.\bibnamedelimi Biolek},
+           suffixi={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{81cdf6cd5d579e096e737a566d6a7f02}
+      \strng{fullhash}{81cdf6cd5d579e096e737a566d6a7f02}
+      \strng{fullhashraw}{81cdf6cd5d579e096e737a566d6a7f02}
+      \strng{bibnamehash}{81cdf6cd5d579e096e737a566d6a7f02}
+      \strng{authorbibnamehash}{81cdf6cd5d579e096e737a566d6a7f02}
+      \strng{authornamehash}{81cdf6cd5d579e096e737a566d6a7f02}
+      \strng{authorfullhash}{81cdf6cd5d579e096e737a566d6a7f02}
+      \strng{authorfullhashraw}{81cdf6cd5d579e096e737a566d6a7f02}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1805-9600}
+      \field{journaltitle}{Radioengineering}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{Improved Model of TiO2 Memristor}
+      \field{volume}{24}
+      \field{year}{2015}
+      \field{pages}{378\bibrangedash 383}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.13164/re.2015.0378
+      \endverb
+      \keyw{TiO2 memristor;Port Equation;State Equation;Pickett’s model;simulation}
+    \endentry
+    \entry{3dxpoint2}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0d74556fb379e7bc87ce8db43fc311d1}{%
+           family={Merritt},
+           familyi={M\bibinitperiod},
+           given={Rick},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d74556fb379e7bc87ce8db43fc311d1}
+      \strng{fullhash}{0d74556fb379e7bc87ce8db43fc311d1}
+      \strng{fullhashraw}{0d74556fb379e7bc87ce8db43fc311d1}
+      \strng{bibnamehash}{0d74556fb379e7bc87ce8db43fc311d1}
+      \strng{authorbibnamehash}{0d74556fb379e7bc87ce8db43fc311d1}
+      \strng{authornamehash}{0d74556fb379e7bc87ce8db43fc311d1}
+      \strng{authorfullhash}{0d74556fb379e7bc87ce8db43fc311d1}
+      \strng{authorfullhashraw}{0d74556fb379e7bc87ce8db43fc311d1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.eetimes.com/3d-xpoint-steps-into-the-light/}
+      \field{note}{Online; Accessed 2026-10-29}
+      \field{title}{3D XPoint Steps Into the Light}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.eetimes.com/3d-xpoint-steps-into-the-light/
+      \endverb
+      \verb{url}
+      \verb https://www.eetimes.com/3d-xpoint-steps-into-the-light/
+      \endverb
+      \keyw{3D XPoint;Intel;IM Flash Technologies;Blalock;Optane;chalcogenide}
+    \endentry
+    \entry{emerging2017}{inbook}{}{}
+      \name{author}{2}{}{%
+        {{hash=178baedf2668c4a12e80c1235b6bf695}{%
+           family={Boukhobza},
+           familyi={B\bibinitperiod},
+           given={Jalil},
+           giveni={J\bibinitperiod}}}%
+        {{hash=da450b57426df8056387c988fe3fbdc2}{%
+           family={Olivier},
+           familyi={O\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b537f40a6336298e7164d31c647a3b45}
+      \strng{fullhash}{b537f40a6336298e7164d31c647a3b45}
+      \strng{fullhashraw}{b537f40a6336298e7164d31c647a3b45}
+      \strng{bibnamehash}{b537f40a6336298e7164d31c647a3b45}
+      \strng{authorbibnamehash}{b537f40a6336298e7164d31c647a3b45}
+      \strng{authornamehash}{b537f40a6336298e7164d31c647a3b45}
+      \strng{authorfullhash}{b537f40a6336298e7164d31c647a3b45}
+      \strng{authorfullhashraw}{b537f40a6336298e7164d31c647a3b45}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781785481246}
+      \field{month}{01}
+      \field{title}{Emerging Non-volatile Memories}
+      \field{year}{2017}
+      \field{pages}{203\bibrangedash 224}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/B978-1-78548-124-6.50014-1
+      \endverb
+    \endentry
+    \entry{3dxpoint}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7828376024056ed9a694e96636f77ded}{%
+           family={Malventano},
+           familyi={M\bibinitperiod},
+           given={Allyn},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7828376024056ed9a694e96636f77ded}
+      \strng{fullhash}{7828376024056ed9a694e96636f77ded}
+      \strng{fullhashraw}{7828376024056ed9a694e96636f77ded}
+      \strng{bibnamehash}{7828376024056ed9a694e96636f77ded}
+      \strng{authorbibnamehash}{7828376024056ed9a694e96636f77ded}
+      \strng{authornamehash}{7828376024056ed9a694e96636f77ded}
+      \strng{authorfullhash}{7828376024056ed9a694e96636f77ded}
+      \strng{authorfullhashraw}{7828376024056ed9a694e96636f77ded}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://pcper.com/2017/06/how-3d-xpoint-phase-change-memory-works/}
+      \field{month}{6}
+      \field{note}{Online; Accessed 2026-10-26}
+      \field{title}{How 3D XPoint Phase-Change Memory Works}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://pcper.com/2017/06/how-3d-xpoint-phase-change-memory-works/
+      \endverb
+      \verb{url}
+      \verb https://pcper.com/2017/06/how-3d-xpoint-phase-change-memory-works/
+      \endverb
+      \keyw{3D XPoint;PCM;Intel;chalcogenide;Micron;Optane}
+    \endentry
+    \entry{reramva}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=ad603ef82f918ceb714ddf0fa6d5f47b}{%
+           family={Messaris},
+           familyi={M\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+        {{hash=98c81c3613658fe1c89ae330105553d5}{%
+           family={Serb},
+           familyi={S\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1e686049d6d5e16e0270b3290fd019f8}{%
+           family={Stathopoulos},
+           familyi={S\bibinitperiod},
+           given={Spyros},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1a2425ddcb2957891157d3fe73bb6b2d}{%
+           family={Khiat},
+           familyi={K\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6d78e903d61b0d1fba847e387191ab42}{%
+           family={Nikolaidis},
+           familyi={N\bibinitperiod},
+           given={Spyridon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4614b77cd792f966824ae5c438f2d424}{%
+           family={Prodromakis},
+           familyi={P\bibinitperiod},
+           given={Themistoklis},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{db1bb4618add38dbbf518fcbd509a9a6}
+      \strng{fullhash}{1b826f5e117cf56f903f49a691a22ca6}
+      \strng{fullhashraw}{1b826f5e117cf56f903f49a691a22ca6}
+      \strng{bibnamehash}{db1bb4618add38dbbf518fcbd509a9a6}
+      \strng{authorbibnamehash}{db1bb4618add38dbbf518fcbd509a9a6}
+      \strng{authornamehash}{db1bb4618add38dbbf518fcbd509a9a6}
+      \strng{authorfullhash}{1b826f5e117cf56f903f49a691a22ca6}
+      \strng{authorfullhashraw}{1b826f5e117cf56f903f49a691a22ca6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}
+      \field{number}{12}
+      \field{title}{A Data-Driven Verilog-A ReRAM Model}
+      \field{volume}{37}
+      \field{year}{2018}
+      \field{pages}{3151\bibrangedash 3162}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TCAD.2018.2791468
+      \endverb
+      \keyw{Mathematical model;Switches;Computational modeling;Integrated circuit modeling;Data models;Voltage control;Memristors;Characterization;modeling;resistive random access memory (ReRAM);simulation;Verilog-A (VA)}
+    \endentry
+    \entry{yang2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=9ca001b7e68b922406b3158f5978c25b}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jinfeng},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cd9a913e469943158185dd0b9f8e2a37}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Bingzhe},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c93136cebf5cddaf43f7285e0d0cfa38}{%
+           family={Lilja},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
+      \strng{fullhash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
+      \strng{fullhashraw}{d55f721e4d7ca59f95e27ae9d8db1f4b}
+      \strng{bibnamehash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
+      \strng{authorbibnamehash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
+      \strng{authornamehash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
+      \strng{authorfullhash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
+      \strng{authorfullhashraw}{d55f721e4d7ca59f95e27ae9d8db1f4b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2376-3639}
+      \field{journaltitle}{ACM Trans. Model. Perform. Eval. Comput. Syst.}
+      \field{number}{1}
+      \field{title}{Exploring Performance Characteristics of the Optane 3D Xpoint Storage Technology}
+      \field{volume}{5}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1145/3372783
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3372783
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3372783
+      \endverb
+      \keyw{3D Xpoint memory,NAND SSD,Optane SSD,nonvolatile memory,performance evaluation,relational database management system,solid-state drive}
+    \endentry
+    \entry{tellini2021}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=b073827fb2614a8df5d93ce14955b550}{%
+           family={Tellini},
+           familyi={T\bibinitperiod},
+           given={Bernardo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c9e9eddc609f15ac394294050406df7d}{%
+           family={Bologna},
+           familyi={B\bibinitperiod},
+           given={Mauro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=48640c18eb8087ab2cf6220f50e38f05}{%
+           family={Chandia},
+           familyi={C\bibinitperiod},
+           given={Kristopher\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=fdb82512d342bb68378a76408be14837}{%
+           family={Macucci},
+           familyi={M\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{94f2fc56e90d3871e44487a28c50e215}
+      \strng{fullhash}{6e07e82f7ea60e0dba2acca69c01fdc7}
+      \strng{fullhashraw}{6e07e82f7ea60e0dba2acca69c01fdc7}
+      \strng{bibnamehash}{94f2fc56e90d3871e44487a28c50e215}
+      \strng{authorbibnamehash}{94f2fc56e90d3871e44487a28c50e215}
+      \strng{authornamehash}{94f2fc56e90d3871e44487a28c50e215}
+      \strng{authorfullhash}{6e07e82f7ea60e0dba2acca69c01fdc7}
+      \strng{authorfullhashraw}{6e07e82f7ea60e0dba2acca69c01fdc7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{eess.SY}
+      \field{eprinttype}{arXiv}
+      \field{title}{Revisiting the Memristor Concept within Basic Circuit Theory}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2102.11669
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2102.11669
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2102.11669
+      \endverb
+    \endentry
+    \entry{soni2022}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=c3063e4740512d01968ea2c45b029e9f}{%
+           family={Soni.},
+           familyi={S\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f1e323dc3c9aed984712cea83769487c}{%
+           family={Sahoo},
+           familyi={S\bibinitperiod},
+           given={Satyajeet},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9dec4e2488bfdb4f7e718650aae587c9}
+      \strng{fullhash}{9dec4e2488bfdb4f7e718650aae587c9}
+      \strng{fullhashraw}{9dec4e2488bfdb4f7e718650aae587c9}
+      \strng{bibnamehash}{9dec4e2488bfdb4f7e718650aae587c9}
+      \strng{authorbibnamehash}{9dec4e2488bfdb4f7e718650aae587c9}
+      \strng{authornamehash}{9dec4e2488bfdb4f7e718650aae587c9}
+      \strng{authorfullhash}{9dec4e2488bfdb4f7e718650aae587c9}
+      \strng{authorfullhashraw}{9dec4e2488bfdb4f7e718650aae587c9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 International Mobile and Embedded Technology Conference (MECON)}
+      \field{title}{A Review On Different Memristor Modeling And Applications}
+      \field{year}{2022}
+      \field{pages}{688\bibrangedash 695}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/MECON53876.2022.9752214
+      \endverb
+      \keyw{Semiconductor device modeling;Nonvolatile memory;Computational modeling;Biological system modeling;Memristors;Logic gates;Mathematical models;Cross Bar Structure;Memristor;Window Functions;Switching Mechanism;Remote Sensing Applications;Power Consumption.}
+    \endentry
+    \entry{souto2024}{misc}{}{}
+      \name{author}{5}{}{%
+        {{hash=f9ac9400cc6be17f133e5993921b31ab}{%
+           family={Souto},
+           familyi={S\bibinitperiod},
+           given={Julio},
+           giveni={J\bibinitperiod}}}%
+        {{hash=72b3b946e3fec4001602d83c929975f0}{%
+           family={Botella},
+           familyi={B\bibinitperiod},
+           given={Guillermo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0944da40a884e85581a74248f3620762}{%
+           family={García},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=75d282154c36eaeb30c0b35d35c8b643}{%
+           family={Murillo},
+           familyi={M\bibinitperiod},
+           given={Raúl},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b7008e03e28b890e3e4f337d2e994358}{%
+           family={Barrio},
+           familyi={B\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           prefix={del},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2883bb213bde82aac7bc90855095190}
+      \strng{fullhash}{bd3b4998ca9c9f04dc5de50d8d7438d5}
+      \strng{fullhashraw}{bd3b4998ca9c9f04dc5de50d8d7438d5}
+      \strng{bibnamehash}{c2883bb213bde82aac7bc90855095190}
+      \strng{authorbibnamehash}{c2883bb213bde82aac7bc90855095190}
+      \strng{authornamehash}{c2883bb213bde82aac7bc90855095190}
+      \strng{authorfullhash}{bd3b4998ca9c9f04dc5de50d8d7438d5}
+      \strng{authorfullhashraw}{bd3b4998ca9c9f04dc5de50d8d7438d5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.NE}
+      \field{eprinttype}{arXiv}
+      \field{title}{Neuromorphic Circuit Simulation with Memristors: Design and Evaluation Using MemTorch for MNIST and CIFAR}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2407.13410
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2407.13410
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2407.13410
+      \endverb
+    \endentry
+    \entry{jiang2025}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=853b28eb3a3980629149b641aeb945db}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Mingrui},
+           giveni={M\bibinitperiod}}}%
+        {{hash=abd7a47e0a85015d4322250a039da681}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yichun},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b8482880953603120e896c4a37c8916f}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zefan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=8e6ea9d2aeafe6a7426446dd92acf0ff}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Can},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{7718d6fcaec22964846829de504e8117}
+      \strng{fullhash}{5b403f6a549d2054fdea384dfef28568}
+      \strng{fullhashraw}{5b403f6a549d2054fdea384dfef28568}
+      \strng{bibnamehash}{7718d6fcaec22964846829de504e8117}
+      \strng{authorbibnamehash}{7718d6fcaec22964846829de504e8117}
+      \strng{authornamehash}{7718d6fcaec22964846829de504e8117}
+      \strng{authorfullhash}{5b403f6a549d2054fdea384dfef28568}
+      \strng{authorfullhashraw}{5b403f6a549d2054fdea384dfef28568}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.ET}
+      \field{eprinttype}{arXiv}
+      \field{title}{Current Opinions on Memristor-Accelerated Machine Learning Hardware}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2501.12644
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2501.12644
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2501.12644
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
