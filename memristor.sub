@@ -1,0 +1,12 @@
+.subckt memristorR1 plus minus params: Ron=100 Roff=10k Rini=5k
+.param uv=10f D=10n k={uv*Ron/D**2} a={(Rini-Ron)/(Roff-Rini)}
+
+* Native dynamic resistor (breaks the PSpice E-source feedback loop)
+Rmem plus minus R={Roff + (Ron-Roff)/(1+a*exp(limit(-4*k*V(q), -80, 80)))}
+
+* Physical integrator (Restored: Cint stabilizes the Newton-Raphson solver)
+Gx 0 q value={I(Rmem)}
+Cint q 0 1
+Raux q 0 100Meg
+
+.ends memristorR1
