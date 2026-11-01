@@ -624,6 +624,54 @@
       \endverb
       \keyw{Mathematical model;Switches;Computational modeling;Integrated circuit modeling;Data models;Voltage control;Memristors;Characterization;modeling;resistive random access memory (ReRAM);simulation;Verilog-A (VA)}
     \endentry
+    \entry{sebastian2020memory}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=a0c0cc3b33339e8dbd75d862b7f904f2}{%
+           family={Sebastian},
+           familyi={S\bibinitperiod},
+           given={Abu},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d3460cbb901fceb04c02107682718490}{%
+           family={Le\bibnamedelima Gallo},
+           familyi={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=069a768de29a83c6bffd1588cdd22f5c}{%
+           family={Khaddam-Aljameh},
+           familyi={K\bibinithyphendelim A\bibinitperiod},
+           given={Riduan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=20a376a5e2f3deef1310a5e5ddc0f658}{%
+           family={Eleftheriou},
+           familyi={E\bibinitperiod},
+           given={Evangelos},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{b82dc02f100a35ebdd9bbcd8f34c79ff}
+      \strng{fullhash}{3a8c50a527aac00c5d373a56268efdd0}
+      \strng{fullhashraw}{3a8c50a527aac00c5d373a56268efdd0}
+      \strng{bibnamehash}{b82dc02f100a35ebdd9bbcd8f34c79ff}
+      \strng{authorbibnamehash}{b82dc02f100a35ebdd9bbcd8f34c79ff}
+      \strng{authornamehash}{b82dc02f100a35ebdd9bbcd8f34c79ff}
+      \strng{authorfullhash}{3a8c50a527aac00c5d373a56268efdd0}
+      \strng{authorfullhashraw}{3a8c50a527aac00c5d373a56268efdd0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1748-3395}
+      \field{journaltitle}{Nature Nanotechnology}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Memory devices and applications for in-memory computing}
+      \field{volume}{15}
+      \field{year}{2020}
+      \field{pages}{529\bibrangedash 544}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1038/s41565-020-0655-z
+      \endverb
+    \endentry
     \entry{yang2020}{article}{}{}
       \name{author}{3}{}{%
         {{hash=9ca001b7e68b922406b3158f5978c25b}{%

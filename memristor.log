@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.10.22)  29 OCT 2026 22:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.10.22)  1 NOV 2026 00:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -660,19 +660,15 @@ Package biblatex Info: ... file 'memristor.bbl' found.
 Package biblatex Info: Reference section=0 on input line 26.
 Package biblatex Info: Reference segment=0 on input line 26.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-] (./memristor.toc)
+(./memristor.toc)
 \tf@toc=\write5
 \openout5 = `memristor.toc'.
 
 
 
-[2]
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
 Overfull \hbox (10.51755pt too wide) in paragraph at lines 36--37
 \OT1/cmr/m/n/10 A mem-risz-tor t^^?ort^^Senete 1971-ben kezd}od^^?ott, L. Chua[
 []2[]] munk^^Saj^^Saval, amely az alkatr^^Sesz elm^^Seleti alap-jait, lehet}os^
@@ -681,42 +677,42 @@ Overfull \hbox (10.51755pt too wide) in paragraph at lines 36--37
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 43.
+(hyperref)                removing `math shift' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 43.
+(hyperref)                removing `subscript' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 43.
+(hyperref)                removing `math shift' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 43.
+(hyperref)                removing `math shift' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 43.
+(hyperref)                removing `subscript' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 43.
+(hyperref)                removing `math shift' on input line 42.
 
-<./images/pickett.png, id=115, 240.9pt x 311.66437pt>
+<./images/pickett.png, id=111, 240.9pt x 311.66437pt>
 File: ./images/pickett.png Graphic file (type png)
 <use ./images/pickett.png>
-Package pdftex.def Info: ./images/pickett.png  used on input line 47.
+Package pdftex.def Info: ./images/pickett.png  used on input line 46.
 (pdftex.def)             Requested size: 240.8994pt x 311.6636pt.
 
-Overfull \hbox (6.92612pt too wide) in paragraph at lines 44--52
+Overfull \hbox (6.92612pt too wide) in paragraph at lines 43--51
 \OT1/cmr/m/n/10 lehet}ov^^Se a "dis-zkr^^Set" ^^Sallapotok defini^^Salhat^^Sos^
 ^Sag^^Sat. B^^Sar, a mem-risz-torok klasszikus ^^Sertelmez^^Ses^^Seben is, v^^S
 altakoz^^So^^Saram^^Su
  []
 
 
-Overfull \hbox (1.75923pt too wide) in paragraph at lines 44--52
+Overfull \hbox (1.75923pt too wide) in paragraph at lines 43--51
 \OT1/cmr/m/n/10 klasszikus ^^Sertelmez^^Sesben a mem-riszt^^S^^Pv rend-sz-erek 
 nem k^^Sepesek en-er-gia t^^Sarol^^Sas^^Sara. Ugyan, a ger-jeszt^^Ses frekvenci
 ^^Sat^^Sol
@@ -732,10 +728,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[2]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -745,46 +738,72 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[4 <./images/pickett.png (PNG copy)>]
-<./images/joglekar.png, id=144, 341.77687pt x 213.79875pt>
+[3 <./images/pickett.png (PNG copy)>]
+<./images/joglekar.png, id=140, 341.77687pt x 213.79875pt>
 File: ./images/joglekar.png Graphic file (type png)
 <use ./images/joglekar.png>
-Package pdftex.def Info: ./images/joglekar.png  used on input line 62.
+Package pdftex.def Info: ./images/joglekar.png  used on input line 61.
 (pdftex.def)             Requested size: 341.77603pt x 213.79822pt.
-<./images/spice.png, id=149, 304.13625pt x 417.81094pt>
+
+Overfull \hbox (16.29515pt too wide) in paragraph at lines 73--76
+\OT1/cmr/m/n/10 Az RS (re-sis-tive switch-ing) tech-nol^^Sogi^^Sahoz sz^^?uks^^
+Seges szige-tel}ok krist^^Salytani, szen-nyezetts^^Segi k^^?ovetelm^^Senyeit, n
+^^?oveszt^^Sesi
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[4 <./images/joglekar.png (PNG copy)>]
+<./images/spice.png, id=154, 304.13625pt x 417.81094pt>
 File: ./images/spice.png Graphic file (type png)
 <use ./images/spice.png>
-Package pdftex.def Info: ./images/spice.png  used on input line 82.
+Package pdftex.def Info: ./images/spice.png  used on input line 89.
 (pdftex.def)             Requested size: 304.1355pt x 417.80992pt.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-[5 <./images/joglekar.png (PNG copy)>]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-[6 <./images/spice.png (PNG copy)>]
-<./images/pcm.png, id=169, 748.29562pt x 300.3722pt>
+<./images/pcm.png, id=157, 748.29562pt x 300.3722pt>
 File: ./images/pcm.png Graphic file (type png)
 <use ./images/pcm.png>
-Package pdftex.def Info: ./images/pcm.png  used on input line 92.
+Package pdftex.def Info: ./images/pcm.png  used on input line 99.
 (pdftex.def)             Requested size: 448.98083pt x 180.22469pt.
 
+Underfull \vbox (badness 4254) has occurred while \output is active []
 
-[7 <./images/pcm.png>]
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[5 <./images/spice.png (PNG copy)>]
+
+[6 <./images/pcm.png>]
+<./images/dnn.png, id=181, 500.62032pt x 263.48438pt>
+File: ./images/dnn.png Graphic file (type png)
+<use ./images/dnn.png>
+Package pdftex.def Info: ./images/dnn.png  used on input line 111.
+(pdftex.def)             Requested size: 468.07762pt x 246.35663pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[7 <./images/dnn.png (PNG copy)>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -804,56 +823,45 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[9]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-[10] (./memristor.aux)
+[9] (./memristor.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `memristor.out' has not changed.
-(rerunfilecheck)             Checksum: D6DAEC271BEF43B6291FEFF06F618B6A;3051.
+(rerunfilecheck)             Checksum: B9A3F85A5E72B537A5AD422B2BD71892;2976.
 Package logreq Info: Writing requests to 'memristor.run.xml'.
 \openout1 = `memristor.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17554 strings out of 475322
- 306598 string characters out of 5771093
- 1144800 words of memory out of 5000000
- 40192 multiletter control sequences out of 15000+600000
+ 17572 strings out of 475322
+ 307083 string characters out of 5771093
+ 1145872 words of memory out of 5000000
+ 40209 multiletter control sequences out of 15000+600000
  565227 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,13n,81p,2437b,1401s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,13n,81p,2436b,1477s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmtt10.pfb>
-Output written on memristor.pdf (10 pages, 501067 bytes).
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on memristor.pdf (9 pages, 570119 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 281 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 149 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 337 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 

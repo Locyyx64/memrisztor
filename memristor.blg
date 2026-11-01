@@ -1,20 +1,20 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'memristor.blg'
-[45] biber:340> INFO - === cs okt 29, 2026, 16:39:52
-[57] Biber.pm:420> INFO - Reading 'memristor.bcf'
-[96] Biber.pm:994> INFO - Found 19 citekeys in bib section 0
-[106] Biber.pm:4463> INFO - Processing section 0
-[113] Biber.pm:4654> INFO - Looking for bibtex file 'konyvek.bib' for section 0
-[113] Biber.pm:4654> INFO - Looking for bibtex file 'cikkek.bib' for section 0
-[115] bibtex.pm:1713> INFO - LaTeX decoding ...
-[130] bibtex.pm:1519> INFO - Found BibTeX data source 'cikkek.bib'
-[253] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[253] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[253] Biber.pm:4283> INFO - Sorting list 'ynt/global//global/global/global' of type 'entry' with template 'ynt' and locale 'en-US'
-[253] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[267] bbl.pm:676> INFO - Writing 'memristor.bbl' with encoding 'UTF-8'
-[272] bbl.pm:779> INFO - Output to memristor.bbl
-[272] Biber.pm:131> WARN - Data source 'konyvek.bib' is empty, ignoring
-[272] Biber.pm:131> WARN - legacy month field 'June' in entry 'kolka2015' is not an integer - this will probably not sort properly.
-[272] Biber.pm:131> WARN - legacy month field 'June' in entry '3dxpoint' is not an integer - this will probably not sort properly.
-[272] Biber.pm:133> INFO - WARNINGS: 3
+[68] biber:340> INFO - === v nov  1, 2026, 00:38:16
+[83] Biber.pm:420> INFO - Reading 'memristor.bcf'
+[146] Biber.pm:994> INFO - Found 20 citekeys in bib section 0
+[161] Biber.pm:4463> INFO - Processing section 0
+[170] Biber.pm:4654> INFO - Looking for bibtex file 'konyvek.bib' for section 0
+[170] Biber.pm:4654> INFO - Looking for bibtex file 'cikkek.bib' for section 0
+[172] bibtex.pm:1713> INFO - LaTeX decoding ...
+[199] bibtex.pm:1519> INFO - Found BibTeX data source 'cikkek.bib'
+[405] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[405] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[405] Biber.pm:4283> INFO - Sorting list 'ynt/global//global/global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[405] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[426] bbl.pm:676> INFO - Writing 'memristor.bbl' with encoding 'UTF-8'
+[434] bbl.pm:779> INFO - Output to memristor.bbl
+[434] Biber.pm:131> WARN - Data source 'konyvek.bib' is empty, ignoring
+[434] Biber.pm:131> WARN - legacy month field 'June' in entry 'kolka2015' is not an integer - this will probably not sort properly.
+[434] Biber.pm:131> WARN - legacy month field 'June' in entry '3dxpoint' is not an integer - this will probably not sort properly.
+[434] Biber.pm:133> INFO - WARNINGS: 3
