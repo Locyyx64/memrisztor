@@ -5,7 +5,10 @@
 \usepackage{hyperref}
 \usepackage{blindtext}
 \usepackage{graphicx}
+\usepackage[toc, page]{appendix}
+\usepackage{listings}
 \usepackage{float}
+\usepackage{xcolor}
 \graphicspath{{./images/}}
 \usepackage[
 backend=biber,
@@ -14,13 +17,25 @@ bibstyle=numeric,
 sorting=ynt
 ]{biblatex}
 
+\definecolor{blue}{rgb}{0.64, 0.76, 0.68}
+
 \addbibresource{konyvek.bib}
 \addbibresource{cikkek.bib}
+
+\lstset{numbers=left,
+backgroundcolor=\color{blue!25},
+captionpos=b,
+xleftmargin=21mm,
+xrightmargin=20mm,
+framexleftmargin=1.5mm
+}
 
 \title{Memrisztorok}
 \author{Baranyi Szabolcs, Gyimesi Dávid}
 \date{\today}
-\renewcommand*\contentsname{Tartalom}
+\renewcommand\contentsname{Tartalom}
+\renewcommand\appendixtocname{Függelék}
+\renewcommand\appendixpagename{Függelék}
 \pagestyle{fancy}
 \fancyhead[RO,LE]{BME Villamosmérnöki és Informatikai Kar}
 
@@ -95,7 +110,7 @@ a &= \frac{R_{\text{ini}} - R_{\text{off}}}{R_{\text{off}}-R_{\text{ini}}} \end{
 	\centering
 	\includegraphics[scale=0.3]{memristor_sine_schematic}
 	\includegraphics[scale=0.3]{memristor_sine_hysteresis}
-	\caption{Általunk megvalósított ideális memrisztor modell (schematic)}
+	\caption{Általunk megvalósított ideális memrisztor modell (schematic)\ref{appendix:kod}}
 \end{figure}}
 
 \subsubsection{Verilog-A modellezés alapjai}
@@ -132,6 +147,15 @@ Neuromorfikus chipek \cite{souto2024}
 
 \newpage
 \printbibliography[heading=bibintoc, title={Hivatkozások}]
+
+\begin{appendices}
+	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+	\section{LTSpice felhasznált kód}
+	\label{appendix:kod}
+	\lstinputlisting[caption=Hálózati modell]{memristor_sine.asc}
+	\lstinputlisting[caption=Memrisztor szimbólum definíció]{memristor.asy}
+	%\lstinputlisting[caption=LTSpice subcircuit fájl]{memristor.sub}
+\end{appendices}
 
 
 \end{document}

@@ -14,3 +14,6 @@
 \contentsline {subsection}{\numberline {6.1}Neurális hálózatok, gépi tanulás}{8}{subsection.6.1}%
 \contentsline {section}{\numberline {7}Cutting-edge kutatási területek}{8}{section.7}%
 \contentsline {section}{Hivatkozások}{9}{section*.2}%
+\contentsline {section}{Függelék}{10}{section*.3}%
+\setcounter {tocdepth}{0}
+\contentsline {section}{\numberline {A}LTSpice felhasznált kód}{10}{appendix.1.A}%
