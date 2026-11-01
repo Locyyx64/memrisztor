@@ -5,6 +5,7 @@
 \usepackage{hyperref}
 \usepackage{blindtext}
 \usepackage{graphicx}
+\usepackage{float}
 \graphicspath{{./images/}}
 \usepackage[
 backend=biber,
@@ -27,7 +28,7 @@ sorting=ynt
 
 \maketitle\thispagestyle{fancy}
 \begin{abstract}
-	Célunk ezzel a kutatással a memrisztív rendszerek bemutatása, a modern alkalmazások felderítése és elemzése, illetve különböző karakterisztikák modellezése, fennálló források alapján. A memrisztor a negyedik ideális áramköri komponens, ami a töltés és a fluxus között definiál karakterisztikát. A múltja a 60-70-es években gyökerezik, de több évtizedig nem létezett pontos megvalósítása. A 2000-es évek elején berobbant a tudományos kutatási figyelem középpontjába, miután sikeresen valósítottak meg titán-dioxid alapú memrisztív rendszert. Ezáltal a nem-felejtő memóriák nagy népszerűségre tettek szert, kifejezetten miután az Intel és a Micron Technologies a piacra dobta a 3D XPoint alapú memóriát.
+	Célunk ezzel a kutatással a memrisztív rendszerek bemutatása, a modern alkalmazások felderítése és elemzése, illetve különböző karakterisztikák modellezése, fennálló források alapján. A memrisztor a negyedik ideális áramköri komponens, ami a töltés és a fluxus között definiál karakterisztikát. A múltja a 60-70-es években gyökerezik, de több évtizedig nem létezett pontos megvalósítása. A 2000-es évek elején berobbant a tudományos kutatási figyelem középpontjába, miután sikeresen valósítottak meg titán-dioxid alapú memrisztív rendszert. Ezáltal a nem-felejtő memóriák nagy népszerűségre tettek szert, kifejezetten miután az Intel és a Micron Technologies piacra dobta a 3D XPoint alapú memóriát.
 \end{abstract}
 \vspace{5mm}
 \tableofcontents
@@ -36,7 +37,7 @@ sorting=ynt
 A memrisztor története 1971-ben kezdődött, L. Chua\cite{chua} munkájával, amely az alkatrész elméleti alapjait, lehetőségeit, alapvető kérdéskörét fektette le. Komolyabb gyakorlati felhasználások/alkalmazások csak a 2000-es évek elején terjedtek el, a non-volatile (nem felejtő) memóriák általános fejlődésével, és a resistive switching technológia kutatásával. Ezen az alkalmazásterületen a rezisztív alapú (memrisztort megvalósító) nem-felejtő memóriákat ReRAM-nak nevezik. Melletük még szintén kiterjedt kutatásterület a phase-change memóriák, a magnetorezisztív memóriák, vagy például a ferroelektromos memóriák.  \cite{emerging2017}
 \section{Bibliometriai elemzés, kutatási trendek}
 \section{Memrisztorok elméleti összefoglalása, modellezés}
-A memrisztor egy olyan ideális hálózati alkatrész, amely karakterisztikája a töltés és a fluxus között értelmezett, így kiteljesíti a négy mennyiség (áram, feszültség, töltés, fluxus) közötti hálózatelméleti négyszöget.\cite{chua} A karakteriszikája (fluxusvezérelt memrisztor): \[d\phi(q) = M(q)dq\]. Tehát fennáll a $v(t) = M(q(t))i(t)$, ilyenkor M a memrisztancia elnevezést kapja, mert mivel az $q(t) = \int_{0}^{t} i(t)dt$, ezért M az áram "múltjától" is függ q(t)-n keresztül. Ugyan, megfigyelve lényegében nemlineáris ellenállásként viselkedik. Az ideális memrisztor megvalósítása eddig nem volt lehetséges, bár tulajdonságai bizonyos alkatrészek/rendszerek (pl. Chua által ajánlott mutátor hálózatok) alkalmazásával közelíthetők. A memrisztor passzivitásához az szükséges, hogy $\int_{-\infty}^{t} p(\tau)d\tau > 0$ teljesüljön bármely t-re, amit a $M(q) > 0 \;\; \forall q$ biztosít. Vagyis, egy, a teljes értelmezési tartományán monoton növő $\phi-q$ görbe mellett a memrisztor passzív alkatrészként viselkedik, tehát kikapcsolás után is megtartja a memrisztancia értékét. Ezáltal, nem-felejtő memóriaként alkalmazható. Tellini et al. szerint \cite{tellini2021} a memrisztor nem egy negyedik független áramköri elem, hanem az idő-variáns ellenállás általánosítása. Ezek mellett, miután Chua és Kang általánosította a dinamikus memrisztív rendszerek fogalmát \cite{chuakang1976}: \begin{align*}\dot{x} &= \vec{f}(\vec{x}, u, t) \\ y &= g(\vec{x}, u, t)u\end{align*} Ez lehetővé tette egyéb memrisztív kialakítások kutatását, például a memkapacitás $q = C(\vec{x}, v, t)v$, vagy a meminduktancia $\varphi = L(\vec{x}, i, t)t$ esetét. Már Mauro et al. is kutattak memrisztív rendszert, az ún. termisztort \cite{mauro1961}\cite{chuakang1976}\cite{tellini2021}, amely esetén az "idő-variáns rezisztancia" állapotváltozója a hőmérséklet (rendellenes reaktáns komponens az impedanciában, hagyományos dinamikus komponensek nélkül). Ebben az esetben a teljes generált energia megegyezik a disszipált és a tárolt hő összegével $p(t) = v(t)i(t) = \delta(T-T_0) + C\frac{dT}{dt}$ de, memrisztoros rendszer lévén \cite{chuakang1976} szerint $v = R_0(T_0)\exp{\left[\beta\left(\frac{1}{T}-\frac{1}{T_0}\right)\right]i}$
+A memrisztor egy olyan ideális hálózati alkatrész, amely karakterisztikája a töltés és a fluxus között értelmezett, így kiteljesíti a négy mennyiség (áram, feszültség, töltés, fluxus) közötti hálózatelméleti négyszöget.\cite{chua} A karakteriszikája (töltésvezérelt memrisztor): \[d\phi(q) = M(q)dq\]. Tehát fennáll a $v(t) = M(q(t))i(t)$, ilyenkor M a memrisztancia elnevezést kapja, mert mivel az $q(t) = \int_{0}^{t} i(t)dt$, ezért M az áram "múltjától" is függ q(t)-n keresztül. Ugyan, megfigyelve lényegében nemlineáris ellenállásként viselkedik. Az ideális memrisztor megvalósítása eddig nem volt lehetséges, bár tulajdonságai bizonyos alkatrészek/rendszerek (pl. Chua által ajánlott mutátor hálózatok) alkalmazásával közelíthetők. A memrisztor passzivitásához az szükséges, hogy $\int_{-\infty}^{t} p(\tau)d\tau > 0$ teljesüljön bármely t-re, amit a $M(q) > 0 \;\; \forall q$ biztosít. Vagyis, egy, a teljes értelmezési tartományán monoton növő $\phi-q$ görbe mellett a memrisztor passzív alkatrészként viselkedik, tehát kikapcsolás után is megtartja a memrisztancia értékét. Ezáltal, nem-felejtő memóriaként alkalmazható. Tellini et al. szerint \cite{tellini2021} a memrisztor nem egy negyedik független áramköri elem, hanem az idő-variáns ellenállás általánosítása. Ezek mellett, miután Chua és Kang általánosította a dinamikus memrisztív rendszerek fogalmát \cite{chuakang1976}: \begin{align*}\dot{x} &= \vec{f}(\vec{x}, u, t) \\ y &= g(\vec{x}, u, t)u\end{align*} Ez lehetővé tette egyéb memrisztív kialakítások kutatását, például a memkapacitás $q = C(\vec{x}, v, t)v$, vagy a meminduktancia $\varphi = L(\vec{x}, i, t)t$ esetét. Már Mauro et al. is kutattak memrisztív rendszert, az ún. termisztort \cite{mauro1961}\cite{chuakang1976}\cite{tellini2021}, amely esetén az "idő-variáns rezisztancia" állapotváltozója a hőmérséklet (rendellenes reaktáns komponens az impedanciában, hagyományos dinamikus komponensek nélkül). Ebben az esetben a teljes generált energia megegyezik a disszipált és a tárolt hő összegével $p(t) = v(t)i(t) = \delta(T-T_0) + C\frac{dT}{dt}$ de, memrisztoros rendszer lévén \cite{chuakang1976} szerint $v = R_0(T_0)\exp{\left[\beta\left(\frac{1}{T}-\frac{1}{T_0}\right)\right]i}$
 \section{Non-volatile memóriák}
 \subsection{Nemfelejtő memóriák bemutatása}
 \subsection{Az anyagtudomány szerepe, TiO$_2$, SrTiO$_3$}
@@ -84,11 +85,19 @@ Számítógépes SPICE-alapú modellezés a nemlineáris ionsodródási modell a
 és $\frac{dx}{dt} = kW(x)I$ ahol pl. $W(x) = 1- (2x-1)^{2p}$. Így pl. $p=1$ mellett $\frac{1}{4}\ln\frac{x}{1-x} = k(q(t) +q_0)$, tehát \begin{align*}
 R(q(t)) &= R_{\text{off}} + \frac{R_{\text{on}}-R_{\text{off}}}{ae^{-4kq(t)} + 1} \\[3mm]
 a &= \frac{R_{\text{ini}} - R_{\text{off}}}{R_{\text{off}}-R_{\text{ini}}} \end{align*}
-\begin{figure}[h]
+\textsc{\begin{figure}[H]
 	\centering
 	\includegraphics{spice}
 	\caption{Lehetséges SPICE megvalósítások\cite{biolek2013}}
 \end{figure}
+Általunk megvalósított modell:
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{memristor_sine_schematic}
+	\includegraphics[scale=0.3]{memristor_sine_hysteresis}
+	\caption{Általunk megvalósított ideális memrisztor modell (schematic)}
+\end{figure}}
+
 \subsubsection{Verilog-A modellezés alapjai}
 \cite{reramva}
 \subsection{Verilog-A demó}
@@ -98,6 +107,11 @@ A 3D XPoint egy crossbar PCM-alapú struktúra, amit az Intel és a Micron Techn
 	\centering
 	\includegraphics[scale=0.6]{pcm}
 	\caption{Amorf és kristályos állapot rezisztív tulajdonságai (1), illetve író-és olvasóimpulzusok (2)\cite{3dxpoint}}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.55]{chalcogenide}
+	\caption{Alkalmazott kalkogenid ötvözet fejlesztői története\cite{3dxpoint}}
 \end{figure}
 A 3D XPoint alapja, hogy PCM cellákkal a DRAM-nál sokkal nagyobb cellasűrűség érhető el, illetve a cellakiválasztást nem tranzisztor/dióda, hanem az ún. ovonic threshold switch (OTS) \cite{3dxpoint} valósítja meg. Ez hasonló kalkogenid ötvözetből készül, mint maga a PCM, viszont pl. arzénnel adalékolják, hogy megakadályozzák az anyag kristályosodását (nem állhat be egy "SET" állapotba, így sosem lesz non-volatile kis rezisztanciája), így lehetővé tegyék hogy memória helyett úgy viselkedjen, mint egy "kapcsoló", azaz csak megadott threshold feszültség felett vezessen (konstans amorf állapot). A 2017-es állapot szerint a 3D XPoint technológia 2 ilyen cellaréteget (WL + cella + BL) tartalmaz, ami együtt is sokkal keskenyebb mint az alatta lévő CMOS kontroll hálózat. Guy Blalock, a IM Flash Technologies társelnök-vezérigazgatója 2016-ban egy interjúban azt mondta, elképzelhető 4 réteg is, illetve a dizájn további zsugorításának csökkentéséből fakadó egyéb előnyök, amint az EUV litográfia technológia megérik. \cite{3dxpoint2} A rétegzést nem is a fizikai kiterjedés korlátozza, hanem (tekintve hogy az OFF állapotú OTS-nek sem végtelen az ellenállása) a párhuzamos "káros" áramok mennyisége (nem léphet át egy határt, hogy ne roncsolja a környező cellák értékét, mint pl. a NAND flash esetén $\rightarrow$ "read disturb"). A NAND tárolók esetén általában az egyszerre végrehajtható olvasási ciklusok számát korlázották emiatt. Ezek mellett, a 3D XPoint törlés nélkül programozható (felülírható), a NAND Flash-sel szemben. \\
 Az Intel Optane SSD-k bájt-címkézhetők, míg a NAND Flash SSD-k csak page-címkézhetők. Az utóbbiak esetén ezáltal az I/O operációk csak page-ként végezhetők el, így pl. a subpage írás esetén az ún. read-modify-write folyamat szükséges. \cite{yang2020}
