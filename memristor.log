@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.10.22)  7 NOV 2026 17:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.10.22)  7 NOV 2026 20:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -710,14 +710,21 @@ Package biblatex Info: Reference segment=0 on input line 57.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-Overfull \hbox (10.51755pt too wide) in paragraph at lines 73--74
+Overfull \hbox (157.72829pt too wide) in paragraph at lines 67--79
+[] 
+ []
+
+
+
+[2]
+Overfull \hbox (10.51755pt too wide) in paragraph at lines 81--82
 \OT1/cmr/m/n/10 A mem-risz-tor t^^?ort^^Senete 1971-ben kezd}od^^?ott, L. Chua[
-[]2[]] munk^^Saj^^Saval, amely az alkatr^^Sesz elm^^Seleti alap-jait, lehet}os^
+[]1[]] munk^^Saj^^Saval, amely az alkatr^^Sesz elm^^Seleti alap-jait, lehet}os^
 ^Segeit,
  []
 
 
-Overfull \hbox (20.55472pt too wide) in paragraph at lines 79--80
+Overfull \hbox (20.55472pt too wide) in paragraph at lines 87--88
 \OT1/cmr/m/n/10 vagy rend-sz-erek (pl. Chua ^^Saltal aj^^Sanlott mut^^Sator h^^
 Sal^^Sozatok) al-ka-lmaz^^Sas^^Saval k^^?ozel^^S^^Pthet}ok. A mem-risz-tor pass
 zivit^^Sas^^Sahoz
@@ -733,7 +740,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[2]
+[3]
+Overfull \hbox (21.60191pt too wide) in paragraph at lines 127--129
+\OT1/cmr/m/n/10 enci^^Salegyenlet ^^Serv^^Senyes.[[]6[]] Ebben az es-et-ben a d
+if-fer-enci^^Salegyenlet ^^Ses a mem-risz-tan-cia ^^Saltal^^Sanos alakja a k^^?
+ovekez}ok^^Seppen
+ []
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -743,22 +757,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[3]
-Overfull \hbox (0.8426pt too wide) in paragraph at lines 133--136
+[4]
+Overfull \hbox (0.8426pt too wide) in paragraph at lines 141--144
 \OT1/cmr/m/n/10 frekvenci^^Saja, ^^Ses a k^^Sesleltet^^Sesekre val^^So ^^Serz^^
 Sekenys^^Seg mi-att. Emi-att az illesztett NVM-nek egyr^^Seszt kiv^^Sal^^So tar
 t^^Soss^^Saggal,
  []
 
-<./images/reram.png, id=117, 336.50719pt x 188.95593pt>
+<./images/reram.png, id=122, 336.50719pt x 188.95593pt>
 File: ./images/reram.png Graphic file (type png)
 <use ./images/reram.png>
-Package pdftex.def Info: ./images/reram.png  used on input line 140.
+Package pdftex.def Info: ./images/reram.png  used on input line 148.
 (pdftex.def)             Requested size: 269.2061pt x 151.16493pt.
-<./images/pcm_boukhobza.png, id=120, 269.50688pt x 155.07938pt>
+<./images/pcm_boukhobza.png, id=125, 269.50688pt x 155.07938pt>
 File: ./images/pcm_boukhobza.png Graphic file (type png)
 <use ./images/pcm_boukhobza.png>
-Package pdftex.def Info: ./images/pcm_boukhobza.png  used on input line 149.
+Package pdftex.def Info: ./images/pcm_boukhobza.png  used on input line 157.
 (pdftex.def)             Requested size: 269.50621pt x 155.07898pt.
 
 
@@ -770,60 +784,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[4
+[5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.151 \end{figure}
-                   <./images/reram.png (PNG copy)>]
-<./images/mram.png, id=128, 380.92313pt x 150.5625pt>
+l.161 \subsubsection
+                    {MRAM} <./images/reram.png (PNG copy)>]
+<./images/mram.png, id=134, 380.92313pt x 150.5625pt>
 File: ./images/mram.png Graphic file (type png)
 <use ./images/mram.png>
-Package pdftex.def Info: ./images/mram.png  used on input line 157.
+Package pdftex.def Info: ./images/mram.png  used on input line 165.
 (pdftex.def)             Requested size: 380.92218pt x 150.56212pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-[5
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.160 A
-        magnetorezisztív memóriának több fajtája van, a leggyakoribb az...
- <./images/pcm_boukhobza.png (PNG copy)>]
-<./images/pickett.png, id=138, 240.9pt x 311.66437pt>
-File: ./images/pickett.png Graphic file (type png)
-<use ./images/pickett.png>
-Package pdftex.def Info: ./images/pickett.png  used on input line 166.
-(pdftex.def)             Requested size: 240.8994pt x 311.6636pt.
-
-Overfull \hbox (6.92612pt too wide) in paragraph at lines 163--171
-\OT1/cmr/m/n/10 lehet}ov^^Se a "dis-zkr^^Set" ^^Sallapotok defini^^Salhat^^Sos^
-^Sag^^Sat. B^^Sar, a mem-risz-torok klasszikus ^^Sertelmez^^Ses^^Seben is, v^^S
-altakoz^^So^^Saram^^Su
- []
-
-
-Overfull \hbox (1.75923pt too wide) in paragraph at lines 163--171
-\OT1/cmr/m/n/10 klasszikus ^^Sertelmez^^Sesben a mem-riszt^^S^^Pv rend-sz-erek 
-nem k^^Sepesek en-er-gia t^^Sarol^^Sas^^Sara. Ugyan, a ger-jeszt^^Ses frekvenci
-^^Sat^^Sol
- []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/feram.png, id=136, 309.40594pt x 145.29282pt>
+File: ./images/feram.png Graphic file (type png)
+<use ./images/feram.png>
+Package pdftex.def Info: ./images/feram.png  used on input line 175.
+(pdftex.def)             Requested size: 309.40518pt x 145.29245pt.
+
+Underfull \vbox (badness 1796) has occurred while \output is active []
 
 
 
@@ -836,30 +819,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [6
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.177 \end{equation}
-                     <./images/mram.png (PNG copy)>]
-<./images/joglekar.png, id=154, 341.77687pt x 213.79875pt>
-File: ./images/joglekar.png Graphic file (type png)
-<use ./images/joglekar.png>
-Package pdftex.def Info: ./images/joglekar.png  used on input line 181.
-(pdftex.def)             Requested size: 341.77603pt x 213.79822pt.
+l.177 \end{figure}
+                   <./images/pcm_boukhobza.png (PNG copy)>]
+<./images/pickett.png, id=149, 240.9pt x 311.66437pt>
+File: ./images/pickett.png Graphic file (type png)
+<use ./images/pickett.png>
+Package pdftex.def Info: ./images/pickett.png  used on input line 184.
+(pdftex.def)             Requested size: 240.8994pt x 311.6636pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (16.29515pt too wide) in paragraph at lines 193--196
-\OT1/cmr/m/n/10 Az RS (re-sis-tive switch-ing) tech-nol^^Sogi^^Sahoz sz^^?uks^^
-Seges szige-tel}ok krist^^Salytani, szen-nyezetts^^Segi k^^?ovetelm^^Senyeit, n
-^^?oveszt^^Sesi
+Overfull \hbox (6.92612pt too wide) in paragraph at lines 181--189
+\OT1/cmr/m/n/10 lehet}ov^^Se a "dis-zkr^^Set" ^^Sallapotok defini^^Salhat^^Sos^
+^Sag^^Sat. B^^Sar, a mem-risz-torok klasszikus ^^Sertelmez^^Ses^^Seben is, v^^S
+altakoz^^So^^Saram^^Su
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (1.75923pt too wide) in paragraph at lines 181--189
+\OT1/cmr/m/n/10 klasszikus ^^Sertelmez^^Sesben a mem-riszt^^S^^Pv rend-sz-erek 
+nem k^^Sepesek en-er-gia t^^Sarol^^Sas^^Sara. Ugyan, a ger-jeszt^^Ses frekvenci
+^^Sat^^Sol
+ []
+
+
+Underfull \vbox (badness 5832) has occurred while \output is active []
 
 
 
@@ -872,21 +858,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.189 ... szennyezett réteg hossza. \begin{align}
+                                                  
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.204 \end{align}
-                  <./images/pickett.png (PNG copy)>]
-<./images/spice.png, id=171, 304.13625pt x 417.81094pt>
-File: ./images/spice.png Graphic file (type png)
-<use ./images/spice.png>
-Package pdftex.def Info: ./images/spice.png  used on input line 215.
-(pdftex.def)             Requested size: 228.10162pt x 313.35744pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+l.189 ... szennyezett réteg hossza. \begin{align}
+                                                   <./images/mram.png (PNG copy
+)> <./images/feram.png (PNG copy)>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -901,22 +885,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 Á
-        ltalunk megvalósított modell: <./images/joglekar.png (PNG copy)>]
-<./images/memristor_sine_schematic.png, id=184, 1442.38875pt x 761.09344pt>
-File: ./images/memristor_sine_schematic.png Graphic file (type png)
-<use ./images/memristor_sine_schematic.png>
-Package pdftex.def Info: ./images/memristor_sine_schematic.png  used on input l
-ine 221.
-(pdftex.def)             Requested size: 432.71997pt x 228.32979pt.
-<./images/memristor_sine_hysteresis.png, id=186, 1442.38875pt x 761.09344pt>
-File: ./images/memristor_sine_hysteresis.png Graphic file (type png)
-<use ./images/memristor_sine_hysteresis.png>
-Package pdftex.def Info: ./images/memristor_sine_hysteresis.png  used on input 
-line 222.
-(pdftex.def)             Requested size: 432.71997pt x 228.32979pt.
+l.189 ... szennyezett réteg hossza. \begin{align}
+                                                   <./images/pickett.png (PNG c
+opy)>]
+<./images/joglekar.png, id=171, 341.77687pt x 213.79875pt>
+File: ./images/joglekar.png Graphic file (type png)
+<use ./images/joglekar.png>
+Package pdftex.def Info: ./images/joglekar.png  used on input line 199.
+(pdftex.def)             Requested size: 341.77603pt x 213.79822pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (16.29515pt too wide) in paragraph at lines 211--214
+\OT1/cmr/m/n/10 Az RS (re-sis-tive switch-ing) tech-nol^^Sogi^^Sahoz sz^^?uks^^
+Seges szige-tel}ok krist^^Salytani, szen-nyezetts^^Segi k^^?ovetelm^^Senyeit, n
+^^?oveszt^^Sesi
+ []
 
 
 
@@ -933,47 +915,81 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.225 
-       <./images/spice.png (PNG copy)>]
-<./images/pcm.png, id=195, 748.29562pt x 300.3722pt>
-File: ./images/pcm.png Graphic file (type png)
-<use ./images/pcm.png>
-Package pdftex.def Info: ./images/pcm.png  used on input line 233.
-(pdftex.def)             Requested size: 448.98083pt x 180.22469pt.
-<./images/chalcogenide.png, id=197, 797.22844pt x 313.9228pt>
-File: ./images/chalcogenide.png Graphic file (type png)
-<use ./images/chalcogenide.png>
-Package pdftex.def Info: ./images/chalcogenide.png  used on input line 238.
-(pdftex.def)             Requested size: 438.477pt x 172.65807pt.
+l.218 \subsubsection
+                    {SPICE modellezés} <./images/joglekar.png (PNG copy)>]
+<./images/spice.png, id=192, 304.13625pt x 417.81094pt>
+File: ./images/spice.png Graphic file (type png)
+<use ./images/spice.png>
+Package pdftex.def Info: ./images/spice.png  used on input line 234.
+(pdftex.def)             Requested size: 228.10162pt x 313.35744pt.
+<./images/memristor_sine_schematic.png, id=194, 1442.38875pt x 761.09344pt>
+File: ./images/memristor_sine_schematic.png Graphic file (type png)
+<use ./images/memristor_sine_schematic.png>
+Package pdftex.def Info: ./images/memristor_sine_schematic.png  used on input l
+ine 240.
+(pdftex.def)             Requested size: 432.71997pt x 228.32979pt.
+<./images/memristor_sine_hysteresis.png, id=196, 1442.38875pt x 761.09344pt>
+File: ./images/memristor_sine_hysteresis.png Graphic file (type png)
+<use ./images/memristor_sine_hysteresis.png>
+Package pdftex.def Info: ./images/memristor_sine_hysteresis.png  used on input 
+line 241.
+(pdftex.def)             Requested size: 432.71997pt x 228.32979pt.
 
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.240 \end{figure}
-                   <./images/memristor_sine_schematic.png> <./images/memristor_
-sine_hysteresis.png>]
+l.244 
+       <./images/spice.png (PNG copy)>]
+<./images/pcm.png, id=210, 748.29562pt x 300.3722pt>
+File: ./images/pcm.png Graphic file (type png)
+<use ./images/pcm.png>
+Package pdftex.def Info: ./images/pcm.png  used on input line 252.
+(pdftex.def)             Requested size: 448.98083pt x 180.22469pt.
+<./images/chalcogenide.png, id=212, 797.22844pt x 313.9228pt>
+File: ./images/chalcogenide.png Graphic file (type png)
+<use ./images/chalcogenide.png>
+Package pdftex.def Info: ./images/chalcogenide.png  used on input line 257.
+(pdftex.def)             Requested size: 438.477pt x 172.65807pt.
+
 
 [11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.244 \section
-              {ReRAM gyakorlati alkalmazásai}
+l.259 \end{figure}
+                   <./images/memristor_sine_schematic.png> <./images/memristor_
+sine_hysteresis.png>]
+
+[12
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.244 \section
+l.263 \section
+              {ReRAM gyakorlati alkalmazásai}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.263 \section
               {ReRAM gyakorlati alkalmazásai} <./images/pcm.png> <./images/cha
 lcogenide.png>]
-<./images/dnn.png, id=222, 500.62032pt x 263.48438pt>
+<./images/dnn.png, id=237, 500.62032pt x 263.48438pt>
 File: ./images/dnn.png Graphic file (type png)
 <use ./images/dnn.png>
-Package pdftex.def Info: ./images/dnn.png  used on input line 250.
+Package pdftex.def Info: ./images/dnn.png  used on input line 269.
 (pdftex.def)             Requested size: 468.07762pt x 246.35663pt.
 
 
@@ -985,12 +1001,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[12
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+[13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.258 \newpage
+l.277 \newpage
                <./images/dnn.png (PNG copy)>]
 
 
@@ -1001,9 +1017,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[13]
+[14]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 265.
+nput line 288.
  (./memristor_sine.asc) (./memristor.asy)
 
 
@@ -1014,8 +1030,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[14{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-(./memristor.aux)
+[15{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[16] (./memristor.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -1027,34 +1052,38 @@ Package logreq Info: Writing requests to 'memristor.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19841 strings out of 475322
- 339023 string characters out of 5771093
- 1199828 words of memory out of 5000000
- 42367 multiletter control sequences out of 15000+600000
+ 19864 strings out of 475322
+ 339762 string characters out of 5771093
+ 1199968 words of memory out of 5000000
+ 42384 multiletter control sequences out of 15000+600000
  566168 words of font info for 64 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,13n,81p,2078b,1474s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/cm-super/sfrm1000.pfb>
-Output written on memristor.pdf (14 pages, 910521 bytes).
+ 75i,13n,81p,2079b,1482s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+pdfTeX warning (dest): name{subsection.4.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/
+cm-super/sfrm1000.pfb>
+Output written on memristor.pdf (16 pages, 935620 bytes).
 PDF statistics:
- 434 PDF objects out of 1000 (max. 8388607)
- 359 compressed objects within 4 object streams
- 129 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 454 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
