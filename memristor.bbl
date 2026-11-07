@@ -431,6 +431,84 @@
       \endverb
       \keyw{Resistive RAM,Transition-metal oxide,Extended defect,Insulator–metal transition,Electronic transport,Electrodegradation,Resistive switching}
     \endentry
+    \entry{tanakamaru2014}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0eb0c4dfa34dcdc48031fb2ec88df468}{%
+           family={Tanakamaru},
+           familyi={T\bibinitperiod},
+           given={Shuhei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=86e63232139ef02aa7aec4aba05d395f}{%
+           family={Doi},
+           familyi={D\bibinitperiod},
+           given={Masafumi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=42f878b7730ca191feb86b699850fbec}{%
+           family={Takeuchi},
+           familyi={T\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d96b4ed1926d83175a51855267fbc08}
+      \strng{fullhash}{4d96b4ed1926d83175a51855267fbc08}
+      \strng{fullhashraw}{4d96b4ed1926d83175a51855267fbc08}
+      \strng{bibnamehash}{4d96b4ed1926d83175a51855267fbc08}
+      \strng{authorbibnamehash}{4d96b4ed1926d83175a51855267fbc08}
+      \strng{authornamehash}{4d96b4ed1926d83175a51855267fbc08}
+      \strng{authorfullhash}{4d96b4ed1926d83175a51855267fbc08}
+      \strng{authorfullhashraw}{4d96b4ed1926d83175a51855267fbc08}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Circuits and Systems I: Regular Papers}
+      \field{number}{4}
+      \field{title}{NAND Flash Memory/ReRAM Hybrid Unified Solid-State-Storage Architecture}
+      \field{volume}{61}
+      \field{year}{2014}
+      \field{pages}{1119\bibrangedash 1132}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TCSI.2013.2285891
+      \endverb
+      \keyw{Ash;Bit error rate;Reliability;Arrays;Programming;Microprocessors;Big-data;NAND flash memory;reliability;ReRAM;storage}
+    \endentry
+    \entry{biolek2015}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ec7b5bd203ac5355fd96aceb9f6415d0}{%
+           family={Z.\bibnamedelimi Biolek},
+           familyi={Z\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={V.\bibnamedelimi Biolkova},
+           giveni={V\bibinitperiod\bibinitdelim B\bibinitperiod},
+           suffix={D.\bibnamedelimi Biolek},
+           suffixi={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec7b5bd203ac5355fd96aceb9f6415d0}
+      \strng{fullhash}{ec7b5bd203ac5355fd96aceb9f6415d0}
+      \strng{fullhashraw}{ec7b5bd203ac5355fd96aceb9f6415d0}
+      \strng{bibnamehash}{ec7b5bd203ac5355fd96aceb9f6415d0}
+      \strng{authorbibnamehash}{ec7b5bd203ac5355fd96aceb9f6415d0}
+      \strng{authornamehash}{ec7b5bd203ac5355fd96aceb9f6415d0}
+      \strng{authorfullhash}{ec7b5bd203ac5355fd96aceb9f6415d0}
+      \strng{authorfullhashraw}{ec7b5bd203ac5355fd96aceb9f6415d0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1805-9600}
+      \field{journaltitle}{Radioengineering}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{Differential Equations of Ideal Memristors}
+      \field{volume}{24}
+      \field{year}{2015}
+      \field{pages}{369\bibrangedash 377}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.13164/re.2015.0369
+      \endverb
+      \keyw{Memristor;differential equation;parameter-vs-state- map (PSM)}
+    \endentry
     \entry{kolka2015}{article}{}{}
       \name{author}{1}{}{%
         {{hash=81cdf6cd5d579e096e737a566d6a7f02}{%

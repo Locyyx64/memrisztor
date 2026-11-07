@@ -1,19 +1,23 @@
 \contentsline {section}{\numberline {1}Bevezetés}{2}{section.1}%
 \contentsline {section}{\numberline {2}Bibliometriai elemzés, kutatási trendek}{2}{section.2}%
-\contentsline {section}{\numberline {3}Memrisztorok elméleti összefoglalása, modellezés}{2}{section.3}%
-\contentsline {section}{\numberline {4}Non-volatile memóriák}{2}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Nemfelejtő memóriák bemutatása}{2}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Az anyagtudomány szerepe, TiO$_2$, SrTiO$_3$}{2}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}MIM ReRAM modellezése}{4}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}MATLAB modellezés}{4}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}SPICE modellezés}{4}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Verilog-A modellezés alapjai}{6}{subsubsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.4}Verilog-A demó}{6}{subsection.4.4}%
-\contentsline {section}{\numberline {5}3D XPoint}{6}{section.5}%
-\contentsline {section}{\numberline {6}ReRAM gyakorlati alkalmazásai}{8}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Neurális hálózatok, gépi tanulás}{8}{subsection.6.1}%
-\contentsline {section}{\numberline {7}Cutting-edge kutatási területek}{8}{section.7}%
-\contentsline {section}{Hivatkozások}{9}{section*.2}%
-\contentsline {section}{Függelék}{10}{section*.3}%
+\contentsline {section}{\numberline {3}Memrisztorok elméleti összefoglalása}{2}{section.3}%
+\contentsline {section}{\numberline {4}Non-volatile memóriák}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Nemfelejtő memóriák bemutatása}{3}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}ReRAM}{4}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}PCM}{5}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}MRAM}{5}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}FeRAM}{6}{subsubsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.2}Az anyagtudomány szerepe, TiO$_2$, SrTiO$_3$}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}MiM ReRAM modellezése}{8}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}MATLAB modellezés}{8}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}SPICE modellezés}{8}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Verilog-A modellezés alapjai}{10}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Verilog-A demó}{10}{subsection.4.4}%
+\contentsline {section}{\numberline {5}3D XPoint}{10}{section.5}%
+\contentsline {section}{\numberline {6}ReRAM gyakorlati alkalmazásai}{12}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Neurális hálózatok, gépi tanulás}{12}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Cutting-edge kutatási területek}{12}{section.7}%
+\contentsline {section}{Hivatkozások}{13}{section*.2}%
+\contentsline {section}{Függelék}{14}{section*.3}%
 \setcounter {tocdepth}{0}
-\contentsline {section}{\numberline {A}LTSpice felhasznált kód}{10}{appendix.1.A}%
+\contentsline {section}{\numberline {A}LTSpice felhasznált kód}{14}{appendix.1.A}%
