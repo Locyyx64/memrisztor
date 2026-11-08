@@ -516,8 +516,8 @@
       \strng{authornamehash}{f8639a07115f63c271c63002200016fd}
       \strng{authorfullhash}{f8639a07115f63c271c63002200016fd}
       \strng{authorfullhashraw}{f8639a07115f63c271c63002200016fd}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The missing memristor found}
@@ -556,8 +556,8 @@
       \strng{authornamehash}{9dec4e2488bfdb4f7e718650aae587c9}
       \strng{authorfullhash}{9dec4e2488bfdb4f7e718650aae587c9}
       \strng{authorfullhashraw}{9dec4e2488bfdb4f7e718650aae587c9}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2022 International Mobile and Embedded Technology Conference (MECON)}
@@ -594,8 +594,8 @@
       \strng{authornamehash}{fab9bccf123bee9ac9ac656a0edbba3d}
       \strng{authorfullhash}{fab9bccf123bee9ac9ac656a0edbba3d}
       \strng{authorfullhashraw}{fab9bccf123bee9ac9ac656a0edbba3d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1361-6404}
@@ -662,73 +662,6 @@
       \verb 10.1109/TCSI.2012.2215714
       \endverb
       \keyw{Mathematical model;Computational modeling;Integrated circuit modeling;Adaptation models;Memristors;Resistance;Semiconductor process modeling;Memristive systems;memristor;SPICE;window function}
-    \endentry
-    \entry{szot2014}{incollection}{}{}
-      \name{author}{3}{}{%
-        {{hash=53d385c40b6080cd3978231e823e9a86}{%
-           family={Szot},
-           familyi={S\bibinitperiod},
-           given={Krzysztof},
-           giveni={K\bibinitperiod}}}%
-        {{hash=cbb84fc7ede315b9bf9666fa5f1ffbaf}{%
-           family={Bihlmayer},
-           familyi={B\bibinitperiod},
-           given={Gustav},
-           giveni={G\bibinitperiod}}}%
-        {{hash=3517c9cc157a59025bb0118ad3d0da6d}{%
-           family={Speier},
-           familyi={S\bibinitperiod},
-           given={Wolfgang},
-           giveni={W\bibinitperiod}}}%
-      }
-      \name{editor}{2}{}{%
-        {{hash=4430ffe7d092114c629c1acf5129a3d2}{%
-           family={Camley},
-           familyi={C\bibinitperiod},
-           given={Robert\bibnamedelima E.},
-           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=0fd46d053351f0b7cf1fff8ce643058e}{%
-           family={Stamps},
-           familyi={S\bibinitperiod},
-           given={Robert\bibnamedelima L.},
-           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Academic Press}%
-      }
-      \strng{namehash}{4a8ba58be3c0a651d03b253c3aec234b}
-      \strng{fullhash}{4a8ba58be3c0a651d03b253c3aec234b}
-      \strng{fullhashraw}{4a8ba58be3c0a651d03b253c3aec234b}
-      \strng{bibnamehash}{4a8ba58be3c0a651d03b253c3aec234b}
-      \strng{authorbibnamehash}{4a8ba58be3c0a651d03b253c3aec234b}
-      \strng{authornamehash}{4a8ba58be3c0a651d03b253c3aec234b}
-      \strng{authorfullhash}{4a8ba58be3c0a651d03b253c3aec234b}
-      \strng{authorfullhashraw}{4a8ba58be3c0a651d03b253c3aec234b}
-      \strng{editorbibnamehash}{476b6d49b4f906c1719590835d2fdd04}
-      \strng{editornamehash}{476b6d49b4f906c1719590835d2fdd04}
-      \strng{editorfullhash}{476b6d49b4f906c1719590835d2fdd04}
-      \strng{editorfullhashraw}{476b6d49b4f906c1719590835d2fdd04}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0081-1947}
-      \field{series}{Solid State Physics}
-      \field{title}{Chapter Four - Nature of the Resistive Switching Phenomena in TiO2 and SrTiO3: Origin of the Reversible Insulator–Metal Transition}
-      \field{volume}{65}
-      \field{year}{2014}
-      \field{pages}{353\bibrangedash 559}
-      \range{pages}{207}
-      \verb{doi}
-      \verb https://doi.org/10.1016/B978-0-12-800175-2.00004-2
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/B9780128001752000042
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/B9780128001752000042
-      \endverb
-      \keyw{Resistive RAM,Transition-metal oxide,Extended defect,Insulator–metal transition,Electronic transport,Electrodegradation,Resistive switching}
     \endentry
     \entry{biolek2013}{misc}{}{}
       \name{author}{3}{}{%
@@ -815,8 +748,8 @@
       \strng{authornamehash}{db1bb4618add38dbbf518fcbd509a9a6}
       \strng{authorfullhash}{1b826f5e117cf56f903f49a691a22ca6}
       \strng{authorfullhashraw}{1b826f5e117cf56f903f49a691a22ca6}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}
@@ -847,8 +780,8 @@
       \strng{authornamehash}{7828376024056ed9a694e96636f77ded}
       \strng{authorfullhash}{7828376024056ed9a694e96636f77ded}
       \strng{authorfullhashraw}{7828376024056ed9a694e96636f77ded}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://pcper.com/2017/06/how-3d-xpoint-phase-change-memory-works/}
@@ -880,8 +813,8 @@
       \strng{authornamehash}{0d74556fb379e7bc87ce8db43fc311d1}
       \strng{authorfullhash}{0d74556fb379e7bc87ce8db43fc311d1}
       \strng{authorfullhashraw}{0d74556fb379e7bc87ce8db43fc311d1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://www.eetimes.com/3d-xpoint-steps-into-the-light/}
@@ -928,8 +861,8 @@
       \strng{authornamehash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
       \strng{authorfullhash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
       \strng{authorfullhashraw}{d55f721e4d7ca59f95e27ae9d8db1f4b}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2376-3639}
@@ -1036,8 +969,8 @@
       \strng{authornamehash}{c2883bb213bde82aac7bc90855095190}
       \strng{authorfullhash}{bd3b4998ca9c9f04dc5de50d8d7438d5}
       \strng{authorfullhashraw}{bd3b4998ca9c9f04dc5de50d8d7438d5}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.NE}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.10.22)  8 NOV 2026 14:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.10.22)  8 NOV 2026 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -756,17 +756,17 @@ Overfull \hbox (10.51755pt too wide) in paragraph at lines 82--83
 ^Segeit,
  []
 
-<./images/memristor_pubs.png, id=84, 642.14906pt x 647.41875pt>
+<./images/memristor_pubs.png, id=88, 642.14906pt x 647.41875pt>
 File: ./images/memristor_pubs.png Graphic file (type png)
 <use ./images/memristor_pubs.png>
 Package pdftex.def Info: ./images/memristor_pubs.png  used on input line 87.
 (pdftex.def)             Requested size: 152.59082pt x 153.84258pt.
-<./images/reram_pubs.png, id=85, 649.67719pt x 635.37375pt>
+<./images/reram_pubs.png, id=89, 649.67719pt x 635.37375pt>
 File: ./images/reram_pubs.png Graphic file (type png)
 <use ./images/reram_pubs.png>
 Package pdftex.def Info: ./images/reram_pubs.png  used on input line 91.
 (pdftex.def)             Requested size: 152.59082pt x 149.22559pt.
-<./images/rs_pubs.png, id=86, 645.91313pt x 639.89063pt>
+<./images/rs_pubs.png, id=90, 645.91313pt x 639.89063pt>
 File: ./images/rs_pubs.png Graphic file (type png)
 <use ./images/rs_pubs.png>
 Package pdftex.def Info: ./images/rs_pubs.png  used on input line 95.
@@ -813,7 +813,7 @@ Sekenys^^Seg mi-att. Emi-att az illesztett NVM-nek egyr^^Seszt kiv^^Sal^^So tar
 t^^Soss^^Saggal,
  []
 
-<./images/reram.png, id=137, 336.50719pt x 188.95593pt>
+<./images/reram.png, id=141, 336.50719pt x 188.95593pt>
 File: ./images/reram.png Graphic file (type png)
 <use ./images/reram.png>
 Package pdftex.def Info: ./images/reram.png  used on input line 176.
@@ -829,12 +829,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [6]
-<./images/pcm_boukhobza.png, id=148, 269.50688pt x 155.07938pt>
+<./images/pcm_boukhobza.png, id=152, 269.50688pt x 155.07938pt>
 File: ./images/pcm_boukhobza.png Graphic file (type png)
 <use ./images/pcm_boukhobza.png>
 Package pdftex.def Info: ./images/pcm_boukhobza.png  used on input line 185.
 (pdftex.def)             Requested size: 269.50621pt x 155.07898pt.
-<./images/mram.png, id=152, 380.92313pt x 150.5625pt>
+<./images/mram.png, id=156, 380.92313pt x 150.5625pt>
 File: ./images/mram.png Graphic file (type png)
 <use ./images/mram.png>
 Package pdftex.def Info: ./images/mram.png  used on input line 193.
@@ -850,7 +850,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [7 <./images/reram.png (PNG copy)> <./images/pcm_boukhobza.png (PNG copy)>]
-<./images/feram.png, id=164, 309.40594pt x 145.29282pt>
+<./images/feram.png, id=168, 309.40594pt x 145.29282pt>
 File: ./images/feram.png Graphic file (type png)
 <use ./images/feram.png>
 Package pdftex.def Info: ./images/feram.png  used on input line 203.
@@ -869,7 +869,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [8 <./images/mram.png (PNG copy)>]
-<./images/pickett.png, id=178, 240.9pt x 311.66437pt>
+<./images/pickett.png, id=182, 240.9pt x 311.66437pt>
 File: ./images/pickett.png Graphic file (type png)
 <use ./images/pickett.png>
 Package pdftex.def Info: ./images/pickett.png  used on input line 213.
@@ -898,7 +898,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [10 <./images/pickett.png (PNG copy)>]
-<./images/joglekar.png, id=202, 341.77687pt x 213.79875pt>
+<./images/joglekar.png, id=206, 341.77687pt x 213.79875pt>
 File: ./images/joglekar.png Graphic file (type png)
 <use ./images/joglekar.png>
 Package pdftex.def Info: ./images/joglekar.png  used on input line 236.
@@ -926,22 +926,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [11 <./images/joglekar.png (PNG copy)>]
-<./images/spice.png, id=221, 304.13625pt x 417.81094pt>
+<./images/spice.png, id=225, 304.13625pt x 417.81094pt>
 File: ./images/spice.png Graphic file (type png)
 <use ./images/spice.png>
-Package pdftex.def Info: ./images/spice.png  used on input line 273.
+Package pdftex.def Info: ./images/spice.png  used on input line 275.
 (pdftex.def)             Requested size: 228.10162pt x 313.35744pt.
-<./images/memristor_sine_schematic.png, id=224, 1442.38875pt x 761.09344pt>
+<./images/memristor_sine_schematic.png, id=228, 1442.38875pt x 761.09344pt>
 File: ./images/memristor_sine_schematic.png Graphic file (type png)
 <use ./images/memristor_sine_schematic.png>
 Package pdftex.def Info: ./images/memristor_sine_schematic.png  used on input l
-ine 279.
+ine 281.
 (pdftex.def)             Requested size: 432.71997pt x 228.32979pt.
-<./images/memristor_sine_hysteresis.png, id=226, 1442.38875pt x 761.09344pt>
+<./images/memristor_sine_hysteresis.png, id=230, 1442.38875pt x 761.09344pt>
 File: ./images/memristor_sine_hysteresis.png Graphic file (type png)
 <use ./images/memristor_sine_hysteresis.png>
 Package pdftex.def Info: ./images/memristor_sine_hysteresis.png  used on input 
-line 280.
+line 282.
 (pdftex.def)             Requested size: 432.71997pt x 228.32979pt.
 
 Underfull \vbox (badness 2080) has occurred while \output is active []
@@ -957,15 +957,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [12 <./images/spice.png (PNG copy)>]
-<./images/pcm.png, id=240, 748.29562pt x 300.3722pt>
+<./images/pcm.png, id=244, 748.29562pt x 300.3722pt>
 File: ./images/pcm.png Graphic file (type png)
 <use ./images/pcm.png>
-Package pdftex.def Info: ./images/pcm.png  used on input line 291.
+Package pdftex.def Info: ./images/pcm.png  used on input line 293.
 (pdftex.def)             Requested size: 448.98083pt x 180.22469pt.
-<./images/chalcogenide.png, id=243, 797.22844pt x 313.9228pt>
+<./images/chalcogenide.png, id=247, 797.22844pt x 313.9228pt>
 File: ./images/chalcogenide.png Graphic file (type png)
 <use ./images/chalcogenide.png>
-Package pdftex.def Info: ./images/chalcogenide.png  used on input line 296.
+Package pdftex.def Info: ./images/chalcogenide.png  used on input line 298.
 (pdftex.def)             Requested size: 438.477pt x 172.65807pt.
 
 
@@ -973,10 +973,10 @@ Package pdftex.def Info: ./images/chalcogenide.png  used on input line 296.
 .png>]
 
 [14 <./images/pcm.png> <./images/chalcogenide.png>]
-<./images/dnn.png, id=270, 500.62032pt x 263.48438pt>
+<./images/dnn.png, id=274, 500.62032pt x 263.48438pt>
 File: ./images/dnn.png Graphic file (type png)
 <use ./images/dnn.png>
-Package pdftex.def Info: ./images/dnn.png  used on input line 308.
+Package pdftex.def Info: ./images/dnn.png  used on input line 311.
 (pdftex.def)             Requested size: 468.07762pt x 246.35663pt.
 
 
@@ -1000,7 +1000,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 327.
+nput line 330.
  (./memristor_sine.asc) (./memristor.asy)
 
 
@@ -1012,40 +1012,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [17{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-[18] (./memristor.aux)
+(./memristor.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `memristor.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                memristor
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'memristor.run.xml'.
 \openout1 = `memristor.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21324 strings out of 475322
- 368310 string characters out of 5771093
- 1219551 words of memory out of 5000000
- 43825 multiletter control sequences out of 15000+600000
+ 21308 strings out of 475322
+ 367831 string characters out of 5771093
+ 1218516 words of memory out of 5000000
+ 43809 multiletter control sequences out of 15000+600000
  567007 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,13n,81p,2079b,1526s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1065,10 +1047,10 @@ onts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
 pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/shar
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/f
 onts/type1/public/cm-super/sfrm1000.pfb>
-Output written on memristor.pdf (18 pages, 980683 bytes).
+Output written on memristor.pdf (17 pages, 980424 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 394 compressed objects within 4 object streams
+ 483 PDF objects out of 1000 (max. 8388607)
+ 391 compressed objects within 4 object streams
  145 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

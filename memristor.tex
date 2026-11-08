@@ -248,8 +248,10 @@ A Pickett-Simmons állapotegyenlet egyszerűbb megadását biztosítja a TEAM mo
 \end{equation}
 Ahol $k_{\text{off}}$,  $k_{\text{on}}$,  $\alpha_{\text{off}}$, és  $\alpha_{\text{on}}$ modellparaméterek, illetve $i_{\text{off}}$ és $i_{\text{on}}$ küszöbáram értékek. \\
 Az RS (resistive switching) technológiához szükséges szigetelők kristálytani, szennyezettségi követelményeit, növesztési technológiáit, belső folyamatait és energiaviszonyait az alábbiakban tárgyaljuk.
-\subsection{Felhasznált szigetelők tulajdonságai}
+\subsection{Magnéli fázisok, és a rácshibák jelentősége}
 
+
+\subsection{2D anyagok felhasználása}
 
 \section{ReRAM modellezése}
 \subsection{MATLAB modellezés}
@@ -299,6 +301,7 @@ A 3D XPoint egy crossbar PCM-alapú struktúra, amit az Intel és a Micron Techn
 A 3D XPoint alapja, hogy PCM cellákkal a DRAM-nál sokkal nagyobb cellasűrűség érhető el, illetve a cellakiválasztást nem tranzisztor/dióda, hanem az ún. ovonic threshold switch (OTS) \cite{3dxpoint} valósítja meg. Ez hasonló kalkogenid ötvözetből készül, mint maga a PCM, viszont pl. arzénnel adalékolják, hogy megakadályozzák az anyag kristályosodását (nem állhat be egy "SET" állapotba, így sosem lesz non-volatile kis rezisztanciája), így lehetővé tegyék hogy memória helyett úgy viselkedjen, mint egy "kapcsoló", azaz csak megadott threshold feszültség felett vezessen (konstans amorf állapot). A 2017-es állapot szerint a 3D XPoint technológia 2 ilyen cellaréteget (WL + cella + BL) tartalmaz, ami együtt is sokkal keskenyebb mint az alatta lévő CMOS kontroll hálózat. Guy Blalock, a IM Flash Technologies társelnök-vezérigazgatója 2016-ban egy interjúban azt mondta, elképzelhető 4 réteg is, illetve a dizájn további zsugorításának csökkentéséből fakadó egyéb előnyök, amint az EUV litográfia technológia megérik. \cite{3dxpoint2} A rétegzést nem is a fizikai kiterjedés korlátozza, hanem (tekintve hogy az OFF állapotú OTS-nek sem végtelen az ellenállása) a párhuzamos "káros" áramok mennyisége (nem léphet át egy határt, hogy ne roncsolja a környező cellák értékét, mint pl. a NAND flash esetén $\rightarrow$ "read disturb"). A NAND tárolók esetén általában az egyszerre végrehajtható olvasási ciklusok számát korlázották emiatt. Ezek mellett, a 3D XPoint törlés nélkül programozható (felülírható), a NAND Flash-sel szemben. \\
 Az Intel Optane SSD-k bájt-címkézhetők, míg a NAND Flash SSD-k csak page-címkézhetők. Az utóbbiak esetén ezáltal az I/O operációk csak page-ként végezhetők el, így pl. a subpage írás esetén az ún. read-modify-write folyamat szükséges. \cite{yang2020}
 A 3D XPoint SSD-ben overwrite melletti írási statisztikák szerint a -- NAND tárolóval szembeni -- helyi felülírási képességnek köszönhetően nincs beépített írás-menti garbage collection, ami élesen csökkentené (kb. 19\%-kal) az írási sebességet/sávszélességet. Így az Optane SSD teljes tár esetén is közel ugyanolyan teljesítményt nyújt (0.5\% körüli hiba), mint normál állapotban. \cite{yang2020}
+\section{Memrisztoros logikai hálózatok}
 \section{ReRAM gyakorlati alkalmazásai}
 \subsection{Neurális hálózatok, gépi tanulás}
 Memrisztorok egyik legelterjedtebb alkalmazása: ANN gyorsítás, pl. crosspoint struktúrával gyors mátrixszámítás, gyorsított regresszió, döntési fák, stb. Belső sztochaszticitásnak köszönhetően probabilisztikus számítások, kombinatorikus optimizáció stb. \cite{jiang2025}
