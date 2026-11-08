@@ -172,7 +172,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortingtemplatename</bcf:key>
-      <bcf:value>ynt</bcf:value>
+      <bcf:value>none</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortsets</bcf:key>
@@ -2382,60 +2382,64 @@
     <bcf:citekey order="7" intorder="1">chuakang1976</bcf:citekey>
     <bcf:citekey order="8" intorder="1">tellini2021</bcf:citekey>
     <bcf:citekey order="9" intorder="1">chuakang1976</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">emerging2017</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">kolka2015</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">pickett2009</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">pickett2009</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">chuakang1976</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">strukov2008</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">soni2022</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">joglekar2009</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">kvatinsky2013</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">kvatinsky2013</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">szot2014</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">biolek2013</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">reramva</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">3dxpoint</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">3dxpoint</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">3dxpoint</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">3dxpoint2</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">yang2020</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">yang2020</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">jiang2025</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">sebastian2020memory</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">souto2024</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">biolek2015</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">biolek2015</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">biolek2015</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">emerging2017</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">emerging2017</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">tanakamaru2014</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">emerging2017</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">emerging2017</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">sebastian2020memory</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">emerging2017</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">emerging2017</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">emerging2017</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">emerging2017</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">emerging2017</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">yoon2008</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">emerging2017</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">kolka2015</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">pickett2009</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">pickett2009</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">pickett2009</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">chuakang1976</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">strukov2008</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">soni2022</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">joglekar2009</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">kvatinsky2013</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">joglekar2009</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">kvatinsky2013</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">kvatinsky2013</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">biolek2013</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">biolek2013</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">reramva</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">3dxpoint</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">3dxpoint</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">3dxpoint</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">3dxpoint</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">3dxpoint</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">3dxpoint2</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">yang2020</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">yang2020</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">jiang2025</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">sebastian2020memory</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">sebastian2020memory</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">souto2024</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="ynt">
+  <bcf:sortingtemplate name="none">
     <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
     </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-      <bcf:sortitem literal="1" order="3">9999</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">translator</bcf:sortitem>
-      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="6">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
+    <bcf:sort order="2">
+      <bcf:sortitem order="1">intciteorder</bcf:sortitem>
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
   <bcf:datalist section="0"
-                name="ynt/global//global/global/global"
+                name="none/global//global/global/global"
                 type="entry"
-                sortingtemplatename="ynt"
+                sortingtemplatename="none"
                 sortingnamekeytemplatename="global"
                 labelprefix=""
                 uniquenametemplatename="global"

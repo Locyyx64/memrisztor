@@ -3,18 +3,20 @@
 \usepackage{fancyhdr}
 \usepackage{amsmath}
 \usepackage{hyperref}
-\usepackage{blindtext}
+%\usepackage{blindtext}  %for placeholder text
 \usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage[toc, page]{appendix}
 \usepackage{listings}
 \usepackage{float}
 \usepackage{xcolor}
+\usepackage{mleftright}
 \graphicspath{{./images/}}
 \usepackage[
 backend=biber,
 citestyle=numeric, 
 bibstyle=numeric,
-sorting=ynt
+sorting=none
 ]{biblatex}
 
 \definecolor{blue}{rgb}{0.64, 0.76, 0.68}
@@ -33,9 +35,23 @@ framexleftmargin=1.5mm
 \title{Memrisztorok}
 \author{Baranyi Szabolcs, Gyimesi Dávid}
 \date{\today}
+\newcommand*{\C}{$^\circ\text{C}$}
 \renewcommand\contentsname{Tartalom}
 \renewcommand\appendixtocname{Függelék}
 \renewcommand\appendixpagename{Függelék}
+\renewcommand\figurename{Ábra}
+\renewcommand\lstlistingname{Kódrészlet}
+
+\newcounter{itemnum}
+
+\newcommand\fun[2]{%
+	f\mleft(\frac{#1}{#2}\mright)%
+}
+\newenvironment{anumerate}[1][]
+{\setcounter{itemnum}{0}
+\def\elem{\stepcounter{itemnum}\par\smallskip\;#1\ \alph{itemnum})\ }}
+{\medskip\\}
+
 \pagestyle{fancy}
 \fancyhead[RO,LE]{BME Villamosmérnöki és Informatikai Kar}
 
@@ -48,61 +64,213 @@ framexleftmargin=1.5mm
 \vspace{5mm}
 \tableofcontents
 \newpage
+\section*{Jelölések jegyzéke}
+\begin{tabular}{p{2cm} p{20cm}}
+	$i$ & áramerősség \\
+	$v$ & feszültség \\
+	$q$ & töltés \\
+	$\phi\:\text{vagy}\:\varphi$ & fluxus \\
+	$R\:\text{vagy}\:M$ & memrisztancia \\
+	$G\:\text{vagy}\:G_M$ & menduktancia \\
+	$T$ & hőmérséklet \\
+	$w$ & vezető csatorna és ellentétes elektród közötti távolság \\
+	$D$ & két elektród távolsága \\
+	$x$ & állapotváltozó
+\end{tabular}
+\newpage
 \section{Bevezetés}
 A memrisztor története 1971-ben kezdődött, L. Chua\cite{chua} munkájával, amely az alkatrész elméleti alapjait, lehetőségeit, alapvető kérdéskörét fektette le. Komolyabb gyakorlati felhasználások/alkalmazások csak a 2000-es évek elején terjedtek el, a non-volatile (nem felejtő) memóriák általános fejlődésével, és a resistive switching technológia kutatásával. Ezen az alkalmazásterületen a rezisztív alapú (memrisztort megvalósító) nem-felejtő memóriákat ReRAM-nak nevezik. Melletük még szintén kiterjedt kutatásterület a phase-change memóriák, a magnetorezisztív memóriák, vagy például a ferroelektromos memóriák.  \cite{emerging2017}
 \section{Bibliometriai elemzés, kutatási trendek}
-\section{Memrisztorok elméleti összefoglalása, modellezés}
-A memrisztor egy olyan ideális hálózati alkatrész, amely karakterisztikája a töltés és a fluxus között értelmezett, így kiteljesíti a négy mennyiség (áram, feszültség, töltés, fluxus) közötti hálózatelméleti négyszöget.\cite{chua} A karakteriszikája (töltésvezérelt memrisztor): \[d\phi(q) = M(q)dq\]. Tehát fennáll a $v(t) = M(q(t))i(t)$, ilyenkor M a memrisztancia elnevezést kapja, mert mivel az $q(t) = \int_{0}^{t} i(t)dt$, ezért M az áram "múltjától" is függ q(t)-n keresztül. Ugyan, megfigyelve lényegében nemlineáris ellenállásként viselkedik. Az ideális memrisztor megvalósítása eddig nem volt lehetséges, bár tulajdonságai bizonyos alkatrészek/rendszerek (pl. Chua által ajánlott mutátor hálózatok) alkalmazásával közelíthetők. A memrisztor passzivitásához az szükséges, hogy $\int_{-\infty}^{t} p(\tau)d\tau > 0$ teljesüljön bármely t-re, amit a $M(q) > 0 \;\; \forall q$ biztosít. Vagyis, egy, a teljes értelmezési tartományán monoton növő $\phi-q$ görbe mellett a memrisztor passzív alkatrészként viselkedik, tehát kikapcsolás után is megtartja a memrisztancia értékét. Ezáltal, nem-felejtő memóriaként alkalmazható. Tellini et al. szerint \cite{tellini2021} a memrisztor nem egy negyedik független áramköri elem, hanem az idő-variáns ellenállás általánosítása. Ezek mellett, miután Chua és Kang általánosította a dinamikus memrisztív rendszerek fogalmát \cite{chuakang1976}: \begin{align*}\dot{x} &= \vec{f}(\vec{x}, u, t) \\ y &= g(\vec{x}, u, t)u\end{align*} Ez lehetővé tette egyéb memrisztív kialakítások kutatását, például a memkapacitás $q = C(\vec{x}, v, t)v$, vagy a meminduktancia $\varphi = L(\vec{x}, i, t)t$ esetét. Már Mauro et al. is kutattak memrisztív rendszert, az ún. termisztort \cite{mauro1961}\cite{chuakang1976}\cite{tellini2021}, amely esetén az "idő-variáns rezisztancia" állapotváltozója a hőmérséklet (rendellenes reaktáns komponens az impedanciában, hagyományos dinamikus komponensek nélkül). Ebben az esetben a teljes generált energia megegyezik a disszipált és a tárolt hő összegével $p(t) = v(t)i(t) = \delta(T-T_0) + C\frac{dT}{dt}$ de, memrisztoros rendszer lévén \cite{chuakang1976} szerint $v = R_0(T_0)\exp{\left[\beta\left(\frac{1}{T}-\frac{1}{T_0}\right)\right]i}$
-\section{Non-volatile memóriák}
-\subsection{Nemfelejtő memóriák bemutatása}
-\subsection{Az anyagtudomány szerepe, TiO$_2$, SrTiO$_3$}
-A nemfelejtő ReRAM technológia kutatása 2008-ban, a TiO$_2$ (titán-dioxid) fém-szigetelő-fém kialakítás sikerének köszönhetően nagyobb népszerűségre tett szert. A ReRAM lényege, hogy a szigetelő anyagban feszültség hatására dinamikusan egy magas rezisztanciás (HRS), és egy alacsony rezisztanciás (LRS) állapot között váltunk a megfelelő bit írásának megfelelően. Ilyenkor a szigetelőben egy vezető csatorna keletkezik (főként a szennyeződéseknek és az esetleges adalékolt pozitív oxigénionok hatására). Használnak még pl. cink-oxidokat, nikkel-oxidot\cite{emerging2017} vagy stroncium-titanátot (SrTiO$_3$). A legtöbbet kutatott, titán-dioxid alapú memrisztor két darab platinum elektródból, illetve egy közöttük lévő TiO$_2$ rétegből áll. Ez utóbbi egy rendkívül vezetőképes, csökkentett oxigénkoncentrációjú rétegből (TiO$_{2-x}$), és egy kémiailag tökéletes titán-dioxid szegmensből áll. Az adalékolt TiO$_2$ és a pozitív elektród közötti távolság w. A két elektródra kapcsolt pozitív feszültség hatására a szennyezett TiO$_2$ ionjai sodródni kezdenek a pozitív elektród felé, így a w távolság csökken. A konstrukción átfolyó teljes áram a w vastagságú oxidréteg áthatolásától függ, ami rendkívül nemlineáris módon függ a w távolság nagyságától \cite{kolka2015}. Egy ilyen kialakítás dinamikus modellezésében például a w, mint állapotváltozó szerint írható fel az állapotváltozós leírás\cite{pickett2009}. Pickett et al. egy TiO$_2$ crosspoint kialakítást vizsgálták, ahol az egyes cellák esetén a "bipoláris átkapcsolás" jelenségét az ionsodródási sebesség exponenciális függvényében, illetve a sodródási és a diffúziós hatások kölcsönhatásának vonatkozásában modellezték. A két platinum elektród közé a titán-dioxidot katódporlasztással növesztették 250 C-on, O-Ti: $2.00 \pm 0.01$ sztöchiometrikus arányban.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.31\textwidth}
+		\includegraphics[width=\linewidth]{memristor_pubs}
+		\caption{"Memristor" cikkek}
+	\end{subfigure}
+	\begin{subfigure}{0.31\textwidth}
+		\includegraphics[width=\linewidth]{reram_pubs}
+		\caption{"ReRAM" cikkek}
+	\end{subfigure}
+	\begin{subfigure}{0.31\textwidth}
+		\includegraphics[width=\linewidth]{rs_pubs}
+		\caption{"resistive switching" cikkek}
+	\end{subfigure}
+	\caption{Főbb témakörök kutatói (kiadási) statisztikái, OpenAlex adatok alapján}
+\end{figure}
+\section{Memrisztorok elméleti összefoglalása}
+\subsection{Ideális memrisztorok és memrisztív rendszerek}
+A memrisztor egy olyan ideális hálózati alkatrész, amely karakterisztikája a töltés és a fluxus között értelmezett, így kiteljesíti a négy mennyiség (áram, feszültség, töltés, fluxus) közötti hálózatelméleti négyszöget.\cite{chua} A karakteriszikája (töltésvezérelt memrisztor): 
+\begin{equation}\label{karakter}
+	d\phi(q) = M(q)dq 
+\end{equation}
+Tehát fennáll a $v(t) = M(q(t))i(t)$, ilyenkor M a memrisztancia elnevezést kapja, mert mivel az $q(t) = \int_{0}^{t} i(t)dt$, ezért M az áram "múltjától" is függ q(t)-n keresztül. Ugyan, megfigyelve lényegében nemlineáris ellenállásként viselkedik. Az ideális memrisztor megvalósítása eddig nem volt lehetséges, bár tulajdonságai bizonyos alkatrészek vagy rendszerek (pl.  Chua által ajánlott mutátor hálózatok) alkalmazásával közelíthetők. A memrisztor passzivitásához az szükséges, hogy $\int_{-\infty}^{t} p(\tau)d\tau > 0$ teljesüljön bármely t-re, amit a $M(q) > 0 \;\; \forall q$ biztosít. Vagyis, egy, a teljes értelmezési tartományán monoton növő $\phi-q$ görbe mellett a memrisztor passzív alkatrészként viselkedik, tehát kikapcsolás után is megtartja a memrisztancia értékét. Ezáltal, nem-felejtő memóriaként alkalmazható. Tellini et al. szerint \cite{tellini2021} a memrisztor nem egy negyedik független áramköri elem, hanem az idő-variáns ellenállás általánosítása. Ezek mellett, miután Chua és Kang általánosította a dinamikus memrisztív rendszerek fogalmát \cite{chuakang1976}: \begin{align}\dot{x} &= \vec{f}(\vec{x}, u, t) \\ y &= g(\vec{x}, u, t)u\end{align} Ez lehetővé tette egyéb memrisztív kialakítások kutatását, például a memkapacitás $q = C(\vec{x}, v, t)v$, vagy a meminduktancia $\varphi = L(\vec{x}, i, t)t$ esetét. Már Mauro et al. is kutattak memrisztív rendszert, az ún. termisztort \cite{mauro1961}\cite{chuakang1976}\cite{tellini2021}, amely esetén az "idő-variáns rezisztancia" állapotváltozója a hőmérséklet (rendellenes reaktáns komponens az impedanciában, hagyományos dinamikus komponensek nélkül). Ebben az esetben a teljes generált energia megegyezik a disszipált és a tárolt hő összegével:
+ \begin{equation}
+ 	p(t) = v(t)i(t) = \delta(T-T_0) + C\frac{dT}{dt} 
+ \end{equation}
+ Illetve ezután, memrisztív rendszer lévén \cite{chuakang1976} a válasz állapotváltozós leírása: 
+ \begin{equation}
+ v = R_0(T_0)\exp{\left[\beta\left(\frac{1}{T}-\frac{1}{T_0}\right)\right]i}
+ \end{equation}
+ \subsection{Ideális memrisztorok differenciálegyenletei}
+ Egy általános, dinamikus kétpólus karakterisztikája a következő alakban írható fel:
+ \begin{equation}\label{gendiffeq}
+ 	F(i,v, \frac{di}{dt}, \frac{dv}{dt}, \frac{d^2i}{dt^2}, \frac{d^2v}{dt^2}, \dots) = 0
+ \end{equation}
+ Általános esetben egy ideális, töltésvezérelt memrisztor \emph{i-v} kapcsolata a karakterisztika \eqref{karakter}, és a memrisztancia időbeli deriválásának
+ \begin{equation}
+ 	\frac{dR_M}{dt} = \frac{dR_M(q)}{dq}i
+ \end{equation}
+ felhasználásával a következő alakra hozható: \cite{biolek2015}
+ \begin{equation}\label{diffeq1}
+	\frac{dR_M}{dq}i^3 + v\frac{di}{dt} - i\frac{dv}{dt} = 0
+ \end{equation}
+ Ez ebben a formában még nem tisztán \eqref{gendiffeq} alakú, de hogyha a memrisztor $R_M(q)$ függvénye (PSM, parameter-to-state map) a $q(t)$ egy környezetében invertálható, akkor az ideális memrisztor differenciális egyenletének (DEM) \eqref{gendiffeq} alakú általános formáját kapjuk:
+ \begin{equation} \label{diffeq2}
+\fun{v}{i}i^3 + v\frac{di}{dt} - i\frac{dv}{dt} = 0
+ \end{equation}
+ ahol \begin{equation}
+ 	\fun{v}{i} = \mleft(\frac{dq}{dR_M}\mright)^{-1}
+ \end{equation}
+ A töltésvezérelt és a fluxusvezérelt memrisztorok differenciálegyenleteinek összevonásából a két különböző típusú memrisztor működése közötti kapcsolat felírható:
+ \begin{equation}
+ 	\frac{dR_M}{dq}i^3 + \frac{dG_M}{d\varphi}v^3 = 0
+ \end{equation}
+ Példaként, a lineáris (affin) memrisztancia esetén a következő áll fenn:
+ \begin{align}
+ 	&R_M(q) = R + kq \\
+ 	&ki^3 + v\frac{di}{dt} - i\frac{dv}{dt} = 0
+ \end{align}
+ A fenti elsőrendű, harmadfokú differenciálegyenlet a feszültségre nézve (amikor i értéke adott) egy elsőrendű lineáris differenciálegyenlet. Ezzel szemben, az áramerősségre nézve (amikor v értéke adott) egy harmadrendű Bernoulli-féle differenciálegyenlet: \cite{biolek2015}
+ \begin{equation}
+ 	\frac{di}{dt} + \chi(t)i + \delta(t)i^n = 0\qquad(n = 3)
+ \end{equation}
+ Ezek alapján elmondható, hogy az ideális memrisztorra, a memrisztancia típusától függően különböző differenciálegyenletek érvényesek, de minden esetben a \eqref{diffeq2} alakra visszavezethetők. Fontos példa a lineáris memrisztancia mellett a későbbiekben tárgyalt \eqref{nemlinr} nemlineáris memrisztor modell, amelyre egy Riccati-féle differenciálegyenlet érvényes.\cite{biolek2015} Ebben az esetben a differenciálegyenlet és a memrisztancia általános alakja a kövekezőképpen adhatók meg:
+ \begin{align}
+ &\frac{dR_M}{dq} = k_1R^2_M + k_2R_M + k_3 \label{riccati2foku}\\
+ &R_M(q) = -\frac{k_2}{2k_1} + \frac{\sqrt{D}}{2k_1}\mleft(1-\frac{2}{1 + e^{-\sqrt{D}(q-q_0)}}\mright)
+ \end{align}
+ Ahol $D$ a(z) \eqref{riccati2foku} egyenlet jobb oldalán lévő másodfokú egyenlet diszkriminánsa. (A fenti partikuláris megoldás a $D>0$ esetre érvényes)
+
+\subsection{Ideális memrisztorok energiaviszonyai}
+\subsection{A hiszterézisgörbe}
+\subsection{Nem-ideális memrisztív rendszerek}
+
+%%	Amiről még írni kell:
+%%		-hiszterézis
+%%		-teljesítmény, veszteségek, nem-ideális memrisztorok
+%%		-???
+%%
+
+\section{Nem-felejtő memóriák bemutatása}
+A nem-felejtő memóriák (NVM) fő előnye (például a DRAM memóriákkal vagy az SRAM-alapú gyorsítótárakkal szemben), hogy árammentes üzemállapotban (kikapcsolás esetén) nem történik adatvesztés. Az ilyen memóriák a rendszer memória-hierarchiájának különböző szintjeire horizontálisan vagy vertikálisan illeszthetők. A horizontális integráció azt jelenti, amikor az adott szinten lévő memóriával egyenértékű eszközként használjuk. A vertikális integráció esetén az illesztett NVM két memóriaszint között egy buffer szintet valósít meg, vagy egy megadott szint memóriáját (leginkább DRAM) gyorsítótárként használja fel. A memória-hierachiába három fő szinten integrálhatunk: processzor cache szinten (SRAM), elsődleges memória szinten (DRAM), illetve másodlagos memória szinten (merevlemez). Mindhárom szint különböző igényekkel, különböző követelményekkel rendelkezik, így egy adott nemfelejtő memóriatípus nem illeszthető bármelyik szintre. \\
+Fontos, hogy az NVM-ek többsége más tulajdonságokkal rendelkezik, mint pl. egy DRAM vagy egy SRAM. Legtöbb esetben az írási-és olvasási idők eltérőek, más tartóssági és áramfogyasztási adottságokkal bírnak. Ezek miatt, a hardveres integráció mellett a szoftveres integrációt is biztosítanunk kell, hogy például az esetleges hatékonysági előnyöket kihasználhassuk. Horizontális illesztés esetén három szinten iktathatunk be olyan rendszert, ami a (például egy sínre kötött) memóriák közötti adatelhelyezést kezeli: \begin{anumerate}
+	\elem Hardveres szinten
+	\elem Operációs rendszer szintjén
+	\elem  Applikáció szinten
+\end{anumerate}
+A legszigorúbb követelményeket a processzor gyorsítótárszintje igényli, az író-és olvasóműveletek mennyisége, frekvenciája, és a késleltetésekre való érzékenység miatt. Emiatt az illesztett NVM-nek egyrészt kiváló tartóssággal, és megfelelő késleltetésekkel kell rendelkeznie.
+\subsection{ReRAM}
+A rezisztív memóriák (ReRAM) a logikai állapotukat egy rezisztív állapoton (HRS/LRS) keresztül valósítják meg. Ezek az eszközök nem-ideális memrisztoroknak (illetve memrisztív rendszereknek) tekinthetők, az ellenállásuk a rájuk kapcsolt feszültség nagyságától, irányától, és a kapcsolás idejétől függ. Passzív komponensek, vagyis az ellenállásukban tárolt állapotuk kikapcsolt állapotban sem vész el, emiatt alkalmazhatók nemfelejtő memóriaként. A magas-rezisztanciás állapot felel meg a logikai magas ("1") állapotnak, és az alacsony-rezisztanciás állapot felel meg a logikai alacsony ("0") állapotnak. Az elemi ReRAM cella felépítése egyszerű. Két fém elektród között egy szigetelő réteg helyezkedik el (metal-insulator-metal, MiM kialakítás), ami az ellenállást biztosítja. A működésének alapelve az ún. resistive switching, amely során a szigetelő réteg belsejében egy rendkívül nagy vezetőképességgel rendelkező csatornát alakítunk ki, vagy szakítunk meg, megfelelő feszültségek alkalmazásával. Ennek a memóriafajtának a csoportjába tartozik a következő alfejezetben tárgyalt titán-dioxid alapú konstrukció. Az elemi cellákat bit sorok (bit line), és word sorok (word line) alkalmazásával mátrixosan helyezik el, ezt nevezik crosspoint vagy crossbar struktúrának.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{reram}
+	\caption{Elemi ReRAM cella felépítése, crossbar kialakítás\cite{emerging2017}}
+\end{figure}
+A ReRAM számos olyan tulajdonsággal rendelkezik, amely a memória-hierarchiába való integrálását indokolhatná. Jó cellasűrűséggel rendelkezik (PCM-nél jobb), a flash memóriánál több nagyságrenddel jobb a tartóssága, a processzor szinti integrációhoz sok esetben viszont még így is túl alacsony. A különböző gyorsítótár szinteken (L0, L1, L2, L3) eltérő fogyasztási/gyorsasági feltételek mellett, a ReRAM felhasználásával a gyorsaság egy részét felválthatjuk jobb (alacsonyabb) fogyasztásra. Ilyen célt szolgálnak például extrém kis fogyasztású beágyazott rendszerekben. \\
+Jobb illeszthetőséggel rendelkezik a másodlagos memória szintjén, például egy meglévő SSD mellett. Ilyen rendszerekre több megoldás is létezik. Példa erre egy olyan rendszer, ahol egy kisebb ReRAM memóriát egy nagy SSD mellett horizontálisan integráltak, hogy a hiba korrekcióhoz szükséges metaadatot tárolja.\cite{tanakamaru2014}
+\subsection{PCM}
+A phase-change memory (PCM) az utólag tárgyalt rezisztív memória mellett a második legjobb cellasűrűséggel rendelkező nemfelejtő memóriatípus. Egy kalkogenid ötvözetből, két elektródból, és esetleg egy "melegítő" részből áll. A kalkogenid anyagot a cellára kapcsolt feszültség nagyságával és idejével két fázisállapot között változtatjuk: egy amorf és egy kristályos állapot között. Egy erőteljes, rövid feszültségimpulzus (RESET) az anyagot amorf állapotba kényszeríti (logikai alacsony), illetve egy hosszabb, gyenge feszültségimpulzus a kristályosodást idézi elő (SET), ami a logikai magas állapotnak felel meg. Részletesebben a 3D XPoint fejezetben tárgyaljuk a működését.
 \begin{figure}[h]
+	\centering
+	\includegraphics{pcm_boukhobza}
+	\caption{PCM felépítése\cite{emerging2017}}
+\end{figure}
+A phase-change memória az írási késleltetései, és a tartóssági paraméterei miatt processzorszinten nem integrálható a memória-hierarchiába. Elsődleges memóriaszinten mind horizontálisan, mind vertikálisan is illeszthető jó eredményekkel. Másodlagos memóriaszinten kifejezetten jó eredmények is elérhetők, ennek nyoma a több évig sikeres Intel Optane SSD, és egyéb megvalósítások.
+\subsection{MRAM}
+A magnetorezisztív memória (MRAM) alacsony írási késleltetéssel, rendkívül alacsony szivárgási árammal és nagy tartóssággal rendelkezik. A logikai adat a kialakítás mágneses orientációjában tárolódik, amit megfelelő áramokkal módosíthatunk. Magát az adattárolást az ún. magnetic tunnel junction (MTJ) valósítja meg, ami egy tranzisztor mellett az elemi cella alapját adja. Az MRAM cellasűrűsége így jóval rosszabb, mint a korábban említett memóriatípusoknál, mert az elemi cella egy szelektor tranzisztort is tartalmaz. A MTJ két ferromágneses rétegből (pl. CoFeB ötvözet\cite{sebastian2020memory}), és köztük egy szigetelő oxidrétegből (tunnel, pl. MgO) áll. Az egyik ferromágneses réteg mágn. orientációja kötött (referencia réteg), míg a másiké szabadon változtatható (szabad réteg). A cella akkor van alacsony rezisztanciás állapotban, ha a két réteg orientációja megegyezik (parallel állapot, logikai alacsony). Amikor az orientációk ellentétesek, akkor a cella magas rezisztanciás állapotban van (antiparallel állapot, logikai magas).
+\begin{figure}[h]
+	\centering
+	\includegraphics{mram}
+	\caption{MRAM cella felépítése\cite{emerging2017}}
+\end{figure}
+A magnetorezisztív memóriának több fajtája van, a leggyakoribb az STT-RAM. (\textit{spin torque transfer RAM}) Ebben az esetben a source line (SL) és a bit line (BL) között kapcsolt feszültséggel módosíthatjuk a szabad réteg orientációját. Pozitív feszültség esetén az orientáció a referencia rétegéhez igazodik ("0" beállítása), negatív feszültség esetén azzal ellentétes lesz ("1" beállítása). Az áramot célszerű megfelelő ideig (2ns - 12ns) fenntartani, és nagyságát egy adott threshold felett biztosítani (általában $100 \mu\text{a}$ és $1000 \mu\text{a}$ között). Az olvasás művelete a PCM-hez hasonlóan egy kis erősségű feszültségimpulzussal érhető el. \\
+Az MRAM fő problémái a MTJ cellák termikus instabilitása (adatvesztést okozhat), és az írási áramok nagysága (disszipáció miatt a kapcsolást errodálhatja).\\
+Az MRAM jó tartóssággal, megfelelő olvasási késleltetéssel rendelkezik, de az írások teljesítménybeli és fogyasztási tulajdonságai miatt szintén csak egy kompromisszum mellett integrálható, különösen a processzor szintjén. Elsődleges memóriaszinten megfelelő kezeléssel DRAM mellett integrálható, az eredő fogyasztás akár 60\%-kal csökkenthető.
+\subsection{FeRAM}
+A ferroelektromos memória (FeRAM vagy FRAM) szintén egyedi tulajdonságokkal rendelkezik. Többek között alacsony olvasási késleltetés, alacsony fogyasztás, és a CMOS technológiával való közvetlen kompatbilitás. Ez utóbbiak lehetővé teszik, hogy pl. autókban beágyazott mikrokontrollerekben alkalmazzák. Egy FeRAM cella felépítése a DRAM-hoz hasonló, egy tranzisztorból és egy kondenzátorból áll. Ami elkülöníti, az a kondenzátor típusa: itt ún. ferroelektromos kondenzátor (FCAP) található. A legtöbbször használt ferroelektromos anyag egy perovszkit, az ólom-cirkonát-titanát (Pb(Zr$_x$,Ti$_{1-x}$)O$_3$, röviden PZT) két elektród között. A ferroelektromos kondenzátort két, reverzibilis polarizációs állapot jellemzi, viszont a DRAM-mal ellentétben itt, a hiszterézis miatt a polaritás kikapcsolás után nem vész el. Emellett szintén a DRAM-mal ellentétben a FeRAM nem igényel frissítési műveletet, tehát fogyasztása jóval alacsonyabb.
+\begin{figure}[H]
+	\centering
+	\includegraphics{feram}
+	\caption{FeRAM cella felépítése\cite{emerging2017}}
+\end{figure}
+Logikai alacsony írása a plate line-on (PL) létrehozott impulzussal érhető el, míg logikai magas írásához a bit line-on (BL) kell egy impulzust létrehoznunk (azonos feszültségen). \\
+A ferroelektromos memória legnagyobb hátránya a cellák nagysága, emiatt csak kis mértékben vagy kiegészítésként integrálható. Emellett egyik tulajdonsága, ami a többi NVM-től elkülöníti, hogy az írási és az olvasási műveletei szinte teljesen szimmetrikusak (fogyasztási, illetve latency szempontból is). Mégis, pl. elsődleges memóriával (DRAM) illesztve jobb fogyasztás fényében rosszabb teljesítmény érhető el.\cite{emerging2017} Másodlagos memóriaként például Flash SSD-vel vertikálisan integrálva lehetséges jobb teljesítmény elérése. Yoon et al. prototípusában \cite{yoon2008} az illesztett FRAM a fájlrendszer metaadatait tárolja (flash translation layer, FTL), a Flash olvasásának felgyorsítása érdekében.
+\section{Az anyagtudomány szerepe, TiO$_2$, SrTiO$_3$}
+\subsection{Egyszerű titán-dioxid alapú ReRAM bemutatása}
+A nemfelejtő ReRAM technológia kutatása 2008-ban, a TiO$_2$ (titán-dioxid) fém-szigetelő-fém (MiM) kialakítás sikerének köszönhetően nagyobb népszerűségre tett szert. A ReRAM lényege, hogy a szigetelő anyagban feszültség hatására dinamikusan egy magas rezisztanciás (HRS), és egy alacsony rezisztanciás (LRS) állapot között váltunk a megfelelő bit írásának megfelelően. Ilyenkor a szigetelőben egy vezető csatorna keletkezik (főként a szennyeződéseknek és az esetleges adalékolt pozitív oxigénionok hatására). Használnak még pl. cink-oxidokat, nikkel-oxidot\cite{emerging2017} vagy stroncium-titanátot (SrTiO$_3$). A legtöbbet kutatott, titán-dioxid alapú memrisztor két darab platinum elektródból, illetve egy közöttük lévő TiO$_2$ rétegből áll. Ez utóbbi egy rendkívül vezetőképes, csökkentett oxigénkoncentrációjú rétegből (TiO$_{2-x}$), és egy kémiailag tökéletes titán-dioxid szegmensből áll. Az adalékolt TiO$_2$ és a pozitív elektród közötti távolság w. A két elektródra kapcsolt pozitív feszültség hatására a szennyezett TiO$_2$ ionjai sodródni kezdenek a pozitív elektród felé, így a w távolság csökken. A konstrukción átfolyó teljes áram a w vastagságú oxidréteg áthatolásától függ, ami rendkívül nemlineáris módon függ a w távolság nagyságától \cite{kolka2015}. Egy ilyen kialakítás dinamikus modellezésében például a w, mint állapotváltozó szerint írható fel az állapotváltozós leírás\cite{pickett2009}. Pickett et al. egy TiO$_2$ crosspoint kialakítást vizsgáltak, ahol az egyes cellák esetén a "bipoláris átkapcsolás" jelenségét az ionsodródási sebesség exponenciális függvényében, illetve a sodródási és a diffúziós hatások kölcsönhatásának vonatkozásában modellezték. A két platinum elektród közé a titán-dioxidot katódporlasztással növesztették 250 \C-on, O-Ti: $2.00 \pm 0.01$ sztöchiometrikus arányban.
+\begin{figure}[H]
 \centering
 \includegraphics{pickett}
 \caption{Pickett et al. fém-szigetelő-fém kialakítása, az adalékolt rutil réteg ellenállása $R_s$, egyebek\cite{pickett2009}}
 \end{figure}
-A TiO$_{2-x}$ részt ún. elektroformálással hozták létre, ami az oxidban oxigén vakanciákat hozott létre, ezzel visszafordíthatatlanul lecsökkentve (nagyságrendekkel) az ellenállását. A folyamat önmagába véve annyit takar, hogy 0V-ról +6V-ra rövidrezárták a memrisztort (5 ms kb). Pickett et al. állapotegyenlete a Simmons-csatorna vastagságára (w) a csatornaáramra ($i_M$) nézve erősen nemlineáris összefüggés, mindkét csatornaáram-irány szempontjából.\\
+A TiO$_{2-x}$ részt ún. elektroformálással hozták létre, ami az oxidban oxigén vakanciákat hozott létre, ezzel visszafordíthatatlanul lecsökkentve (nagyságrendekkel) az ellenállását. A folyamat alapvetően annyit takar, hogy 0V-ról fokozatosan +6V-ra emelik a memrisztor feszültségét, és rövid ideig ott tartják (a folyamat összesen kb. 5ms). Pickett et al. állapotegyenlete a Simmons-csatorna vastagságára (w) a csatornaáramra ($i_M$) nézve erősen nemlineáris összefüggés, mindkét csatornaáram-irány szempontjából:
+\begin{equation}\label{pickettoff}
+	\frac{dw}{dt} = f_{\text{off}}\sinh\mleft(\frac{i}{i_{\text{off}}}\mright)\exp\mleft[-\exp\mleft(\frac{w-a_{\text{off}}}{w_c}-\frac{|i|}{b}\mright)-\frac{w}{w_c}\mright]
+\end{equation}
+kikapcsolás esetén ($i > 0$), illetve bekapcsolás esetén ($i < 0$):
+\begin{equation}
+	\frac{dw}{dt} = f_{\text{on}}\sinh\mleft(\frac{i}{i_{\text{on}}}\mright)\exp\mleft[-\exp\mleft(-\frac{w-a_{\text{on}}}{w_c}-\frac{|i|}{b}\mright)-\frac{w}{w_c}\mright]
+\end{equation}
+ahol $f_{\text{on}}$, $f_{\text{off}}$, $i_{\text{on}}$, $i_{\text{off}}$, $a_{\text{on}}$, $a_{\text{off}}$, $b$ és $w_c$ regressziós modellparaméterek.
 A bipoláris átkapcsolású memrisztív rendszerek alapvető tulajdonsága egyfajta hiszterézis az i-v görbén. Ez teszi lehetővé a "diszkrét" állapotok definiálhatóságát. Bár, a memrisztorok klasszikus értelmezésében is, váltakozóáramú gerjesztésre a i-v karakterisztika az origóban "összefogott" Lissajous-görbéket mutat\cite{chuakang1976}. Ennek oka, hogy a klasszikus értelmezésben a memrisztív rendszerek nem képesek energia tárolására. Ugyan, a gerjesztés frekvenciától függ a görbe "befogott területe", végtelen frekvencia esetén a "hiszteretikus" görbe helyett egyetlen összefüggő görbe lesz. \\
-Strukov et al. a titán-dioxid ReRAM kialakítást két sorba kapcsolt ellenállásként értelmezi. \cite{strukov2008} Állapotváltozónak a w-t használták, ami náluk a szennyezett réteg hossza. \begin{align*}
+Strukov et al. a titán-dioxid ReRAM kialakítást két sorba kapcsolt ellenállásként értelmezi. \cite{strukov2008} Állapotváltozónak a w-t használták, ami náluk a szennyezett réteg hossza. \begin{align}
 	v(t) &= \left(\mathcal{R}_{ON}\frac{w(t)}{D} + \mathcal{R}_{OFF}\left(1 - \frac{w(t)}{D}\right)\right)i(t) \\
 	\frac{dw}{dt} &= \mu_v \frac{\mathcal{R}_{ON}}{D} i(t)
-\end{align*}
-Tehát a rendszer modellezett memrisztanciája (ha $\mathcal{R}_{ON} \ll \mathcal{R}_{OFF}$): \[
+\end{align}
+Tehát a rendszer modellezett memrisztanciája (ha $\mathcal{R}_{ON} \ll \mathcal{R}_{OFF}$): \begin{equation}
 	M(q) = \mathcal{R}_{OFF} \left(1- \frac{\mu_v \mathcal{R}_{ON}}{D^2}q(t)\right)
-\]
+\end{equation}
 Soni et al. ezt a modellt nevezi "lineáris ionsodródási modellnek"\cite{soni2022}. Nemlineáris ionsodródási modellek során az állapotváltozó kifejezéséhez egy extra $f(x)$ tényezőt is hozzárendelnek, így az állapotváltozó saját magára is kihat, ezáltal a szennyezett oxidréteg feszültségmenti növekedésének mértékére közvetlenül megadhatunk egy nemlineáris ablakfüggvényt.\\
-\begin{figure}[h]
-	\[ F_p(x) = 1 - (2x - 1)^{2p}\]
+\begin{figure}[H]
+	\begin{equation} F_p(x) = 1 - (2x - 1)^{2p} \end{equation}
 	\includegraphics{joglekar}
 	\centering
 	\caption{Joglekar-féle ablakfüggvény\cite{joglekar2009}\cite{kvatinsky2013}}
 \end{figure}
 
 A Pickett-Simmons állapotegyenlet egyszerűbb megadását biztosítja a TEAM modell (ThrEshold Adaptive Memristor)\cite{kvatinsky2013}
-\begin{equation*}
+\begin{equation}
 	\frac{dx(t)}{dt} =\begin{cases}
 		k_{\text{off}}\cdot\left(\frac{i(t)}{i_{\text{off}}}-1\right)^{\alpha_{\text{off}}}\cdot f_{\text{off}}(x), & 0<i_{\text{off}}<i \\[2mm]
 		0, & i_{\text{on}}<i<i_{\text{off}} \\[2mm]
 		k_{\text{on}}\cdot\left(\frac{i(t)}{i_{\text{on}}}-1\right)^{\alpha_{\text{on}}}\cdot f_{\text{on}}(x), & i<i_{\text{on}}<0
 	\end{cases}
-\end{equation*}
+\end{equation}
 Ahol $k_{\text{off}}$,  $k_{\text{on}}$,  $\alpha_{\text{off}}$, és  $\alpha_{\text{on}}$ modellparaméterek, illetve $i_{\text{off}}$ és $i_{\text{on}}$ küszöbáram értékek. \\
-Az RS (resistive switching) technológiához szükséges szigetelők kristálytani, szennyezettségi követelményeit, növesztési technológiáit, belső folyamatait és energiaviszonyait \cite{szot2014} részletezi.
+Az RS (resistive switching) technológiához szükséges szigetelők kristálytani, szennyezettségi követelményeit, növesztési technológiáit, belső folyamatait és energiaviszonyait az alábbiakban tárgyaljuk.
+\subsection{Felhasznált szigetelők tulajdonságai}
 
-\subsection{MIM ReRAM modellezése}
-\subsubsection{MATLAB modellezés}
-\subsubsection{SPICE modellezés}
+
+\section{ReRAM modellezése}
+\subsection{MATLAB modellezés}
+\ref{appendix:matlab}
+\subsection{SPICE modellezés}
 Számítógépes SPICE-alapú modellezés a nemlineáris ionsodródási modell alapján.
-\[
-	R(x) = R_{\text{on}}x + R_{\text{off}}(1-x)
-\]
-és $\frac{dx}{dt} = kW(x)I$ ahol pl. $W(x) = 1- (2x-1)^{2p}$. Így pl. $p=1$ mellett $\frac{1}{4}\ln\frac{x}{1-x} = k(q(t) +q_0)$, tehát \begin{align*}
-R(q(t)) &= R_{\text{off}} + \frac{R_{\text{on}}-R_{\text{off}}}{ae^{-4kq(t)} + 1} \\[3mm]
-a &= \frac{R_{\text{ini}} - R_{\text{off}}}{R_{\text{off}}-R_{\text{ini}}} \end{align*}
-\textsc{\begin{figure}[H]
+\begin{align}
+	R(x) &= R_{\text{on}}x + R_{\text{off}}(1-x) \\
+	\frac{dx}{dt} &= kW(x)I
+\end{align}
+Ahol a W függvény egy kiválasztott ablakfüggvénynek felel meg (pl. Joglekar-ablakfüggvény). Így pl. $p=1$ mellett fennáll az alábbi összefüggés: 
+\begin{equation}
+	\frac{1}{4}\ln\frac{x}{1-x} = k(q(t) +q_0)
+\end{equation} 
+Tehát a memrisztancia kifejezése a töltés alapján:
+\begin{align}
+R(q(t)) &= R_{\text{off}} + \frac{R_{\text{on}}-R_{\text{off}}}{ae^{-4kq(t)} + 1} \label{nemlinr} \\[3mm]
+a &= \frac{R_{\text{ini}} - R_{\text{off}}}{R_{\text{off}}-R_{\text{ini}}} \end{align}
+\begin{figure}[H]
 	\centering
-	\includegraphics{spice}
+	\includegraphics[scale=0.75]{spice}
 	\caption{Lehetséges SPICE megvalósítások\cite{biolek2013}}
 \end{figure}
 Általunk megvalósított modell:
@@ -111,13 +279,13 @@ a &= \frac{R_{\text{ini}} - R_{\text{off}}}{R_{\text{off}}-R_{\text{ini}}} \end{
 	\includegraphics[scale=0.3]{memristor_sine_schematic}
 	\includegraphics[scale=0.3]{memristor_sine_hysteresis}
 	\caption{Általunk megvalósított ideális memrisztor modell (schematic)\ref{appendix:kod}}
-\end{figure}}
+\end{figure}
 
-\subsubsection{Verilog-A modellezés alapjai}
+\subsection{Verilog-A modellezés alapjai}
 \cite{reramva}
-\subsection{Verilog-A demó}
+%\subsection{Verilog-A demó}
 \section{3D XPoint}
-A 3D XPoint egy crossbar PCM-alapú struktúra, amit az Intel és a Micron Technology dolgozott ki kb. 2008 és 2017 között. Ezen technológiát felhasználó alkatrészek/eszközök 2022. júliusig voltak kaphatók a piacon, Optane (Intel) néven.  PCM (phase-change memory) lévén egy kalkogenid anyag fázisállapotainak kapcsolásával alakítható kis egy HRS és egy LRS állapot. Itt a kalkogenid anyag bizonyos félfémekből, illetve tellúriumból (Te) áll. A teljes félfémes ötvözet ebben az esetben a leggyakoribb, 2:2:5 sztöchiometriai arányú Ge2Sb2Te5, röviden GST. A phase-change memory alapja, hogy különböző nagyságú és idejű áramimpulzusokkal az anyagot egy kristályos, és egy rendezetlen amorf állapot között kapcsoljuk. Az amorf állapot inkább szigetelő (pl. üveg), a kristályos állapot inkább vezető. Amorf állapotban egy $V_th$ határfeszültség alatt szinte egyáltalán nem vezet. Ezt túllépve az anyag rezisztív tulajdonságú lesz, disszipálni kezd. Ha kb. 350 C-ot elér, még nem olvad meg, viszont a részecskék növekedett kinetikus energiája miatt elkezd kristályosodni (ha a SET áramot kb 100ns ideig fenntartjuk). A kristályos állapot energiamentes állapotban is megmarad (ettől lesz a PCM nem-felejtő memória). Ebben az állapotban az anyag kis ellenállású (LRS állapot), ezt egy rövid, alacsony impulzussal olvashatjuk. Az amorf állapotba kapcsolás magasabb  teljesítményen történik (kb. 610 C-ra melegszik a kalkogenid), az anyag megolvad, de az impulzus kis időtartama miatt nincs elég ideje kristályosodni. Ezáltal amorf állapotban szilárdul meg. Ilyenkor az ellenállás sokkal nagyobb ($V_th$ alatt), így ezt is egy rövid impulzussal olvashatjuk. A LRS és a HRS állapot $V_{th}$ alatt egyértelműen megkülönböztethető. \\
+A 3D XPoint egy crossbar PCM-alapú struktúra, amit az Intel és a Micron Technology dolgozott ki kb. 2008 és 2017 között. Ezen technológiát felhasználó alkatrészek/eszközök 2022. júliusig voltak kaphatók a piacon, Optane (Intel) néven.  PCM (phase-change memory) lévén egy kalkogenid anyag fázisállapotainak kapcsolásával alakítható kis egy HRS és egy LRS állapot. Itt a kalkogenid anyag bizonyos félfémekből, illetve tellúriumból (Te) áll. A teljes félfémes ötvözet ebben az esetben a leggyakoribb, 2:2:5 sztöchiometriai arányú Ge2Sb2Te5, röviden GST. A phase-change memory alapja, hogy különböző nagyságú és idejű áramimpulzusokkal az anyagot egy kristályos, és egy rendezetlen amorf állapot között kapcsoljuk. Az amorf állapot inkább szigetelő (pl. üveg), a kristályos állapot inkább vezető. Amorf állapotban egy $V_th$ határfeszültség alatt szinte egyáltalán nem vezet. Ezt túllépve az anyag rezisztív tulajdonságú lesz, disszipálni kezd. Ha kb. 350 \C-ot elér, még nem olvad meg, viszont a részecskék növekedett kinetikus energiája miatt elkezd kristályosodni (ha a SET áramot kb 100ns ideig fenntartjuk). A kristályos állapot energiamentes állapotban is megmarad (ettől lesz a PCM nem-felejtő memória). Ebben az állapotban az anyag kis ellenállású (LRS állapot), ezt egy rövid, alacsony impulzussal olvashatjuk. Az amorf állapotba kapcsolás magasabb  teljesítményen történik (kb. 610 C-ra melegszik a kalkogenid), az anyag megolvad, de az impulzus kis időtartama miatt nincs elég ideje kristályosodni. Ezáltal amorf állapotban szilárdul meg. Ilyenkor az ellenállás sokkal nagyobb ($V_th$ alatt), így ezt is egy rövid impulzussal olvashatjuk. A LRS és a HRS állapot $V_{th}$ alatt egyértelműen megkülönböztethető. \\
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.6]{pcm}
@@ -150,6 +318,10 @@ Neuromorfikus chipek \cite{souto2024}
 
 \begin{appendices}
 	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+	\section{MATLAB felhasznált kód}
+	\label{appendix:matlab}
+	%TODO: kommenteket kiszedni MATLAB kódból
+	%\lstinputlisting[caption=MATLAB kód]{memristor_final.m}
 	\section{LTSpice felhasznált kód}
 	\label{appendix:kod}
 	\lstinputlisting[caption=Hálózati modell]{memristor_sine.asc}
