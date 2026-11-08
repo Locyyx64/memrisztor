@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.10.22)  7 NOV 2026 20:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.10.22)  8 NOV 2026 14:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -286,33 +286,60 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 \Gin@req@height=\dimen163
 \Gin@req@width=\dimen164
 )
+(/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen165
+\captionmargin=\dimen166
+\caption@leftmargin=\dimen167
+\caption@rightmargin=\dimen168
+\caption@width=\dimen169
+\caption@indent=\dimen170
+\caption@parindent=\dimen171
+\caption@hangindent=\dimen172
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count297
+\c@continuedfloat=\count298
+Package caption Info: hyperref package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count299
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count300
+)
 (/usr/share/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count297
-\c@@ppsavesec=\count298
-\c@@ppsaveapp=\count299
+\c@@pps=\count301
+\c@@ppsavesec=\count302
+\c@@ppsaveapp=\count303
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count300
+\lst@mode=\count304
 \lst@gtempboxa=\box54
 \lst@token=\toks24
-\lst@length=\count301
-\lst@currlwidth=\dimen165
-\lst@column=\count302
-\lst@pos=\count303
-\lst@lostspace=\dimen166
-\lst@width=\dimen167
-\lst@newlines=\count304
-\lst@lineno=\count305
-\lst@maxwidth=\dimen168
+\lst@length=\count305
+\lst@currlwidth=\dimen173
+\lst@column=\count306
+\lst@pos=\count307
+\lst@lostspace=\dimen174
+\lst@width=\dimen175
+\lst@newlines=\count308
+\lst@lineno=\count309
+\lst@maxwidth=\dimen176
 
 (/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count306
-\lst@skipnumbers=\count307
+\c@lstnumber=\count310
+\lst@skipnumbers=\count311
 \lst@framebox=\box55
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
@@ -322,7 +349,7 @@ Package: listings 2024/09/23 1.10c (Carsten Heinz)
 
 (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count308
+\c@float@type=\count312
 \float@exts=\toks25
 \float@box=\box56
 \@float@everytoks=\toks26
@@ -355,7 +382,7 @@ Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count309
+\lrq@indent=\count313
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -363,49 +390,49 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count310
-\c@listtotal=\count311
-\c@listcount=\count312
-\c@liststart=\count313
-\c@liststop=\count314
-\c@citecount=\count315
-\c@citetotal=\count316
-\c@multicitecount=\count317
-\c@multicitetotal=\count318
-\c@instcount=\count319
-\c@maxnames=\count320
-\c@minnames=\count321
-\c@maxitems=\count322
-\c@minitems=\count323
-\c@citecounter=\count324
-\c@maxcitecounter=\count325
-\c@savedcitecounter=\count326
-\c@uniquelist=\count327
-\c@uniquename=\count328
-\c@refsection=\count329
-\c@refsegment=\count330
-\c@maxextratitle=\count331
-\c@maxextratitleyear=\count332
-\c@maxextraname=\count333
-\c@maxextradate=\count334
-\c@maxextraalpha=\count335
-\c@abbrvpenalty=\count336
-\c@highnamepenalty=\count337
-\c@lownamepenalty=\count338
-\c@maxparens=\count339
-\c@parenlevel=\count340
-\blx@tempcnta=\count341
-\blx@tempcntb=\count342
-\blx@tempcntc=\count343
-\c@blx@maxsection=\count344
-\blx@maxsegment@0=\count345
-\blx@notetype=\count346
-\blx@parenlevel@text=\count347
-\blx@parenlevel@foot=\count348
-\blx@sectionciteorder@0=\count349
-\blx@sectionciteorderinternal@0=\count350
-\blx@entrysetcounter=\count351
-\blx@biblioinstance=\count352
+\c@tabx@nest=\count314
+\c@listtotal=\count315
+\c@listcount=\count316
+\c@liststart=\count317
+\c@liststop=\count318
+\c@citecount=\count319
+\c@citetotal=\count320
+\c@multicitecount=\count321
+\c@multicitetotal=\count322
+\c@instcount=\count323
+\c@maxnames=\count324
+\c@minnames=\count325
+\c@maxitems=\count326
+\c@minitems=\count327
+\c@citecounter=\count328
+\c@maxcitecounter=\count329
+\c@savedcitecounter=\count330
+\c@uniquelist=\count331
+\c@uniquename=\count332
+\c@refsection=\count333
+\c@refsegment=\count334
+\c@maxextratitle=\count335
+\c@maxextratitleyear=\count336
+\c@maxextraname=\count337
+\c@maxextradate=\count338
+\c@maxextraalpha=\count339
+\c@abbrvpenalty=\count340
+\c@highnamepenalty=\count341
+\c@lownamepenalty=\count342
+\c@maxparens=\count343
+\c@parenlevel=\count344
+\blx@tempcnta=\count345
+\blx@tempcntb=\count346
+\blx@tempcntc=\count347
+\c@blx@maxsection=\count348
+\blx@maxsegment@0=\count349
+\blx@notetype=\count350
+\blx@parenlevel@text=\count351
+\blx@parenlevel@foot=\count352
+\blx@sectionciteorder@0=\count353
+\blx@sectionciteorderinternal@0=\count354
+\blx@entrysetcounter=\count355
+\blx@biblioinstance=\count356
 \labelnumberwidth=\skip64
 \labelalphawidth=\skip65
 \biblabelsep=\skip66
@@ -417,9 +444,9 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language5
-\c@mincomprange=\count353
-\c@maxcomprange=\count354
-\c@mincompwidth=\count355
+\c@mincomprange=\count357
+\c@maxcomprange=\count358
+\c@mincompwidth=\count359
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -430,74 +457,74 @@ Package biblatex Info: Trying to load biblatex citestyle data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count356
-\c@savedafterword=\count357
-\c@annotator=\count358
-\c@savedannotator=\count359
-\c@author=\count360
-\c@savedauthor=\count361
-\c@bookauthor=\count362
-\c@savedbookauthor=\count363
-\c@commentator=\count364
-\c@savedcommentator=\count365
-\c@editor=\count366
-\c@savededitor=\count367
-\c@editora=\count368
-\c@savededitora=\count369
-\c@editorb=\count370
-\c@savededitorb=\count371
-\c@editorc=\count372
-\c@savededitorc=\count373
-\c@foreword=\count374
-\c@savedforeword=\count375
-\c@holder=\count376
-\c@savedholder=\count377
-\c@introduction=\count378
-\c@savedintroduction=\count379
-\c@namea=\count380
-\c@savednamea=\count381
-\c@nameb=\count382
-\c@savednameb=\count383
-\c@namec=\count384
-\c@savednamec=\count385
-\c@translator=\count386
-\c@savedtranslator=\count387
-\c@shortauthor=\count388
-\c@savedshortauthor=\count389
-\c@shorteditor=\count390
-\c@savedshorteditor=\count391
-\c@labelname=\count392
-\c@savedlabelname=\count393
-\c@institution=\count394
-\c@savedinstitution=\count395
-\c@lista=\count396
-\c@savedlista=\count397
-\c@listb=\count398
-\c@savedlistb=\count399
-\c@listc=\count400
-\c@savedlistc=\count401
-\c@listd=\count402
-\c@savedlistd=\count403
-\c@liste=\count404
-\c@savedliste=\count405
-\c@listf=\count406
-\c@savedlistf=\count407
-\c@location=\count408
-\c@savedlocation=\count409
-\c@organization=\count410
-\c@savedorganization=\count411
-\c@origlocation=\count412
-\c@savedoriglocation=\count413
-\c@origpublisher=\count414
-\c@savedorigpublisher=\count415
-\c@publisher=\count416
-\c@savedpublisher=\count417
-\c@language=\count418
-\c@savedlanguage=\count419
-\c@origlanguage=\count420
-\c@savedoriglanguage=\count421
-\c@pageref=\count422
-\c@savedpageref=\count423
+\c@afterword=\count360
+\c@savedafterword=\count361
+\c@annotator=\count362
+\c@savedannotator=\count363
+\c@author=\count364
+\c@savedauthor=\count365
+\c@bookauthor=\count366
+\c@savedbookauthor=\count367
+\c@commentator=\count368
+\c@savedcommentator=\count369
+\c@editor=\count370
+\c@savededitor=\count371
+\c@editora=\count372
+\c@savededitora=\count373
+\c@editorb=\count374
+\c@savededitorb=\count375
+\c@editorc=\count376
+\c@savededitorc=\count377
+\c@foreword=\count378
+\c@savedforeword=\count379
+\c@holder=\count380
+\c@savedholder=\count381
+\c@introduction=\count382
+\c@savedintroduction=\count383
+\c@namea=\count384
+\c@savednamea=\count385
+\c@nameb=\count386
+\c@savednameb=\count387
+\c@namec=\count388
+\c@savednamec=\count389
+\c@translator=\count390
+\c@savedtranslator=\count391
+\c@shortauthor=\count392
+\c@savedshortauthor=\count393
+\c@shorteditor=\count394
+\c@savedshorteditor=\count395
+\c@labelname=\count396
+\c@savedlabelname=\count397
+\c@institution=\count398
+\c@savedinstitution=\count399
+\c@lista=\count400
+\c@savedlista=\count401
+\c@listb=\count402
+\c@savedlistb=\count403
+\c@listc=\count404
+\c@savedlistc=\count405
+\c@listd=\count406
+\c@savedlistd=\count407
+\c@liste=\count408
+\c@savedliste=\count409
+\c@listf=\count410
+\c@savedlistf=\count411
+\c@location=\count412
+\c@savedlocation=\count413
+\c@organization=\count414
+\c@savedorganization=\count415
+\c@origlocation=\count416
+\c@savedoriglocation=\count417
+\c@origpublisher=\count418
+\c@savedorigpublisher=\count419
+\c@publisher=\count420
+\c@savedpublisher=\count421
+\c@language=\count422
+\c@savedlanguage=\count423
+\c@origlanguage=\count424
+\c@savedoriglanguage=\count425
+\c@pageref=\count426
+\c@savedpageref=\count427
 \shorthandwidth=\skip72
 \shortjournalwidth=\skip73
 \shortserieswidth=\skip74
@@ -523,19 +550,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texmf-site/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count424
-\c@textcitetotal=\count425
-\c@textcitemaxnames=\count426
-\c@biburlbigbreakpenalty=\count427
-\c@biburlbreakpenalty=\count428
-\c@biburlnumpenalty=\count429
-\c@biburlucpenalty=\count430
-\c@biburllcpenalty=\count431
+\c@textcitecount=\count428
+\c@textcitetotal=\count429
+\c@textcitemaxnames=\count430
+\c@biburlbigbreakpenalty=\count431
+\c@biburlbreakpenalty=\count432
+\c@biburlnumpenalty=\count433
+\c@biburlucpenalty=\count434
+\c@biburllcpenalty=\count435
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count432
+\c@smartand=\count436
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -547,8 +574,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texmf-site/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count433
-\c@bbx:relatedtotal=\count434
+\c@bbx:relatedcount=\count437
+\c@bbx:relatedtotal=\count438
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -581,7 +608,7 @@ Package: expl3 2024-11-02 L3 programming layer (loader)
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count435
+\l__color_backend_stack_int=\count439
 \l__pdf_internal_box=\box58
 ))
 Package biblatex Info: ... and expl3
@@ -595,31 +622,31 @@ Package: xparse 2024-08-16 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
-\c@itemnum=\count436
-\@quotelevel=\count437
-\@quotereset=\count438
+\c@itemnum=\count440
+\@quotelevel=\count441
+\@quotereset=\count442
 
 (./memristor.aux)
 \openout1 = `memristor.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -655,7 +682,7 @@ LaTeX Font Info:    ... okay on input line 57.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 57.
+Package hyperref Info: Link coloring OFF on input line 58.
 (./memristor.out) (./memristor.out)
 \@outlinefile=\write4
 \openout4 = `memristor.out'.
@@ -663,16 +690,16 @@ Package hyperref Info: Link coloring OFF on input line 57.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count439
-\scratchdimen=\dimen169
+\scratchcounter=\count443
+\scratchdimen=\dimen177
 \scratchbox=\box59
-\nofMPsegments=\count440
-\nofMParguments=\count441
+\nofMPsegments=\count444
+\nofMParguments=\count445
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count442
-\MPscratchDim=\dimen170
-\MPnumerator=\count443
-\makeMPintoPDFobject=\count444
+\MPscratchCnt=\count446
+\MPscratchDim=\dimen178
+\MPnumerator=\count447
+\makeMPintoPDFobject=\count448
 \everyMPtoPDFconversion=\toks28
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -683,7 +710,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count445
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count449
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -698,33 +729,50 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'memristor.bbl' found.
  (./memristor.bbl)
-Package biblatex Info: Reference section=0 on input line 57.
-Package biblatex Info: Reference segment=0 on input line 57.
+Package biblatex Info: Reference section=0 on input line 58.
+Package biblatex Info: Reference segment=0 on input line 58.
 
-(./memristor.toc)
+(./memristor.toc
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+])
 \tf@toc=\write5
 \openout5 = `memristor.toc'.
 
 
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-]
-Overfull \hbox (157.72829pt too wide) in paragraph at lines 67--79
+[2]
+Overfull \hbox (157.72829pt too wide) in paragraph at lines 68--80
 [] 
  []
 
 
 
-[2]
-Overfull \hbox (10.51755pt too wide) in paragraph at lines 81--82
+[3]
+Overfull \hbox (10.51755pt too wide) in paragraph at lines 82--83
 \OT1/cmr/m/n/10 A mem-risz-tor t^^?ort^^Senete 1971-ben kezd}od^^?ott, L. Chua[
 []1[]] munk^^Saj^^Saval, amely az alkatr^^Sesz elm^^Seleti alap-jait, lehet}os^
 ^Segeit,
  []
 
+<./images/memristor_pubs.png, id=84, 642.14906pt x 647.41875pt>
+File: ./images/memristor_pubs.png Graphic file (type png)
+<use ./images/memristor_pubs.png>
+Package pdftex.def Info: ./images/memristor_pubs.png  used on input line 87.
+(pdftex.def)             Requested size: 152.59082pt x 153.84258pt.
+<./images/reram_pubs.png, id=85, 649.67719pt x 635.37375pt>
+File: ./images/reram_pubs.png Graphic file (type png)
+<use ./images/reram_pubs.png>
+Package pdftex.def Info: ./images/reram_pubs.png  used on input line 91.
+(pdftex.def)             Requested size: 152.59082pt x 149.22559pt.
+<./images/rs_pubs.png, id=86, 645.91313pt x 639.89063pt>
+File: ./images/rs_pubs.png Graphic file (type png)
+<use ./images/rs_pubs.png>
+Package pdftex.def Info: ./images/rs_pubs.png  used on input line 95.
+(pdftex.def)             Requested size: 152.59082pt x 151.16519pt.
 
-Overfull \hbox (20.55472pt too wide) in paragraph at lines 87--88
+Overfull \hbox (20.55472pt too wide) in paragraph at lines 105--106
 \OT1/cmr/m/n/10 vagy rend-sz-erek (pl. Chua ^^Saltal aj^^Sanlott mut^^Sator h^^
 Sal^^Sozatok) al-ka-lmaz^^Sas^^Saval k^^?ozel^^S^^Pthet}ok. A mem-risz-tor pass
 zivit^^Sas^^Sahoz
@@ -740,8 +788,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[3]
-Overfull \hbox (21.60191pt too wide) in paragraph at lines 127--129
+[4 <./images/memristor_pubs.png (PNG copy)> <./images/reram_pubs.png (PNG copy)
+> <./images/rs_pubs.png (PNG copy)>]
+Overfull \hbox (21.60191pt too wide) in paragraph at lines 146--148
 \OT1/cmr/m/n/10 enci^^Salegyenlet ^^Serv^^Senyes.[[]6[]] Ebben az es-et-ben a d
 if-fer-enci^^Salegyenlet ^^Ses a mem-risz-tan-cia ^^Saltal^^Sanos alakja a k^^?
 ovekez}ok^^Seppen
@@ -757,23 +806,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[4]
-Overfull \hbox (0.8426pt too wide) in paragraph at lines 141--144
+[5]
+Overfull \hbox (0.8426pt too wide) in paragraph at lines 169--172
 \OT1/cmr/m/n/10 frekvenci^^Saja, ^^Ses a k^^Sesleltet^^Sesekre val^^So ^^Serz^^
 Sekenys^^Seg mi-att. Emi-att az illesztett NVM-nek egyr^^Seszt kiv^^Sal^^So tar
 t^^Soss^^Saggal,
  []
 
-<./images/reram.png, id=122, 336.50719pt x 188.95593pt>
+<./images/reram.png, id=137, 336.50719pt x 188.95593pt>
 File: ./images/reram.png Graphic file (type png)
 <use ./images/reram.png>
-Package pdftex.def Info: ./images/reram.png  used on input line 148.
+Package pdftex.def Info: ./images/reram.png  used on input line 176.
 (pdftex.def)             Requested size: 269.2061pt x 151.16493pt.
-<./images/pcm_boukhobza.png, id=125, 269.50688pt x 155.07938pt>
-File: ./images/pcm_boukhobza.png Graphic file (type png)
-<use ./images/pcm_boukhobza.png>
-Package pdftex.def Info: ./images/pcm_boukhobza.png  used on input line 157.
-(pdftex.def)             Requested size: 269.50621pt x 155.07898pt.
 
 
 
@@ -784,29 +828,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[5
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.161 \subsubsection
-                    {MRAM} <./images/reram.png (PNG copy)>]
-<./images/mram.png, id=134, 380.92313pt x 150.5625pt>
+[6]
+<./images/pcm_boukhobza.png, id=148, 269.50688pt x 155.07938pt>
+File: ./images/pcm_boukhobza.png Graphic file (type png)
+<use ./images/pcm_boukhobza.png>
+Package pdftex.def Info: ./images/pcm_boukhobza.png  used on input line 185.
+(pdftex.def)             Requested size: 269.50621pt x 155.07898pt.
+<./images/mram.png, id=152, 380.92313pt x 150.5625pt>
 File: ./images/mram.png Graphic file (type png)
 <use ./images/mram.png>
-Package pdftex.def Info: ./images/mram.png  used on input line 165.
+Package pdftex.def Info: ./images/mram.png  used on input line 193.
 (pdftex.def)             Requested size: 380.92218pt x 150.56212pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/feram.png, id=136, 309.40594pt x 145.29282pt>
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[7 <./images/reram.png (PNG copy)> <./images/pcm_boukhobza.png (PNG copy)>]
+<./images/feram.png, id=164, 309.40594pt x 145.29282pt>
 File: ./images/feram.png Graphic file (type png)
 <use ./images/feram.png>
-Package pdftex.def Info: ./images/feram.png  used on input line 175.
+Package pdftex.def Info: ./images/feram.png  used on input line 203.
 (pdftex.def)             Requested size: 309.40518pt x 145.29245pt.
 
-Underfull \vbox (badness 1796) has occurred while \output is active []
+Underfull \vbox (badness 5681) has occurred while \output is active []
 
 
 
@@ -818,34 +868,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[6
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.177 \end{figure}
-                   <./images/pcm_boukhobza.png (PNG copy)>]
-<./images/pickett.png, id=149, 240.9pt x 311.66437pt>
+[8 <./images/mram.png (PNG copy)>]
+<./images/pickett.png, id=178, 240.9pt x 311.66437pt>
 File: ./images/pickett.png Graphic file (type png)
 <use ./images/pickett.png>
-Package pdftex.def Info: ./images/pickett.png  used on input line 184.
+Package pdftex.def Info: ./images/pickett.png  used on input line 213.
 (pdftex.def)             Requested size: 240.8994pt x 311.6636pt.
 
-Overfull \hbox (6.92612pt too wide) in paragraph at lines 181--189
-\OT1/cmr/m/n/10 lehet}ov^^Se a "dis-zkr^^Set" ^^Sallapotok defini^^Salhat^^Sos^
-^Sag^^Sat. B^^Sar, a mem-risz-torok klasszikus ^^Sertelmez^^Ses^^Seben is, v^^S
-altakoz^^So^^Saram^^Su
- []
-
-
-Overfull \hbox (1.75923pt too wide) in paragraph at lines 181--189
-\OT1/cmr/m/n/10 klasszikus ^^Sertelmez^^Sesben a mem-riszt^^S^^Pv rend-sz-erek 
-nem k^^Sepesek en-er-gia t^^Sarol^^Sas^^Sara. Ugyan, a ger-jeszt^^Ses frekvenci
-^^Sat^^Sol
- []
-
-
-Underfull \vbox (badness 5832) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -857,20 +887,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[7
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.189 ... szennyezett réteg hossza. \begin{align}
-                                                  
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.189 ... szennyezett réteg hossza. \begin{align}
-                                                   <./images/mram.png (PNG copy
-)> <./images/feram.png (PNG copy)>]
+[9 <./images/feram.png (PNG copy)>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -880,21 +897,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[8
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.189 ... szennyezett réteg hossza. \begin{align}
-                                                   <./images/pickett.png (PNG c
-opy)>]
-<./images/joglekar.png, id=171, 341.77687pt x 213.79875pt>
+[10 <./images/pickett.png (PNG copy)>]
+<./images/joglekar.png, id=202, 341.77687pt x 213.79875pt>
 File: ./images/joglekar.png Graphic file (type png)
 <use ./images/joglekar.png>
-Package pdftex.def Info: ./images/joglekar.png  used on input line 199.
+Package pdftex.def Info: ./images/joglekar.png  used on input line 236.
 (pdftex.def)             Requested size: 341.77603pt x 213.79822pt.
 
-Overfull \hbox (16.29515pt too wide) in paragraph at lines 211--214
+Underfull \hbox (badness 10000) in paragraph at lines 232--239
+
+ []
+
+
+Overfull \hbox (16.29515pt too wide) in paragraph at lines 248--251
 \OT1/cmr/m/n/10 Az RS (re-sis-tive switch-ing) tech-nol^^Sogi^^Sahoz sz^^?uks^^
 Seges szige-tel}ok krist^^Salytani, szen-nyezetts^^Segi k^^?ovetelm^^Senyeit, n
 ^^?oveszt^^Sesi
@@ -910,30 +925,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.218 \subsubsection
-                    {SPICE modellezés} <./images/joglekar.png (PNG copy)>]
-<./images/spice.png, id=192, 304.13625pt x 417.81094pt>
+[11 <./images/joglekar.png (PNG copy)>]
+<./images/spice.png, id=221, 304.13625pt x 417.81094pt>
 File: ./images/spice.png Graphic file (type png)
 <use ./images/spice.png>
-Package pdftex.def Info: ./images/spice.png  used on input line 234.
+Package pdftex.def Info: ./images/spice.png  used on input line 273.
 (pdftex.def)             Requested size: 228.10162pt x 313.35744pt.
-<./images/memristor_sine_schematic.png, id=194, 1442.38875pt x 761.09344pt>
+<./images/memristor_sine_schematic.png, id=224, 1442.38875pt x 761.09344pt>
 File: ./images/memristor_sine_schematic.png Graphic file (type png)
 <use ./images/memristor_sine_schematic.png>
 Package pdftex.def Info: ./images/memristor_sine_schematic.png  used on input l
-ine 240.
+ine 279.
 (pdftex.def)             Requested size: 432.71997pt x 228.32979pt.
-<./images/memristor_sine_hysteresis.png, id=196, 1442.38875pt x 761.09344pt>
+<./images/memristor_sine_hysteresis.png, id=226, 1442.38875pt x 761.09344pt>
 File: ./images/memristor_sine_hysteresis.png Graphic file (type png)
 <use ./images/memristor_sine_hysteresis.png>
 Package pdftex.def Info: ./images/memristor_sine_hysteresis.png  used on input 
-line 241.
+line 280.
 (pdftex.def)             Requested size: 432.71997pt x 228.32979pt.
+
+Underfull \vbox (badness 2080) has occurred while \output is active []
+
 
 
 
@@ -944,52 +956,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[10
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.244 
-       <./images/spice.png (PNG copy)>]
-<./images/pcm.png, id=210, 748.29562pt x 300.3722pt>
+[12 <./images/spice.png (PNG copy)>]
+<./images/pcm.png, id=240, 748.29562pt x 300.3722pt>
 File: ./images/pcm.png Graphic file (type png)
 <use ./images/pcm.png>
-Package pdftex.def Info: ./images/pcm.png  used on input line 252.
+Package pdftex.def Info: ./images/pcm.png  used on input line 291.
 (pdftex.def)             Requested size: 448.98083pt x 180.22469pt.
-<./images/chalcogenide.png, id=212, 797.22844pt x 313.9228pt>
+<./images/chalcogenide.png, id=243, 797.22844pt x 313.9228pt>
 File: ./images/chalcogenide.png Graphic file (type png)
 <use ./images/chalcogenide.png>
-Package pdftex.def Info: ./images/chalcogenide.png  used on input line 257.
+Package pdftex.def Info: ./images/chalcogenide.png  used on input line 296.
 (pdftex.def)             Requested size: 438.477pt x 172.65807pt.
 
 
-[11
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.259 \end{figure}
-                   <./images/memristor_sine_schematic.png> <./images/memristor_
-sine_hysteresis.png>]
+[13 <./images/memristor_sine_schematic.png> <./images/memristor_sine_hysteresis
+.png>]
 
-[12
-pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.263 \section
-              {ReRAM gyakorlati alkalmazásai}
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.263 \section
-              {ReRAM gyakorlati alkalmazásai} <./images/pcm.png> <./images/cha
-lcogenide.png>]
-<./images/dnn.png, id=237, 500.62032pt x 263.48438pt>
+[14 <./images/pcm.png> <./images/chalcogenide.png>]
+<./images/dnn.png, id=270, 500.62032pt x 263.48438pt>
 File: ./images/dnn.png Graphic file (type png)
 <use ./images/dnn.png>
-Package pdftex.def Info: ./images/dnn.png  used on input line 269.
+Package pdftex.def Info: ./images/dnn.png  used on input line 308.
 (pdftex.def)             Requested size: 468.07762pt x 246.35663pt.
 
 
@@ -1001,13 +988,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[13
-pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.277 \newpage
-               <./images/dnn.png (PNG copy)>]
+[15 <./images/dnn.png (PNG copy)>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1017,9 +998,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[14]
+[16]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 288.
+nput line 327.
  (./memristor_sine.asc) (./memristor.asy)
 
 
@@ -1030,7 +1011,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[15{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[17{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1040,50 +1021,54 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[16] (./memristor.aux)
+[18] (./memristor.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `memristor.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                memristor
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'memristor.run.xml'.
 \openout1 = `memristor.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19864 strings out of 475322
- 339762 string characters out of 5771093
- 1199968 words of memory out of 5000000
- 42384 multiletter control sequences out of 15000+600000
- 566168 words of font info for 64 fonts, out of 8000000 for 9000
+ 21324 strings out of 475322
+ 368310 string characters out of 5771093
+ 1219551 words of memory out of 5000000
+ 43825 multiletter control sequences out of 15000+600000
+ 567007 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,13n,81p,2079b,1482s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-pdfTeX warning (dest): name{subsection.4.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/
-cm-super/sfrm1000.pfb>
-Output written on memristor.pdf (16 pages, 935620 bytes).
+ 75i,13n,81p,2079b,1526s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/f
+onts/type1/public/cm-super/sfrm1000.pfb>
+Output written on memristor.pdf (18 pages, 980683 bytes).
 PDF statistics:
- 454 PDF objects out of 1000 (max. 8388607)
- 376 compressed objects within 4 object streams
- 135 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 487 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 145 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
