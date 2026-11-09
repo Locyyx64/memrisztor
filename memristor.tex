@@ -41,6 +41,7 @@ framexleftmargin=1.5mm
 \renewcommand\appendixpagename{Függelék}
 \renewcommand\figurename{Ábra}
 \renewcommand\lstlistingname{Kódrészlet}
+\DeclareMathOperator\stp{stp}
 
 \newcounter{itemnum}
 
@@ -75,7 +76,8 @@ framexleftmargin=1.5mm
 	$T$ & hőmérséklet \\
 	$w$ & vezető csatorna és ellentétes elektród közötti távolság \\
 	$D$ & két elektród távolsága \\
-	$x$ & állapotváltozó
+	$x$ & állapotváltozó \\
+	$\sigma$ & fajlagos vezetőképesség
 \end{tabular}
 \newpage
 \section{Bevezetés}
@@ -207,7 +209,7 @@ Logikai alacsony írása a plate line-on (PL) létrehozott impulzussal érhető 
 A ferroelektromos memória legnagyobb hátránya a cellák nagysága, emiatt csak kis mértékben vagy kiegészítésként integrálható. Emellett egyik tulajdonsága, ami a többi NVM-től elkülöníti, hogy az írási és az olvasási műveletei szinte teljesen szimmetrikusak (fogyasztási, illetve latency szempontból is). Mégis, pl. elsődleges memóriával (DRAM) illesztve jobb fogyasztás fényében rosszabb teljesítmény érhető el.\cite{emerging2017} Másodlagos memóriaként például Flash SSD-vel vertikálisan integrálva lehetséges jobb teljesítmény elérése. Yoon et al. prototípusában \cite{yoon2008} az illesztett FRAM a fájlrendszer metaadatait tárolja (flash translation layer, FTL), a Flash olvasásának felgyorsítása érdekében.
 \section{Az anyagtudomány szerepe, TiO$_2$, SrTiO$_3$}
 \subsection{Egyszerű titán-dioxid alapú ReRAM bemutatása}
-A nemfelejtő ReRAM technológia kutatása 2008-ban, a TiO$_2$ (titán-dioxid) fém-szigetelő-fém (MiM) kialakítás sikerének köszönhetően nagyobb népszerűségre tett szert. A ReRAM lényege, hogy a szigetelő anyagban feszültség hatására dinamikusan egy magas rezisztanciás (HRS), és egy alacsony rezisztanciás (LRS) állapot között váltunk a megfelelő bit írásának megfelelően. Ilyenkor a szigetelőben egy vezető csatorna keletkezik (főként a szennyeződéseknek és az esetleges adalékolt pozitív oxigénionok hatására). Használnak még pl. cink-oxidokat, nikkel-oxidot\cite{emerging2017} vagy stroncium-titanátot (SrTiO$_3$). A legtöbbet kutatott, titán-dioxid alapú memrisztor két darab platinum elektródból, illetve egy közöttük lévő TiO$_2$ rétegből áll. Ez utóbbi egy rendkívül vezetőképes, csökkentett oxigénkoncentrációjú rétegből (TiO$_{2-x}$), és egy kémiailag tökéletes titán-dioxid szegmensből áll. Az adalékolt TiO$_2$ és a pozitív elektród közötti távolság w. A két elektródra kapcsolt pozitív feszültség hatására a szennyezett TiO$_2$ ionjai sodródni kezdenek a pozitív elektród felé, így a w távolság csökken. A konstrukción átfolyó teljes áram a w vastagságú oxidréteg áthatolásától függ, ami rendkívül nemlineáris módon függ a w távolság nagyságától \cite{kolka2015}. Egy ilyen kialakítás dinamikus modellezésében például a w, mint állapotváltozó szerint írható fel az állapotváltozós leírás\cite{pickett2009}. Pickett et al. egy TiO$_2$ crosspoint kialakítást vizsgáltak, ahol az egyes cellák esetén a "bipoláris átkapcsolás" jelenségét az ionsodródási sebesség exponenciális függvényében, illetve a sodródási és a diffúziós hatások kölcsönhatásának vonatkozásában modellezték. A két platinum elektród közé a titán-dioxidot katódporlasztással növesztették 250 \C-on, O-Ti: $2.00 \pm 0.01$ sztöchiometrikus arányban.
+A nemfelejtő ReRAM technológia kutatása 2008-ban, a TiO$_2$ (titán-dioxid) fém-szigetelő-fém (MiM) kialakítás sikerének köszönhetően nagyobb népszerűségre tett szert. A ReRAM lényege, hogy a szigetelő anyagban feszültség hatására dinamikusan egy magas rezisztanciás (HRS), és egy alacsony rezisztanciás (LRS) állapot között váltunk a megfelelő bit írásának megfelelően. Ilyenkor a szigetelőben egy vezető csatorna keletkezik (főként a szennyeződéseknek és az esetleges adalékolt pozitív oxigénionok hatására). Használnak még pl. cink-oxidokat, nikkel-oxidot\cite{emerging2017}, stroncium-titanátot (SrTiO$_3$), vagy akár Ag-adalékolt Si réteget\cite{prodromakis2010} A legtöbbet kutatott, titán-dioxid alapú memrisztor két darab platinum elektródból, illetve egy közöttük lévő TiO$_2$ rétegből áll. Ez utóbbi egy rendkívül vezetőképes, csökkentett oxigénkoncentrációjú rétegből (TiO$_{2-x}$), és egy kémiailag tökéletes titán-dioxid szegmensből áll. Az adalékolt TiO$_2$ és a pozitív elektród közötti távolság w. A két elektródra kapcsolt pozitív feszültség hatására a szennyezett TiO$_2$ ionjai sodródni kezdenek a pozitív elektród felé, így a w távolság csökken. A konstrukción átfolyó teljes áram a w vastagságú oxidréteg áthatolásától függ, ami rendkívül nemlineáris módon függ a w távolság nagyságától \cite{kolka2015}. Egy ilyen kialakítás dinamikus modellezésében például a w, mint állapotváltozó szerint írható fel az állapotváltozós leírás\cite{pickett2009}. Pickett et al. egy TiO$_2$ crosspoint kialakítást vizsgáltak, ahol az egyes cellák esetén a "bipoláris átkapcsolás" jelenségét az ionsodródási sebesség exponenciális függvényében, illetve a sodródási és a diffúziós hatások kölcsönhatásának vonatkozásában modellezték. A két platinum elektród közé a titán-dioxidot katódporlasztással növesztették 250 \C-on, O-Ti: $2.00 \pm 0.01$ sztöchiometrikus arányban.
 \begin{figure}[H]
 \centering
 \includegraphics{pickett}
@@ -230,13 +232,34 @@ Strukov et al. a titán-dioxid ReRAM kialakítást két sorba kapcsolt ellenáll
 Tehát a rendszer modellezett memrisztanciája (ha $\mathcal{R}_{ON} \ll \mathcal{R}_{OFF}$): \begin{equation}
 	M(q) = \mathcal{R}_{OFF} \left(1- \frac{\mu_v \mathcal{R}_{ON}}{D^2}q(t)\right)
 \end{equation}
-Soni et al. ezt a modellt nevezi "lineáris ionsodródási modellnek"\cite{soni2022}. Nemlineáris ionsodródási modellek során az állapotváltozó kifejezéséhez egy extra $f(x)$ tényezőt is hozzárendelnek, így az állapotváltozó saját magára is kihat, ezáltal a szennyezett oxidréteg feszültségmenti növekedésének mértékére közvetlenül megadhatunk egy nemlineáris ablakfüggvényt.\\
+Soni et al. ezt a modellt nevezi "lineáris ionsodródási modellnek"\cite{soni2022}. Nemlineáris ionsodródási modellek során az állapotváltozó kifejezéséhez egy extra $f(x)$ tényezőt is hozzárendelnek, így az állapotváltozó saját magára is kihat, ezáltal a szennyezett oxidréteg feszültségmenti növekedésének mértékére közvetlenül megadhatunk egy nemlineáris ablakfüggvényt. Ha bevezetjük az állapotváltozót a $w$ helyett a $w/D$ hányadosra, illetve kifejezzük az állapotegyenlet állandó tényezőjét:
+\begin{align}
+	&x = \frac{w}{D} \\
+	&k = \frac{\mu_v R_{\text{ON}}}{D^2}
+\end{align}
+Akkor az egyszerű nemlineáris ionsodródási modell állapotegyenlete:
+\begin{equation}
+	\frac{dx}{dt} = ki(t)f(x)
+\end{equation}
+Ahol $f(x)$ a változás mértékét befolyásoló ablakfüggvény. (ld. Joglekar-féle ablakfüggvény)
+\medskip
 \begin{figure}[H]
-	\begin{equation} F_p(x) = 1 - (2x - 1)^{2p} \end{equation}
+	\begin{equation} f(x) = 1 - (2x - 1)^{2p} \end{equation}
 	\includegraphics{joglekar}
 	\centering
 	\caption{Joglekar-féle ablakfüggvény\cite{joglekar2009}\cite{kvatinsky2013}}
 \end{figure}
+\noindent
+További ablakfüggvények például: \begin{anumerate}
+	\elem Biolek-féle ablakfüggvény\footnote{$stp(x)$ a Heaviside-függvénynek felel meg.}\cite{biolek2009}:
+	\begin{equation}
+		f(x) = 1-(x - \stp(-i))^{2p} 
+	\end{equation}
+	\elem Prodromakis-féle ablakfüggvény\cite{prodromakis2011}
+	\begin{equation}
+			f(x) = 1 - \mleft[(x-0.5)^2 + 0.75\mright]^p
+	\end{equation}
+\end{anumerate}
 
 A Pickett-Simmons állapotegyenlet egyszerűbb megadását biztosítja a TEAM modell (ThrEshold Adaptive Memristor)\cite{kvatinsky2013}
 \begin{equation}
@@ -249,10 +272,35 @@ A Pickett-Simmons állapotegyenlet egyszerűbb megadását biztosítja a TEAM mo
 Ahol $k_{\text{off}}$,  $k_{\text{on}}$,  $\alpha_{\text{off}}$, és  $\alpha_{\text{on}}$ modellparaméterek, illetve $i_{\text{off}}$ és $i_{\text{on}}$ küszöbáram értékek. \\
 Az RS (resistive switching) technológiához szükséges szigetelők kristálytani, szennyezettségi követelményeit, növesztési technológiáit, belső folyamatait és energiaviszonyait az alábbiakban tárgyaljuk.
 \subsection{Magnéli fázisok, és a rácshibák jelentősége}
-
-
+A resistive switching jelenségének vonatkozásában a legnagyobb szerepet az átmenetifém-alapú szigetelők vagy oxidok dinamikus vezetővé válása teszi lehetővé. A titán-dioxid esetén, enyhén redukálva (csak vakanciák, több dimenziós rácshibákkal külön kell számolnunk) a rendkívül vezetőképes ún. Magnéli fázis okozza, ami egy nem-sztöchiometrikus, oxigén-vakanciás anyag. (TiO$_{2-x}$) A vezetőképességet ugyan nem csak az oxigén vakanciák ($V_O$) befolyásolják, hanem egyéb kristályhibák is, például interstíciós Ti atomok, vagy Schottky-párok. A kristályhibák leírására az ún. Kröger-Vink jelölés alkalmazható\cite{szot2014}. A Frenkel-párok és a Schottky-párok figyelembe vételével egy átfogóbb képlet adható a Magnéli fázisokra. Az anyag vezetőképességét a különböző redukáló és oxidáló körülmények között a következőképpen modellezhetjük:
+\begin{equation}
+	\frac{1}{m_\sigma} = \frac{d\ln\sigma}{d\ln p(O_2)}
+\end{equation}
+ahol $m_\sigma$ egy arányszám (a modell alapja), $p(O_2)$ az oxigén parciális nyomása és $\sigma$ a vezetőképesség/töltéshordozó mobilitás. Az alacsony oxigénnyomás redukciós környezetet eredményez. A Ti atomok redukálódnak, és Frenkel-hibákat alkotnak. A +3 elektronfelszabadulás miatt a redukcióval együtt az anyag vezetőképessége is nő (ld. 8. ábra). A semleges többletű (intrinsic) anyag a hőmérséklet emelkedésével nagyobb oxigénnyomás felé tolódik.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{conductivity}
+	\caption{A ponthibák szerepe: az erősen redukált tartományon az interstíciós Ti-k és az elektrontöbblet miatt "n" adalékoltság, oxidált tartományon "p" adalékoltság\cite{szot2014}}
+\end{figure}
+A titán-dioxidban nagyobb hibakoncentráció esetén valószínű a egy-vagy kétdimenziós hibák kialakulása is, például diszlokációk, vakancia klaszterek/oszlopok kialakulása adott kristályirány mentén. Célszerű, hogy az RS-ben használt egykristály anyag hibakoncentrációját már a kristálynövesztéstől kezdve ellenőrizzük, és megfelelően kezeljük a vezetőképesség érdekében. A növesztési felület instabilitása miatt nem alkalmazható a népszerű Czochralski-eljárás, így a TiO$_2$ növesztésére a legelterjedtebb módszerek a Verneuil-módszer és a floating-zone (FZ) módszer. Bár, a modern technológiával már a Verneuil-módszer is kifejezetten jó minőségű kristályt eredményez, kisszögű szemcsehatárok és mozaikszerű elrendezések előfordulhatnak. az SrTiO$_3$-at is Verneuil-módszerrel növesztik leggyakrabban. Általában egy megfelelő tisztaságú SrTiO$_3$ port vagy TiO$_2$ port alkalmaznak enyhe SrO többlettel. Fontos a megfelelő arányok alkalmazása, különben a titán-dioxid aránya túl magas lesz a növesztett stroncium-titanát egykristályban (>3\%), vagy pedig, magas SrO arány mellett a SrTiO$-3$-nak valamelyik ún. Ruddlesden-Popper fázisát kapjuk. A növesztett stroncium-titanátban kialakult kívánatlan hibák eltávolítása ("a kristály átlátszósítása") általában $H_2$-vel redukáló környezetben, majd hőkezeléssel történik.\cite{szot2014}\par
+A titán-dioxid tehát, magas hőmérsékleten és alacsony oxigénnyomáson kiváló vezetővé alakítható, és ez a folyamat reverzibilis. Ezt elérhetjük más módszerekkel is, például elektrodegradációval (elektroformálás), külső ion/foton gerjesztéssel, illetve fém atomok katódporlasztásával.
+%TODO: TiO2 rácshibák ab initio elmélete?
+%TODO: Redukciós folyamat magyarázata
+%TODO: Stroncium titanát rácshibái, redukciója, szerkezete
+%TODO: Elektroformálás magyarázata
+\subsection{A resistive switching jelensége}
+%TODO: Resistive switching TiO2-ben és SrTiO3-ban
 \subsection{2D anyagok felhasználása}
-
+%TODO: 2D anyagok bemutatása, 2D anyagok pl. MoS2 felhasználása memrisztortechnológiában
+\subsubsection{2D anyagok bemutatása, tulajdonságaik}
+Miután 2004-ben a grafént sikeresen alkalmazták nanoméretű térhatású tranzisztorban, a 2D anyagok a félvezetőkutatásban és a CMOS áramkörök kapcsán nagy népszerűségnek örvendhettek. Emellett a MOSFET technológia fokozatos miniatűrizálódása egyre inkább indokolttá tette az utóbbi években a szilíciumon kívüli egyéb szubsztrátok kutatását. Az utóbbi években sikeresen, 5nm alatti MFS-t érhettünk el különböző 2D anyagokkal, például TMD-kel (átmenetifém dikalkogenidek), illetve egy-vagy többréteges "X-énekkel", például szilicénnel vagy foszforénnel.\cite{nichols2016} Tranzisztorok zsugorítása esetén a néhány nanométeres tartományban már több problémával is szembe kell néznünk, többek között az elektroncsatornázásnak köszönhető áramszivárgással. A szilíciumban a minimum csatornaszélesség ilyen szintű csökkentése olyan problémával járhat, mint a felszíni szóródás, ami a töltéshordozók mozgékonyságát rontja. A népszerű 2D anyagok nem járnak ilyen gonddal, emellett a legtöbbjük szubsztrát-független, így sok helyen és eltérő körülmények között is alkalmazható. \\
+A 2D anyagok rácsszerketükből adódóan atomosan síkbeliek, a felszínük tökéletesen sima, és kiálló kötésektől mentes. A tiltottsáv-tartományaik figyelembe vételével beszélhetünk félvezető-szerű 2D anyagokról (grafén esetén 0 sávszélesség, pl. wolfrám-diszelenid esetén 1.7 eV, molibdén-diszulfid esetén 1.8eV), és szigetelő-szerű 2D anyagokról (pl. bór-nitrid BN, 4.69 eV sáv).  \\
+FET tranzisztorok esetén a 2D anyagokat elektronmobilitási szintjük, $I_{\text{on}}/I_{\text{off}}$ arányuk, és érintkezési rezisztanciájuk (R$_C$) szerint csoportosíthatjuk. Ezek alapján különböző területeken előnyöket élvezhetnek a gyakori félvezetőkkel szemben.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{2dmaterials}
+	\caption{A) Tiltottsáv-szélesség és mobilitási diagram, B) On/off arány és mobilitás, 2D anyagok és gyakori hajlékony elektronikai szubsztrátok\cite{nichols2016}}
+\end{figure}
 \section{ReRAM modellezése}
 \subsection{MATLAB modellezés}
 \ref{appendix:matlab}
@@ -302,7 +350,9 @@ A 3D XPoint alapja, hogy PCM cellákkal a DRAM-nál sokkal nagyobb cellasűrűs�
 Az Intel Optane SSD-k bájt-címkézhetők, míg a NAND Flash SSD-k csak page-címkézhetők. Az utóbbiak esetén ezáltal az I/O operációk csak page-ként végezhetők el, így pl. a subpage írás esetén az ún. read-modify-write folyamat szükséges. \cite{yang2020}
 A 3D XPoint SSD-ben overwrite melletti írási statisztikák szerint a -- NAND tárolóval szembeni -- helyi felülírási képességnek köszönhetően nincs beépített írás-menti garbage collection, ami élesen csökkentené (kb. 19\%-kal) az írási sebességet/sávszélességet. Így az Optane SSD teljes tár esetén is közel ugyanolyan teljesítményt nyújt (0.5\% körüli hiba), mint normál állapotban. \cite{yang2020}
 \section{Memrisztoros logikai hálózatok}
-\section{ReRAM gyakorlati alkalmazásai}
+%TODO: MAGIC-aided memristor logic
+\section{Memrisztorok további alkalmazásai}
+\subsection{Memóriánbelüli számításelmélet}
 \subsection{Neurális hálózatok, gépi tanulás}
 Memrisztorok egyik legelterjedtebb alkalmazása: ANN gyorsítás, pl. crosspoint struktúrával gyors mátrixszámítás, gyorsított regresszió, döntési fák, stb. Belső sztochaszticitásnak köszönhetően probabilisztikus számítások, kombinatorikus optimizáció stb. \cite{jiang2025}
 \vspace{4mm}
@@ -312,7 +362,16 @@ Memrisztorok egyik legelterjedtebb alkalmazása: ANN gyorsítás, pl. crosspoint
 	\caption{Mély neurális háló megvalósítása crosspoint memrisztorokkal\cite{sebastian2020memory}}
 \end{figure}
 \\
-Neuromorfikus chipek \cite{souto2024}
+%TODO: In-memory Computing
+%TODO: Neurális hálók
+%TODO: Döntési fák
+%TODO: Bayesian inference
+%TODO: Sztochasztikus számítások
+%TODO: Regresszió
+\subsection{Neuromorfikus chipek} 
+\cite{souto2024}
+\subsection{Egyéb alkalmazások}
+Használhatók például dinamikus módosítható terhelésként bizonyos rendszerekben, például programozható erősítőkben\cite{prodromakis2010} minimális veszteségekkel, programozható threshold komparátorokban, vagy speciális oszcillátorokban.
 
 \section{Cutting-edge kutatási területek}
 
