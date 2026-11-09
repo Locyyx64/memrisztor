@@ -941,6 +941,149 @@
       \endverb
       \keyw{2D materials,Field-effect transistor,Charge carrier mobility,Graphene,Phosphorene,Transition metal dichalcogenides,Layered materials,RF electronics,Emerging materials,van der Waals’ heterostructures}
     \endentry
+    \entry{eftekhari2017}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=54806dfeec60d64cb0e4cb0f4ed3c52a}{%
+           family={Eftekhari},
+           familyi={E\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{54806dfeec60d64cb0e4cb0f4ed3c52a}
+      \strng{fullhash}{54806dfeec60d64cb0e4cb0f4ed3c52a}
+      \strng{fullhashraw}{54806dfeec60d64cb0e4cb0f4ed3c52a}
+      \strng{bibnamehash}{54806dfeec60d64cb0e4cb0f4ed3c52a}
+      \strng{authorbibnamehash}{54806dfeec60d64cb0e4cb0f4ed3c52a}
+      \strng{authornamehash}{54806dfeec60d64cb0e4cb0f4ed3c52a}
+      \strng{authorfullhash}{54806dfeec60d64cb0e4cb0f4ed3c52a}
+      \strng{authorfullhashraw}{54806dfeec60d64cb0e4cb0f4ed3c52a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2352-9407}
+      \field{journaltitle}{Applied Materials Today}
+      \field{note}{2D Materials in Electrochemistry}
+      \field{title}{Molybdenum diselenide (MoSe2) for energy storage, catalysis, and optoelectronics}
+      \field{volume}{8}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.apmt.2017.01.006
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2352940716302475
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2352940716302475
+      \endverb
+      \keyw{MoSe,Lithium-ion battery,Electrocatalysis,Photocatalysis,Energy storage,Solar cells}
+    \endentry
+    \entry{schwierz2015}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=280480ac087e1bd72e203fa2a2991069}{%
+           family={Schwierz},
+           familyi={S\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d2197e962eb1f56ea37c9b8568b46a10}{%
+           family={Pezoldt},
+           familyi={P\bibinitperiod},
+           given={Joerg},
+           giveni={J\bibinitperiod}}}%
+        {{hash=25f73a37e80affab4378032fb0a482f9}{%
+           family={Granzner},
+           familyi={G\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0cb180415b1160f6e88db56e29f9e1df}
+      \strng{fullhash}{0cb180415b1160f6e88db56e29f9e1df}
+      \strng{fullhashraw}{0cb180415b1160f6e88db56e29f9e1df}
+      \strng{bibnamehash}{0cb180415b1160f6e88db56e29f9e1df}
+      \strng{authorbibnamehash}{0cb180415b1160f6e88db56e29f9e1df}
+      \strng{authornamehash}{0cb180415b1160f6e88db56e29f9e1df}
+      \strng{authorfullhash}{0cb180415b1160f6e88db56e29f9e1df}
+      \strng{authorfullhashraw}{0cb180415b1160f6e88db56e29f9e1df}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nanoscale}
+      \field{month}{04}
+      \field{title}{Two-dimensional materials and their prospects in transistor electronics}
+      \field{volume}{7}
+      \field{year}{2015}
+      \field{pages}{8261\bibrangedash 8283}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1039/C5NR01052G
+      \endverb
+    \endentry
+    \entry{sangwan2015gate}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=fee5c1fdbc8fc28576d2c9ac72ac5d4f}{%
+           family={Sangwan},
+           familyi={S\bibinitperiod},
+           given={Vinod\bibnamedelima K.},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=7a5e7be75be609750d95d18e2d230c18}{%
+           family={Jariwala},
+           familyi={J\bibinitperiod},
+           given={Deep},
+           giveni={D\bibinitperiod}}}%
+        {{hash=24c3e3f139cf602a55bfa18c2adb151a}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={In\bibnamedelima Soo},
+           giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b6b22b2c55a19e22f2ee2a5bde60c588}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Kan-Sheng},
+           giveni={K\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=6d70fa548c274f0ae588b8155d24e1d2}{%
+           family={Marks},
+           familyi={M\bibinitperiod},
+           given={Tobin\bibnamedelima J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=04baf47978a7fcdb954c74e13d824d69}{%
+           family={Lauhon},
+           familyi={L\bibinitperiod},
+           given={Lincoln\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=59b2abb5fe45884a94edde71afa253a8}{%
+           family={Hersam},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{e61464416902d34cebd36bce2d610544}
+      \strng{fullhash}{4ca0d85f0daa4d4b8c8e33103f2b7a0f}
+      \strng{fullhashraw}{4ca0d85f0daa4d4b8c8e33103f2b7a0f}
+      \strng{bibnamehash}{e61464416902d34cebd36bce2d610544}
+      \strng{authorbibnamehash}{e61464416902d34cebd36bce2d610544}
+      \strng{authornamehash}{e61464416902d34cebd36bce2d610544}
+      \strng{authorfullhash}{4ca0d85f0daa4d4b8c8e33103f2b7a0f}
+      \strng{authorfullhashraw}{4ca0d85f0daa4d4b8c8e33103f2b7a0f}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1748-3395}
+      \field{journaltitle}{Nature Nanotechnology}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Gate-tunable memristive phenomena mediated by grain boundaries in single-layer {MoS2}}
+      \field{volume}{10}
+      \field{year}{2015}
+      \field{pages}{403\bibrangedash 406}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1038/nnano.2015.56
+      \endverb
+    \endentry
     \entry{biolek2013}{misc}{}{}
       \name{author}{3}{}{%
         {{hash=1fd037a25ecb0ca3712c2c23f26ac6c5}{%
@@ -967,8 +1110,8 @@
       \strng{authornamehash}{c0851a1cdbc79f8e5eaee22ce4d38c41}
       \strng{authorfullhash}{c0851a1cdbc79f8e5eaee22ce4d38c41}
       \strng{authorfullhashraw}{c0851a1cdbc79f8e5eaee22ce4d38c41}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{physics.comp-ph}
@@ -1026,8 +1169,8 @@
       \strng{authornamehash}{db1bb4618add38dbbf518fcbd509a9a6}
       \strng{authorfullhash}{1b826f5e117cf56f903f49a691a22ca6}
       \strng{authorfullhashraw}{1b826f5e117cf56f903f49a691a22ca6}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}
@@ -1058,8 +1201,8 @@
       \strng{authornamehash}{7828376024056ed9a694e96636f77ded}
       \strng{authorfullhash}{7828376024056ed9a694e96636f77ded}
       \strng{authorfullhashraw}{7828376024056ed9a694e96636f77ded}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://pcper.com/2017/06/how-3d-xpoint-phase-change-memory-works/}
@@ -1091,8 +1234,8 @@
       \strng{authornamehash}{0d74556fb379e7bc87ce8db43fc311d1}
       \strng{authorfullhash}{0d74556fb379e7bc87ce8db43fc311d1}
       \strng{authorfullhashraw}{0d74556fb379e7bc87ce8db43fc311d1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://www.eetimes.com/3d-xpoint-steps-into-the-light/}
@@ -1139,8 +1282,8 @@
       \strng{authornamehash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
       \strng{authorfullhash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
       \strng{authorfullhashraw}{d55f721e4d7ca59f95e27ae9d8db1f4b}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2376-3639}
@@ -1191,8 +1334,8 @@
       \strng{authornamehash}{7718d6fcaec22964846829de504e8117}
       \strng{authorfullhash}{5b403f6a549d2054fdea384dfef28568}
       \strng{authorfullhashraw}{5b403f6a549d2054fdea384dfef28568}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.ET}
@@ -1247,8 +1390,8 @@
       \strng{authornamehash}{c2883bb213bde82aac7bc90855095190}
       \strng{authorfullhash}{bd3b4998ca9c9f04dc5de50d8d7438d5}
       \strng{authorfullhashraw}{bd3b4998ca9c9f04dc5de50d8d7438d5}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.NE}
