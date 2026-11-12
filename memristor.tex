@@ -367,6 +367,39 @@ a &= \frac{R_{\text{ini}} - R_{\text{off}}}{R_{\text{off}}-R_{\text{ini}}} \end{
 	\includegraphics[scale=0.3]{memristor_sine_hysteresis}
 	\caption{Általunk megvalósított ideális memrisztor modell (schematic)\ref{appendix:kod}}
 \end{figure}
+A memrisztor szimulációjához használt .sub (subcircuit) fájl definiálja a saját komponensként implementált memrisztort. A saját modell "plus" és "minus" kapcsai között vannak definiálva a modellparaméterek, majd az ezekkel leírt differenciálegyenletek [melyikek?!]
+A modellparaméterek:
+-	Ron az erős adalékolású régió ellenállása
+-	Roff a közel szigetelő (oxid) régió ellenállása
+-	Rini egy kezdőérték a szimuláció elindításához, a memrisztancia t=0 pillanatbeli értéke
+-	uv a töltéshordozók µ mozgékonysága (10f értéke a "femto" azaz 10-15 SI prefixum tízszerese)
+-	D az eszköz teljes hossza
+-	k és a pedig konstansok az előző paraméterek átláthatóbb használata érdekében bevezetve
+MATLAB és LTSpice modellek egyeztetése: MATLAB programkóddal is implementálhatjuk ugyanazon modellt. A függelékben csatolt kódban ugyanazon paraméterek lettek beállítva.
+
+A memrisztor kezdeti memrisztanciája [] alapján, x  =0.2 estén 12.82 kOhm. 
+A kapcsokra pedig egy feszültségforrás lett kötve. 
+Physical integrator struktúra:
+-	1F kondenzátor feszültsége a kondenzátor áramának integrálja osztva 1F kapacitással; azaz numerikusan voltban annyi, mint amennyi Coulomb töltés van a kondenzátoron.
+-	100MOhm söntellenállás: a Spice szimulátorokban minden csomópontnak szükséges egy egyenáramú úton (ún. DC path) keresztül a földpotenciálra kötődnie, a numerikus számítások elvégzése miatt (a munkaponti számításokban van jelentősége).
+
+A memrisztor áramát különböző gerjesztésekre a következő megfigyeléseket tehetjük.
+A)	Egyenfeszültségű gerjesztés esetén a memrisztor természetesen Ohmos ellenállásként viselkedik.
+B)	Szinuszos gerjesztésre megfigyelhető a periódikus válaszjel. Ha idő szerinti ábrázolás helyett a feszültség függvényében ábrázoljuk az áramot, a karakterisztikus hiszterézisgörbét kapjuk. A görbe azonban többféleképpen manipulálható. Töltéshordozók mobilitása, feszültségmaplitudó, frekvencia!
+C)	Háromszögjel esetén a szinuszos gerjesztéshez képest a hiszterézis sokkal élesebben vált, ugyanis ekkor a gerjesztő feszültség deriváltja szakaszonként állandó.
+A memrisztor viselkedésének befolyásolása
+Szép hiszterézis görbét kapunk 0.7 V amplitudójú, 0.5 Hz frekvenciájú szinuszhullám esetén, a megadott eszközparaméterekkel.
+Ha az amplitudót nagymértékben növeljük, az adalékolt régió töltéshordozói a nagy elektromos tér miatt gyorsan mozognak. Ekkor hamarabb éri el az eszköz a telítődést, azaz a teljes hossz mentén alacsony ellenállást jelentő állapotot. Ez a hiszterézisben egy éles, függőleges vátlásban jelenik meg. Kis amplitudó (0.2 V) esetén pedig a egynege tér alig változtat a memrisztancián, így a görbe alig tér el a lineáristól.
+A frekvencia növelésével kevesebb idő jut a rendszer változására, az ionok mozgása így időben korlátozott; szintén a lineárishoz közeli karakterisztika az eredmény. Alacsony frekvencia esetén pedig van idő elérni a telítődési állapotot.
+Az ionok mozgékonysága hasonlóan befolyásolja a hiszterézist. Mozgékony ionok gyorsabb telítődést eredményeznek. 
+Látható tehát, hogy mind a gerjesztés befolyásolásával (az amplitudó és frekvencia modulációjával), mind az eszköz adalékolásával illetve anyagával (mozgékonyabb ionok alkalmazásával) számíthatóan változtathatjuk a memrisztor viselkedését.
+
+A modellezés korlátai és az ablakfüggvény értelmezése
+Mivel ideális eszközt modellezünk matematikai függvények, eljárások alkalmazásával, bizonyos peremfeltételek esetén korlátokba ütközünk, nem reális vagy eltorzult értékeket kapva. Ami fontos, hogy ismerjük a módszerek korlátait, és hogy a számunkra fontos értéktartományokban (példaul a gerjesztés vagy az eszköz paraméterei) a helyes viselkedést adja vissza a modell.
+Az integrator wind-up jelensége: Az LTSpice modellben, ha nem alkalmazunk ablakfüggvényt (lsd. Joglekar), amint az ionok átérnek a teljes eszközön (D távolság), a fizikai integrátor tovább számolja a töltésmennyiséget a mérő kondenzátoron. Amint megfordul a gerjesztés polaritása, ez a felgyülemlett töltés elkezd kisülni. Túl alacsony frekvencia esetén ez a felgyülemlett irreális nagyságú lesz. Ez az egyszerű Spice modellben olyan, mintha az ionok meghaladnák a memrisztor kiterjedését, így amikor a gerjesztő feszültség polaritása megfordul, nem az eszköz végétől kellene visszaszorulni az ionoknak (ezáltal a nagy ellenállású régió területe rögtön növekedni kezdene), hanem egy nagyobb távolságról, így valótlan értékeket kapunk a váltás után.
+Ha a telítődés jelenségét jól akarjuk modellezni, például ablakfüggvényt érdemes használni. Ennek lényege, hogy a telítődés tartományához közelítve egyre kisebb változást ér el a gerjesztés, és az alacsony régió kiterjedése nem haladja meg az eszköz hosszát (a rendszerváltozó – x-szel jelölve a fenti differenciálegyenletekben – deriváltja fokozatosan a nullához tart). Ehhez egy összetettebb .sub fájlt kell alkalmazni, ami ezt figyelembe veszi
+
+
 
 \subsection{Verilog-A modellezés alapjai}
 \cite{reramva}
