@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.10.22)  12 NOV 2026 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024 Gentoo Linux) (preloaded format=pdflatex 2026.10.22)  12 NOV 2026 20:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -629,24 +629,24 @@ Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 (./memristor.aux)
 \openout1 = `memristor.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -682,7 +682,7 @@ LaTeX Font Info:    ... okay on input line 75.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 75.
+Package hyperref Info: Link coloring OFF on input line 76.
 (./memristor.out) (./memristor.out)
 \@outlinefile=\write4
 \openout4 = `memristor.out'.
@@ -729,8 +729,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'memristor.bbl' found.
  (./memristor.bbl)
-Package biblatex Info: Reference section=0 on input line 75.
-Package biblatex Info: Reference segment=0 on input line 75.
+Package biblatex Info: Reference section=0 on input line 76.
+Package biblatex Info: Reference segment=0 on input line 76.
 
 (./memristor.toc
 
@@ -743,14 +743,14 @@ Package biblatex Info: Reference segment=0 on input line 75.
 
 
 [2]
-Overfull \hbox (157.72829pt too wide) in paragraph at lines 85--99
+Overfull \hbox (157.72829pt too wide) in paragraph at lines 86--100
 [] 
  []
 
 
 
 [3]
-Overfull \hbox (10.51755pt too wide) in paragraph at lines 101--102
+Overfull \hbox (10.51755pt too wide) in paragraph at lines 102--103
 \OT1/cmr/m/n/10 A mem-risz-tor t^^?ort^^Senete 1971-ben kezd}od^^?ott, L. Chua[
 []1[]] munk^^Saj^^Saval, amely az alkatr^^Sesz elm^^Seleti alap-jait, lehet}os^
 ^Segeit,
@@ -759,20 +759,20 @@ Overfull \hbox (10.51755pt too wide) in paragraph at lines 101--102
 <./images/memristor_pubs.png, id=106, 642.14906pt x 647.41875pt>
 File: ./images/memristor_pubs.png Graphic file (type png)
 <use ./images/memristor_pubs.png>
-Package pdftex.def Info: ./images/memristor_pubs.png  used on input line 106.
+Package pdftex.def Info: ./images/memristor_pubs.png  used on input line 107.
 (pdftex.def)             Requested size: 152.59082pt x 153.84258pt.
 <./images/reram_pubs.png, id=107, 649.67719pt x 635.37375pt>
 File: ./images/reram_pubs.png Graphic file (type png)
 <use ./images/reram_pubs.png>
-Package pdftex.def Info: ./images/reram_pubs.png  used on input line 110.
+Package pdftex.def Info: ./images/reram_pubs.png  used on input line 111.
 (pdftex.def)             Requested size: 152.59082pt x 149.22559pt.
 <./images/rs_pubs.png, id=108, 645.91313pt x 639.89063pt>
 File: ./images/rs_pubs.png Graphic file (type png)
 <use ./images/rs_pubs.png>
-Package pdftex.def Info: ./images/rs_pubs.png  used on input line 114.
+Package pdftex.def Info: ./images/rs_pubs.png  used on input line 115.
 (pdftex.def)             Requested size: 152.59082pt x 151.16519pt.
 
-Overfull \hbox (20.55472pt too wide) in paragraph at lines 124--125
+Overfull \hbox (20.55472pt too wide) in paragraph at lines 125--126
 \OT1/cmr/m/n/10 vagy rend-sz-erek (pl. Chua ^^Saltal aj^^Sanlott mut^^Sator h^^
 Sal^^Sozatok) al-ka-lmaz^^Sas^^Saval k^^?ozel^^S^^Pthet}ok. A mem-risz-tor pass
 zivit^^Sas^^Sahoz
@@ -790,7 +790,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4 <./images/memristor_pubs.png (PNG copy)> <./images/reram_pubs.png (PNG copy)
 > <./images/rs_pubs.png (PNG copy)>]
-Overfull \hbox (21.60191pt too wide) in paragraph at lines 165--167
+Overfull \hbox (21.60191pt too wide) in paragraph at lines 166--168
 \OT1/cmr/m/n/10 enci^^Salegyenlet ^^Serv^^Senyes.[[]6[]] Ebben az es-et-ben a d
 if-fer-enci^^Salegyenlet ^^Ses a mem-risz-tan-cia ^^Saltal^^Sanos alakja a k^^?
 ovekez}ok^^Seppen
@@ -807,20 +807,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [5]
-Overfull \hbox (4.4816pt too wide) in paragraph at lines 184--186
-\OT1/cmr/m/n/10 szem-ben), hogy ^^Sarammentes ^^?uzem^^Sallapotban (kikapc-sol^
-^Sas eset^^Sen) nem t^^?ort^^Senik adatveszt^^Ses. Az ilyen mem^^Sori^^Sak
- []
-
-
-Overfull \hbox (11.25943pt too wide) in paragraph at lines 184--186
-\OT1/cmr/m/n/10 m^^Sasodlagos mem^^Soria sz-in-ten (merevle-mez). Mindh^^Sarom 
-szint k^^?ul^^?onb^^?oz}o ig^^Senyekkel, k^^?ul^^?onb^^?oz}o k^^?ovetelm^^Senye
-kkel
- []
-
-
-Overfull \hbox (0.8426pt too wide) in paragraph at lines 188--191
+Overfull \hbox (0.8426pt too wide) in paragraph at lines 191--192
 \OT1/cmr/m/n/10 frekvenci^^Saja, ^^Ses a k^^Sesleltet^^Sesekre val^^So ^^Serz^^
 Sekenys^^Seg mi-att. Emi-att az illesztett NVM-nek egyr^^Seszt kiv^^Sal^^So tar
 t^^Soss^^Saggal,
@@ -829,7 +816,7 @@ t^^Soss^^Saggal,
 <./images/reram.png, id=159, 336.50719pt x 188.95593pt>
 File: ./images/reram.png Graphic file (type png)
 <use ./images/reram.png>
-Package pdftex.def Info: ./images/reram.png  used on input line 195.
+Package pdftex.def Info: ./images/reram.png  used on input line 196.
 (pdftex.def)             Requested size: 269.2061pt x 151.16493pt.
 
 
@@ -845,12 +832,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./images/pcm_boukhobza.png, id=171, 269.50688pt x 155.07938pt>
 File: ./images/pcm_boukhobza.png Graphic file (type png)
 <use ./images/pcm_boukhobza.png>
-Package pdftex.def Info: ./images/pcm_boukhobza.png  used on input line 204.
+Package pdftex.def Info: ./images/pcm_boukhobza.png  used on input line 205.
 (pdftex.def)             Requested size: 269.50621pt x 155.07898pt.
 <./images/mram.png, id=175, 380.92313pt x 150.5625pt>
 File: ./images/mram.png Graphic file (type png)
 <use ./images/mram.png>
-Package pdftex.def Info: ./images/mram.png  used on input line 212.
+Package pdftex.def Info: ./images/mram.png  used on input line 213.
 (pdftex.def)             Requested size: 380.92218pt x 150.56212pt.
 
 
@@ -866,7 +853,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./images/feram.png, id=186, 309.40594pt x 145.29282pt>
 File: ./images/feram.png Graphic file (type png)
 <use ./images/feram.png>
-Package pdftex.def Info: ./images/feram.png  used on input line 222.
+Package pdftex.def Info: ./images/feram.png  used on input line 223.
 (pdftex.def)             Requested size: 309.40518pt x 145.29245pt.
 
 Underfull \vbox (badness 5681) has occurred while \output is active []
@@ -885,7 +872,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./images/pickett.png, id=201, 240.9pt x 311.66437pt>
 File: ./images/pickett.png Graphic file (type png)
 <use ./images/pickett.png>
-Package pdftex.def Info: ./images/pickett.png  used on input line 232.
+Package pdftex.def Info: ./images/pickett.png  used on input line 233.
 (pdftex.def)             Requested size: 240.8994pt x 311.6636pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -914,13 +901,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./images/joglekar.png, id=226, 341.77687pt x 213.79875pt>
 File: ./images/joglekar.png Graphic file (type png)
 <use ./images/joglekar.png>
-Package pdftex.def Info: ./images/joglekar.png  used on input line 265.
+Package pdftex.def Info: ./images/joglekar.png  used on input line 266.
 (pdftex.def)             Requested size: 341.77603pt x 213.79822pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 278--280
-
- []
-
 
 
 
@@ -932,7 +914,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [11 <./images/joglekar.png (PNG copy)>]
-Overfull \hbox (16.29515pt too wide) in paragraph at lines 288--291
+Overfull \hbox (16.29515pt too wide) in paragraph at lines 289--292
 \OT1/cmr/m/n/10 Az RS (re-sis-tive switch-ing) tech-nol^^Sogi^^Sahoz sz^^?uks^^
 Seges szige-tel}ok krist^^Salytani, szen-nyezetts^^Segi k^^?ovetelm^^Senyeit, n
 ^^?oveszt^^Sesi
@@ -941,7 +923,7 @@ Seges szige-tel}ok krist^^Salytani, szen-nyezetts^^Segi k^^?ovetelm^^Senyeit, n
 <./images/conductivity.png, id=257, 746.03719pt x 441.90094pt>
 File: ./images/conductivity.png Graphic file (type png)
 <use ./images/conductivity.png>
-Package pdftex.def Info: ./images/conductivity.png  used on input line 299.
+Package pdftex.def Info: ./images/conductivity.png  used on input line 300.
 (pdftex.def)             Requested size: 447.62576pt x 265.14261pt.
 
 
@@ -957,7 +939,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./images/2dmaterials.png, id=270, 560.8453pt x 286.82156pt>
 File: ./images/2dmaterials.png Graphic file (type png)
 <use ./images/2dmaterials.png>
-Package pdftex.def Info: ./images/2dmaterials.png  used on input line 318.
+Package pdftex.def Info: ./images/2dmaterials.png  used on input line 319.
 (pdftex.def)             Requested size: 448.67685pt x 229.45755pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -973,7 +955,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 [13]
-Overfull \hbox (9.7028pt too wide) in paragraph at lines 321--322
+Overfull \hbox (9.7028pt too wide) in paragraph at lines 322--323
 \OT1/cmr/m/n/10 sziv^^Sarg^^Sas). A t^^?olt^^Seshordoz^^So mo-bilit^^Sas egy ^^
 Saltal^^Sanos hat^^Sekonys^^Sagi, gy-or-sas^^Sagi t^^Senyez}o a tranzisz-torok 
 vonatkoz^^Sas^^Saban.
@@ -982,12 +964,12 @@ vonatkoz^^Sas^^Saban.
 <./images/2dmaterials2.png, id=283, 455.45157pt x 167.87718pt>
 File: ./images/2dmaterials2.png Graphic file (type png)
 <use ./images/2dmaterials2.png>
-Package pdftex.def Info: ./images/2dmaterials2.png  used on input line 332.
+Package pdftex.def Info: ./images/2dmaterials2.png  used on input line 333.
 (pdftex.def)             Requested size: 455.45045pt x 167.87677pt.
 <./images/graphene.png, id=289, 336.50719pt x 113.67468pt>
 File: ./images/graphene.png Graphic file (type png)
 <use ./images/graphene.png>
-Package pdftex.def Info: ./images/graphene.png  used on input line 339.
+Package pdftex.def Info: ./images/graphene.png  used on input line 340.
 (pdftex.def)             Requested size: 336.50635pt x 113.6744pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1009,10 +991,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./images/mos2mem.png, id=305, 532.99126pt x 234.8775pt>
 File: ./images/mos2mem.png Graphic file (type png)
 <use ./images/mos2mem.png>
-Package pdftex.def Info: ./images/mos2mem.png  used on input line 352.
+Package pdftex.def Info: ./images/mos2mem.png  used on input line 353.
 (pdftex.def)             Requested size: 426.39359pt x 187.90225pt.
 
-Overfull \hbox (14.39828pt too wide) in paragraph at lines 348--355
+Overfull \hbox (14.39828pt too wide) in paragraph at lines 349--356
 \OT1/cmr/m/n/10 l^^Setre, az i-v g^^?orbe hiszter^^Sezist mu-tat, nyit^^So ^^Se
 s z^^Sar^^So tar-tom^^Sanyban eg-yar^^Sant. F}obb oka a pon-thib^^Sak s}ur}us^^
 Segleoszl^^Sas^^Saban,
@@ -1045,7 +1027,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./images/spice.png, id=326, 304.13625pt x 417.81094pt>
 File: ./images/spice.png Graphic file (type png)
 <use ./images/spice.png>
-Package pdftex.def Info: ./images/spice.png  used on input line 388.
+Package pdftex.def Info: ./images/spice.png  used on input line 389.
 (pdftex.def)             Requested size: 228.10162pt x 313.35744pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1065,13 +1047,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: ./images/memristor_sine_schematic.png Graphic file (type png)
 <use ./images/memristor_sine_schematic.png>
 Package pdftex.def Info: ./images/memristor_sine_schematic.png  used on input l
-ine 394.
+ine 395.
 (pdftex.def)             Requested size: 432.71997pt x 228.32979pt.
 <./images/memristor_sine_hysteresis.png, id=340, 1442.38875pt x 761.09344pt>
 File: ./images/memristor_sine_hysteresis.png Graphic file (type png)
 <use ./images/memristor_sine_hysteresis.png>
 Package pdftex.def Info: ./images/memristor_sine_hysteresis.png  used on input 
-line 395.
+line 396.
 (pdftex.def)             Requested size: 432.71997pt x 228.32979pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1098,7 +1080,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [19{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./images/
 memristor_sine_schematic.png> <./images/memristor_sine_hysteresis.png>]
-Overfull \hbox (24.42506pt too wide) in paragraph at lines 418--419
+Overfull \hbox (24.42506pt too wide) in paragraph at lines 419--420
 \OT1/cmr/m/n/10 f^^?uggv^^Seny^^Seben ^^Sabr^^Sazoljuk az ^^Saramot, a karak-te
 r-isztikus hiszter^^Sezisg^^?orb^^Set kapjuk. A g^^?orbe azon-ban t^^?obbf^^Sel
 ek^^Seppen
@@ -1107,39 +1089,92 @@ ek^^Seppen
 <./images/pcm.png, id=360, 748.29562pt x 300.3722pt>
 File: ./images/pcm.png Graphic file (type png)
 <use ./images/pcm.png>
-Package pdftex.def Info: ./images/pcm.png  used on input line 444.
+Package pdftex.def Info: ./images/pcm.png  used on input line 445.
 (pdftex.def)             Requested size: 448.98083pt x 180.22469pt.
 <./images/chalcogenide.png, id=363, 797.22844pt x 313.9228pt>
 File: ./images/chalcogenide.png Graphic file (type png)
 <use ./images/chalcogenide.png>
-Package pdftex.def Info: ./images/chalcogenide.png  used on input line 449.
+Package pdftex.def Info: ./images/chalcogenide.png  used on input line 450.
 (pdftex.def)             Requested size: 438.477pt x 172.65807pt.
 
 
 [20]
 
 [21 <./images/pcm.png> <./images/chalcogenide.png>]
-Overfull \hbox (1.25945pt too wide) in paragraph at lines 459--460
-\OT1/cmr/m/n/10 k^^Sesleltet^^Sese ^^Sathidalhat^^So, ^^Ses a folya-mat op-ti-m
-aliz^^Sal^^Sasa k^^?ozel t^^?ok^^Seletes^^S^^Pthet}o. Az elv k^^?oz^^Seppontj^^
-Sat alkotja a mem^^Sori^^Sak
- []
+<./images/mvm_abstract.png, id=385, 405.76593pt x 219.82124pt>
+File: ./images/mvm_abstract.png Graphic file (type png)
+<use ./images/mvm_abstract.png>
+Package pdftex.def Info: ./images/mvm_abstract.png  used on input line 465.
+(pdftex.def)             Requested size: 405.76494pt x 219.8207pt.
 
-<./images/dnn.png, id=385, 500.62032pt x 263.48438pt>
-File: ./images/dnn.png Graphic file (type png)
-<use ./images/dnn.png>
-Package pdftex.def Info: ./images/dnn.png  used on input line 465.
-(pdftex.def)             Requested size: 468.07762pt x 246.35663pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 461--475
-
+Overfull \hbox (4.64603pt too wide) in paragraph at lines 462--470
+\OT1/cmr/m/n/10 sz^^Sam^^S^^Pt^^Sast meg-val^^Sos^^S^^Pt^^So rend-sz-erre Zhang
+ et al. hat-tranzisztoros SRAM (6T-SRAM) cell^^Sakb^^Sol ^^Sall^^So meg-val^^So
+s^^S^^Pt^^Sasa[[]30[]],
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<./images/sram.png, id=387, 331.99031pt x 231.86626pt>
+File: ./images/sram.png Graphic file (type png)
+<use ./images/sram.png>
+Package pdftex.def Info: ./images/sram.png  used on input line 475.
+(pdftex.def)             Requested size: 331.98949pt x 231.86568pt.
 
-Overfull \hbox (34.10213pt too wide) in paragraph at lines 478--479
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[22]
+<./images/memristorCBA1.png, id=399, 164.11313pt x 139.27031pt>
+File: ./images/memristorCBA1.png Graphic file (type png)
+<use ./images/memristorCBA1.png>
+Package pdftex.def Info: ./images/memristorCBA1.png  used on input line 482.
+(pdftex.def)             Requested size: 164.11272pt x 139.26996pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[23 <./images/mvm_abstract.png (PNG copy)> <./images/sram.png (PNG copy)>]
+Overfull \hbox (3.7965pt too wide) in paragraph at lines 489--490
+\OT1/cmr/m/n/10 ci-pal com-po-nent anal-y-sis), kom-bi-na-torikus op-ti-miz^^Sa
+ci^^So (NP-neh^^Sez probl^^Sem^^Sak kom-plexit^^Sas^^Sanak cs^^?okkent^^Sese),
+ []
+
+<./images/dnn.png, id=412, 500.62032pt x 263.48438pt>
+File: ./images/dnn.png Graphic file (type png)
+<use ./images/dnn.png>
+Package pdftex.def Info: ./images/dnn.png  used on input line 500.
+(pdftex.def)             Requested size: 468.07762pt x 246.35663pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--509
+
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[24 <./images/memristorCBA1.png (PNG copy)> <./images/dnn.png (PNG copy)>]
+Overfull \hbox (34.10213pt too wide) in paragraph at lines 512--513
 \OT1/cmr/m/n/10 Haszn^^Salhat^^Sok p^^Seld^^Saul di-namikus m^^Sodos^^S^^Pthat^
 ^So ter-hel^^Sesk^^Sent bi-zonyos rend-sz-erek-ben, p^^Seld^^Saul pro-gramozhat
 ^^So er}os^^S^^Pt}okben[[]10[]]
@@ -1155,7 +1190,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[22]
+[25]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1165,20 +1200,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[23 <./images/dnn.png (PNG copy)>]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-[24]
+[26] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 493.
- (./memristor_sine.asc
+nput line 523.
+
+(./memristor_final.m
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1188,7 +1216,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[25]) (./memristor.asy)
+[27]
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 3
+9.
+ (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 39.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1198,7 +1237,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
-[26] (./memristor.aux)
+[28]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 8
+4.
+ (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
+) (./memristor_sine.asc)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[29] (./memristor.asy)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[30] (./memristor.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -1210,13 +1277,13 @@ Package logreq Info: Writing requests to 'memristor.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21491 strings out of 475322
- 372612 string characters out of 5771093
- 1205750 words of memory out of 5000000
- 43949 multiletter control sequences out of 15000+600000
- 567007 words of font info for 67 fonts, out of 8000000 for 9000
+ 22340 strings out of 475322
+ 384133 string characters out of 5771093
+ 1263183 words of memory out of 5000000
+ 44686 multiletter control sequences out of 15000+600000
+ 567384 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,13n,81p,2137b,1977s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,13n,81p,2137b,2611s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1234,11 +1301,12 @@ nts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-t10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on memristor.pdf (26 pages, 1592266 bytes).
+t10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on memristor.pdf (30 pages, 1716030 bytes).
 PDF statistics:
- 640 PDF objects out of 1000 (max. 8388607)
- 520 compressed objects within 6 object streams
- 188 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 794 PDF objects out of 1000 (max. 8388607)
+ 662 compressed objects within 7 object streams
+ 286 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

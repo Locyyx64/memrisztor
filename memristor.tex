@@ -60,8 +60,9 @@ framexleftmargin=1.5mm
 }
 \newenvironment{anumerate}[1][]
 {\setcounter{itemnum}{0}
-\def\elem{\stepcounter{itemnum}\hangindent=2em\hangafter=1\noindent\par\smallskip\;#1\ \alph{itemnum})\ }}
-{\medskip\\}
+ \smallskip
+\def\elem{\stepcounter{itemnum}\par\,\hangindent=3em\hangafter=1\noindent\;#1\ \alph{itemnum})\ }}
+{\par\medskip}
 
 \newenvironment{Anumerate}[1][]
 {\setcounter{itemnum}{0}
@@ -114,7 +115,7 @@ A memrisztor története 1971-ben kezdődött, L. Chua\cite{chua} munkájával, 
 		\includegraphics[width=\linewidth]{rs_pubs}
 		\caption{"resistive switching" cikkek}
 	\end{subfigure}
-	\caption{Főbb témakörök kutatói (kiadási) statisztikái, OpenAlex adatok alapján}
+	\caption{Főbb témakörök kutatói (kiadási) statisztikái, OpenAlex adatok alapján, 2000 és 2026 között}
 \end{figure}
 \section{Memrisztorok elméleti összefoglalása}
 \subsection{Ideális memrisztorok és memrisztív rendszerek}
@@ -456,7 +457,41 @@ A 3D XPoint SSD-ben overwrite melletti írási statisztikák szerint a -- NAND t
 %TODO: MAGIC-aided memristor logic
 \section{Memrisztorok további alkalmazásai}
 \subsection{Memóriánbelüli számításelmélet}
-Az utóbbi évtizedben, különösen a mesterséges intelligencia fejlődésének köszönhetően felrobbant az érdeklődés, és az igény a költséghatékony, ultra gyors számítási rendszerekre. Kezdetben az általános CPU-k optimalizációja nyújtott lehetőséget a gyorsításra, majd a masszívan parallel GPU számítások rendkívül megnövelték a számítási teljesítményt. A processzor esetében hatalmas lassító faktor a "távoli" memóriahozzáférés, és az ebből adódó monumentális időbeli késleltetések. A GPU-k esetében a belső memória és az optimalizált parallel folyamatok nagyságrendekkel felgyorsították a számítást, de csak egy adott felső korlátig, mert a memóriák így is valamennyi késleltetést visznek a rendszerbe. Az alábbiakban tárgyalt, és az utóbbi néhány évben felkapott memóriánbelüli számítási rendszerek, az ún. nem-Neumann modellű rendszerek felhasználásával a memória késleltetése áthidalható, és a folyamat optimalizálása közel tökéletesíthető. Az elv középpontját alkotja a memóriák belső "mátrix" szerkezete, ami például lehetővé teszi hogy a sorokra kapcsolt megfelelő feszültségekkel és a memória "szerkezetében" található mátrixszal teljes mátrix-vektorszorzást (matrix-vector multiplication, MVM) végezzünk. Ezek mellett a crossbar-array (CBA) formában kapcsolt memrisztorhálózattal képesek vagyunk neurális háló kialakítására, mind a forward-, mind a backpropagation egyszerű műveletekkel végezhető a hálózaton egy vezérlő egység beiktatásával.
+\par
+Az utóbbi évtizedben, különösen a mesterséges intelligencia fejlődésének köszönhetően felrobbant az érdeklődés, és az igény a költséghatékony, ultra gyors számítási rendszerekre. Kezdetben az általános CPU-k optimalizációja nyújtott lehetőséget a gyorsításra, majd a masszívan parallel GPU számítások rendkívül megnövelték a számítási teljesítményt. A processzor esetében hatalmas lassító faktor a "távoli" memóriahozzáférés, és az ebből adódó monumentális időbeli késleltetések. A GPU-k esetében a belső memória és az optimalizált parallel folyamatok nagyságrendekkel felgyorsították a számítást, de csak egy adott felső korlátig, mert a memóriák így is valamennyi késleltetést visznek a rendszerbe. Az alábbiakban tárgyalt, és az utóbbi néhány évben felkapott memóriánbelüli számítási rendszerek, az ún. nem-Neumann modellű rendszerek felhasználásával a memória késleltetése áthidalható, és a folyamat optimalizálása közel tökéletesíthető. Régóta ismert tény, hogy két szám szorzásának (mint számítási műveletnek) az energiaigénye nagyságrendekkel kisebb pl. egy külső memóriából való read művleleténél. A memóriánbelüli számítás elvének középpontját alkotja a memóriák belső "mátrix" szerkezete, ami például lehetővé teszi hogy a sorokra kapcsolt megfelelő feszültségekkel és a memória "szerkezetében" található mátrixszal teljes mátrix-vektorszorzást (matrix-vector multiplication, MVM) végezzünk. Ezek mellett a crossbar-array (CBA) formában kapcsolt memrisztorhálózattal képesek vagyunk neurális háló kialakítására, mind a forward-, mind a backpropagation egyszerű műveletekkel végezhető a hálózaton egy vezérlő egység beiktatásával.\par\smallskip
+Általános esetben, egy olyan memóriahálózat kialakítására van szükségünk, ami a következőképpen működik: az egyes memóriacellák processzáló elemeknek (PE) felelnek meg, amelyek a bemeneteikre adott értékek szorzását, ennek a saját meglévő értékükhöz való hozzáadását, majd a saját (új) értéküknek a továbbítását végzik.\cite{verma2019} Az oszlop-és sormenti továbbítás a transzponált szorzás lehetősége miatt egyszerre szerepel.
+\begin{figure}[h] \label{fig:mvmabs}
+	\centering
+	\includegraphics{mvm_abstract}
+	\caption{MVM-et megvalósító absztrakt hálózat}
+\end{figure}
+Példa egy memóriánbelüli számítást megvalósító rendszerre Zhang et al. hat-tranzisztoros SRAM (6T-SRAM) cellákból álló megvalósítása\cite{zhang2017}, ami két üzemmódban operálhat:
+\begin{anumerate}
+	\elem SRAM üzemmód: egy művelet csak egy cellához fér hozzá, egy soron keresztül (word line, WL)
+	\elem IMC (In-Memory Computing) üzemmód: az összes cellához hozzáférünk egyszerre. Ebben az esetben a WLDAC-en (WL digital-analog converter) keresztül a bemeneti vektornak megfelelő feszültségeket adunk az adott sorokra. Ilyenkor az egyes cellák áramai az oszlopok mentén összeadódnak, és a read bufferen keresztül kiolvasható a megoldásvektor. A BL és a BLB vonalak felváltva követik egymást. A bementek feszültségei által keltett áramok a 6T-SRAM elemekben tárolt értékeknek függően vagy a BL, vagy a BLB vonalon fognak folyni, ezért a BL/BLB-t egy differenciális jelnek tudjuk kezelni, amelyben a feszültségeknek megfelelő áramokat vagy $+1$-gyel, vagy $-1$-gyel szorozzuk be.
+\end{anumerate}
+\begin{figure}[H]\label{fig:sram}
+	\centering
+	\includegraphics{sram}
+	\caption{6T-SRAM alapú osztályozó rendszer hálózata\cite{zhang2017}}
+\end{figure}
+Az IMC vonatkozásában a D (cellák/bitek száma a hálózatban) függvényében a műveletek energiája lineárisan változik, a SNR (signal-to-noise ratio) viszont $1/D^{1/2}$ szerint változik (ilyen metrikával a sima memóriaüzemmód esetén nem foglalkozunk). Emellett egy másik előnye az IMC-nek, hogy D-től nem függ a rendszer sávszélessége illetve késleltetése (az összes cellához férünk hozzá egyszerre). \par\smallskip
+Egy memrisztorokból, vagy memrisztív cellákból álló crossbar-array hasonló módon képes MVM műveleteket végezni, viszont itt az egyes cellák súlya egy analóg rezisztancia érték. Mátrixszorzás (MatMul) esetén több iterációban, oszloponként vagy soronként hatjuk végre a szorzást, vagy pedig a bemeneti mátrix oszlopainak vagy sorainak megfelelő számú CBA-t használunk.\cite{bettayeb2024}
+\begin{figure}
+	\centering
+	\includegraphics{memristorCBA1}
+	\caption{$Ax =b$ mátrix-vektorszorzó CBA, normál és transzponált esetben\cite{sebastian2020memory}}
+\end{figure}
+%Hol előnyös az IMC? válasz a sebastian2020memory-ban
+A memrisztoros CBA kialakításban problémát jelenthet többek között a szelektálás (cellánként egy extra hozzáadott tranzisztor, vagyis az 1T1R kialakítás nagy cellasűrűséghez vezet), a szivárgó áramokból adódó enyhe instabilitás (zaj), vagy a cellákat összekötő nanohuzalok ellenállásból adódó veszteség. Ezek mellett viszont nagy mennyiségű előnye van az ilyen rendszereknek. Az IMC felhasználásait három osztályba sorolhatjuk:\cite{sebastian2020memory}
+\begin{anumerate}
+	\elem Alacsony pontossági igény (sztochasztikus számítások): pl. véletlen szám generáció
+	\elem Mérsékelt pontossági igény (jelfeldolgozás, optimizáció, gépi tanulás): pl. képszűrés/tömörítés, PCA (principal component analysis), kombinatorikus optimizáció (NP-nehéz problémák komplexitásának csökkentése), mélyháló-inferencia és tanítás, asszociatív memória, sparse kódolás
+	\elem Magas pontossági igény (tudományos számítások): pl. parciális differenciálegyenletek megoldása
+\end{anumerate}
+\noindent
+ \textit{Példa} Memrisztor alapú képtömörítés\cite{halawani2018}: 
+
 \subsection{Neurális hálózatok, gépi tanulás}
 Memrisztorok egyik legelterjedtebb alkalmazása: ANN gyorsítás, pl. crosspoint struktúrával gyors mátrixszámítás, gyorsított regresszió, döntési fák, stb. Belső sztochaszticitásnak köszönhetően probabilisztikus számítások, kombinatorikus optimizáció stb. \cite{jiang2025}
 \vspace{4mm}
@@ -466,7 +501,6 @@ Memrisztorok egyik legelterjedtebb alkalmazása: ANN gyorsítás, pl. crosspoint
 	\caption{Mély neurális háló megvalósítása crosspoint memrisztorokkal\cite{sebastian2020memory}}
 \end{figure}
 \\
-%TODO: In-memory Computing
 %TODO: Neurális hálók
 %TODO: Döntési fák
 %TODO: Bayesian inference
@@ -486,8 +520,7 @@ Használhatók például dinamikus módosítható terhelésként bizonyos rendsz
 	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 	\section{MATLAB felhasznált kód}
 	\label{appendix:matlab}
-	%TODO: kommenteket kiszedni MATLAB kódból
-	%\lstinputlisting[caption=MATLAB kód]{memristor_final.m}
+	\lstinputlisting[caption=MATLAB kód, language=MATLAB]{memristor_final.m}
 	\section{LTSpice felhasznált kód}
 	\label{appendix:kod}
 	\lstinputlisting[caption=Hálózati modell]{memristor_sine.asc}

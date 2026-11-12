@@ -1282,8 +1282,8 @@
       \strng{authornamehash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
       \strng{authorfullhash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
       \strng{authorfullhashraw}{d55f721e4d7ca59f95e27ae9d8db1f4b}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2376-3639}
@@ -1302,6 +1302,240 @@
       \verb https://doi.org/10.1145/3372783
       \endverb
       \keyw{3D Xpoint memory,NAND SSD,Optane SSD,nonvolatile memory,performance evaluation,relational database management system,solid-state drive}
+    \endentry
+    \entry{verma2019}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=55d52a726174ca29114a9d46aac56c42}{%
+           family={Verma},
+           familyi={V\bibinitperiod},
+           given={Naveen},
+           giveni={N\bibinitperiod}}}%
+        {{hash=cf8a6924c0b881bba3f9fe3f5f78ce02}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Hongyang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1885681b51dbcb4b8f1863faaf56eb4b}{%
+           family={Valavi},
+           familyi={V\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ad9dd784c620b064bb64e23022126968}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Yinqi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f3841ee7f7356ee4571446f989f85637}{%
+           family={Ozatay},
+           familyi={O\bibinitperiod},
+           given={Murat},
+           giveni={M\bibinitperiod}}}%
+        {{hash=023b46328d8601b1c60c2a120331e27b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Lung-Yen},
+           giveni={L\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=3608a7627a928f009edfd77a79bf1571}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Bonan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1537b46cc2ebdd07f3e6da4ea5cde89c}{%
+           family={Deaville},
+           familyi={D\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{dcf85c7893d3c3be6462aa75a4329a48}
+      \strng{fullhash}{dade74f3ca408b89698d42d96c37ee06}
+      \strng{fullhashraw}{dade74f3ca408b89698d42d96c37ee06}
+      \strng{bibnamehash}{dcf85c7893d3c3be6462aa75a4329a48}
+      \strng{authorbibnamehash}{dcf85c7893d3c3be6462aa75a4329a48}
+      \strng{authornamehash}{dcf85c7893d3c3be6462aa75a4329a48}
+      \strng{authorfullhash}{dade74f3ca408b89698d42d96c37ee06}
+      \strng{authorfullhashraw}{dade74f3ca408b89698d42d96c37ee06}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Solid-State Circuits Magazine}
+      \field{number}{3}
+      \field{title}{In-Memory Computing: Advances and Prospects}
+      \field{volume}{11}
+      \field{year}{2019}
+      \field{pages}{43\bibrangedash 55}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/MSSC.2019.2922889
+      \endverb
+      \keyw{Signal to noise ratio;Arrays;Memory management;Throughput;Measurement;Energy efficiency}
+    \endentry
+    \entry{zhang2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=544268f889ad92a0a97d176dc6aa2e5a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jintao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=03e144a0ff8dff6dcc3bfa83a0063983}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhuo},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=55d52a726174ca29114a9d46aac56c42}{%
+           family={Verma},
+           familyi={V\bibinitperiod},
+           given={Naveen},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e4a8701a1d9b1a45d9e558bd44704cb}
+      \strng{fullhash}{8e4a8701a1d9b1a45d9e558bd44704cb}
+      \strng{fullhashraw}{8e4a8701a1d9b1a45d9e558bd44704cb}
+      \strng{bibnamehash}{8e4a8701a1d9b1a45d9e558bd44704cb}
+      \strng{authorbibnamehash}{8e4a8701a1d9b1a45d9e558bd44704cb}
+      \strng{authornamehash}{8e4a8701a1d9b1a45d9e558bd44704cb}
+      \strng{authorfullhash}{8e4a8701a1d9b1a45d9e558bd44704cb}
+      \strng{authorfullhashraw}{8e4a8701a1d9b1a45d9e558bd44704cb}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+      \field{number}{4}
+      \field{title}{In-Memory Computation of a Machine-Learning Classifier in a Standard 6T SRAM Array}
+      \field{volume}{52}
+      \field{year}{2017}
+      \field{pages}{915\bibrangedash 924}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/JSSC.2016.2642198
+      \endverb
+      \keyw{Training;Random access memory;Standards;Computer architecture;Boosting;Computational modeling;Machine learning algorithms;Analog computation;image detection;in-memory computation}
+    \endentry
+    \entry{bettayeb2024}{inbook}{}{}
+      \name{author}{5}{}{%
+        {{hash=7519085658530c2787cf984481a901fb}{%
+           family={Bettayeb},
+           familyi={B\bibinitperiod},
+           given={Meriem},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ef12bb79b0ba5ab31eb7a8b62684717b}{%
+           family={Halawani},
+           familyi={H\bibinitperiod},
+           given={Yasmin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=55229b917b98ebb9da7568ac21b483c2}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Muhammad\bibnamedelima Umair},
+           giveni={M\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=e632ae2720094e4190cb8601d5569a40}{%
+           family={Mohammad},
+           familyi={M\bibinitperiod},
+           given={Baker},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5a449121b169eac6f8254938a79920f2}{%
+           family={Saleh},
+           familyi={S\bibinitperiod},
+           given={Hani},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=e632ae2720094e4190cb8601d5569a40}{%
+           family={Mohammad},
+           familyi={M\bibinitperiod},
+           given={Baker},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ef12bb79b0ba5ab31eb7a8b62684717b}{%
+           family={Halawani},
+           familyi={H\bibinitperiod},
+           given={Yasmin},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature Switzerland}%
+      }
+      \strng{namehash}{d2087333fa70ea9ae2ce1ddbe90639d1}
+      \strng{fullhash}{7eb55511ba658f1b2907dfadbd9d6b70}
+      \strng{fullhashraw}{7eb55511ba658f1b2907dfadbd9d6b70}
+      \strng{bibnamehash}{d2087333fa70ea9ae2ce1ddbe90639d1}
+      \strng{authorbibnamehash}{d2087333fa70ea9ae2ce1ddbe90639d1}
+      \strng{authornamehash}{d2087333fa70ea9ae2ce1ddbe90639d1}
+      \strng{authorfullhash}{7eb55511ba658f1b2907dfadbd9d6b70}
+      \strng{authorfullhashraw}{7eb55511ba658f1b2907dfadbd9d6b70}
+      \strng{editorbibnamehash}{07ec73b388b703fd54799e343cd1459c}
+      \strng{editornamehash}{07ec73b388b703fd54799e343cd1459c}
+      \strng{editorfullhash}{07ec73b388b703fd54799e343cd1459c}
+      \strng{editorfullhashraw}{07ec73b388b703fd54799e343cd1459c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{In-Memory Computing Hardware Accelerators for Data-Intensive Applications}
+      \field{isbn}{978-3-031-34233-2}
+      \field{title}{Memristor-Based In-Memory Computing}
+      \field{year}{2024}
+      \field{pages}{97\bibrangedash 121}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/978-3-031-34233-2_6
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-031-34233-2_6
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-031-34233-2_6
+      \endverb
+    \endentry
+    \entry{halawani2018}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=ef12bb79b0ba5ab31eb7a8b62684717b}{%
+           family={Halawani},
+           familyi={H\bibinitperiod},
+           given={Yasmin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e632ae2720094e4190cb8601d5569a40}{%
+           family={Mohammad},
+           familyi={M\bibinitperiod},
+           given={Baker},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d842c260b46ed29449cb18ae4c7b77bc}{%
+           family={Al-Qutayri},
+           familyi={A\bibinithyphendelim Q\bibinitperiod},
+           given={Mahmoud},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f30ab3d8f0980c3b1d3269861d749dfa}{%
+           family={Al-Sarawi},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Said\bibnamedelima F.},
+           giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{8ffbb1b9690fc260e2392ba7f4e709ed}
+      \strng{fullhash}{4571729f0cec6d372a5dfcece5770059}
+      \strng{fullhashraw}{4571729f0cec6d372a5dfcece5770059}
+      \strng{bibnamehash}{8ffbb1b9690fc260e2392ba7f4e709ed}
+      \strng{authorbibnamehash}{8ffbb1b9690fc260e2392ba7f4e709ed}
+      \strng{authornamehash}{8ffbb1b9690fc260e2392ba7f4e709ed}
+      \strng{authorfullhash}{4571729f0cec6d372a5dfcece5770059}
+      \strng{authorfullhashraw}{4571729f0cec6d372a5dfcece5770059}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Very Large Scale Integration (VLSI) Systems}
+      \field{number}{12}
+      \field{title}{Memristor-Based Hardware Accelerator for Image Compression}
+      \field{volume}{26}
+      \field{year}{2018}
+      \field{pages}{2749\bibrangedash 2758}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TVLSI.2018.2835572
+      \endverb
+      \keyw{Image coding;Memristors;Computer architecture;Discrete wavelet transforms;Mathematical model;Hardware;2-D discrete wavelet transform (DWT);crossbar architecture;hardware accelerator;image compression;in-memory computing (IMC);memristor}
     \endentry
     \entry{jiang2025}{misc}{}{}
       \name{author}{4}{}{%
@@ -1334,8 +1568,8 @@
       \strng{authornamehash}{7718d6fcaec22964846829de504e8117}
       \strng{authorfullhash}{5b403f6a549d2054fdea384dfef28568}
       \strng{authorfullhashraw}{5b403f6a549d2054fdea384dfef28568}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.ET}
@@ -1390,8 +1624,8 @@
       \strng{authornamehash}{c2883bb213bde82aac7bc90855095190}
       \strng{authorfullhash}{bd3b4998ca9c9f04dc5de50d8d7438d5}
       \strng{authorfullhashraw}{bd3b4998ca9c9f04dc5de50d8d7438d5}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.NE}

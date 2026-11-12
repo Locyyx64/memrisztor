@@ -29,12 +29,12 @@
 \contentsline {section}{\numberline {9}Memrisztoros logikai hálózatok}{22}{section.9}%
 \contentsline {section}{\numberline {10}Memrisztorok további alkalmazásai}{22}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Memóriánbelüli számításelmélet}{22}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Neurális hálózatok, gépi tanulás}{22}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Neuromorfikus chipek}{22}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Egyéb alkalmazások}{22}{subsection.10.4}%
-\contentsline {section}{\numberline {11}Cutting-edge kutatási területek}{23}{section.11}%
-\contentsline {section}{Hivatkozások}{24}{section*.20}%
-\contentsline {section}{Függelék}{25}{section*.21}%
+\contentsline {subsection}{\numberline {10.2}Neurális hálózatok, gépi tanulás}{24}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Neuromorfikus chipek}{25}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Egyéb alkalmazások}{25}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Cutting-edge kutatási területek}{25}{section.11}%
+\contentsline {section}{Hivatkozások}{26}{section*.23}%
+\contentsline {section}{Függelék}{27}{section*.24}%
 \setcounter {tocdepth}{0}
-\contentsline {section}{\numberline {A}MATLAB felhasznált kód}{25}{appendix.1.A}%
-\contentsline {section}{\numberline {B}LTSpice felhasznált kód}{25}{appendix.1.B}%
+\contentsline {section}{\numberline {A}MATLAB felhasznált kód}{27}{appendix.1.A}%
+\contentsline {section}{\numberline {B}LTSpice felhasznált kód}{29}{appendix.1.B}%
