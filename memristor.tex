@@ -44,6 +44,15 @@ framexleftmargin=1.5mm
 \newcommand\abra[1]{\ref{#1}.ábra}
 \DeclareMathOperator\stp{stp}
 
+
+%% Egységrendszer
+\DeclareMathOperator\kOhm{k\Omega}
+\DeclareMathOperator\MOhm{M\Omega}
+\DeclareMathOperator\F{F}
+\DeclareMathOperator\V{V}
+\DeclareMathOperator\mA{mA}
+\DeclareMathOperator\Hz{Hz}
+
 \newcounter{itemnum}
 
 \newcommand\fun[2]{%
@@ -51,8 +60,14 @@ framexleftmargin=1.5mm
 }
 \newenvironment{anumerate}[1][]
 {\setcounter{itemnum}{0}
-\def\elem{\stepcounter{itemnum}\par\smallskip\;#1\ \alph{itemnum})\ }}
+\def\elem{\stepcounter{itemnum}\hangindent=2em\hangafter=1\noindent\par\smallskip\;#1\ \alph{itemnum})\ }}
 {\medskip\\}
+
+\newenvironment{Anumerate}[1][]
+{\setcounter{itemnum}{0}
+ \smallskip
+\def\elem{\stepcounter{itemnum}\par\,\hangindent=3em\hangafter=1\noindent\;#1\ \Alph{itemnum})\ }}
+{\par\medskip}
 
 \pagestyle{fancy}
 \fancyhead[RO,LE]{BME Villamosmérnöki és Informatikai Kar}
@@ -285,10 +300,10 @@ ahol $m_\sigma$ egy arányszám (a modell alapja), $p(O_2)$ az oxigén parciáli
 	\caption{A ponthibák szerepe: az erősen redukált tartományon az interstíciós Ti-k és az elektrontöbblet miatt "n" adalékoltság, oxidált tartományon "p" adalékoltság\cite{szot2014}}
 \end{figure}
 A titán-dioxidban nagyobb hibakoncentráció esetén valószínű a egy-vagy kétdimenziós hibák kialakulása is, például diszlokációk, vakancia klaszterek/oszlopok kialakulása adott kristályirány mentén. Célszerű, hogy az RS-ben használt egykristály anyag hibakoncentrációját már a kristálynövesztéstől kezdve ellenőrizzük, és megfelelően kezeljük a vezetőképesség érdekében. A növesztési felület instabilitása miatt nem alkalmazható a népszerű Czochralski-eljárás, így a TiO$_2$ növesztésére a legelterjedtebb módszerek a Verneuil-módszer és a floating-zone (FZ) módszer. Bár, a modern technológiával már a Verneuil-módszer is kifejezetten jó minőségű kristályt eredményez, kisszögű szemcsehatárok és mozaikszerű elrendezések előfordulhatnak. az SrTiO$_3$-at is Verneuil-módszerrel növesztik leggyakrabban. Általában egy megfelelő tisztaságú SrTiO$_3$ port vagy TiO$_2$ port alkalmaznak enyhe SrO többlettel. Fontos a megfelelő arányok alkalmazása, különben a titán-dioxid aránya túl magas lesz a növesztett stroncium-titanát egykristályban (>3\%), vagy pedig, magas SrO arány mellett a SrTiO$-3$-nak valamelyik ún. Ruddlesden-Popper fázisát kapjuk. A növesztett stroncium-titanátban kialakult kívánatlan hibák eltávolítása ("a kristály átlátszósítása") általában $H_2$-vel redukáló környezetben, majd hőkezeléssel történik.\cite{szot2014}\par
-A titán-dioxid tehát, magas hőmérsékleten és alacsony oxigénnyomáson kiváló vezetővé alakítható, és ez a folyamat reverzibilis. Ezt elérhetjük más módszerekkel is, például elektrodegradációval (elektroformálás), külső ion/foton gerjesztéssel, illetve fém atomok katódporlasztásával.
-%TODO: TiO2 rácshibák ab initio elmélete?
-%TODO: Redukciós folyamat magyarázata
-%TODO: Stroncium titanát rácshibái, redukciója, szerkezete
+A titán-dioxid tehát, magas hőmérsékleten és alacsony oxigénnyomáson kiváló vezetővé alakítható, és ez a folyamat reverzibilis. Ezt elérhetjük más módszerekkel is, például elektrodegradációval (elektroformálás), külső ion/foton gerjesztéssel, illetve fém atomok katódporlasztásával. A kristályrács lényeges megváltoztatásának az elkerülése miatt a maximális oxigénhiány a redukálás után $x = 0.001$ lehet, illetve az oxigén deszorbciójából adódó relatív tömegváltozásra:
+\begin{equation}
+	\frac{\Delta m }{m} < 0.1\%
+\end{equation}
 %TODO: Elektroformálás magyarázata
 \subsection{A resistive switching jelensége}
 %TODO: Resistive switching TiO2-ben és SrTiO3-ban
@@ -338,10 +353,23 @@ Az ilyen kialakítású memrisztorok előnye például a SET feszültség dinami
 	\caption{A) Szemcsehatárt tartalmazó MoS$_2$ monoréteg-kialakítás, B) i-v görbén megfigyelhető jelképes Lissajous-görbe\cite{nichols2016}}
 	\label{fig:mos2mem}
 \end{figure}
+Az említett tanulmányban Au elektródokat használnak. a szemcsehatár csak az egyik elektródhoz csatlakozik. Az állapotváltoztathatóságot elektroformálás után figyelték meg. Az eszköz nulla feszültségen magas rezisztanciás (HRS) állapotban kezd. A feszültség növelésével, egy meredek áramerősség-növekedés után alacsony ellenállású állapotba (LRS, "set" művelet) vált (ld. \abra{fig:mos2mem}). Záróirányú (negatív) feszültség esetén az eszköz az LRS állapotban kezd, majd HRS-be vált ("reset" művelet). Az eszköz set feszültsége $V_\text{set} \approx 8.3 \text{V}$, addig az áram a következőképpen változik (sweep "i"):
+\begin{equation}
+	I \propto V^m \;\;\;(V < 8.5 \text{V})
+\end{equation}
+ahol m a feszültséggel monoton növő arányszám. Ezt a szakaszt egy rövid negatív differenciális ellenállású (NDR) szakasz követi. Az ideális memrisztorokhoz hasonlóan, az origóban ($I = 0, V = 0$) az eszköz bistabil rezisztancia-állapotokkal rendelkezik, amelyek aránya: \begin{equation}
+	\frac{R_\text{HRS}}{R_\text{LRS}} \sim 10^3
+\end{equation}A set feszültség látszólag közel 100x kisebb, mint a hagyományos memrisztorokban, ezért a MoS$_2$ memrisztor kis teljesítményű memóriaként vagy kapcsolóként hatékonyan használható. A \abra{fig:mos2mem} memrisztora az ún. intersecting-GB (grain boundary) kialakítás. A szemcsehatár más orientációban is elhelyezhető. Például a bridge-GB memrisztorban a szemcsehatár a monoréteg molibdén-diszulfid csatornával párhuzamos, és mindkét elektróddal érintkezik. Elektroformálás után sokkal meredekebb áramemelkedést mutat, majd egy szintén sokkal meredekebb NDR szakaszt. Ezek melett a bridge-GB memrisztor nem rendelkezik az origóban bistabil rezisztancia-állapotokkal. A szemcsehatár másik kialakítása a csatornára merőlegesen, egyik elektróddal sem érintkezve (bisecting-GB). Ebben az esetben LRS állapotban kezd az eszköz, sokkal kisebb bistabil rezisztancia-aránnyal, mint az intersecting-GB esetben. Az NDR szakasz elnyújtott, kisebb meredekségű ($V > 20\text{V}$). \\
+Az elektroformálás az intersecting-GB memrisztor esetén a szemcsehatár csúcsa és az ellentétes oldal elektródja közti szabad töltéshordozókat az elektroformálás módszerétől függően leköti, így "off" állapotban megnöveli a memrisztor rezisztanciáját. A fenti "set" folyamat a töltéshordozókat az imént említett "hiányos" tartományba vonzza, ezzel növelve a memrisztor vezetőképességét (LRS állapot). Negatív feszültség esetén a szemcsehatárral ellentétes elektródtól eltaszítódnak a töltéshordozók (a szemcsehatár felé), ezzel kikapcsolva a memrisztort (HRS állapot). \\
+Egy ilyen felépítésű, háromkivezetéses memrisztor "gate-tunable"\cite{sangwan2015gate}, azaz a set feszültség nagyjából $3.0\text{V}$ és $8.0\text{V}$ között mozgatható a megfelelő gatepotenciál beiktatásával ($0\text{V} - 40\text{V}$). Emellett például a gate elektróda feszültségével befolyásolható a bisecting-GB memrisztorban a gerjesztetlen HRS és LRS ellenállás pontos értéke (több nagyságrenddel változtatható), de az arányuk nem. \par
+Hasonló tulajdonságokkal rendelkezik egy másik tanulmányban felvetett MoO$_x$-MoS$_2$, illetve egy WO$_x$-WS$_2$ heterostruktúra. Ezeknél még alacsonyabb set feszültség ($0.1-0.2\text{V}$) érhető el. Részletesebben az első esetet tárgyaljuk. Bessonov et al. egy ultravékony (< 3 nm) MoO$_x$ ($x < 3$) rétegből és MoS$_2$ réteg(ek)ből kialakított vdWH-t vizsgáltak, két ezüst elektróda között. Mint a fentebb említett klasszikus TiO$_2$ struktúrában, itt is anionok/kationok (mint szabad töltéshordozók) gradiense okozza a magas vezetőképességet. Feltehetően a molibdén-diszulfid szélei menti hibák, és egyéb belső diszlokációk erős nem-sztöchiometrikus tartományokat hoznak létre, így alacsony hőmérsékleten is lehetővé teszik az oxidációt.
+\subsection{Egyéb 2D memrisztorok}
+
 \section{ReRAM modellezése}
 \subsection{MATLAB modellezés}
 \ref{appendix:matlab}
 \subsection{SPICE modellezés}
+\subsubsection{Példa egy SPICE modellre}
 Számítógépes SPICE-alapú modellezés a nemlineáris ionsodródási modell alapján.
 \begin{align}
 	R(x) &= R_{\text{on}}x + R_{\text{off}}(1-x) \\
@@ -360,7 +388,7 @@ a &= \frac{R_{\text{ini}} - R_{\text{off}}}{R_{\text{off}}-R_{\text{ini}}} \end{
 	\includegraphics[scale=0.75]{spice}
 	\caption{Lehetséges SPICE megvalósítások\cite{biolek2013}}
 \end{figure}
-Általunk megvalósított modell:
+\subsubsection{Általunk megvalósított modell}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{memristor_sine_schematic}
@@ -369,37 +397,42 @@ a &= \frac{R_{\text{ini}} - R_{\text{off}}}{R_{\text{off}}-R_{\text{ini}}} \end{
 \end{figure}
 A memrisztor szimulációjához használt .sub (subcircuit) fájl definiálja a saját komponensként implementált memrisztort. A saját modell "plus" és "minus" kapcsai között vannak definiálva a modellparaméterek, majd az ezekkel leírt differenciálegyenletek [melyikek?!]
 A modellparaméterek:
--	Ron az erős adalékolású régió ellenállása
--	Roff a közel szigetelő (oxid) régió ellenállása
--	Rini egy kezdőérték a szimuláció elindításához, a memrisztancia t=0 pillanatbeli értéke
--	uv a töltéshordozók µ mozgékonysága (10f értéke a "femto" azaz 10-15 SI prefixum tízszerese)
--	D az eszköz teljes hossza
--	k és a pedig konstansok az előző paraméterek átláthatóbb használata érdekében bevezetve
-MATLAB és LTSpice modellek egyeztetése: MATLAB programkóddal is implementálhatjuk ugyanazon modellt. A függelékben csatolt kódban ugyanazon paraméterek lettek beállítva.
-
-A memrisztor kezdeti memrisztanciája [] alapján, x  =0.2 estén 12.82 kOhm. 
+\begin{itemize}
+	\setlength\itemsep{0.35em}
+	\item $R_\text{on}$ az erős adalékolású régió ellenállása
+	\item $R_\text{off}$ a közel szigetelő (oxid) régió ellenállása
+	\item $R_\text{ini}$ egy kezdőérték a szimuláció elindításához, a memrisztancia t=0 pillanatbeli értéke
+	\item $u_v$ a töltéshordozók µ mozgékonysága (10f értéke a "femto" azaz 10-15 SI prefixum tízszerese)
+	\item $D$ az eszköz teljes hossza
+	\item $k$ és a pedig konstansok az előző paraméterek átláthatóbb használata érdekében bevezetve
+\end{itemize}
+\textit{MATLAB és LTSpice modellek egyeztetése}: MATLAB programkóddal is implementálhatjuk ugyanazon modellt. A függelékben csatolt kódban ugyanazon paraméterek lettek beállítva. 
+A memrisztor kezdeti memrisztanciája [] alapján, $x =0.2$ estén $12.82 \kOhm$. 
 A kapcsokra pedig egy feszültségforrás lett kötve. 
 Physical integrator struktúra:
--	1F kondenzátor feszültsége a kondenzátor áramának integrálja osztva 1F kapacitással; azaz numerikusan voltban annyi, mint amennyi Coulomb töltés van a kondenzátoron.
--	100MOhm söntellenállás: a Spice szimulátorokban minden csomópontnak szükséges egy egyenáramú úton (ún. DC path) keresztül a földpotenciálra kötődnie, a numerikus számítások elvégzése miatt (a munkaponti számításokban van jelentősége).
+-	$1\F$ kondenzátor feszültsége a kondenzátor áramának integrálja osztva $1\F$ kapacitással; azaz numerikusan voltban annyi, mint amennyi Coulomb töltés van a kondenzátoron.
+-	$100 \MOhm$ söntellenállás: a Spice szimulátorokban minden csomópontnak szükséges egy egyenáramú úton (ún. DC path) keresztül a földpotenciálra kötődnie, a numerikus számítások elvégzése miatt (a munkaponti számításokban van jelentősége).\\
+A memrisztor áramát különböző gerjesztésekre a következő megfigyeléseket tehetjük:
+\begin{Anumerate}
+	\elem Egyenfeszültségű gerjesztés esetén a memrisztor természetesen Ohmos ellenállásként viselkedik.
+	\elem Szinuszos gerjesztésre megfigyelhető a periódikus válaszjel. Ha idő szerinti ábrázolás helyett a feszültség függvényében ábrázoljuk az áramot, a karakterisztikus hiszterézisgörbét kapjuk. A görbe azonban többféleképpen manipulálható. Töltéshordozók mobilitása, feszültségmaplitudó, frekvencia!
+	\elem Háromszögjel esetén a szinuszos gerjesztéshez képest a hiszterézis sokkal élesebben vált, ugyanis ekkor a gerjesztő feszültség deriváltja szakaszonként állandó.
+\end{Anumerate}
 
-A memrisztor áramát különböző gerjesztésekre a következő megfigyeléseket tehetjük.
-A)	Egyenfeszültségű gerjesztés esetén a memrisztor természetesen Ohmos ellenállásként viselkedik.
-B)	Szinuszos gerjesztésre megfigyelhető a periódikus válaszjel. Ha idő szerinti ábrázolás helyett a feszültség függvényében ábrázoljuk az áramot, a karakterisztikus hiszterézisgörbét kapjuk. A görbe azonban többféleképpen manipulálható. Töltéshordozók mobilitása, feszültségmaplitudó, frekvencia!
-C)	Háromszögjel esetén a szinuszos gerjesztéshez képest a hiszterézis sokkal élesebben vált, ugyanis ekkor a gerjesztő feszültség deriváltja szakaszonként állandó.
-A memrisztor viselkedésének befolyásolása
-Szép hiszterézis görbét kapunk 0.7 V amplitudójú, 0.5 Hz frekvenciájú szinuszhullám esetén, a megadott eszközparaméterekkel.
-Ha az amplitudót nagymértékben növeljük, az adalékolt régió töltéshordozói a nagy elektromos tér miatt gyorsan mozognak. Ekkor hamarabb éri el az eszköz a telítődést, azaz a teljes hossz mentén alacsony ellenállást jelentő állapotot. Ez a hiszterézisben egy éles, függőleges vátlásban jelenik meg. Kis amplitudó (0.2 V) esetén pedig a egynege tér alig változtat a memrisztancián, így a görbe alig tér el a lineáristól.
+\textit{A memrisztor viselkedésének befolyásolása}
+
+Szép hiszterézis görbét kapunk $0.7 \V$ amplitúdójú, $0.5 \Hz$ frekvenciájú szinuszhullám esetén, a megadott eszközparaméterekkel.
+Ha az amplitúdót nagymértékben növeljük, az adalékolt régió töltéshordozói a nagy elektromos tér miatt gyorsan mozognak. Ekkor hamarabb éri el az eszköz a telítődést, azaz a teljes hossz mentén alacsony ellenállást jelentő állapotot. Ez a hiszterézisben egy éles, függőleges váltásban jelenik meg. Kis amplitudó ($0.2 V$) esetén pedig a gyenge tér alig változtat a memrisztancián, így a görbe alig tér el a lineáristól.
 A frekvencia növelésével kevesebb idő jut a rendszer változására, az ionok mozgása így időben korlátozott; szintén a lineárishoz közeli karakterisztika az eredmény. Alacsony frekvencia esetén pedig van idő elérni a telítődési állapotot.
 Az ionok mozgékonysága hasonlóan befolyásolja a hiszterézist. Mozgékony ionok gyorsabb telítődést eredményeznek. 
-Látható tehát, hogy mind a gerjesztés befolyásolásával (az amplitudó és frekvencia modulációjával), mind az eszköz adalékolásával illetve anyagával (mozgékonyabb ionok alkalmazásával) számíthatóan változtathatjuk a memrisztor viselkedését.
+Látható tehát, hogy mind a gerjesztés befolyásolásával (az amplitudó és frekvencia modulációjával), mind az eszköz adalékolásával illetve anyagával (mozgékonyabb ionok alkalmazásával) számíthatóan változtathatjuk a memrisztor viselkedését.\smallskip
 
-A modellezés korlátai és az ablakfüggvény értelmezése
-Mivel ideális eszközt modellezünk matematikai függvények, eljárások alkalmazásával, bizonyos peremfeltételek esetén korlátokba ütközünk, nem reális vagy eltorzult értékeket kapva. Ami fontos, hogy ismerjük a módszerek korlátait, és hogy a számunkra fontos értéktartományokban (példaul a gerjesztés vagy az eszköz paraméterei) a helyes viselkedést adja vissza a modell.
+\textit{A modellezés korlátai és az ablakfüggvény értelmezése}
+
+Mivel ideális eszközt modellezünk matematikai függvények, eljárások alkalmazásával, bizonyos peremfeltételek esetén korlátokba ütközünk, nem reális vagy eltorzult értékeket kapva. Ami fontos, hogy ismerjük a módszerek korlátait, és hogy a számunkra fontos értéktartományokban (példaul a gerjesztés vagy az eszköz paraméterei) a helyes viselkedést adja vissza a modell.\smallskip
+
 Az integrator wind-up jelensége: Az LTSpice modellben, ha nem alkalmazunk ablakfüggvényt (lsd. Joglekar), amint az ionok átérnek a teljes eszközön (D távolság), a fizikai integrátor tovább számolja a töltésmennyiséget a mérő kondenzátoron. Amint megfordul a gerjesztés polaritása, ez a felgyülemlett töltés elkezd kisülni. Túl alacsony frekvencia esetén ez a felgyülemlett irreális nagyságú lesz. Ez az egyszerű Spice modellben olyan, mintha az ionok meghaladnák a memrisztor kiterjedését, így amikor a gerjesztő feszültség polaritása megfordul, nem az eszköz végétől kellene visszaszorulni az ionoknak (ezáltal a nagy ellenállású régió területe rögtön növekedni kezdene), hanem egy nagyobb távolságról, így valótlan értékeket kapunk a váltás után.
-Ha a telítődés jelenségét jól akarjuk modellezni, például ablakfüggvényt érdemes használni. Ennek lényege, hogy a telítődés tartományához közelítve egyre kisebb változást ér el a gerjesztés, és az alacsony régió kiterjedése nem haladja meg az eszköz hosszát (a rendszerváltozó – x-szel jelölve a fenti differenciálegyenletekben – deriváltja fokozatosan a nullához tart). Ehhez egy összetettebb .sub fájlt kell alkalmazni, ami ezt figyelembe veszi
-
-
+Ha a telítődés jelenségét jól akarjuk modellezni, például ablakfüggvényt érdemes használni. Ennek lényege, hogy a telítődés tartományához közelítve egyre kisebb változást ér el a gerjesztés, és az alacsony régió kiterjedése nem haladja meg az eszköz hosszát (a rendszerváltozó – x-szel jelölve a fenti differenciálegyenletekben – deriváltja fokozatosan a nullához tart). Ehhez egy összetettebb .sub fájlt kell alkalmazni, ami ezt figyelembe veszi.
 
 \subsection{Verilog-A modellezés alapjai}
 \cite{reramva}
@@ -423,6 +456,7 @@ A 3D XPoint SSD-ben overwrite melletti írási statisztikák szerint a -- NAND t
 %TODO: MAGIC-aided memristor logic
 \section{Memrisztorok további alkalmazásai}
 \subsection{Memóriánbelüli számításelmélet}
+Az utóbbi évtizedben, különösen a mesterséges intelligencia fejlődésének köszönhetően felrobbant az érdeklődés, és az igény a költséghatékony, ultra gyors számítási rendszerekre. Kezdetben az általános CPU-k optimalizációja nyújtott lehetőséget a gyorsításra, majd a masszívan parallel GPU számítások rendkívül megnövelték a számítási teljesítményt. A processzor esetében hatalmas lassító faktor a "távoli" memóriahozzáférés, és az ebből adódó monumentális időbeli késleltetések. A GPU-k esetében a belső memória és az optimalizált parallel folyamatok nagyságrendekkel felgyorsították a számítást, de csak egy adott felső korlátig, mert a memóriák így is valamennyi késleltetést visznek a rendszerbe. Az alábbiakban tárgyalt, és az utóbbi néhány évben felkapott memóriánbelüli számítási rendszerek, az ún. nem-Neumann modellű rendszerek felhasználásával a memória késleltetése áthidalható, és a folyamat optimalizálása közel tökéletesíthető. Az elv középpontját alkotja a memóriák belső "mátrix" szerkezete, ami például lehetővé teszi hogy a sorokra kapcsolt megfelelő feszültségekkel és a memória "szerkezetében" található mátrixszal teljes mátrix-vektorszorzást (matrix-vector multiplication, MVM) végezzünk. Ezek mellett a crossbar-array (CBA) formában kapcsolt memrisztorhálózattal képesek vagyunk neurális háló kialakítására, mind a forward-, mind a backpropagation egyszerű műveletekkel végezhető a hálózaton egy vezérlő egység beiktatásával.
 \subsection{Neurális hálózatok, gépi tanulás}
 Memrisztorok egyik legelterjedtebb alkalmazása: ANN gyorsítás, pl. crosspoint struktúrával gyors mátrixszámítás, gyorsított regresszió, döntési fák, stb. Belső sztochaszticitásnak köszönhetően probabilisztikus számítások, kombinatorikus optimizáció stb. \cite{jiang2025}
 \vspace{4mm}

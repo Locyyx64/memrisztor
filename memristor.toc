@@ -18,20 +18,23 @@
 \contentsline {section}{\numberline {6}2D anyagok és felhasználásuk}{13}{section.6}%
 \contentsline {subsection}{\numberline {6.1}2D anyagok bemutatása, tulajdonságaik}{13}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}MoS$_2$ alapú memrisztorok}{15}{subsection.6.2}%
-\contentsline {section}{\numberline {7}ReRAM modellezése}{16}{section.7}%
-\contentsline {subsection}{\numberline {7.1}MATLAB modellezés}{16}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}SPICE modellezés}{16}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Verilog-A modellezés alapjai}{19}{subsection.7.3}%
-\contentsline {section}{\numberline {8}3D XPoint}{19}{section.8}%
-\contentsline {section}{\numberline {9}Memrisztoros logikai hálózatok}{21}{section.9}%
-\contentsline {section}{\numberline {10}Memrisztorok további alkalmazásai}{21}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Memóriánbelüli számításelmélet}{21}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Neurális hálózatok, gépi tanulás}{21}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Neuromorfikus chipek}{21}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Egyéb alkalmazások}{21}{subsection.10.4}%
-\contentsline {section}{\numberline {11}Cutting-edge kutatási területek}{22}{section.11}%
-\contentsline {section}{Hivatkozások}{23}{section*.20}%
-\contentsline {section}{Függelék}{24}{section*.21}%
+\contentsline {subsection}{\numberline {6.3}Egyéb 2D memrisztorok}{17}{subsection.6.3}%
+\contentsline {section}{\numberline {7}ReRAM modellezése}{17}{section.7}%
+\contentsline {subsection}{\numberline {7.1}MATLAB modellezés}{17}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}SPICE modellezés}{17}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Példa egy SPICE modellre}{17}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Általunk megvalósított modell}{19}{subsubsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.3}Verilog-A modellezés alapjai}{20}{subsection.7.3}%
+\contentsline {section}{\numberline {8}3D XPoint}{20}{section.8}%
+\contentsline {section}{\numberline {9}Memrisztoros logikai hálózatok}{22}{section.9}%
+\contentsline {section}{\numberline {10}Memrisztorok további alkalmazásai}{22}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Memóriánbelüli számításelmélet}{22}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Neurális hálózatok, gépi tanulás}{22}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Neuromorfikus chipek}{22}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Egyéb alkalmazások}{22}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Cutting-edge kutatási területek}{23}{section.11}%
+\contentsline {section}{Hivatkozások}{24}{section*.20}%
+\contentsline {section}{Függelék}{25}{section*.21}%
 \setcounter {tocdepth}{0}
-\contentsline {section}{\numberline {A}MATLAB felhasznált kód}{24}{section.1.A}%
-\contentsline {section}{\numberline {B}LTSpice felhasznált kód}{24}{section.1.B}%
+\contentsline {section}{\numberline {A}MATLAB felhasznált kód}{25}{appendix.1.A}%
+\contentsline {section}{\numberline {B}LTSpice felhasznált kód}{25}{appendix.1.B}%

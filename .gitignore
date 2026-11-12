@@ -1,0 +1,9 @@
+memristor.tex.bkp
+*.aux
+*.blg
+*.out
+*.bbl
+*.run.xml
+*.toc
+*.synctex.gz
+*.log
