@@ -2,6 +2,7 @@
 \usepackage[a4paper, bottom=85pt, left=1.85cm, right=1.85cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{amsmath}
+\usepackage{amsbsy}
 \usepackage{hyperref}
 %\usepackage{blindtext}  %for placeholder text
 \usepackage{graphicx}
@@ -43,6 +44,7 @@ framexleftmargin=1.5mm
 \renewcommand\lstlistingname{Kódrészlet}
 \newcommand\abra[1]{\ref{#1}.ábra}
 \DeclareMathOperator\stp{stp}
+\DeclareMathOperator\sgm{sgm}
 
 
 %% Egységrendszer
@@ -52,6 +54,8 @@ framexleftmargin=1.5mm
 \DeclareMathOperator\V{V}
 \DeclareMathOperator\mA{mA}
 \DeclareMathOperator\Hz{Hz}
+
+\newcommand*\mat[1]{\pmb{\mathit{#1}}}
 
 \newcounter{itemnum}
 
@@ -196,8 +200,8 @@ A rezisztív memóriák (ReRAM) a logikai állapotukat egy rezisztív állapoton
 	\includegraphics[scale=0.8]{reram}
 	\caption{Elemi ReRAM cella felépítése, crossbar kialakítás\cite{emerging2017}}
 \end{figure}
-A ReRAM számos olyan tulajdonsággal rendelkezik, amely a memória-hierarchiába való integrálását indokolhatná. Jó cellasűrűséggel rendelkezik (PCM-nél jobb), a flash memóriánál több nagyságrenddel jobb a tartóssága, a processzor szinti integrációhoz sok esetben viszont még így is túl alacsony. A különböző gyorsítótár szinteken (L0, L1, L2, L3) eltérő fogyasztási/gyorsasági feltételek mellett, a ReRAM felhasználásával a gyorsaság egy részét felválthatjuk jobb (alacsonyabb) fogyasztásra. Ilyen célt szolgálnak például extrém kis fogyasztású beágyazott rendszerekben. \\
-Jobb illeszthetőséggel rendelkezik a másodlagos memória szintjén, például egy meglévő SSD mellett. Ilyen rendszerekre több megoldás is létezik. Példa erre egy olyan rendszer, ahol egy kisebb ReRAM memóriát egy nagy SSD mellett horizontálisan integráltak, hogy a hiba korrekcióhoz szükséges metaadatot tárolja.\cite{tanakamaru2014}
+A ReRAM (vagy RRAM) számos olyan tulajdonsággal rendelkezik, amely a memória-hierarchiába való integrálását indokolhatná. Jó cellasűrűséggel rendelkezik (PCM-nél jobb), a flash memóriánál több nagyságrenddel jobb a tartóssága, a processzor szinti integrációhoz sok esetben viszont még így is túl alacsony. A különböző gyorsítótár szinteken (L0, L1, L2, L3) eltérő fogyasztási/gyorsasági feltételek mellett, a ReRAM felhasználásával a gyorsaság egy részét felválthatjuk jobb (alacsonyabb) fogyasztásra. Ilyen célt szolgálnak például extrém kis fogyasztású beágyazott rendszerekben. \par\smallskip
+Jobb illeszthetőséggel rendelkezik a másodlagos memória szintjén, például egy meglévő SSD mellett. Ilyen rendszerekre több megoldás is létezik. Példa erre egy olyan rendszer, ahol egy kisebb ReRAM memóriát egy nagy SSD mellett horizontálisan integráltak, hogy a hiba korrekcióhoz szükséges metaadatot tárolja.\cite{tanakamaru2014}. A fentebb említett, nagy vezetőképességű csatornák dinamikus létrehozásával működő RRAM mellett megkülönböztethetünk interfész-alapú rezisztív kapcsolású rendszert is, amely az elektródok (fém) és a belső anyag közötti potenciálgát-magasságok változtatásával (pl. Schottky-gát) működik.\cite{mehonic2023}
 \subsection{PCM}
 A phase-change memory (PCM) az utólag tárgyalt rezisztív memória mellett a második legjobb cellasűrűséggel rendelkező nemfelejtő memóriatípus. Egy kalkogenid ötvözetből, két elektródból, és esetleg egy "melegítő" részből áll. A kalkogenid anyagot a cellára kapcsolt feszültség nagyságával és idejével két fázisállapot között változtatjuk: egy amorf és egy kristályos állapot között. Egy erőteljes, rövid feszültségimpulzus (RESET) az anyagot amorf állapotba kényszeríti (logikai alacsony), illetve egy hosszabb, gyenge feszültségimpulzus a kristályosodást idézi elő (SET), ami a logikai magas állapotnak felel meg. Részletesebben a 3D XPoint fejezetben tárgyaljuk a működését.
 \begin{figure}[h]
@@ -217,7 +221,7 @@ A magnetorezisztív memóriának több fajtája van, a leggyakoribb az STT-RAM. 
 Az MRAM fő problémái a MTJ cellák termikus instabilitása (adatvesztést okozhat), és az írási áramok nagysága (disszipáció miatt a kapcsolást errodálhatja).\\
 Az MRAM jó tartóssággal, megfelelő olvasási késleltetéssel rendelkezik, de az írások teljesítménybeli és fogyasztási tulajdonságai miatt szintén csak egy kompromisszum mellett integrálható, különösen a processzor szintjén. Elsődleges memóriaszinten megfelelő kezeléssel DRAM mellett integrálható, az eredő fogyasztás akár 60\%-kal csökkenthető.
 \subsection{FeRAM}
-A ferroelektromos memória (FeRAM vagy FRAM) szintén egyedi tulajdonságokkal rendelkezik. Többek között alacsony olvasási késleltetés, alacsony fogyasztás, és a CMOS technológiával való közvetlen kompatbilitás. Ez utóbbiak lehetővé teszik, hogy pl. autókban beágyazott mikrokontrollerekben alkalmazzák. Egy FeRAM cella felépítése a DRAM-hoz hasonló, egy tranzisztorból és egy kondenzátorból áll. Ami elkülöníti, az a kondenzátor típusa: itt ún. ferroelektromos kondenzátor (FCAP) található. A legtöbbször használt ferroelektromos anyag egy perovszkit, az ólom-cirkonát-titanát (Pb(Zr$_x$,Ti$_{1-x}$)O$_3$, röviden PZT) két elektród között. A ferroelektromos kondenzátort két, reverzibilis polarizációs állapot jellemzi, viszont a DRAM-mal ellentétben itt, a hiszterézis miatt a polaritás kikapcsolás után nem vész el. Emellett szintén a DRAM-mal ellentétben a FeRAM nem igényel frissítési műveletet, tehát fogyasztása jóval alacsonyabb.
+A ferroelektromos memória (FeRAM vagy FRAM) szintén egyedi tulajdonságokkal rendelkezik. Többek között alacsony olvasási késleltetés, alacsony fogyasztás, és a CMOS technológiával való közvetlen kompatbilitás. Ez utóbbiak lehetővé teszik, hogy pl. autókban beágyazott mikrokontrollerekben alkalmazzák. Egy FeRAM cella felépítése a DRAM-hoz hasonló, egy tranzisztorból és egy kondenzátorból áll. Ami elkülöníti, az a kondenzátor típusa: itt ún. ferroelektromos kondenzátor (FCAP) található. A legtöbbször használt ferroelektromos anyag egy perovszkit, az ólom-cirkonát-titanát (Pb(Zr$_x$,Ti$_{1-x}$)O$_3$, röviden PZT)\footnote{A CMOS kompatibilitás miatt alkalmaznak pl. ferroelektrikus hafnium-oxid (HfO$_x$) alapú anyagokat is\cite{mehonic2023}} két elektród között. A ferroelektromos kondenzátort két, reverzibilis polarizációs állapot jellemzi, viszont a DRAM-mal ellentétben itt, a hiszterézis miatt a polaritás kikapcsolás után nem vész el. Emellett szintén a DRAM-mal ellentétben a FeRAM nem igényel frissítési műveletet, tehát fogyasztása jóval alacsonyabb.
 \begin{figure}[H]
 	\centering
 	\includegraphics{feram}
@@ -363,7 +367,7 @@ ahol m a feszültséggel monoton növő arányszám. Ezt a szakaszt egy rövid n
 \end{equation}A set feszültség látszólag közel 100x kisebb, mint a hagyományos memrisztorokban, ezért a MoS$_2$ memrisztor kis teljesítményű memóriaként vagy kapcsolóként hatékonyan használható. A \abra{fig:mos2mem} memrisztora az ún. intersecting-GB (grain boundary) kialakítás. A szemcsehatár más orientációban is elhelyezhető. Például a bridge-GB memrisztorban a szemcsehatár a monoréteg molibdén-diszulfid csatornával párhuzamos, és mindkét elektróddal érintkezik. Elektroformálás után sokkal meredekebb áramemelkedést mutat, majd egy szintén sokkal meredekebb NDR szakaszt. Ezek melett a bridge-GB memrisztor nem rendelkezik az origóban bistabil rezisztancia-állapotokkal. A szemcsehatár másik kialakítása a csatornára merőlegesen, egyik elektróddal sem érintkezve (bisecting-GB). Ebben az esetben LRS állapotban kezd az eszköz, sokkal kisebb bistabil rezisztancia-aránnyal, mint az intersecting-GB esetben. Az NDR szakasz elnyújtott, kisebb meredekségű ($V > 20\text{V}$). \\
 Az elektroformálás az intersecting-GB memrisztor esetén a szemcsehatár csúcsa és az ellentétes oldal elektródja közti szabad töltéshordozókat az elektroformálás módszerétől függően leköti, így "off" állapotban megnöveli a memrisztor rezisztanciáját. A fenti "set" folyamat a töltéshordozókat az imént említett "hiányos" tartományba vonzza, ezzel növelve a memrisztor vezetőképességét (LRS állapot). Negatív feszültség esetén a szemcsehatárral ellentétes elektródtól eltaszítódnak a töltéshordozók (a szemcsehatár felé), ezzel kikapcsolva a memrisztort (HRS állapot). \\
 Egy ilyen felépítésű, háromkivezetéses memrisztor "gate-tunable"\cite{sangwan2015gate}, azaz a set feszültség nagyjából $3.0\text{V}$ és $8.0\text{V}$ között mozgatható a megfelelő gatepotenciál beiktatásával ($0\text{V} - 40\text{V}$). Emellett például a gate elektróda feszültségével befolyásolható a bisecting-GB memrisztorban a gerjesztetlen HRS és LRS ellenállás pontos értéke (több nagyságrenddel változtatható), de az arányuk nem. \par
-Hasonló tulajdonságokkal rendelkezik egy másik tanulmányban felvetett MoO$_x$-MoS$_2$, illetve egy WO$_x$-WS$_2$ heterostruktúra. Ezeknél még alacsonyabb set feszültség ($0.1-0.2\text{V}$) érhető el. Részletesebben az első esetet tárgyaljuk. Bessonov et al. egy ultravékony (< 3 nm) MoO$_x$ ($x < 3$) rétegből és MoS$_2$ réteg(ek)ből kialakított vdWH-t vizsgáltak, két ezüst elektróda között. Mint a fentebb említett klasszikus TiO$_2$ struktúrában, itt is anionok/kationok (mint szabad töltéshordozók) gradiense okozza a magas vezetőképességet. Feltehetően a molibdén-diszulfid szélei menti hibák, és egyéb belső diszlokációk erős nem-sztöchiometrikus tartományokat hoznak létre, így alacsony hőmérsékleten is lehetővé teszik az oxidációt.
+Hasonló tulajdonságokkal rendelkezik egy másik tanulmányban felvetett MoO$_x$-MoS$_2$, illetve egy WO$_x$-WS$_2$ heterostruktúra.\cite{bessonov2015} Ezeknél még alacsonyabb set feszültség ($0.1-0.2\text{V}$) érhető el. Részletesebben az első esetet tárgyaljuk. Bessonov et al. egy ultravékony (< 3 nm) MoO$_x$ ($x < 3$) rétegből és MoS$_2$ réteg(ek)ből kialakított vdWH-t vizsgáltak, két ezüst elektróda között. Mint a fentebb említett klasszikus TiO$_2$ struktúrában, itt is anionok/kationok (mint szabad töltéshordozók) gradiense okozza a magas vezetőképességet. Feltehetően a molibdén-diszulfid szélei menti hibák, és egyéb belső diszlokációk erős nem-sztöchiometrikus tartományokat hoznak létre, így alacsony hőmérsékleten is lehetővé teszik az oxidációt.
 \subsection{Egyéb 2D memrisztorok}
 
 \section{ReRAM modellezése}
@@ -403,7 +407,7 @@ A modellparaméterek:
 	\item $R_\text{on}$ az erős adalékolású régió ellenállása
 	\item $R_\text{off}$ a közel szigetelő (oxid) régió ellenállása
 	\item $R_\text{ini}$ egy kezdőérték a szimuláció elindításához, a memrisztancia t=0 pillanatbeli értéke
-	\item $u_v$ a töltéshordozók µ mozgékonysága (10f értéke a "femto" azaz 10-15 SI prefixum tízszerese)
+	\item $\mu_v$ a töltéshordozók $\mu$ mozgékonysága (10f értéke a "femto" azaz 10-15 SI prefixum tízszerese)
 	\item $D$ az eszköz teljes hossza
 	\item $k$ és a pedig konstansok az előző paraméterek átláthatóbb használata érdekében bevezetve
 \end{itemize}
@@ -493,26 +497,64 @@ A memrisztoros CBA kialakításban problémát jelenthet többek között a szel
  \textit{Példa} Memrisztor alapú képtömörítés\cite{halawani2018}: 
 
 \subsection{Neurális hálózatok, gépi tanulás}
-Memrisztorok egyik legelterjedtebb alkalmazása: ANN gyorsítás, pl. crosspoint struktúrával gyors mátrixszámítás, gyorsított regresszió, döntési fák, stb. Belső sztochaszticitásnak köszönhetően probabilisztikus számítások, kombinatorikus optimizáció stb. \cite{jiang2025}
+Memrisztorok legelterjedtebb alkalmazásai közé tartoznak például: ANN (artificial neural network) gyorsítás, crosspoint struktúrával gyors mátrixszámítás, gyorsított regresszió, döntési fák, stb. Belső sztochaszticitásnak köszönhetően probabilisztikus számítások, kombinatorikus optimizáció stb. \cite{jiang2025} A memrisztorok "szinaptikus" működése alátámasztja a memrisztor hasznosságát neurális alapú modellekben, hatékonyabb működés érhető el. A gyakran alkalmazott memrisztív eszközökből (pl. MoS$_2$ memrisztor) adódó magas fokú nemidealitás ill. a pontosság hiánya a gépi tanulás során nem jelent akkora problémát, mint egyéb, fentebb említett alkalmazásokban. Mivel a memrisztorok konduktanciájukban csak egy megadott tartományban tárolhatnak adatot ($G_\text{off}$ és $G_\text{on}$ között), ez egy leképezési hibatényezőt vihet a hálózatba, ami esetleg erőteljes regularizációval minimalizálható. A memrisztor crossbar esetén a parallel soronkénti vagy oszlopokénti írás/olvasás a régebbi SRAM-ból kialakított szinaptikus hálózatoknál sokkal gyorsabb és hatékonyabb, mert az SRAM eszközök csak sorosan képesek ezeket a műveleteket végrehajtani.\cite{longcheng2022} 
 \vspace{4mm}
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.935]{dnn}
 	\caption{Mély neurális háló megvalósítása crosspoint memrisztorokkal\cite{sebastian2020memory}}
 \end{figure}
-\\
-%TODO: Neurális hálók
-%TODO: Döntési fák
-%TODO: Bayesian inference
-%TODO: Sztochasztikus számítások
-%TODO: Regresszió
+
+\subsubsection{Feed-forward neurális hálózatok memrisztorokkal}
+Egy egyszerű példa a Wang et al. által megvalósított előrecsatolt, egy rejtett rétegű neurális hálózat, ami az ingatlanárak előrejelzésének céljával többváltozós regressziót hajt végre.\cite{wang2018} A többrétegű hálózat egyes processzáló elemeinek súlyait a memrisztorok a konduktanciájukban tárolják (hasonlóan a fentebb említett MVM esetén), a hálózat tanítása egyszerű backpropagationnel (BP) történik. Összesen 2 paramétermátrix, és egy paramétervektor (az eltolások vektora) áll rendelkezésre. A rejtett réteg a következő transzformációt valósítja meg: \begin{equation}
+	\mat{h} = f_1(\mat{V}\cdot\mat{X} + \mat{b}_1)
+\end{equation}
+Ahol a $\mat{V}$ mátrix a rejtett réteg súlyait, $\mat{X}$ a rejtett réteg bemeneteit, $\mat{b}_1$ pedig a rejtett réteg (fix) eltolásait tartalmazza. Ezt az affin transzformációt egy szigmoid nemlinearitáson visszük keresztül (a tetszőleges regresszióhoz szükséges a nemlineáris transzformáció):
+\begin{equation}
+	f_1(x) = \sgm(x) = \frac{1}{1+e^{-x}}
+\end{equation}
+Emellett a kimeneti rétegen már lineáris transzformációval szerepel: \begin{equation}
+	\hat{y} = f_2(\mat{W}\cdot\mat{h} + \mat{b}_2)
+\end{equation} 
+Ahol $f_2$ egy lineáris transzformáció, $\mat{W}$ tartalmazza a kimeneti réteg súlyait, $\mat{b}_2$ pedig a kimeneti réteg eltolásait. 
+\begin{figure}[h]\label{fig:ann}
+	\centering
+	\includegraphics[scale=0.45]{ann}
+	\caption{a) A kétrétegű előrecsatolt hálózat felépítése, b) a rejtett réteg felépítése, c) a kimeneti réteg felépítése\cite{wang2018}}
+\end{figure}
+Ebben a rendszerben a $V_\text{bpi}$ feszültségek a backpropagation megvalósításához szükséges feszültségek, $V_\text{xj}$ a $\mat{V}$ súlymátrix j-dik oszlopában lévő weight unitokra adott bemeneti feszültség, $V_\text{fix}$ az eltolásokra adott konstans feszültség, majd $V_\text{hi}$ a rejtett réteg i-dik processzáló elemének a kimeneti feszültsége. Ezek mellett természetesen $f_1$ és $f_2$ rendre a megvalósított transzformációk, vagyis a szigmoid és a linearitás. A weight unitok tartalmazzák az egyes memrisztorokat, illetve a rájuk eső feszültség ill. a bennük tárolt konduktancia alapján elvégzik az egyes szorzásokat. A memrisztorok konduktanciáját egy meghatározott feszültség threshold feletti bemenettel változtathatjuk (itt $0.5\V$, ez a konstans eltolási feszültségek értéke is). Kezdetben a szimmetria megtörése és a lokális konvergencia elkerülése érdekében egyenletes eloszlásból mintázott, véletlenszerű értékekkel inicializáljuk a memrisztorokat. Az egyes weight unitban található kapcsolónak, és áramdetektornak köszönhetően ha az elem kimenetére egy áramfogyasztó van kapcsolva, akkor pozitív súlyokat kapunk, hogyha pedig egy áramforrás, akkor negatív súlyokat. Ha a súly pozitív, akkor pozitív feszültség hatására növelhető a memrisztor konduktanciája (így a súly), ellenkező esetben csökkenthető. Tanítás során költségfüggvénynek az átlagos négyzethibát használták, majd a hibavisszaterjesztés után egyszerű gradient descenttel változtatják a súlyokat. 
+\begin{figure}[H]\label{fig:weightunit}
+	\centering
+	\includegraphics{weightunit}
+	\caption{Egy weight unit felépítése\cite{wang2018}}
+\end{figure}
+\par
+Egy hasonló teljesen összekötött neurális hálózat (multi-layer perceptron, MLP) a memrisztorok vonatkozásában felfogható pre-szinaptikus és poszt-szinaptikus neuronok teljes kapcsolásaként. A közöttük értelmezett kapcsolatok súlyait nyújtják az egyes memrisztorok. A pre-szinaptikus neuronok biztosítják a rejtett réteg bemeneteit, a poszt-szinaptikus neuronok pedig a rejtett réteg processzáló elemeit, vagyis az összegzést és a nemlinearitást.\cite{mehonic2023} A fentebb tárgyalt Wang et al.-féle modellben is értelmezhetünk poszt-szinapszisokat az $f$ kimeneti függvényekkel.
+
+\subsubsection{Sparse kódolás}
+A sparse kódolás egy (többek között) neurális hálókkal megvalósítható komponensanalízisben (feature extraction), ill. komplex, sokdimenziós adatok feldolgozásában használt módszer. A Sheridan et al. \cite{sheridan2017} által megvalósított rendszer egy 32x32-es 2D memrisztor alapú (WO$_x$) crossbar hálózat. A módszer kivitelezéséhez a rendszernek tudnia kell neuronok közötti korlátozásokat alkalmazni (pl. regularizálni), hogy a sokdimenziós bemeneti teret egy optimizált, redukált térré alakítsa. A módszer ilyen szempontból hasonlít más feature extraction módszerekre, például a főkomponens-analízisre (PCA). Ezt a neurális hálokon keresztül általában sparse autoenkóderekkel valósítják meg\cite{gao2024}, amelyekben L$_1$ regularizációval (vagy ritkábban L$_0$) a kimeneti vektor komponenseinek összegét minimalizálják. Általában, a sparse kódolás célja a következőképpen fejezhető ki:
+\begin{equation}
+	\min_a(|x-Da^T|_2 + \lambda|a|_0)
+\end{equation}
+Ahol a $|\cdot|_2$ az L$_2$, az $|\cdot|_0$ pedig az L$_0$ norma, emellett az első tényező a reprezentálási hiba, a második tényező pedig a D feletti reprezentációs koordinátavektor ritkasága (nemnulla elemeinek száma). A fentebb említett crossbar kialakításban a D mátrix (dictionary) elemeit az egyes memrisztorok tárolják. A kimeneti neuronok membrán potenciálját a bemenet (a reprezentáción keresztül), és egy szivárgási tényező befolyásolja. A folyamat két szakaszból áll. Az első szakaszban a bemeneti vektor ($x$) elemeit (pl. egy bemeneti kép pixeleinek intenzitása) a sorokra adják meghatározott amplitúdójú, de a bemeneti értékkel arányos hosszúságú olvasó pulzussal. Emiatt az egyes memrisztorokon átvitt töltés arányos a sorra adott bemeneti érték és a memrisztorban tárolt érték (a konduktancia) szorzatával. A j-dik oszlop végén összegyűlt töltés tehát:\begin{equation}
+	Q_j = \sum_i x_i D_{ij} = x^T D_j
+\end{equation}
+Hogyha ez a membrán potenciál elér egy adott $\lambda$ határt, akkor az oszlopnak megfelelő poszt-szinaptikus neuron "aktívvá" válik. A folyamat másik szakaszában egy transzponált MVM végrehajtása történik. Az oszlopokra az adott oszlop kimeneti neuronjának aktivitásával arányos $a_j$ pulzust adunk (hasonló módon mint az első szakaszban), majd a sorok végén (kezdetben pre-szinaptikus neuronok) összegyűlt töltést vizsgáljuk. Ez a bemeneti vektor rekonstrukciója:
+\begin{align}
+	Q_i &= \sum_j D_{ij}a_j = D_i a^T \\
+	\hat{x} &= Da^T
+\end{align}
+Ezután ismét az első fázisba lépünk, de ezúttal $x$ helyett a sorokra a kezdeti bemenet és a reprezentáció különbségét adjuk ("maradék"), majd a keletkező töltéseket a neuronok membrán potenciáljához hozzáadjuk. Ezt követően ismét előállítjuk az $a_j$ értékeket. Ezt a két szakaszt addig ismételjük, amíg a hálózat stabilizálódik, végül az $a$ vektor lesz a kapott sparse reprezentációs vektor. A diszkrét időben végzett előre-, majd visszaterjesztés ismétlésével a kimeneti neuronok közötti korlátozó szinapszisok nélkül is egy regularizációs effektust kapunk.\cite{sheridan2017}
+\subsubsection{Döntési fák}
+\subsubsection{Konvolúciós neurális hálók}
+\subsubsection{Sztochasztikus hálók}
 \subsection{Neuromorfikus chipek} 
 \cite{souto2024}
 \subsection{Egyéb alkalmazások}
 Használhatók például dinamikus módosítható terhelésként bizonyos rendszerekben, például programozható erősítőkben\cite{prodromakis2010} minimális veszteségekkel, programozható threshold komparátorokban, vagy speciális oszcillátorokban.
 
 \section{Cutting-edge kutatási területek}
-
+\subsection{Fotoelektrikus memrisztorok}
 \newpage
 \printbibliography[heading=bibintoc, title={Hivatkozások}]
 

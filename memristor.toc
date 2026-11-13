@@ -30,11 +30,17 @@
 \contentsline {section}{\numberline {10}Memrisztorok további alkalmazásai}{22}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Memóriánbelüli számításelmélet}{22}{subsection.10.1}%
 \contentsline {subsection}{\numberline {10.2}Neurális hálózatok, gépi tanulás}{24}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Neuromorfikus chipek}{25}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Egyéb alkalmazások}{25}{subsection.10.4}%
-\contentsline {section}{\numberline {11}Cutting-edge kutatási területek}{25}{section.11}%
-\contentsline {section}{Hivatkozások}{26}{section*.23}%
-\contentsline {section}{Függelék}{27}{section*.24}%
+\contentsline {subsubsection}{\numberline {10.2.1}Feed-forward neurális hálózatok memrisztorokkal}{25}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}Sparse kódolás}{27}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.3}Döntési fák}{27}{subsubsection.10.2.3}%
+\contentsline {subsubsection}{\numberline {10.2.4}Konvolúciós neurális hálók}{27}{subsubsection.10.2.4}%
+\contentsline {subsubsection}{\numberline {10.2.5}Sztochasztikus hálók}{27}{subsubsection.10.2.5}%
+\contentsline {subsection}{\numberline {10.3}Neuromorfikus chipek}{27}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Egyéb alkalmazások}{27}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Cutting-edge kutatási területek}{27}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Fotoelektrikus memrisztorok}{27}{subsection.11.1}%
+\contentsline {section}{Hivatkozások}{28}{section*.25}%
+\contentsline {section}{Függelék}{30}{section*.26}%
 \setcounter {tocdepth}{0}
-\contentsline {section}{\numberline {A}MATLAB felhasznált kód}{27}{appendix.1.A}%
-\contentsline {section}{\numberline {B}LTSpice felhasznált kód}{29}{appendix.1.B}%
+\contentsline {section}{\numberline {A}MATLAB felhasznált kód}{30}{appendix.1.A}%
+\contentsline {section}{\numberline {B}LTSpice felhasznált kód}{32}{appendix.1.B}%
