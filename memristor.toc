@@ -28,20 +28,20 @@
 \contentsline {subsection}{\numberline {7.3}Verilog-A modellezés alapjai}{21}{subsection.7.3}%
 \contentsline {section}{\numberline {8}3D XPoint}{21}{section.8}%
 \contentsline {section}{\numberline {9}Memrisztoros logikai hálózatok}{25}{section.9}%
-\contentsline {section}{\numberline {10}Memrisztorok további alkalmazásai}{25}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Memóriánbelüli számításelmélet}{25}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Neurális hálózatok, gépi tanulás}{29}{subsection.10.2}%
-\contentsline {subsubsection}{\numberline {10.2.1}Feed-forward neurális hálózatok memrisztorokkal}{30}{subsubsection.10.2.1}%
-\contentsline {subsubsection}{\numberline {10.2.2}Sparse kódolás}{31}{subsubsection.10.2.2}%
-\contentsline {subsubsection}{\numberline {10.2.3}Döntési fák}{32}{subsubsection.10.2.3}%
-\contentsline {subsubsection}{\numberline {10.2.4}Konvolúciós neurális hálók}{32}{subsubsection.10.2.4}%
-\contentsline {subsubsection}{\numberline {10.2.5}Sztochasztikus hálók}{32}{subsubsection.10.2.5}%
-\contentsline {subsection}{\numberline {10.3}Neuromorfikus chipek}{32}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Egyéb alkalmazások}{32}{subsection.10.4}%
-\contentsline {section}{\numberline {11}Cutting-edge kutatási területek}{32}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Fotoelektrikus memrisztorok}{32}{subsection.11.1}%
-\contentsline {section}{Hivatkozások}{33}{section*.33}%
-\contentsline {section}{Függelék}{35}{section*.34}%
+\contentsline {section}{\numberline {10}Memrisztorok további alkalmazásai}{29}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Memóriánbelüli számításelmélet}{29}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Neurális hálózatok, gépi tanulás}{32}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Feed-forward neurális hálózatok memrisztorokkal}{33}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}Sparse kódolás}{34}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.3}Döntési fák}{35}{subsubsection.10.2.3}%
+\contentsline {subsubsection}{\numberline {10.2.4}Konvolúciós neurális hálók}{35}{subsubsection.10.2.4}%
+\contentsline {subsubsection}{\numberline {10.2.5}Sztochasztikus hálók}{35}{subsubsection.10.2.5}%
+\contentsline {subsection}{\numberline {10.3}Neuromorfikus chipek}{35}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Egyéb alkalmazások}{35}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Cutting-edge kutatási területek}{35}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Fotoelektrikus memrisztorok}{35}{subsection.11.1}%
+\contentsline {section}{Hivatkozások}{36}{section*.37}%
+\contentsline {section}{Függelék}{39}{section*.38}%
 \setcounter {tocdepth}{0}
-\contentsline {section}{\numberline {A}MATLAB felhasznált kód}{35}{appendix.1.A}%
-\contentsline {section}{\numberline {B}LTSpice felhasznált kód}{37}{appendix.1.B}%
+\contentsline {section}{\numberline {A}MATLAB felhasznált kód}{39}{appendix.1.A}%
+\contentsline {section}{\numberline {B}LTSpice felhasznált kód}{40}{appendix.1.B}%

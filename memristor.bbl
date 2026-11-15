@@ -721,6 +721,7 @@
       \strng{authornamehash}{6654002682a136a96984e3ce57af9a39}
       \strng{authorfullhash}{23b5e017bec6849bb5607d47e73bab19}
       \strng{authorfullhashraw}{23b5e017bec6849bb5607d47e73bab19}
+      \field{extraname}{1}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -1593,6 +1594,317 @@
       \endverb
       \keyw{3D Xpoint memory,NAND SSD,Optane SSD,nonvolatile memory,performance evaluation,relational database management system,solid-state drive}
     \endentry
+    \entry{borghetti2010}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=21ddbac40674d0ad5a2282c60f73ca1d}{%
+           family={Borghetti},
+           familyi={B\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5551023f0d55cc1b9f231916d2ff443e}{%
+           family={Snider},
+           familyi={S\bibinitperiod},
+           given={Gregory\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=4c252463a60a187cb7619af5b1ea1cca}{%
+           family={Kuekes},
+           familyi={K\bibinitperiod},
+           given={Philip\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=097061c4172ddd74306566ccbc43f2fc}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={J.\bibnamedelimi Joshua},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b2cc9a6c635e5a35a9288a07493cb45e}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={Duncan\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=c30d94799e86116728a7987a8e774ae1}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={R.\bibnamedelimi Stanley},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b10c27c62e99c6072a364a5a5feca9a}
+      \strng{fullhash}{3481c4475f97e632f5db75b097609221}
+      \strng{fullhashraw}{3481c4475f97e632f5db75b097609221}
+      \strng{bibnamehash}{5b10c27c62e99c6072a364a5a5feca9a}
+      \strng{authorbibnamehash}{5b10c27c62e99c6072a364a5a5feca9a}
+      \strng{authornamehash}{5b10c27c62e99c6072a364a5a5feca9a}
+      \strng{authorfullhash}{3481c4475f97e632f5db75b097609221}
+      \strng{authorfullhashraw}{3481c4475f97e632f5db75b097609221}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1476-4687}
+      \field{journaltitle}{Nature}
+      \field{month}{4}
+      \field{number}{7290}
+      \field{title}{`Memristive' switches enable `stateful' logic operations via material implication}
+      \field{volume}{464}
+      \field{year}{2010}
+      \field{pages}{873\bibrangedash 876}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1038/nature08940
+      \endverb
+    \endentry
+    \entry{kvatinsky2011}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=eb0c6e099d2e8383b4931d8f8ac8e17a}{%
+           family={Weiser},
+           familyi={W\bibinitperiod},
+           given={Uri\bibnamedelima C.},
+           giveni={U\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=883282875d69316f7f01d5ecd7b82c5e}{%
+           family={Kolodny},
+           familyi={K\bibinitperiod},
+           given={Avinoam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d8783caf7d315ac851ca41a972ca4352}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Eby\bibnamedelima G.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=b702c4c9ccebc9149ea9f2a93b9c53de}{%
+           family={Kvatinsky},
+           familyi={K\bibinitperiod},
+           given={Shahar},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{102bf4734cdbbe464d05515ede4d1913}
+      \strng{fullhash}{46b7a1429d6539393ee5f0ad0a161d59}
+      \strng{fullhashraw}{46b7a1429d6539393ee5f0ad0a161d59}
+      \strng{bibnamehash}{102bf4734cdbbe464d05515ede4d1913}
+      \strng{authorbibnamehash}{102bf4734cdbbe464d05515ede4d1913}
+      \strng{authornamehash}{102bf4734cdbbe464d05515ede4d1913}
+      \strng{authorfullhash}{46b7a1429d6539393ee5f0ad0a161d59}
+      \strng{authorfullhashraw}{46b7a1429d6539393ee5f0ad0a161d59}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2012 IEEE 30th International Conference on Computer Design (ICCD)}
+      \field{title}{{ Memristor-based IMPLY logic design procedure }}
+      \field{year}{2011}
+      \field{pages}{142\bibrangedash 147}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICCD.2011.6081389
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.ieeecomputersociety.org/10.1109/ICCD.2011.6081389
+      \endverb
+      \verb{url}
+      \verb https://doi.ieeecomputersociety.org/10.1109/ICCD.2011.6081389
+      \endverb
+    \endentry
+    \entry{kvatinsky2014}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=b702c4c9ccebc9149ea9f2a93b9c53de}{%
+           family={Kvatinsky},
+           familyi={K\bibinitperiod},
+           given={Shahar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=45c6bb47fe9529ae1b544b8d5616800d}{%
+           family={Satat},
+           familyi={S\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d1b11e735b41a2ebffc0c575d771c5b3}{%
+           family={Wald},
+           familyi={W\bibinitperiod},
+           given={Nimrod},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d8783caf7d315ac851ca41a972ca4352}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Eby\bibnamedelima G.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=883282875d69316f7f01d5ecd7b82c5e}{%
+           family={Kolodny},
+           familyi={K\bibinitperiod},
+           given={Avinoam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eb0c6e099d2e8383b4931d8f8ac8e17a}{%
+           family={Weiser},
+           familyi={W\bibinitperiod},
+           given={Uri\bibnamedelima C.},
+           giveni={U\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{6654002682a136a96984e3ce57af9a39}
+      \strng{fullhash}{6215ddee8a95eff904a7596fd813af76}
+      \strng{fullhashraw}{6215ddee8a95eff904a7596fd813af76}
+      \strng{bibnamehash}{6654002682a136a96984e3ce57af9a39}
+      \strng{authorbibnamehash}{6654002682a136a96984e3ce57af9a39}
+      \strng{authornamehash}{6654002682a136a96984e3ce57af9a39}
+      \strng{authorfullhash}{6215ddee8a95eff904a7596fd813af76}
+      \strng{authorfullhashraw}{6215ddee8a95eff904a7596fd813af76}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Very Large Scale Integration (VLSI) Systems}
+      \field{number}{10}
+      \field{title}{Memristor-Based Material Implication (IMPLY) Logic: Design Principles and Methodologies}
+      \field{volume}{22}
+      \field{year}{2014}
+      \field{pages}{2054\bibrangedash 2066}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/TVLSI.2013.2282132
+      \endverb
+      \keyw{Memristors;Logic gates;Resistance;Computer architecture;Design methodology;Switches;Design methodology;IMPLY;logic;memristive systems;memristor;Von Neumann architecture.;Design methodology;IMPLY;logic;memristive systems;memristor;Von Neumann architecture}
+    \endentry
+    \entry{lehtonen2010}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=792a6ee79981f19d1d9977d4c47710ac}{%
+           family={Lehtonen},
+           familyi={L\bibinitperiod},
+           given={Eero},
+           giveni={E\bibinitperiod}}}%
+        {{hash=8d6ab4032703e82563777b0a679abbb7}{%
+           family={Poikonen},
+           familyi={P\bibinitperiod},
+           given={Jussi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3bb07401f3249e9dccf83c5018ab9a49}{%
+           family={Laiho},
+           familyi={L\bibinitperiod},
+           given={Mika},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2fa198061e0b022809aea1985b2db73d}
+      \strng{fullhash}{2fa198061e0b022809aea1985b2db73d}
+      \strng{fullhashraw}{2fa198061e0b022809aea1985b2db73d}
+      \strng{bibnamehash}{2fa198061e0b022809aea1985b2db73d}
+      \strng{authorbibnamehash}{2fa198061e0b022809aea1985b2db73d}
+      \strng{authornamehash}{2fa198061e0b022809aea1985b2db73d}
+      \strng{authorfullhash}{2fa198061e0b022809aea1985b2db73d}
+      \strng{authorfullhashraw}{2fa198061e0b022809aea1985b2db73d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronics Letters}
+      \field{month}{02}
+      \field{title}{Two Memristors Suffice to Compute All Boolean Functions}
+      \field{volume}{46}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.1049/el.2010.3407
+      \endverb
+    \endentry
+    \entry{lehtonen2009}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=792a6ee79981f19d1d9977d4c47710ac}{%
+           family={Lehtonen},
+           familyi={L\bibinitperiod},
+           given={Eero},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3bb07401f3249e9dccf83c5018ab9a49}{%
+           family={Laiho},
+           familyi={L\bibinitperiod},
+           given={Mika},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f209c2b3d9394875050f81b5a55ec8a}
+      \strng{fullhash}{3f209c2b3d9394875050f81b5a55ec8a}
+      \strng{fullhashraw}{3f209c2b3d9394875050f81b5a55ec8a}
+      \strng{bibnamehash}{3f209c2b3d9394875050f81b5a55ec8a}
+      \strng{authorbibnamehash}{3f209c2b3d9394875050f81b5a55ec8a}
+      \strng{authornamehash}{3f209c2b3d9394875050f81b5a55ec8a}
+      \strng{authorfullhash}{3f209c2b3d9394875050f81b5a55ec8a}
+      \strng{authorfullhashraw}{3f209c2b3d9394875050f81b5a55ec8a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2009 IEEE/ACM International Symposium on Nanoscale Architectures}
+      \field{title}{Stateful implication logic with memristors}
+      \field{year}{2009}
+      \field{pages}{33\bibrangedash 36}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/NANOARCH.2009.5226356
+      \endverb
+      \keyw{Logic;Memristors;Educational technology;Automation;Computer aided instruction;Automatic control;Military computing;Computer science;Computer science education;Instruments}
+    \endentry
+    \entry{kvatinskymagic}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=b702c4c9ccebc9149ea9f2a93b9c53de}{%
+           family={Kvatinsky},
+           familyi={K\bibinitperiod},
+           given={Shahar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0906287f2b042053d2442ae4eba5c0b8}{%
+           family={Belousov},
+           familyi={B\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2d01f84f12ecc9f39aad1a3171803bc2}{%
+           family={Liman},
+           familyi={L\bibinitperiod},
+           given={Slavik},
+           giveni={S\bibinitperiod}}}%
+        {{hash=45c6bb47fe9529ae1b544b8d5616800d}{%
+           family={Satat},
+           familyi={S\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d1b11e735b41a2ebffc0c575d771c5b3}{%
+           family={Wald},
+           familyi={W\bibinitperiod},
+           given={Nimrod},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d8783caf7d315ac851ca41a972ca4352}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Eby\bibnamedelima G.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=883282875d69316f7f01d5ecd7b82c5e}{%
+           family={Kolodny},
+           familyi={K\bibinitperiod},
+           given={Avinoam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eb0c6e099d2e8383b4931d8f8ac8e17a}{%
+           family={Weiser},
+           familyi={W\bibinitperiod},
+           given={Uri\bibnamedelima C.},
+           giveni={U\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{6654002682a136a96984e3ce57af9a39}
+      \strng{fullhash}{5e3e3f4b54cca1e70885d27181996012}
+      \strng{fullhashraw}{5e3e3f4b54cca1e70885d27181996012}
+      \strng{bibnamehash}{6654002682a136a96984e3ce57af9a39}
+      \strng{authorbibnamehash}{6654002682a136a96984e3ce57af9a39}
+      \strng{authornamehash}{6654002682a136a96984e3ce57af9a39}
+      \strng{authorfullhash}{5e3e3f4b54cca1e70885d27181996012}
+      \strng{authorfullhashraw}{5e3e3f4b54cca1e70885d27181996012}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Circuits and Systems II: Express Briefs}
+      \field{number}{11}
+      \field{title}{MAGIC—Memristor-Aided Logic}
+      \field{volume}{61}
+      \field{year}{2014}
+      \field{pages}{895\bibrangedash 899}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/TCSII.2014.2357292
+      \endverb
+      \keyw{Memristors;Logic gates;Threshold voltage;Resistance;Arrays;Random access memory;IMPLY;in-memory computing;memristive systems;memristor;memristor-aided logic (MAGIC);stateful logic}
+    \endentry
     \entry{patterson1997}{article}{}{}
       \name{author}{8}{}{%
         {{hash=be3f8623b621505dcf8292092a817782}{%
@@ -1644,8 +1956,8 @@
       \strng{authornamehash}{a908d3398abaf8b93364a542af01d18a}
       \strng{authorfullhash}{11e8b8d4c413c52cfecb35990e8ccad8}
       \strng{authorfullhashraw}{11e8b8d4c413c52cfecb35990e8ccad8}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Micro}
@@ -1706,8 +2018,8 @@
       \strng{authornamehash}{0a1cc549625067e2cd250bb18b2e97f3}
       \strng{authorfullhash}{bd8164ef05527e64edf939381210c6cd}
       \strng{authorfullhashraw}{bd8164ef05527e64edf939381210c6cd}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1476-4687}
@@ -2109,8 +2421,8 @@
       \strng{authornamehash}{861372c55b71e7688d63b889756999ce}
       \strng{authorfullhash}{a346b6ff79d549e21b2060150be66ec8}
       \strng{authorfullhashraw}{a346b6ff79d549e21b2060150be66ec8}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.AR}
@@ -2143,8 +2455,8 @@
       \strng{authornamehash}{2c9d1aa766759ce8abffd16d2a35689e}
       \strng{authorfullhash}{2c9d1aa766759ce8abffd16d2a35689e}
       \strng{authorfullhashraw}{2c9d1aa766759ce8abffd16d2a35689e}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2014 IEEE International Solid-State Circuits Conference Digest of Technical Papers (ISSCC)}
@@ -2178,8 +2490,8 @@
       \strng{authornamehash}{665ef2a5e5d0facfd6c179aaf7d3a2f5}
       \strng{authorfullhash}{665ef2a5e5d0facfd6c179aaf7d3a2f5}
       \strng{authorfullhashraw}{665ef2a5e5d0facfd6c179aaf7d3a2f5}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the IEEE}
@@ -2245,8 +2557,8 @@
       \strng{authornamehash}{dcf85c7893d3c3be6462aa75a4329a48}
       \strng{authorfullhash}{dade74f3ca408b89698d42d96c37ee06}
       \strng{authorfullhashraw}{dade74f3ca408b89698d42d96c37ee06}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Solid-State Circuits Magazine}
@@ -2287,8 +2599,8 @@
       \strng{authornamehash}{8e4a8701a1d9b1a45d9e558bd44704cb}
       \strng{authorfullhash}{8e4a8701a1d9b1a45d9e558bd44704cb}
       \strng{authorfullhashraw}{8e4a8701a1d9b1a45d9e558bd44704cb}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Journal of Solid-State Circuits}

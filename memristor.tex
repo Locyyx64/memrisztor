@@ -45,6 +45,7 @@ framexleftmargin=1.5mm
 \newcommand\abra[1]{\ref{#1}.ábra}
 \DeclareMathOperator\stp{stp}
 \DeclareMathOperator\sgm{sgm}
+\DeclareMathOperator\implicate{IMP}
 
 %% Egységrendszer
 \DeclareMathOperator\kOhm{k\Omega}
@@ -503,7 +504,7 @@ ahol $I_T$ a 0-dik sor kimeneti cellájára érkező áram. A WLB (word line bot
 	\includegraphics[scale=0.8]{subarray}
 	\caption{a) BL-to-BL kapcsolás, b) BL-to-WLT kapcsolás, magasabbrendű mátrix-vagy tenzorszámításra\cite{zabihi2021}}
 \end{figure}
-Például két darab 2 szintes 3D XPoint alhálózat segítségével megvalósítható egy egy rejtett réteges előrecsatolt neurális hálózat a következő módon. Tegyük fel, hogy a neurális háló célja $M$ számú kép feldolgozása an MNIST adatgyűjteményből. A két alhálózatot BL-to-WLT kapcsolásba hozzuk. A bemeneti és a rejtett réteg közötti súlymátrixot az első 3D XPoint felső PCM rétege tartalmazza, majd ugyanerre a hálózatra kapcsoljuk a bemeneti vektort ($X_0$, $X_1$, $\dots X_N$ ) a WLT oszlopokra. Az rejtett réteg értékei minden ütemben 1-1 kép vonatkozásában kiszámításra kerülnek, és a második alhálózattal való kapcsolat miatt a második alhálózat felső PCM rétegében kerülnek tárolásra (ld. \abra{fig:mlp3dx}). Minden ütemben az épp kiszámításra kerülő kép rejtett rétegéhez tartozó BL sor a második alhálóban a GND-re van kötve, a többi lebeg. A forward propagation utolsó lépésében a rejtett réteg és a kimeneti réteg közötti súlyokat a második alháló WLT oszlopaira visszük. A második alhálózat alsó PCM rétege tárolja a kimeneteket.
+Például két darab 2 szintes 3D XPoint alhálózat segítségével megvalósítható egy egy rejtett réteges előrecsatolt neurális hálózat a következő módon. Tegyük fel, hogy a neurális háló célja $M$ számú kép feldolgozása an MNIST adatgyűjteményből. A két alhálózatot BL-to-WLT kapcsolásba hozzuk. A bemeneti és a rejtett réteg közötti súlymátrixot az első 3D XPoint felső PCM rétege tartalmazza, majd ugyanerre a hálózatra kapcsoljuk a bemeneti vektort ($X_0$, $X_1$, $\dots X_N$ ) a WLT oszlopokra. Az rejtett réteg értékei minden ütemben 1-1 kép vonatkozásában kiszámításra kerülnek, és a második alhálózattal való kapcsolat miatt a második alhálózat felső PCM rétegében kerülnek tárolásra (ld. \abra{fig:mlp3dx}). Minden ütemben az épp kiszámításra kerülő kép rejtett rétegéhez tartozó BL sor a második alhálóban a GND-re van kötve, a többi lebeg. A forward propagation utolsó lépésében a rejtett réteg és a kimeneti réteg közötti súlyokat a második alháló WLT oszlopaira visszük. A második alhálózat alsó PCM rétege tárolja a kimeneteket. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.8]{mlp3dx}
@@ -511,7 +512,47 @@ Például két darab 2 szintes 3D XPoint alhálózat segítségével megvalósí
 	\label{fig:mlp3dx}
 \end{figure}
 \section{Memrisztoros logikai hálózatok}
-%TODO: MAGIC-aided memristor logic
+A memrisztorokból álló rendszerekkel lehetséges Boole-logikai műveletek megvalósítása is, a normál számítások mellett. Ezáltal, ha a logikai kapuk felépítésében el tudjuk kerülni a nagy helyigényű alkatrészek (például tranzisztorok) alkalmazását, akkor hatékony, apró digitális hálózatokat tudunk építeni. Bár, mint a későbbiekben látjuk, ennek a kialakításnak sajátos problémái ill. hátrányai vannak, amit adott alkalmazások során nem lehet figyelmen kívül hagyni. A memrisztorokkal realizált logikai hálózatot "stateful"-nak nevezik, mert a memrisztorok egyszerre tárolnak logikai adatot, és végzik a logikai műveleteket. Az implikáció-alapú (material implication, IMP) memrisztor hálózatot már a 2010-es évek elején bemutatták\cite{borghetti2010}\cite{kvatinsky2011}\cite{kvatinsky2014}. Borghetti et al. bemutatta, hogy az implikáció (IMP) és a negáció (NOT) művelete teljes logikai bázist alkotnak, mert a NAND művelet megvalósítható velük. Bemutattak egy egyszerű két memrisztoros IMP kapcsolást egy terhelési ellenállás, és két ágon egy-egy logikai tároló memrisztor és egy rájuk kapcsolt feszültség felhasználásával. Egy adott memrisztor akkor állítható logikai magas állapotba (LRS), ha $V_\text{SET}$ feszültséget kap, illetve alacsony állapotba (HRS), ha $V_\text{CLEAR}$ feszültséget kap. A $V_\text{COND}$ feszültség a set feszültségnél alacsonyabb, és nem változtatja a memrisztor állapotát. Ha a \ref{fig:imp}. ábrán látható módon az egyik ágra a $V_\text{COND}$, a másikra a $V_\text{SET}$ feszültséget kapcsoljuk, az ellenállásból adódó feszültségosztásnak köszönhetően különböző mértékű terhelés esik a memrisztorokra az állapotuktól függően, és az ábrán látható igazságtáblát kapjuk. Hogyha bevezetünk egy harmadik ágat (s állapot), akkor először s negálásával (vagyis a $V_S = V_\text{CLEAR}$ művelettel), majd először $p\implicate s$ majd $q\implicate s$ után p-re ill. q-ra nézve egy NAND műveletet kapunk. 
+\begin{figure}[H]
+	\centering
+	\includegraphics{borghetti}
+	\caption{a) IMP művelet megvalósítása: egy, a feszültégosztást befolyásoló terhelési ellenállás $R_G$, két ágon egy-egy logikai állapotot tároló "stateful" memrisztor (P és Q, állapotaik p és q), rájuk egy-egy tri-state meghajtón keresztül feszültség kapcsolása (kapcsolás hiányában HiZ állapot), az egyikre $V_\text{COND}$, a másikra $V_\text{SET}$ feszültség, b) Megvalósított művelet igazságtáblája\cite{borghetti2010}}
+	\label{fig:imp}
+\end{figure}
+Ebben a kialakításban a Q memrisztor rezisztanciája csak csökkenhet. A logikai állapotok elektromos aszimmetriájából adódóan állapotkúszás ("state drift") előfordulhat, ilyenkor az állapot frissítése szükséges.\cite{kvatinsky2011}. Kvatinsky et al. bebizonyították, hogy a memrisztoros NAND műveletek miatt egy tetszőleges $f: B^n \longrightarrow B$ logikai függvény megvalósítható legalább $n+3$ memrisztor felhasználásával\cite{kvatinsky2014} A logikai függvény elvégzésének minden ütemében vagy egy memrisztort resetelünk, vagy pedig 2 memrisztorral IMP műveletet végzünk. Minden logikai függvény, amely 2 vagy 3 bemeneti változóval rendelkezik (bemeneti memrisztorban tárolt állapotok), megvalósítható 2 műveleti memrisztor alkalmazásával\cite{lehtonen2010}, és erre hatékony algoritmus definiálható (különösen ha optimalizálunk prímimplikánsokra, pl. Quine-McCluskey algoritmussal). Több bemeneti memrisztor esetén 3 műveleti memrisztor lesz szükséges tetszőleges Boole-függvény realizálására\cite{lehtonen2009}, illetve egy $B^n \longrightarrow B^m$ függvény esetén legalább $m+2$ műveleti memrisztor. A NOR műveletből is kiindulhatunk, ami 2 ütemben elvégezhető. Az ilyen IMPLY alapú logika crossbar hálózatban is megvalósítható (lsd. \abra{fig:crossbarimp}), ahol a word lineokra kötjük a meghajtó feszültségeket, és a bit lineokat a terhelő ellenálláson keresztül GND-re kötjük.\cite{kvatinsky2014} Egy adott logikai függvény változóinak azonos sorban kell lenniük. Mivel az IMP művelet destruktív a változóira nézve, a fontos adatot tároló állapotokról a műveletek elvégzése előtt másolatot kell készítenünk. Emellett a szelektor tranzisztorok parazitikus kapacitását, a huzalok ellenállásait és a szivárgó áramokat ("sneak path phenomenon") is figyelembe kell venni. A megfelelő kapcsolási feszültségek, ill. a megfelelő terhelési ellenállás meghatározására szükség van a memrisztor hálózati modellezésére, emellett az állapotkúszás és egyéb hibák modellezésére. Ezen felül a logikai hálózat megfelelő késleltetéseinek kiszámítására szükség van az IMPLY műveletek írási idejére. Crossbar logikai hálózat tervezésénél a rendszer belső parallelizmusát kihasználva több IMPLY és FALSE műveletet végezhetünk egyetlen órajel alatt, és ennek a lehetőségét a hálózat tervezésénél valósíthatjuk meg. Lehtonen et al, és Kvantisky et al. bemutatnak egy IMPLY-alapú 8 bites teljes teljes összeadót (lsd. \abra{fig:fulladder}), ami a CMOS esetben szükséges 400 tranzisztoros megoldásnál sokkal helyhatékonyabb. Az XOR művelethez két műveleti tranzisztor szükséges. A kimeneti $S_i$ bit kiszámításához 26 számítási ütem és két műveleti memrisztor szükséges:
+\begin{equation}
+	S_i = (A_i \oplus B_i) \oplus C_i
+\end{equation}
+ahol $A_i$ az $A$ bemenet i-dik bitje, $B_i$ a $B$ bemenet i-dik bitje és $C_i$ a legutóbbi egybites összeadás maradéka. A maradék $C_\text{out,i}$ kiszámítása bonyolultabb.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{impfulladder}
+	\caption{a) 8-bites teljes összeadó soros kialakítása, b) párhuzamos kialakítása sorok közötti kapcsolókkal \cite{kvatinsky2014}}
+	\label{fig:fulladder}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{implycrossbar}
+	\caption{$m\times n$ memrisztor crossbar az IMPLY logika megvalósításához\cite{kvatinsky2014}}
+	\label{fig:crossbarimp}
+\end{figure}
+\smallskip
+Az IMPLY-alapú memrisztoros logikának, illetve a stateful hálózatoknak több hátránya is van. Egyrészt a logikai hálózatok komplexitásának növekedésével a bemeneti feszültségek bonyolult, szekvenciális alkalmazása szükséges, emellett legtöbbször a bemeneti memrisztorok értéke elvész (felülíródik), vagy pedig alapból a bemeneti memrisztorok egyike szolgáltatja a műveletek kimenetét. Ezek mellett egy ilyen hálózat a memrisztorokon kívüli egyéb komponenseket is tartalmaz (terhelési ellenállások, vezérlők, stb.), amik energiát disszipálnak és növelik az áramkörök komplexitását. Ezeket a problémákat igyekszik például a memristor-aided logic (MAGIC) megoldani\cite{kvatinskymagic}. A MAGIC hálózatok kizárólag memrisztorokat tartalmaznak. Egy memrisztor logikai állapota itt is HRS esetén "0", és LRS esetén "1". Emellett egy IMPLY kapuval szemben megkülönböztetik a bemeneti és a kimeneti memrisztorokat. Egy MAGIC kapu működésének első fázisában a kimeneti memrisztort egy ismert értékre inicializáljuk. A második fázisban egy adott $V_0$ feszültséget kapcsolunk a kapu bemenetére, így ilyenkor a kimeneti memrisztor feszültsége a bemeneti memrisztorok állapotától (és a saját, kezdeti állapotától) függ. Ha a kimeneti memrisztorra eső feszültség átlép egy threshold feszültséget, akkor a kimeneti memrisztor logikai állapotot vált. Ilyen módon könnyen kialakítható pl. a NOR kapu (ld. \abra{fig:magicnor}). Például ha a két bemeneti memrisztor logikai alacsony (HRS) állapotban van, akkor az eredő memrisztanciájuk replusz művelettel kiszámítva $\approx R_\text{OFF} /2$, a kimeneti memrisztor memrisztanciája pedig közelítőleg $R_\text{ON}$. Ilyenkor a kimeneti memrisztor feszültsége nem éri el a threshold feszültséget, és az logikai magas állapotban marad. A többi esetben, ha valamelyik bemeneti memrisztor LRS állapotban van (logikai magas), akkor a kimeneti memrisztor feszültsége meghaladja a threshold feszültséget, és az állapotot vált. Ha a memrisztor bekapcsolási limitfeszültsége $V_\text{T,ON}$, és kikapcsolási limitfeszültsége $V_\text{T,OFF}$, akkor a bemeneti $V_0$ feszültséget a következőképpen kell méretezni\cite{kvatinskymagic}:
+\begin{equation}
+	2V_\text{T,OFF} < V_0 < \frac{R_\text{OFF}}{2R_\text{ON}}\cdot V_\text{T,OFF} \;\;\;\;\;\; (R_\text{OFF} \gg R_\text{ON})
+\end{equation}
+De a bemeneti memrisztorok értékére nézve nemdestruktív műveletet esetén a feszültség felső korlátjára szükséges érték:
+\begin{equation}
+	V_0 < \min\mleft[\frac{R_\text{OFF}}{2R_\text{ON}}\cdot V_\text{T,OFF}, |V_\text{T,ON}|\mright]
+\end{equation}
+A tetszőleges bementszámú NAND MAGIC kapuk is megvalósíhatók, ilyenkor a bemeneti memrisztorok sorosan vannak kapcsolva. A NOT kapu esetén a bemeneti memrisztor és a kimeneti memrisztor szintén sorosan van kapcsolva, de ellentétes polaritással.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.75]{magicnor}
+	\caption{a) 2-bemenetű NOR kapu MAGIC megvalósítása, b) bemeneti kombinációk hatása $\text{out}_\text{init} = 1$ esetén, c) N-bemenetű NOR kapu\cite{kvatinskymagic}}
+	\label{fig:magicnor}
+\end{figure}
+
 \section{Memrisztorok további alkalmazásai}
 \subsection{Memóriánbelüli számításelmélet}
 \label{imc}
