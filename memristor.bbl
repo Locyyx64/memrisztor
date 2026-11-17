@@ -35,6 +35,7 @@
       \strng{authornamehash}{63e0785bf72df205130a6325c329c6ba}
       \strng{authorfullhash}{63e0785bf72df205130a6325c329c6ba}
       \strng{authorfullhashraw}{63e0785bf72df205130a6325c329c6ba}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -821,6 +822,134 @@
       \endverb
       \keyw{Semiconductor process modeling;Memristors;Biological system modeling;Kinetic theory;Switches;Integrated circuit modeling;Nanoscale devices;Memristive devices;memristor model;memristor;nonlinear dopant kinetics}
     \endentry
+    \entry{vongehr2015}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=317453bd7d968d4b9d7d20b03e8fe7ab}{%
+           family={Vongehr},
+           familyi={V\bibinitperiod},
+           given={Sascha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=24b8e34e9254c14c3e41591979eea703}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Xiangkang},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e1f9648f17db827fd7c60ab7cfb33d1}
+      \strng{fullhash}{5e1f9648f17db827fd7c60ab7cfb33d1}
+      \strng{fullhashraw}{5e1f9648f17db827fd7c60ab7cfb33d1}
+      \strng{bibnamehash}{5e1f9648f17db827fd7c60ab7cfb33d1}
+      \strng{authorbibnamehash}{5e1f9648f17db827fd7c60ab7cfb33d1}
+      \strng{authornamehash}{5e1f9648f17db827fd7c60ab7cfb33d1}
+      \strng{authorfullhash}{5e1f9648f17db827fd7c60ab7cfb33d1}
+      \strng{authorfullhashraw}{5e1f9648f17db827fd7c60ab7cfb33d1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{month}{6}
+      \field{number}{1}
+      \field{title}{The Missing Memristor has Not been Found}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{pages}{11657}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/srep11657
+      \endverb
+    \endentry
+    \entry{souto2024}{misc}{}{}
+      \name{author}{5}{}{%
+        {{hash=f9ac9400cc6be17f133e5993921b31ab}{%
+           family={Souto},
+           familyi={S\bibinitperiod},
+           given={Julio},
+           giveni={J\bibinitperiod}}}%
+        {{hash=72b3b946e3fec4001602d83c929975f0}{%
+           family={Botella},
+           familyi={B\bibinitperiod},
+           given={Guillermo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0944da40a884e85581a74248f3620762}{%
+           family={García},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=75d282154c36eaeb30c0b35d35c8b643}{%
+           family={Murillo},
+           familyi={M\bibinitperiod},
+           given={Raúl},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b7008e03e28b890e3e4f337d2e994358}{%
+           family={Barrio},
+           familyi={B\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           prefix={del},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2883bb213bde82aac7bc90855095190}
+      \strng{fullhash}{bd3b4998ca9c9f04dc5de50d8d7438d5}
+      \strng{fullhashraw}{bd3b4998ca9c9f04dc5de50d8d7438d5}
+      \strng{bibnamehash}{c2883bb213bde82aac7bc90855095190}
+      \strng{authorbibnamehash}{c2883bb213bde82aac7bc90855095190}
+      \strng{authornamehash}{c2883bb213bde82aac7bc90855095190}
+      \strng{authorfullhash}{bd3b4998ca9c9f04dc5de50d8d7438d5}
+      \strng{authorfullhashraw}{bd3b4998ca9c9f04dc5de50d8d7438d5}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.NE}
+      \field{eprinttype}{arXiv}
+      \field{title}{Neuromorphic Circuit Simulation with Memristors: Design and Evaluation Using MemTorch for MNIST and CIFAR}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2407.13410
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2407.13410
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2407.13410
+      \endverb
+    \endentry
+    \entry{chua2014}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a78d0aad8267c51f4b9dce1ea0782770}{%
+           family={Chua},
+           familyi={C\bibinitperiod},
+           given={Leon},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a78d0aad8267c51f4b9dce1ea0782770}
+      \strng{fullhash}{a78d0aad8267c51f4b9dce1ea0782770}
+      \strng{fullhashraw}{a78d0aad8267c51f4b9dce1ea0782770}
+      \strng{bibnamehash}{a78d0aad8267c51f4b9dce1ea0782770}
+      \strng{authorbibnamehash}{a78d0aad8267c51f4b9dce1ea0782770}
+      \strng{authornamehash}{a78d0aad8267c51f4b9dce1ea0782770}
+      \strng{authorfullhash}{a78d0aad8267c51f4b9dce1ea0782770}
+      \strng{authorfullhashraw}{a78d0aad8267c51f4b9dce1ea0782770}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0268-1242}
+      \field{journaltitle}{Semiconductor Science and Technology}
+      \field{month}{9}
+      \field{number}{10}
+      \field{title}{If it's pinched it's a memristor}
+      \field{volume}{29}
+      \field{year}{2014}
+      \field{pages}{104001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0268-1242/29/10/104001
+      \endverb
+    \endentry
     \entry{szot2014}{incollection}{}{}
       \name{author}{3}{}{%
         {{hash=53d385c40b6080cd3978231e823e9a86}{%
@@ -958,8 +1087,8 @@
       \strng{editornamehash}{08e82a0f3e8bd5964e4a38bf2bb610d8}
       \strng{editorfullhash}{08e82a0f3e8bd5964e4a38bf2bb610d8}
       \strng{editorfullhashraw}{08e82a0f3e8bd5964e4a38bf2bb610d8}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2D Materials}
@@ -1218,8 +1347,8 @@
       \strng{authornamehash}{44605715513bf77531dedd985a27f83c}
       \strng{authorfullhash}{a894d6b304a8cf805630cb7f49e8ac8e}
       \strng{authorfullhashraw}{a894d6b304a8cf805630cb7f49e8ac8e}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Science Advances}
@@ -1286,8 +1415,8 @@
       \strng{authornamehash}{809159c708473687777690242c64a318}
       \strng{authorfullhash}{1728f05a201662e021ec665b6b77ca37}
       \strng{authorfullhashraw}{1728f05a201662e021ec665b6b77ca37}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1530-6992}
@@ -1425,8 +1554,8 @@
       \strng{authornamehash}{7828376024056ed9a694e96636f77ded}
       \strng{authorfullhash}{7828376024056ed9a694e96636f77ded}
       \strng{authorfullhashraw}{7828376024056ed9a694e96636f77ded}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://pcper.com/2017/06/how-3d-xpoint-phase-change-memory-works/}
@@ -1493,8 +1622,8 @@
       \strng{authornamehash}{489c6677a7083a8d508a45efc58b8de9}
       \strng{authorfullhash}{6d4db72ab4d05ad30a236a590ac8ab0f}
       \strng{authorfullhashraw}{6d4db72ab4d05ad30a236a590ac8ab0f}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Journal on Exploratory Solid-State Computational Devices and Circuits}
@@ -1789,8 +1918,8 @@
       \strng{authornamehash}{2fa198061e0b022809aea1985b2db73d}
       \strng{authorfullhash}{2fa198061e0b022809aea1985b2db73d}
       \strng{authorfullhashraw}{2fa198061e0b022809aea1985b2db73d}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Electronics Letters}
@@ -1823,8 +1952,8 @@
       \strng{authornamehash}{3f209c2b3d9394875050f81b5a55ec8a}
       \strng{authorfullhash}{3f209c2b3d9394875050f81b5a55ec8a}
       \strng{authorfullhashraw}{3f209c2b3d9394875050f81b5a55ec8a}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2009 IEEE/ACM International Symposium on Nanoscale Architectures}
@@ -3190,6 +3319,7 @@
       \strng{authornamehash}{d611c484b71686c36aa03d3e7e32d7a1}
       \strng{authorfullhash}{72a1416d9cd3bf07b7b39456000a0f72}
       \strng{authorfullhashraw}{72a1416d9cd3bf07b7b39456000a0f72}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -3208,60 +3338,709 @@
       \verb https://arxiv.org/abs/2406.04093
       \endverb
     \endentry
-    \entry{souto2024}{misc}{}{}
-      \name{author}{5}{}{%
-        {{hash=f9ac9400cc6be17f133e5993921b31ab}{%
-           family={Souto},
-           familyi={S\bibinitperiod},
-           given={Julio},
-           giveni={J\bibinitperiod}}}%
-        {{hash=72b3b946e3fec4001602d83c929975f0}{%
-           family={Botella},
-           familyi={B\bibinitperiod},
-           given={Guillermo},
-           giveni={G\bibinitperiod}}}%
-        {{hash=0944da40a884e85581a74248f3620762}{%
-           family={García},
+    \entry{yao2020}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=2ced597ff548e513cd05295e304d2e91}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ec9005190776ae5787beb894b905b6e0}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Huaqiang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4b8da17a1cd42b7bfaba56a8dbcf5168}{%
+           family={Gao},
            familyi={G\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=75d282154c36eaeb30c0b35d35c8b643}{%
-           family={Murillo},
-           familyi={M\bibinitperiod},
-           given={Raúl},
-           giveni={R\bibinitperiod}}}%
-        {{hash=b7008e03e28b890e3e4f337d2e994358}{%
-           family={Barrio},
-           familyi={B\bibinitperiod},
-           given={Alberto},
-           giveni={A\bibinitperiod},
-           prefix={del},
-           prefixi={d\bibinitperiod}}}%
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b0108453483110bcdc08e23148538e84}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Jianshi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=62bc161ae8dd9dfb6ae9bd21a428d90a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Qingtian},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=5f2d67499a98929cedfb4f81c4d10f7d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Wenqiang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=097061c4172ddd74306566ccbc43f2fc}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={J.\bibnamedelimi Joshua},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=04820a79d709be7699892a41c2209e94}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={He},
+           giveni={H\bibinitperiod}}}%
       }
-      \strng{namehash}{c2883bb213bde82aac7bc90855095190}
-      \strng{fullhash}{bd3b4998ca9c9f04dc5de50d8d7438d5}
-      \strng{fullhashraw}{bd3b4998ca9c9f04dc5de50d8d7438d5}
-      \strng{bibnamehash}{c2883bb213bde82aac7bc90855095190}
-      \strng{authorbibnamehash}{c2883bb213bde82aac7bc90855095190}
-      \strng{authornamehash}{c2883bb213bde82aac7bc90855095190}
-      \strng{authorfullhash}{bd3b4998ca9c9f04dc5de50d8d7438d5}
-      \strng{authorfullhashraw}{bd3b4998ca9c9f04dc5de50d8d7438d5}
+      \strng{namehash}{9ca302c119a4ba75eb7bc63f3df58650}
+      \strng{fullhash}{68dcb5be047d82a747094d5ecaa7d082}
+      \strng{fullhashraw}{68dcb5be047d82a747094d5ecaa7d082}
+      \strng{bibnamehash}{9ca302c119a4ba75eb7bc63f3df58650}
+      \strng{authorbibnamehash}{9ca302c119a4ba75eb7bc63f3df58650}
+      \strng{authornamehash}{9ca302c119a4ba75eb7bc63f3df58650}
+      \strng{authorfullhash}{68dcb5be047d82a747094d5ecaa7d082}
+      \strng{authorfullhashraw}{68dcb5be047d82a747094d5ecaa7d082}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1476-4687}
+      \field{journaltitle}{Nature}
+      \field{month}{1}
+      \field{number}{7792}
+      \field{title}{Fully hardware-implemented memristor convolutional neural network}
+      \field{volume}{577}
+      \field{year}{2020}
+      \field{pages}{641\bibrangedash 646}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/s41586-020-1942-4
+      \endverb
+    \endentry
+    \entry{gao2021}{inproceedings}{}{}
+      \name{author}{7}{}{%
+        {{hash=23d21d47f32e9e039b085e94547bbfaa}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Di},
+           giveni={D\bibinitperiod}}}%
+        {{hash=74539aec278766c1e2d78aa060ac2786}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Qingrong},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=91c33bd6fb57b461f3afc489ba1cc8a5}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Grace\bibnamedelima Li},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=ead36a33ec05e7daaae3cc11d4f1ecdb}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Xunzhao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=5eb4c3e75d14d3af4ceb7f957e07f41c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=726c60a6d529e92e3a4883c8a362f684}{%
+           family={Schlichtmann},
+           familyi={S\bibinitperiod},
+           given={Ulf},
+           giveni={U\bibinitperiod}}}%
+        {{hash=c9604fe347d4a4007a6e4ab081715e1e}{%
+           family={Zhuo},
+           familyi={Z\bibinitperiod},
+           given={Cheng},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{39b4e4aa81b23a6ef28db268db76da53}
+      \strng{fullhash}{d776d5b50f81ae186e989d219fb833d7}
+      \strng{fullhashraw}{d776d5b50f81ae186e989d219fb833d7}
+      \strng{bibnamehash}{39b4e4aa81b23a6ef28db268db76da53}
+      \strng{authorbibnamehash}{39b4e4aa81b23a6ef28db268db76da53}
+      \strng{authornamehash}{39b4e4aa81b23a6ef28db268db76da53}
+      \strng{authorfullhash}{d776d5b50f81ae186e989d219fb833d7}
+      \strng{authorfullhashraw}{d776d5b50f81ae186e989d219fb833d7}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 58th ACM/IEEE Design Automation Conference (DAC)}
+      \field{title}{Bayesian Inference Based Robust Computing on Memristor Crossbar}
+      \field{year}{2021}
+      \field{pages}{121\bibrangedash 126}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/DAC18074.2021.9586160
+      \endverb
+      \keyw{Training;Degradation;Heuristic algorithms;Neural networks;Memristors;Transforms;Robustness}
+    \endentry
+    \entry{pataki2006}{inbook}{}{}
+      \name{author}{4}{}{%
+        {{hash=782fd28e87fe6a729525e8b9cc3cbf41}{%
+           family={Pataki\bibnamedelima Béla},
+           familyi={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Altrichter\bibnamedelima Márta.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0eeb309c49e27406f76f4ef00bc61f1d}{%
+           family={G.},
+           familyi={G\bibinitperiod},
+           given={Horváth},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8b9d935e77452b9a570893be603fc8d8}{%
+           family={Strausz\bibnamedelima Gy.},
+           familyi={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Takács\bibnamedelima G.},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=161485bcf2b2a5430da911c2dab12c8b}{%
+           family={J.},
+           familyi={J\bibinitperiod},
+           given={Valyon},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Panem Könyvkiadó Kft., Budapest}%
+      }
+      \strng{namehash}{76b1b0dca7e8cdd6780ba8adb631040c}
+      \strng{fullhash}{ecfb9276aa9c0b910b1add99536ea704}
+      \strng{fullhashraw}{ecfb9276aa9c0b910b1add99536ea704}
+      \strng{bibnamehash}{76b1b0dca7e8cdd6780ba8adb631040c}
+      \strng{authorbibnamehash}{76b1b0dca7e8cdd6780ba8adb631040c}
+      \strng{authornamehash}{76b1b0dca7e8cdd6780ba8adb631040c}
+      \strng{authorfullhash}{ecfb9276aa9c0b910b1add99536ea704}
+      \strng{authorfullhashraw}{ecfb9276aa9c0b910b1add99536ea704}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9635454643}
+      \field{title}{Neurális hálózatok}
+      \field{year}{2006}
+      \field{pages}{40\bibrangedash 43}
+      \range{pages}{4}
+    \endentry
+    \entry{goodfellow2016}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{fullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{fullhashraw}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{bibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorbibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authornamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorfullhashraw}{3ae53fe582e8a815b118d26947eaa326}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Deep Learning}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb http://www.deeplearningbook.org
+      \endverb
+      \verb{url}
+      \verb http://www.deeplearningbook.org
+      \endverb
+    \endentry
+    \entry{yan2023}{article}{}{}
+      \name{author}{12}{}{%
+        {{hash=e136e2a272c4345e9b6f02edf4d97295}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Xiaodong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=c116b3443071200925f31564cf7bc48b}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Zhiren},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=fee5c1fdbc8fc28576d2c9ac72ac5d4f}{%
+           family={Sangwan},
+           familyi={S\bibinitperiod},
+           given={Vinod\bibnamedelima K.},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=192e41e982ff50ea65ab9cb2cce92e09}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={Justin\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=86632d04994d5619b3f646f7e4a081d3}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xueqiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=1dd4d600129b080b6c4d975435ccf1e3}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Stephanie\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=ec13cda2cbfddcda8775a94455efdce0}{%
+           family={Watanabe},
+           familyi={W\bibinitperiod},
+           given={Kenji},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5a856342313a0ed8d5c7c0315c53a88f}{%
+           family={Taniguchi},
+           familyi={T\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=daf7c4e86fa0c792db107e48ce20c4e5}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Su-Yang},
+           giveni={S\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=104adca655c0c282c6fcedc11db38805}{%
+           family={Jarillo-Herrero},
+           familyi={J\bibinithyphendelim H\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cf0bb5eeee79596cca755153e0390819}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Qiong},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=59b2abb5fe45884a94edde71afa253a8}{%
+           family={Hersam},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{944511086ee12452f3a9e853658d66e4}
+      \strng{fullhash}{ff59bc49b1f73ada672520c865003aad}
+      \strng{fullhashraw}{ff59bc49b1f73ada672520c865003aad}
+      \strng{bibnamehash}{944511086ee12452f3a9e853658d66e4}
+      \strng{authorbibnamehash}{944511086ee12452f3a9e853658d66e4}
+      \strng{authornamehash}{944511086ee12452f3a9e853658d66e4}
+      \strng{authorfullhash}{ff59bc49b1f73ada672520c865003aad}
+      \strng{authorfullhashraw}{ff59bc49b1f73ada672520c865003aad}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1476-4687}
+      \field{journaltitle}{Nature}
+      \field{month}{12}
+      \field{number}{7992}
+      \field{title}{Moiré synaptic transistor with room-temperature neuromorphic functionality}
+      \field{volume}{624}
+      \field{year}{2023}
+      \field{pages}{551\bibrangedash 556}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/s41586-023-06791-1
+      \endverb
+    \endentry
+    \entry{mead1989}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=ea3081cb732b7755222fed6bbe55a486}{%
+           family={Mead},
+           familyi={M\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{ea3081cb732b7755222fed6bbe55a486}
+      \strng{fullhash}{ea3081cb732b7755222fed6bbe55a486}
+      \strng{fullhashraw}{ea3081cb732b7755222fed6bbe55a486}
+      \strng{bibnamehash}{ea3081cb732b7755222fed6bbe55a486}
+      \strng{authorbibnamehash}{ea3081cb732b7755222fed6bbe55a486}
+      \strng{authornamehash}{ea3081cb732b7755222fed6bbe55a486}
+      \strng{authorfullhash}{ea3081cb732b7755222fed6bbe55a486}
+      \strng{authorfullhashraw}{ea3081cb732b7755222fed6bbe55a486}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780201059922}
+      \field{title}{Analog {VLSI} and Neural Systems}
+      \field{year}{1989}
+      \verb{urlraw}
+      \verb https://books.google.hu/books?id=-j8PAQAAMAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.hu/books?id=-j8PAQAAMAAJ
+      \endverb
+    \endentry
+    \entry{sangwan2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=fee5c1fdbc8fc28576d2c9ac72ac5d4f}{%
+           family={Sangwan},
+           familyi={S\bibinitperiod},
+           given={Vinod\bibnamedelima K.},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=59b2abb5fe45884a94edde71afa253a8}{%
+           family={Hersam},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb541d81cb237e7124545404975b48aa}
+      \strng{fullhash}{fb541d81cb237e7124545404975b48aa}
+      \strng{fullhashraw}{fb541d81cb237e7124545404975b48aa}
+      \strng{bibnamehash}{fb541d81cb237e7124545404975b48aa}
+      \strng{authorbibnamehash}{fb541d81cb237e7124545404975b48aa}
+      \strng{authornamehash}{fb541d81cb237e7124545404975b48aa}
+      \strng{authorfullhash}{fb541d81cb237e7124545404975b48aa}
+      \strng{authorfullhashraw}{fb541d81cb237e7124545404975b48aa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1748-3395}
+      \field{journaltitle}{Nature Nanotechnology}
+      \field{number}{7}
+      \field{title}{Neuromorphic nanoelectronic materials}
+      \field{volume}{15}
+      \field{year}{2020}
+      \field{pages}{517\bibrangedash 528}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1038/s41565-020-0647-z
+      \endverb
+    \endentry
+    \entry{yang2022}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=decb3ccdac45fcb482db58da7bb34a14}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4743103b1cc063f236f4c28f77725c3d}{%
+           family={Joshua\bibnamedelima Yang},
+           familyi={J\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9560f66e17f9e321e49a2d5c98bd2a68}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Ru},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9ad2cc59b9dcf4e8da6d4aba27fabc75}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yuchao},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{159f3cc2153f6e39c093244abb628832}
+      \strng{fullhash}{bb8df1483e60196bfcd19fa999d67e7e}
+      \strng{fullhashraw}{bb8df1483e60196bfcd19fa999d67e7e}
+      \strng{bibnamehash}{159f3cc2153f6e39c093244abb628832}
+      \strng{authorbibnamehash}{159f3cc2153f6e39c093244abb628832}
+      \strng{authornamehash}{159f3cc2153f6e39c093244abb628832}
+      \strng{authorfullhash}{bb8df1483e60196bfcd19fa999d67e7e}
+      \strng{authorfullhashraw}{bb8df1483e60196bfcd19fa999d67e7e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Small Science}
+      \field{title}{Nonlinearity in Memristors for Neuromorphic Dynamic Systems}
+      \field{year}{2022}
+      \verb{doi}
+      \verb https://doi.org/10.1002/smsc.202100049
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/smsc.202100049
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/smsc.202100049
+      \endverb
+      \keyw{chaos,coupled oscillatory networks,neuromorphic dynamic systems,nonlinearity in memristors,reservoir computing}
+    \endentry
+    \entry{xiao2023}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=3360d5c5981d3da11ae17c4b14182f1a}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Yongyue},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=215a6337e44399811a195bf368926c0b}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Bei},
+           giveni={B\bibinitperiod}}}%
+        {{hash=75c37fe503cc9c3ef8ab9d2e2bd1e578}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zihao},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=bb9ddaf9329c640eec506d345725f72e}{%
+           family={Ke},
+           familyi={K\bibinitperiod},
+           given={Shanwu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b8ac23afc7992986556e89fc4beded01}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Yaoyao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9494e496566b0e2237ecf0c82781bae2}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=dc4a8da2ff24c868b758bef0ea24db11}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Cong},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{c91c8225f42bf8ae3bbf3ac0ae98646e}
+      \strng{fullhash}{80f86099c2a5407ea9ef558dce75adab}
+      \strng{fullhashraw}{80f86099c2a5407ea9ef558dce75adab}
+      \strng{bibnamehash}{c91c8225f42bf8ae3bbf3ac0ae98646e}
+      \strng{authorbibnamehash}{c91c8225f42bf8ae3bbf3ac0ae98646e}
+      \strng{authornamehash}{c91c8225f42bf8ae3bbf3ac0ae98646e}
+      \strng{authorfullhash}{80f86099c2a5407ea9ef558dce75adab}
+      \strng{authorfullhashraw}{80f86099c2a5407ea9ef558dce75adab}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science and Technology of Advanced Materials}
+      \field{month}{02}
+      \field{title}{A review of memristor: material and structure design, device performance, applications and prospects}
+      \field{volume}{24}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1080/14686996.2022.2162323
+      \endverb
+    \endentry
+    \entry{zhou2020}{article}{}{}
+      \name{author}{16}{}{%
+        {{hash=b703ac3c636f0ae8d197757826103d3d}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Jia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4d5a1ec375736c19dc1665edb1bb6fee}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wen},
+           giveni={W\bibinitperiod}}}%
+        {{hash=676c068afe8004904ddb9c5b3bf072dc}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3d8717280b01473a2d7c876ab2db1813}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Yen‐Hung},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=3d7e294e9072456169c07e5c6d4fc01b}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Mingdong},
+           giveni={M\bibinitperiod}}}%
+        {{hash=94429369244dcd7d9736926b146677d3}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jiayu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7112495974e7a57c172e193ce4d7ebf4}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={Yangzhou},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ce115520e3e031c2cda4b7f11a2af526}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Yun},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3409b448a27e850745506123c32a89a5}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Keyang},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5ff4c27e9069ba8a802f28145a5844de}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Ling-Hai},
+           giveni={L\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=1685944e8cef13e1287d61ae5b1ab47c}{%
+           family={Ling},
+           familyi={L\bibinitperiod},
+           given={Haifeng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2db6630a72d889c73fb97a39b8718cb3}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Zhongjie},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=7d3ddc65d4318933762b08899c363741}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Jiangping},
+           giveni={J\bibinitperiod}}}%
+        {{hash=62dec400353f9194fa5f64c4d21de427}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jintao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2e988b420a1b0efbfb59c3b5f2319c48}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Skouke},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5c689f5303ffb71b39f1ed4cdaae6270}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{01998e186753501f1c1e068e57d5c9ce}
+      \strng{fullhash}{ef928ff2e6625df8bc180e416098bdb5}
+      \strng{fullhashraw}{ef928ff2e6625df8bc180e416098bdb5}
+      \strng{bibnamehash}{01998e186753501f1c1e068e57d5c9ce}
+      \strng{authorbibnamehash}{01998e186753501f1c1e068e57d5c9ce}
+      \strng{authornamehash}{01998e186753501f1c1e068e57d5c9ce}
+      \strng{authorfullhash}{ef928ff2e6625df8bc180e416098bdb5}
+      \strng{authorfullhashraw}{ef928ff2e6625df8bc180e416098bdb5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Materials}
+      \field{month}{12}
+      \field{title}{A Monochloro Copper Phthalocyanine Memristor with High‐Temperature Resilience for Electronic Synapse Applications}
+      \field{volume}{33}
+      \field{year}{2020}
+      \field{pages}{2006201}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/adma.202006201
+      \endverb
+    \endentry
+    \entry{feng2019}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=0bd795323e3d2f604e723e25b4a68fef}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=23fcc07bc560108d27d773a6f2c4e433}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Xu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=28087e35f7571313771cbdb80ba36c75}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Ya-Nan},
+           giveni={Y\bibinithyphendelim N\bibinitperiod}}}%
+        {{hash=58ac0a2004893a330dc4b180b01a211a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jia-Ling},
+           giveni={J\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=4f73889175741957c9d30bacda21006b}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Jianlong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0307b95e2d2c0f2b8fbbd5843ea23d50}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Sui-Dong},
+           giveni={S\bibinithyphendelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{d89e51924436239218a222e84919bfc3}
+      \strng{fullhash}{cbf7a205c1f97a114eaa053235239aa1}
+      \strng{fullhashraw}{cbf7a205c1f97a114eaa053235239aa1}
+      \strng{bibnamehash}{d89e51924436239218a222e84919bfc3}
+      \strng{authorbibnamehash}{d89e51924436239218a222e84919bfc3}
+      \strng{authornamehash}{d89e51924436239218a222e84919bfc3}
+      \strng{authorfullhash}{cbf7a205c1f97a114eaa053235239aa1}
+      \strng{authorfullhashraw}{cbf7a205c1f97a114eaa053235239aa1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Intelligent Systems}
+      \field{month}{07}
+      \field{title}{Solution‐Processed Polymer Thin Film Memristors with Electrochromic Feature and Frequency‐Dependent Synaptic Plasticity}
+      \field{volume}{1}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1002/aisy.201900022
+      \endverb
+    \endentry
+    \entry{schuman2017}{misc}{}{}
+      \name{author}{7}{}{%
+        {{hash=4427d61c9a83f8dd8e00c470b83270b1}{%
+           family={Schuman},
+           familyi={S\bibinitperiod},
+           given={Catherine\bibnamedelima D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=db9b5cc6b951dc45b765687f31b52e4e}{%
+           family={Potok},
+           familyi={P\bibinitperiod},
+           given={Thomas\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=def4c88cbf9c4c572ffcd815a5ac81c3}{%
+           family={Patton},
+           familyi={P\bibinitperiod},
+           given={Robert\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f47bc6a87ec4f7335bb839053c62612b}{%
+           family={Birdwell},
+           familyi={B\bibinitperiod},
+           given={J.\bibnamedelimi Douglas},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=6e14f3fb3f975f4ab9790987897038bb}{%
+           family={Dean},
+           familyi={D\bibinitperiod},
+           given={Mark\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=4660c3755ddb8a704e2783d2711ae456}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={Garrett\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=0c727c72e946fd32eec454b197f98e8a}{%
+           family={Plank},
+           familyi={P\bibinitperiod},
+           given={James\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{57bd1e0125637893e5fc8c9909ca0532}
+      \strng{fullhash}{b9b3982be1273ddf7ac6256ddadc7a71}
+      \strng{fullhashraw}{b9b3982be1273ddf7ac6256ddadc7a71}
+      \strng{bibnamehash}{57bd1e0125637893e5fc8c9909ca0532}
+      \strng{authorbibnamehash}{57bd1e0125637893e5fc8c9909ca0532}
+      \strng{authornamehash}{57bd1e0125637893e5fc8c9909ca0532}
+      \strng{authorfullhash}{b9b3982be1273ddf7ac6256ddadc7a71}
+      \strng{authorfullhashraw}{b9b3982be1273ddf7ac6256ddadc7a71}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.NE}
       \field{eprinttype}{arXiv}
-      \field{title}{Neuromorphic Circuit Simulation with Memristors: Design and Evaluation Using MemTorch for MNIST and CIFAR}
-      \field{year}{2024}
+      \field{title}{A Survey of Neuromorphic Computing and Neural Networks in Hardware}
+      \field{year}{2017}
       \verb{eprint}
-      \verb 2407.13410
+      \verb 1705.06963
       \endverb
       \verb{urlraw}
-      \verb https://arxiv.org/abs/2407.13410
+      \verb https://arxiv.org/abs/1705.06963
       \endverb
       \verb{url}
-      \verb https://arxiv.org/abs/2407.13410
+      \verb https://arxiv.org/abs/1705.06963
       \endverb
     \endentry
   \enddatalist

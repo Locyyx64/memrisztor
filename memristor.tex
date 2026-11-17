@@ -2,6 +2,7 @@
 \usepackage[a4paper, bottom=85pt, left=1.85cm, right=1.85cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{amsbsy}
 \usepackage{hyperref}
 %\usepackage{blindtext}  %for placeholder text
@@ -46,6 +47,10 @@ framexleftmargin=1.5mm
 \DeclareMathOperator\stp{stp}
 \DeclareMathOperator\sgm{sgm}
 \DeclareMathOperator\implicate{IMP}
+\DeclareMathOperator\argmin{argmin}
+\DeclareMathOperator\argmax{argmax}
+\DeclareMathOperator\E{\mathbb{E}}
+\DeclareMathOperator\KL{KL}
 
 %% Egységrendszer
 \DeclareMathOperator\kOhm{k\Omega}
@@ -296,7 +301,8 @@ A Pickett-Simmons állapotegyenlet egyszerűbb megadását biztosítja a TEAM mo
 	\end{cases}
 \end{equation}
 Ahol $k_{\text{off}}$,  $k_{\text{on}}$,  $\alpha_{\text{off}}$, és  $\alpha_{\text{on}}$ modellparaméterek, illetve $i_{\text{off}}$ és $i_{\text{on}}$ küszöbáram értékek. \\
-Az RS (resistive switching) technológiához szükséges szigetelők kristálytani, szennyezettségi követelményeit, növesztési technológiáit, belső folyamatait és energiaviszonyait az alábbiakban tárgyaljuk.
+Az RS (resistive switching) technológiához szükséges szigetelők kristálytani, szennyezettségi követelményeit, növesztési technológiáit, belső folyamatait és energiaviszonyait az alábbiakban tárgyaljuk. \par\smallskip
+A fentebbi, klasszikus Strukov et al. tanulmány többek között olyan kritikát kapott, hogy ideális memrisztornak, illetve egy forradalmi felfedezésnek ítéli a memrisztorok megvalósításában a TiO$_2$ átmenetifém-oxid alapú memrisztort\cite{vongehr2015}. Vongehr et al. cikkje szerint az ilyen szerkezetű eszköz kutatása több évtizeddel visszanyúlik, azzal a különbséggel, hogy akkor még nem vélték L. Chua memrisztor-leírásának megvalósításaként. Felhozzák azt, hogy annak ellenére, hogy Chua az 1971-es cikkjében a memrisztornak a kvázi-sztatikus Maxwell-egyenleteken keresztül mágneses hatást is tulajdonít\cite{chua}, a Strukov-féle titán-dioxid eszköz mágnesesség nélkül is működik.\cite{souto2024}. Ezek után, egy 2014-es cikkben Chua a memrisztor jelentését minden olyan elektromos eszközre kiterjesztette, ami egy "összefogott" I-V hiszterézissel rendelkezik\cite{chua2014}.
 \subsection{Magnéli fázisok, és a rácshibák jelentősége}
 A resistive switching jelenségének vonatkozásában a legnagyobb szerepet az átmenetifém-alapú szigetelők vagy oxidok dinamikus vezetővé válása teszi lehetővé. A titán-dioxid esetén, enyhén redukálva (csak vakanciák, több dimenziós rácshibákkal külön kell számolnunk) a rendkívül vezetőképes ún. Magnéli fázis okozza, ami egy nem-sztöchiometrikus, oxigén-vakanciás anyag. (TiO$_{2-x}$) A vezetőképességet ugyan nem csak az oxigén vakanciák ($V_O$) befolyásolják, hanem egyéb kristályhibák is, például interstíciós Ti atomok, vagy Schottky-párok. A kristályhibák leírására az ún. Kröger-Vink jelölés alkalmazható\cite{szot2014}. A Frenkel-párok és a Schottky-párok figyelembe vételével egy átfogóbb képlet adható a Magnéli fázisokra. Az anyag vezetőképességét a különböző redukáló és oxidáló körülmények között a következőképpen modellezhetjük:
 \begin{equation}
@@ -370,6 +376,11 @@ ahol m a feszültséggel monoton növő arányszám. Ezt a szakaszt egy rövid n
 Az elektroformálás az intersecting-GB memrisztor esetén a szemcsehatár csúcsa és az ellentétes oldal elektródja közti szabad töltéshordozókat az elektroformálás módszerétől függően leköti, így "off" állapotban megnöveli a memrisztor rezisztanciáját. A fenti "set" folyamat a töltéshordozókat az imént említett "hiányos" tartományba vonzza, ezzel növelve a memrisztor vezetőképességét (LRS állapot). Negatív feszültség esetén a szemcsehatárral ellentétes elektródtól eltaszítódnak a töltéshordozók (a szemcsehatár felé), ezzel kikapcsolva a memrisztort (HRS állapot). \par\smallskip
 Egy ilyen felépítésű, háromkivezetéses memrisztor "gate-tunable"\cite{sangwan2015gate}, azaz a set feszültség nagyjából $3.0\text{V}$ és $8.0\text{V}$ között mozgatható a megfelelő gatepotenciál beiktatásával ($0\text{V} - 40\text{V}$). Emellett például a gate elektróda feszültségével befolyásolható a bisecting-GB memrisztorban a gerjesztetlen HRS és LRS ellenállás pontos értéke (több nagyságrenddel változtatható), de az arányuk nem. \par\smallskip
 Hasonló tulajdonságokkal rendelkezik egy másik tanulmányban felvetett MoO$_x$-MoS$_2$, illetve egy WO$_x$-WS$_2$ heterostruktúra.\cite{bessonov2015} Ezeknél még alacsonyabb set feszültség ($0.1-0.2\text{V}$) érhető el. Részletesebben az első esetet tárgyaljuk. Bessonov et al. egy ultravékony ($< 3\nm$) MoO$_x$ ($x < 3$) rétegből és MoS$_2$ réteg(ek)ből kialakított vdWH-t vizsgáltak, két ezüst elektróda között. Mint a fentebb említett klasszikus TiO$_2$ struktúrában, itt is anionok/kationok (mint szabad töltéshordozók) koncentrációgradiense okozza a magas vezetőképességet. Feltehetően a molibdén-diszulfid szélei menti hibák, és egyéb belső diszlokációk erős nem-sztöchiometrikus tartományokat hoznak létre, így alacsony hőmérsékleten is lehetővé teszik az oxidációt. Három óra 200\C-os hőkezelés után a molibdén-diszulfid felszíne körül egy $< 3\nm$ MoO$_x$ réteg keletkezik, főként Mo$^{6+}$ és Mo$^{5+}$ állapotokkal, így az oxigénvakanciák gradiense természetes módon ki is alakul (az oxidált rétegben alacsonyabb koncentráció). A két réteg érintkezésénél lévő ponthibák és strukturális hibák miatt a két rácsszerkezet egymástól különböző. Az oxid és az ezüst elektród közötti Schottky-gát miatt alacsony határfeszültség mellett működik az eszköz (kb. $0.1-0.2\V$). Nyitóirányú feszültség hatására az eszköz bekapcsol (LRS állapot), záróirányú feszültség hatására kikapcsol (HRS állapot). Amint látszik, az ilyen kialakítású molibdén-diszulfid eszközben elektroformálás nélkül is könnyen kialakítható egy vezetőképes réteg. Az oxidáció körülményeitől (pl. hőkezelés típusától) függően eltérő vastagságú, eltérő ionkoncentrációjú oxidréteg alakul ki. Memkapacitív hatások is megfigyelhetők, vélhetően az Ag/MoO$_x$ interfész "töltésnyelő" tulajdonságából.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{mooxstructure}
+	\caption{MoO$_x$-MoS$_2$ cella felépítése\cite{bessonov2015}}
+\end{figure}
 \begin{figure}[h]
 	\centering
 	\includegraphics{moox}
@@ -519,7 +530,7 @@ A memrisztorokból álló rendszerekkel lehetséges Boole-logikai műveletek meg
 	\caption{a) IMP művelet megvalósítása: egy, a feszültégosztást befolyásoló terhelési ellenállás $R_G$, két ágon egy-egy logikai állapotot tároló "stateful" memrisztor (P és Q, állapotaik p és q), rájuk egy-egy tri-state meghajtón keresztül feszültség kapcsolása (kapcsolás hiányában HiZ állapot), az egyikre $V_\text{COND}$, a másikra $V_\text{SET}$ feszültség, b) Megvalósított művelet igazságtáblája\cite{borghetti2010}}
 	\label{fig:imp}
 \end{figure}
-Ebben a kialakításban a Q memrisztor rezisztanciája csak csökkenhet. A logikai állapotok elektromos aszimmetriájából adódóan állapotkúszás ("state drift") előfordulhat, ilyenkor az állapot frissítése szükséges.\cite{kvatinsky2011}. Kvatinsky et al. bebizonyították, hogy a memrisztoros NAND műveletek miatt egy tetszőleges $f: B^n \longrightarrow B$ logikai függvény megvalósítható legalább $n+3$ memrisztor felhasználásával\cite{kvatinsky2014} A logikai függvény elvégzésének minden ütemében vagy egy memrisztort resetelünk, vagy pedig 2 memrisztorral IMP műveletet végzünk. Minden logikai függvény, amely 2 vagy 3 bemeneti változóval rendelkezik (bemeneti memrisztorban tárolt állapotok), megvalósítható 2 műveleti memrisztor alkalmazásával\cite{lehtonen2010}, és erre hatékony algoritmus definiálható (különösen ha optimalizálunk prímimplikánsokra, pl. Quine-McCluskey algoritmussal). Több bemeneti memrisztor esetén 3 műveleti memrisztor lesz szükséges tetszőleges Boole-függvény realizálására\cite{lehtonen2009}, illetve egy $B^n \longrightarrow B^m$ függvény esetén legalább $m+2$ műveleti memrisztor. A NOR műveletből is kiindulhatunk, ami 2 ütemben elvégezhető. Az ilyen IMPLY alapú logika crossbar hálózatban is megvalósítható (lsd. \abra{fig:crossbarimp}), ahol a word lineokra kötjük a meghajtó feszültségeket, és a bit lineokat a terhelő ellenálláson keresztül GND-re kötjük.\cite{kvatinsky2014} Egy adott logikai függvény változóinak azonos sorban kell lenniük. Mivel az IMP művelet destruktív a változóira nézve, a fontos adatot tároló állapotokról a műveletek elvégzése előtt másolatot kell készítenünk. Emellett a szelektor tranzisztorok parazitikus kapacitását, a huzalok ellenállásait és a szivárgó áramokat ("sneak path phenomenon") is figyelembe kell venni. A megfelelő kapcsolási feszültségek, ill. a megfelelő terhelési ellenállás meghatározására szükség van a memrisztor hálózati modellezésére, emellett az állapotkúszás és egyéb hibák modellezésére. Ezen felül a logikai hálózat megfelelő késleltetéseinek kiszámítására szükség van az IMPLY műveletek írási idejére. Crossbar logikai hálózat tervezésénél a rendszer belső parallelizmusát kihasználva több IMPLY és FALSE műveletet végezhetünk egyetlen órajel alatt, és ennek a lehetőségét a hálózat tervezésénél valósíthatjuk meg. Lehtonen et al, és Kvantisky et al. bemutatnak egy IMPLY-alapú 8 bites teljes teljes összeadót (lsd. \abra{fig:fulladder}), ami a CMOS esetben szükséges 400 tranzisztoros megoldásnál sokkal helyhatékonyabb. Az XOR művelethez két műveleti tranzisztor szükséges. A kimeneti $S_i$ bit kiszámításához 26 számítási ütem és két műveleti memrisztor szükséges:
+Ebben a kialakításban a Q memrisztor rezisztanciája csak csökkenhet. A logikai állapotok elektromos aszimmetriájából adódóan állapotkúszás ("state drift") előfordulhat, ilyenkor az állapot frissítése szükséges.\cite{kvatinsky2011}. Kvatinsky et al. bebizonyították, hogy a memrisztoros NAND műveletek miatt egy tetszőleges $f: B^n \longrightarrow B$ logikai függvény megvalósítható legalább $n+3$ memrisztor felhasználásával\cite{kvatinsky2014} A logikai függvény elvégzésének minden ütemében vagy egy memrisztort resetelünk, vagy pedig 2 memrisztorral IMP műveletet végzünk. Minden logikai függvény, amely 2 vagy 3 bemeneti változóval rendelkezik (bemeneti memrisztorban tárolt állapotok), megvalósítható 2 műveleti memrisztor alkalmazásával\cite{lehtonen2010}, és erre hatékony algoritmus definiálható (különösen ha minimalizálunk prímimplikánsokra, pl. Quine-McCluskey algoritmussal). Több bemeneti memrisztor esetén 3 műveleti memrisztor lesz szükséges tetszőleges Boole-függvény realizálására\cite{lehtonen2009}, illetve egy $B^n \longrightarrow B^m$ függvény esetén legalább $m+2$ műveleti memrisztor. A NOR műveletből is kiindulhatunk, ami 2 ütemben elvégezhető. Az ilyen IMPLY alapú logika crossbar hálózatban is megvalósítható (lsd. \abra{fig:crossbarimp}), ahol a word lineokra kötjük a meghajtó feszültségeket, és a bit lineokat a terhelő ellenálláson keresztül GND-re kötjük.\cite{kvatinsky2014} Egy adott logikai függvény változóinak azonos sorban kell lenniük. Mivel az IMP művelet destruktív a változóira nézve, a fontos adatot tároló állapotokról a műveletek elvégzése előtt másolatot kell készítenünk. Emellett a szelektor tranzisztorok parazitikus kapacitását, a huzalok ellenállásait és a szivárgó áramokat ("sneak path phenomenon") is figyelembe kell venni. A megfelelő kapcsolási feszültségek, ill. a megfelelő terhelési ellenállás meghatározására szükség van a memrisztor hálózati modellezésére, emellett az állapotkúszás és egyéb hibák modellezésére. Ezen felül a logikai hálózat megfelelő késleltetéseinek kiszámítására szükség van az IMPLY műveletek írási idejére. Crossbar logikai hálózat tervezésénél a rendszer belső parallelizmusát kihasználva több IMPLY és FALSE műveletet végezhetünk egyetlen órajel alatt, és ennek a lehetőségét a hálózat tervezésénél valósíthatjuk meg. Lehtonen et al, és Kvantisky et al. bemutatnak egy IMPLY-alapú 8 bites teljes teljes összeadót (lsd. \abra{fig:fulladder}), ami a CMOS esetben szükséges 400 tranzisztoros megoldásnál sokkal helyhatékonyabb. Az XOR művelethez két műveleti tranzisztor szükséges. A kimeneti $S_i$ bit kiszámításához 26 számítási ütem és két műveleti memrisztor szükséges:
 \begin{equation}
 	S_i = (A_i \oplus B_i) \oplus C_i
 \end{equation}
@@ -653,11 +664,80 @@ Hogyha ez a membrán potenciál elér egy adott $\lambda$ határt, akkor az oszl
 	\hat{x} &= Da^T
 \end{align}
 Ezután ismét az első fázisba lépünk, de ezúttal $x$ helyett a sorokra a kezdeti bemenet és a reprezentáció különbségét adjuk ("maradék"), majd a keletkező töltéseket a neuronok membrán potenciáljához hozzáadjuk. Ezt követően ismét előállítjuk az $a_j$ értékeket. Ezt a két szakaszt addig ismételjük, amíg a hálózat stabilizálódik, végül az $a$ vektor lesz a kapott sparse reprezentációs vektor. A diszkrét időben végzett előre-, majd visszaterjesztés ismétlésével a kimeneti neuronok közötti korlátozó szinapszisok nélkül is egy regularizációs effektust kapunk.\cite{sheridan2017}
-\subsubsection{Döntési fák}
 \subsubsection{Konvolúciós neurális hálók}
+A konvolúciós neurális hálók (convolutional neural network, CNN) alapja, hogy egy tanulható kernelmátrix felhasználásával a bemeneti adaton diszkrét konvolúciókat végzünk, ezt akár több konzekvens alkalommal elvégezzük (pl. average pooling rétegeken keresztül), majd nemlinearitásokon keresztül egy előrecsatolt neurális hálóba kötjük a végső réteg kimenetét. Egy ilyen hálózat kialakítása a crossbar módszerrel nehézkes, mert, ahogy később (ld. \ref{sec:stochastic}) még ismertetjük, a crossbar hálózatból adódó zaj (pl. variáció) és egyéb nemideális faktorok nagy hatással lehetnek a kimenet pontosságára. A CNN neuromorfikus chipekben a nem-Neumann architektúra miatt megszűnik az adattovábbításból származó költség, így az ilyen rendszerek hatékonybbak. Yao et al. tanulmányában egy 5 réteges memrisztor alapú CNN segítségével az MNIST mintahalmazon tanított képfelismerésben 96\% körüli pontosságot értek el.\cite{yao2020} A rendszer 1T1R crossbart használ, TaO$_x$-HfO$_x$ memrisztorokkal. A teljes CNN hálózata 8 különböző; 2,048 cellás ($128 \times 16$) crossbar hálóra (processing element, PE) van osztva. Az MNIST mintái $28\times 28$-as greyscale (8 bites) képek, tehát a kernel dimenziója lehet például $1\times3\times3\times8$. A használt kernelek súlyait a egy-egy differenciális konduktanciapárként illesztjük a crossbar hálózatra. A BL oszlopokra a feszültségpulzussá kódolt bemeneteket adjuk, a kerneles konvolúció műveletének megfelelően ("csúsztatás"). Tekintve hogy a különböző kerneleket egyszerre működtetjük (mindegyik egy-egy saját crossbaron működik), a hálózat hatékony. A műveletek előjelesen súlyozott eredményeit a differenciális source line-ok érzékelik. A hálózat in situ tanítása az említett okokból rendkívül zajos eredményekhez vezethet.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.45]{cnn1}
+	\caption{A konvolúciós kernelek ($3\times3$) illesztése a memrisztorokra, a CBA felépítése. A WL sorok konstans $4.5\V$-ra vannak kapcsolva, a bemeneteknek megfelelő BL pulzusok amplitúdója $0.2\V$, végül a SL sorok GND-re vannak kapcsolva\cite{yao2020}}
+\end{figure}
+Az ex situ tanítás miatt a rendszer "hibrid tanulású". A súlyokat egy külső rendszer határozza meg (pl. egy Python keretrendszerben futó kód, TensorFlow segítségével), ezeket a PE crossbarokra írja egy vezérlő egység. Majd a helyben történő előreterjesztés után kizárólag a végső (FC) réteg van in situ tanítva. Kutatások szerint ez a módszer elégséges a eszköz varianciáinak kompenzálására. Bár, a szoftver-hardver kompatibilitás miatt a meghatározott súlyokat kvantálni kell az átvitel előtt (pl. megengedett konduktanciatartományra való átskálázás, illetve 32-bites lebegőpontos ábrázolásról 15-bites fixpontos ábrázolásra való áttérés), és hoz némi teljesítménybeli romlást az ideálishoz képest. Ez okozta, hogy a szoftveresen elért $98\%$ pontosság helyett csak kb. $96.4\%$ volt elérhető.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{cnn2}
+	\caption{Ötréteges CNN felépítése, felül a kernelek és a pooling ablakok dimenziói, alul a feature mapek és a vektorok dimenziói, és elhelyezésük a PE crossbarokon\cite{yao2020}}
+\end{figure}
 \subsubsection{Sztochasztikus hálók}
+\label{sec:stochastic}
+A memrisztor crossbar hálózatok egyik legnagyobb hátránya a gyenge pontosság, ami a hálózat nagyságával arányos. Konvolúciós neurális hálók esetén az ún. process variationból adódó hibák a tanított CNN inferenciás pontosságát akár 89\%-ról 59\%-ra leronthatják. Emellett a hálózatra kapcsolt periférikus eszközök, pl. DC/AC konverterek belső kialakításukból adódóan kitéve lehetnek az ilyen zajeffektusoknak. Sok kísérlet volt már az ilyen hibák hatásának minimalizálására pl. rekurzív proecsszáláson és újratanításon keresztül, és jó margójú pontosság érhető el ilyen módszerekkel. Viszont jobb eredmény nyújthat, ha magába a tanulás folyamatába vonjuk bele a sztochasztikus tényezők pontossággal való dekorrelációját. Erre ad egy sikeres módszert a memrisztor crossbar hálózaton megvalósított bayesi inferenciaháló.\cite{gao2021} Ennek előnyei az újratanítással szemben: \begin{anumerate}
+	\elem Rendszer robosztussága különböző zajforrásokra, súlyok optimalizálása zajos környezetben, egységesített módszer
+	\elem Deviáció modellezése különböző forrásokra nézve (paraméteres kanonikus alak)
+	\elem Kiindulási információ felhasználása (a priori eloszlás), súlyok posteriori eloszlásának optimalizálása a robosztusságra
+	\elem Adaptív, rugalmas priori eloszlás (grid search lehetősége megadott paramétereken) 
+	\elem Akár 50-60\%-kal csökkenti az inferenciás degradációt
+\end{anumerate}
+Egy memrisztor crossbar tartalmazhat "beégetett", gyári ún. térben korrelált variációkat, amik a crossbar elemeiből és a köztük lévő kapcsolásokból adódik. Emellett beszélhetünk ún. dinamikus variációkról, amelyek hatására illetve mértéke a hálózat élete/használata során változik (pl. sztochasztikus ionmozgás, spontán generáció). A statisztikus tanuló rendszerekben a célunk egy adott $\mathcal{D}$ adathalmazra optimalizálni egy belső $P$ eloszlást, vagy a maximum likelihood estimation (MLE) terminológiájával élve:
+\begin{equation}
+	w_\text{MLE} = \argmin_w - \log P(\mathcal{D}|w)
+\end{equation}
+	Ahol $w$ a hálózat (pl. CNN) súlyai, és $P(\mathcal{D}|w)$ annak a valószínűsége, hogy $w$ súly mellett $\mathcal{D}$-t fogjuk megfigyelni a kimeneten. A $P(w|\mathcal{D})$ eloszlást nevezzük a súly "a posteriori" (valamilyen ismeret elsajátítása utáni) eloszlásának, ami megmutatja hogy adott $\mathcal{D}$ esetén milyen mértékben variál. Ezt a Bayes-szabály alapján a következő adja:
+	\begin{equation}
+		P(w|\mathcal{D}) = \frac{P(w)P(\mathcal{D}|w)}{P(\mathcal{D})}
+	\end{equation}
+	Az a priori eloszlás $P(w)$ megadja, hogy a keresett paraméter a megfigyelésekből származó ismeretek hiányában a paramétertében különböző értékeket milyen valószínűséggel vesz fel\cite{pataki2006}. Emellett, ha a $P(w|\mathcal{D})$ posterioi eloszlásból egy optimális paramértert szeretnénk kinyerni, nem pedig egy eloszlást, akkor alkalmazható az ún. maximum a posteriori (MAP) becslés. \begin{equation}
+		\hat{w}_\text{MAP} = \argmax_w P(w|\mathcal{D})
+	\end{equation}
+	Mivel $w$-t variánsnak vesszük $P(w|\mathcal{D})$ függvényében, ezért a rendszer valószínűsége, hogy egy adott bemenetre a megfelelő $y$ értéket adja:
+	\begin{equation}
+		P(y|x) = \E_{P(w|\mathcal{D})}\mleft[P(y|x, w)\mright]
+	\end{equation}
+	Emellett, hogyha a Kullback-Leibler (KL) divergencia két eloszlás hasonlóságának mértéke a következő módon\cite{goodfellow2016}:
+	\begin{equation}
+		\KL(P||Q) = \E_{x\sim P}\mleft[\log\frac{P(x)}{Q(x)}\mright] = \E_{x\sim P} \mleft[\log P(x) - \log Q(x)\mright]
+	\end{equation}
+	Ezek után definiálható egy $q(w|\theta)$, amivel a posteriori súlyeloszlást közelítjük (hiszen az közvetlen nem számolható). Ez tejlesíti a varianciamodellezési követelményét a rendszernek. A közelítő $q$ eloszlás paraméterereit a következő adja:
+	\begin{equation}
+		\theta^* =  \argmin_\theta \KL\mleft[q(w,\theta)||P(w|\mathcal{D})\mright]
+	\end{equation}
+	Ennek egy ekvivalens alakját, an ún. evidence lower boundot (ELBO) használjuk költségfüggvény ill. veszteségfüggvényként, mert ezzel könnyebb számolni:
+	\begin{equation}
+		\text{ELBO} = \E_{q(w|\theta)}\mleft[log(P(\mathcal{D}|w))\mright]-\KL\mleft[q(w|\theta)||P(w)\mright]
+	\end{equation}
+	Az ELBO-t maximalizálni szeretnénk, vagyis valójában ennek a (-1)-szerese lesz a költségfüggvény. Ennek a $\theta$ szerinti gradiensét visszaterjesztjük, és a $\theta$ paramétereket gradient descenttel frissítjük. Amikor ezt a költségfüggvényt minimalizáljuk, az ELBO képletének második tagja egy olyan kényszert visz a tanulásba, hogy a posterior modellező eloszlás $q(w,\theta)$ megfelelő mértékben hasonló legyen a priori eloszláshoz, ehhez lehetővé téve a gyári variációk ismeretének felhasználását. A modellezett posteriori eloszlásnak a MAP becslését vesszük, és a crossbar memrisztoraira illesztjük (ld. \abra{fig:bayes1}), és az így optimalizált crossbar háló (például CNN alkalmazásában) pontosabb eredményeket idéz a megvalósított rendszer kimenetén.
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}{0.49\textwidth}
+			\includegraphics[scale=0.65]{bayes}
+		\end{subfigure}
+		\begin{subfigure}{0.49\textwidth}
+			\includegraphics[scale=0.3]{bayes2}
+		\end{subfigure}
+		\caption{A teljes BNN rendszer Gao et al. tanulmányában\cite{gao2021}}
+		\label{fig:bayes1}
+	\end{figure}
 \subsection{Neuromorfikus chipek} 
-\cite{souto2024}
+A "neuromorfikus" jelzőt általában olyan áramkörökre, chipekre használják, amelyek a memóriánbelüli számítás elvét ill. a nem-Neumann modellt alkalmazzák olyan módon, ami az agyi működésre hasonlít.\cite{souto2024}. A korábban tárgyalt memrisztoros neurális hálókat megvalósító chipeket is neuromorfikusnak nevezik. Maga az elnevezés az ilyen áramkörök és a tényleges agyi működést közötti hasonlóságból következik. Az agyban a memória és a feldolgozás/számítás egyszerre, parallel történik és a két folyamat erőteljesen összefonódott (kolokalizált memória és számítás\cite{indiveri2015}). A memrisztorokban tárolt súlyok és a köztük lévő kapcsolatok működése lényegében megegyezik az agyban lévő neuronok, és a köztük lévő szinapszisok működésével.\cite{souto2024} Az agyban a különböző neuronok közötti szinapszisok erőssége folyton (pl. tanulás során) változik. Emiatt, a neuromorfikus áramkörökben szükség van nem-felejtő módon tárolt paraméterekre, amik egy mesterséges tanulási folyamat során módosíthatók. Ezek tárolására felhasználhatók memrisztorok, egyéb memrisztív rendszerek, vagy pl. szinaptikus tranzisztorok\cite{yan2023}. A szinaptikus tranzisztorok az agyi szinaptikus vezikulák működését utánozzák, az ún. Moiré mintának köszönhető elektronfelhalmozó tulajdonságukkal. A neuromorfikus chipekhez társított előnyök, az agyhoz hasonlóan, a rendkívüli energiahatékonyság, gyorsaság, rugalmasság, és az aszinkron, eseményalapú működés. Kutatásuk az 1980-as évek végéig nyúlik vissza\cite{mead1989}, de az utóbbi évtizedben erősen megnőtt az érdeklődés irántuk, különösen az AI fejlődésének és a nanoméretű memrisztív rendszerek feljődésének viszonylatában\cite{sangwan2020}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.75]{brain&memory}
+	\caption{a) Agyi felépítés: neuronokból álló mikrohálózatok klaszterei, közöttük hosszú távú kapcsolatok, b) többmagos modern CPU kapcsolata az elsődleges és a perifériás memóriákkal, minden mag saját lokális memóriával rendelkezik (cache-k és a regiszterek)\cite{indiveri2015}}
+\end{figure}
+A neuromorfikus áramkörökben alkalmazott memrisztorok több kategóriába eshetnek, pl. anion migrációs (TiO$_2$)\cite{yang2022}, kation migrációs, vagy duális típusú\cite{souto2024}. Emellett az alkalmazott anyag lehet szerves vagy szervetlen\cite{xiao2023}. A szervetlen anyagok (pl. kettős oxidok, perovszkitok, 2D anyagok) általában stabilabb, robusztusabb és gyorsabb RS tulajdonságokkal rendelkeznek, a szerves anyagok viszont olcsóbbak, rugalmasabbak, és egyszerűbb az előállításuk. Az utóbbiakra például hajlékony elektronikában van szükség, ilyen anyagok pl. a ClCuPc\cite{zhou2020}, illetve különböző polimerek\cite{feng2019}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{neuropiechart}
+	\caption{Neuromorfikus számítás hardveres megvalósításainak típusai\cite{schuman2017}}
+\end{figure}
 \subsection{Egyéb alkalmazások}
 Használhatók például dinamikus módosítható terhelésként bizonyos rendszerekben, például programozható erősítőkben\cite{prodromakis2010} minimális veszteségekkel, programozható threshold komparátorokban, vagy speciális oszcillátorokban.
 
