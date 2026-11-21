@@ -376,6 +376,134 @@
       \verb 10.1038/s41565-020-0655-z
       \endverb
     \endentry
+    \entry{ferroelectricity}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=cef67bce6c42215bde9bc1bf8fadd4df}{%
+           family={College},
+           familyi={C\bibinitperiod},
+           given={Prabhat\bibnamedelima Kumar},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {DSpace at Prabhat Kumar College}%
+      }
+      \strng{namehash}{cef67bce6c42215bde9bc1bf8fadd4df}
+      \strng{fullhash}{cef67bce6c42215bde9bc1bf8fadd4df}
+      \strng{fullhashraw}{cef67bce6c42215bde9bc1bf8fadd4df}
+      \strng{bibnamehash}{cef67bce6c42215bde9bc1bf8fadd4df}
+      \strng{authorbibnamehash}{cef67bce6c42215bde9bc1bf8fadd4df}
+      \strng{authornamehash}{cef67bce6c42215bde9bc1bf8fadd4df}
+      \strng{authorfullhash}{cef67bce6c42215bde9bc1bf8fadd4df}
+      \strng{authorfullhashraw}{cef67bce6c42215bde9bc1bf8fadd4df}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lecture Notes - Ferroelectricity}
+      \verb{urlraw}
+      \verb pkcollegecontai.dspaces.org/bitstream/123456789/529/1/ferroelectricity.pdf
+      \endverb
+      \verb{url}
+      \verb pkcollegecontai.dspaces.org/bitstream/123456789/529/1/ferroelectricity.pdf
+      \endverb
+    \endentry
+    \entry{tsymbal2006}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=283b433d7f6bce19410f848fa63e4367}{%
+           family={Tsymbal},
+           familyi={T\bibinitperiod},
+           given={Evgeny\bibnamedelima Y.},
+           giveni={E\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=f7437684e46df2d65f3b0df0bf5c06d0}{%
+           family={Kohlstedt},
+           familyi={K\bibinitperiod},
+           given={Hermann},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{e432b9915be119bb9cc0c6cae1d4fc1b}
+      \strng{fullhash}{e432b9915be119bb9cc0c6cae1d4fc1b}
+      \strng{fullhashraw}{e432b9915be119bb9cc0c6cae1d4fc1b}
+      \strng{bibnamehash}{e432b9915be119bb9cc0c6cae1d4fc1b}
+      \strng{authorbibnamehash}{e432b9915be119bb9cc0c6cae1d4fc1b}
+      \strng{authornamehash}{e432b9915be119bb9cc0c6cae1d4fc1b}
+      \strng{authorfullhash}{e432b9915be119bb9cc0c6cae1d4fc1b}
+      \strng{authorfullhashraw}{e432b9915be119bb9cc0c6cae1d4fc1b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{5784}
+      \field{title}{Tunneling Across a Ferroelectric}
+      \field{volume}{313}
+      \field{year}{2006}
+      \field{pages}{181\bibrangedash 183}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1126/science.1126230
+      \endverb
+    \endentry
+    \entry{yin2021}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=5b70477a62d9f3a7569b215d246f7714}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=cd6063395c30f1789e0bf3ab0be7b791}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Ruiqing},
+           giveni={R\bibinitperiod}}}%
+        {{hash=66e53c1d7ca4a860648856e78d6204e0}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=088e43073696d6830bf797750794b8be}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chuansheng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1e1aeaa170e67ede50111a962ff1168c}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b1cbd7ebe26d4a2b8c15aab895c240b}
+      \strng{fullhash}{c0e5e619a627569830e3f6ebb9ddc1c0}
+      \strng{fullhashraw}{c0e5e619a627569830e3f6ebb9ddc1c0}
+      \strng{bibnamehash}{2b1cbd7ebe26d4a2b8c15aab895c240b}
+      \strng{authorbibnamehash}{2b1cbd7ebe26d4a2b8c15aab895c240b}
+      \strng{authornamehash}{2b1cbd7ebe26d4a2b8c15aab895c240b}
+      \strng{authorfullhash}{c0e5e619a627569830e3f6ebb9ddc1c0}
+      \strng{authorfullhashraw}{c0e5e619a627569830e3f6ebb9ddc1c0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Materials}
+      \field{number}{29}
+      \field{title}{Emerging 2D Memory Devices for In-Memory Computing}
+      \field{volume}{33}
+      \field{year}{2021}
+      \field{pages}{2007081}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1002/adma.202007081
+      \endverb
+      \verb{eprint}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.202007081
+      \endverb
+      \verb{urlraw}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.202007081
+      \endverb
+      \verb{url}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.202007081
+      \endverb
+      \keyw{2D layered materials,2D memory devices,in-memory computing,van der Waals heterostructures}
+    \endentry
     \entry{yoon2008}{article}{}{}
       \name{author}{7}{}{%
         {{hash=7ef0aab94bfb35378d13193bce42c97f}{%
@@ -422,8 +550,8 @@
       \strng{authornamehash}{d414c6c208c1117e5a8e2088ae9fde80}
       \strng{authorfullhash}{a2c55f4614f5b935d8750a226aba8fc7}
       \strng{authorfullhashraw}{a2c55f4614f5b935d8750a226aba8fc7}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Computer Architecture Letters}
@@ -459,8 +587,8 @@
       \strng{authornamehash}{0b7a682f6a3a39a029880edd0e0a15e4}
       \strng{authorfullhash}{0b7a682f6a3a39a029880edd0e0a15e4}
       \strng{authorfullhashraw}{0b7a682f6a3a39a029880edd0e0a15e4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2010 17th IEEE International Conference on Electronics, Circuits and Systems}
@@ -669,8 +797,8 @@
       \strng{authornamehash}{fab9bccf123bee9ac9ac656a0edbba3d}
       \strng{authorfullhash}{fab9bccf123bee9ac9ac656a0edbba3d}
       \strng{authorfullhashraw}{fab9bccf123bee9ac9ac656a0edbba3d}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1361-6404}
@@ -723,8 +851,8 @@
       \strng{authorfullhash}{23b5e017bec6849bb5607d47e73bab19}
       \strng{authorfullhashraw}{23b5e017bec6849bb5607d47e73bab19}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Circuits and Systems I: Regular Papers}
@@ -933,8 +1061,8 @@
       \strng{authorfullhash}{a78d0aad8267c51f4b9dce1ea0782770}
       \strng{authorfullhashraw}{a78d0aad8267c51f4b9dce1ea0782770}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0268-1242}
@@ -995,8 +1123,8 @@
       \strng{editornamehash}{476b6d49b4f906c1719590835d2fdd04}
       \strng{editorfullhash}{476b6d49b4f906c1719590835d2fdd04}
       \strng{editorfullhashraw}{476b6d49b4f906c1719590835d2fdd04}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0081-1947}
@@ -1016,6 +1144,57 @@
       \verb https://www.sciencedirect.com/science/article/pii/B9780128001752000042
       \endverb
       \keyw{Resistive RAM,Transition-metal oxide,Extended defect,Insulator–metal transition,Electronic transport,Electrodegradation,Resistive switching}
+    \endentry
+    \entry{li2019}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=1ddc80cd8205939b83d7a9245248e355}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ming-Yang},
+           giveni={M\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=7760ce54ce6b921e29a54249a827f88d}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Sheng-Kai},
+           giveni={S\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=60526d097df26e16f0535b4b1d5f7e5c}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={H.-S.\bibnamedelimi Philip},
+           giveni={H\bibinithyphendelim S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=da46492ce09ca687e56cf8af2947316c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Lain-Jong},
+           giveni={L\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae1ea328a82b5befcf66308721bf5e33}
+      \strng{fullhash}{cd4855efbcb00f1e19cd72a6ab59414e}
+      \strng{fullhashraw}{cd4855efbcb00f1e19cd72a6ab59414e}
+      \strng{bibnamehash}{ae1ea328a82b5befcf66308721bf5e33}
+      \strng{authorbibnamehash}{ae1ea328a82b5befcf66308721bf5e33}
+      \strng{authornamehash}{ae1ea328a82b5befcf66308721bf5e33}
+      \strng{authorfullhash}{cd4855efbcb00f1e19cd72a6ab59414e}
+      \strng{authorfullhashraw}{cd4855efbcb00f1e19cd72a6ab59414e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{title}{How 2D semiconductors could extend Moore's Law}
+      \field{volume}{567}
+      \field{year}{2019}
+      \field{pages}{169\bibrangedash 170}
+      \range{pages}{2}
+      \verb{doi}
+      \verb doi: https://doi.org/10.1038/d41586-019-00793-8
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/d41586-019-00793-8
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/d41586-019-00793-8
+      \endverb
     \endentry
     \entry{nichols2016}{incollection}{}{}
       \name{author}{7}{}{%
@@ -1126,8 +1305,8 @@
       \strng{authornamehash}{54806dfeec60d64cb0e4cb0f4ed3c52a}
       \strng{authorfullhash}{54806dfeec60d64cb0e4cb0f4ed3c52a}
       \strng{authorfullhashraw}{54806dfeec60d64cb0e4cb0f4ed3c52a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2352-9407}
@@ -1175,8 +1354,8 @@
       \strng{authornamehash}{0cb180415b1160f6e88db56e29f9e1df}
       \strng{authorfullhash}{0cb180415b1160f6e88db56e29f9e1df}
       \strng{authorfullhashraw}{0cb180415b1160f6e88db56e29f9e1df}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nanoscale}
@@ -1188,6 +1367,752 @@
       \range{pages}{23}
       \verb{doi}
       \verb 10.1039/C5NR01052G
+      \endverb
+    \endentry
+    \entry{li2015}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=18ba73252766a06dc14ce84e6f718773}{%
+           family={Hui},
+           familyi={H\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3e3bd905c7015f3ce946fe3e0ce79eaf}{%
+           family={Hui-Xia},
+           familyi={H\bibinithyphendelim X\bibinitperiod},
+           given={Fu},
+           giveni={F\bibinitperiod}}}%
+        {{hash=cb2be8c086ce6ff00af72780d2f4f1f3}{%
+           family={Sheng},
+           familyi={S\bibinitperiod},
+           given={Meng},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd1de70ea51408c7b72d049b653f8872}
+      \strng{fullhash}{dd1de70ea51408c7b72d049b653f8872}
+      \strng{fullhashraw}{dd1de70ea51408c7b72d049b653f8872}
+      \strng{bibnamehash}{dd1de70ea51408c7b72d049b653f8872}
+      \strng{authorbibnamehash}{dd1de70ea51408c7b72d049b653f8872}
+      \strng{authornamehash}{dd1de70ea51408c7b72d049b653f8872}
+      \strng{authorfullhash}{dd1de70ea51408c7b72d049b653f8872}
+      \strng{authorfullhashraw}{dd1de70ea51408c7b72d049b653f8872}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1674-1056}
+      \field{journaltitle}{Chin. Phys. B}
+      \field{number}{8}
+      \field{title}{Silicene: from monolayer to multilayer–A concise review}
+      \field{volume}{24}
+      \field{year}{2015}
+      \field{pages}{086102\bibrangedash 086102}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1674-1056/24/8/086102
+      \endverb
+      \verb{urlraw}
+      \verb https://cpb.iphy.ac.cn/en/article/doi/10.1088/1674-1056/24/8/086102
+      \endverb
+      \verb{url}
+      \verb https://cpb.iphy.ac.cn/en/article/doi/10.1088/1674-1056/24/8/086102
+      \endverb
+    \endentry
+    \entry{ni2014}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=9ba36928c673f263cd127725b443c2c9}{%
+           family={Ni},
+           familyi={N\bibinitperiod},
+           given={Zeyuan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=35914b62f46b0c9eaf979841c49579e2}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Hongxia},
+           giveni={H\bibinitperiod}}}%
+        {{hash=52ea5f5a9befc77f72cc0b2b1a5346b3}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Xinhe},
+           giveni={X\bibinitperiod}}}%
+        {{hash=75c7962ca179ac0c6cc3fb55b1d8bb87}{%
+           family={Quhe},
+           familyi={Q\bibinitperiod},
+           given={Ruge},
+           giveni={R\bibinitperiod}}}%
+        {{hash=85d57caa3b9e2756f7f9eea95afe59b9}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Guangfu},
+           giveni={G\bibinitperiod}}}%
+        {{hash=470fac4487d50030669c8ddc1e72f254}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yangyang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bc418b382a0babfb2419efefc7a11e21}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Meng},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1eeb7ee2c00dc4cdb8e9bb9213f515f3}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jinbo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=059d8a7c5101f2613a73ed6059ce7a6d}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Junjie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=56a36a3757d48ad98c5d9f736c9f69d3}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{790dced84fc3580899b516ca3a777cc2}
+      \strng{fullhash}{7f8acf7ce757fa10f9fb5d770bce4111}
+      \strng{fullhashraw}{7f8acf7ce757fa10f9fb5d770bce4111}
+      \strng{bibnamehash}{790dced84fc3580899b516ca3a777cc2}
+      \strng{authorbibnamehash}{790dced84fc3580899b516ca3a777cc2}
+      \strng{authornamehash}{790dced84fc3580899b516ca3a777cc2}
+      \strng{authorfullhash}{7f8acf7ce757fa10f9fb5d770bce4111}
+      \strng{authorfullhashraw}{7f8acf7ce757fa10f9fb5d770bce4111}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nanoscale}
+      \field{number}{13}
+      \field{title}{Tunable band gap and doping type in silicene by surface adsorption: towards tunneling transistors}
+      \field{volume}{6}
+      \field{year}{2014}
+      \field{pages}{7609\bibrangedash 7618}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1039/c4nr00028e
+      \endverb
+      \verb{eprint}
+      \verb https://pubs.rsc.org/nr/article-pdf/6/13/7609/3690486/c4nr00028e.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1039/c4nr00028e
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1039/c4nr00028e
+      \endverb
+    \endentry
+    \entry{pan2015}{article}{}{}
+      \name{author}{11}{}{%
+        {{hash=bacbbbe66d531fc28af37fab0097a611}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+        {{hash=470fac4487d50030669c8ddc1e72f254}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yangyang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ea4aa22d44b4c580010d5eafc6886dd0}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Kaili},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9ba36928c673f263cd127725b443c2c9}{%
+           family={Ni},
+           familyi={N\bibinitperiod},
+           given={Zeyuan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=a0da82e783e23df668a06d81a15116d2}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jianhua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2a339569aa4f738786f453b85cbe8733}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Jiaxin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=75c7962ca179ac0c6cc3fb55b1d8bb87}{%
+           family={Quhe},
+           familyi={Q\bibinitperiod},
+           given={Ruge},
+           giveni={R\bibinitperiod}}}%
+        {{hash=059d8a7c5101f2613a73ed6059ce7a6d}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Junjie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1eeb7ee2c00dc4cdb8e9bb9213f515f3}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jinbo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=70e75d0c72042fcaa7440362ca0bbdb6}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Changle},
+           giveni={C\bibinitperiod}}}%
+        {{hash=56a36a3757d48ad98c5d9f736c9f69d3}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8991079b13cd866bd5d0b26d7372e2a1}
+      \strng{fullhash}{820010977b49d112b815a15e9cffbde0}
+      \strng{fullhashraw}{820010977b49d112b815a15e9cffbde0}
+      \strng{bibnamehash}{8991079b13cd866bd5d0b26d7372e2a1}
+      \strng{authorbibnamehash}{8991079b13cd866bd5d0b26d7372e2a1}
+      \strng{authornamehash}{8991079b13cd866bd5d0b26d7372e2a1}
+      \strng{authorfullhash}{820010977b49d112b815a15e9cffbde0}
+      \strng{authorfullhashraw}{820010977b49d112b815a15e9cffbde0}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{number}{1}
+      \field{title}{Silicene nanomesh}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{pages}{9075}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/srep09075
+      \endverb
+    \endentry
+    \entry{xiong2023}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=710dce16083a5ca2734107b8d0c3c15b}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Yunhai},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0d78efb344c66a6df5dd12cb5bcc4333}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Duo},
+           giveni={D\bibinitperiod}}}%
+        {{hash=379bad686dfa88379c39b1ee73fc19e6}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Yiping},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=eb5430857b16783e571edafb4ad216aa}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Guangjie},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b4063469a222398eb315066258accbca}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Pei},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0c475071538366636655ccf385c755e7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiang},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{8262c482a89a25cee9c1bb700bafe629}
+      \strng{fullhash}{3ae83073d8fe72796f7a20e0a5bf9eda}
+      \strng{fullhashraw}{3ae83073d8fe72796f7a20e0a5bf9eda}
+      \strng{bibnamehash}{8262c482a89a25cee9c1bb700bafe629}
+      \strng{authorbibnamehash}{8262c482a89a25cee9c1bb700bafe629}
+      \strng{authornamehash}{8262c482a89a25cee9c1bb700bafe629}
+      \strng{authorfullhash}{3ae83073d8fe72796f7a20e0a5bf9eda}
+      \strng{authorfullhashraw}{3ae83073d8fe72796f7a20e0a5bf9eda}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Materials}
+      \field{number}{50}
+      \field{title}{P-Type 2D Semiconductors for Future Electronics}
+      \field{volume}{35}
+      \field{year}{2023}
+      \field{pages}{2206939}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1002/adma.202206939
+      \endverb
+      \verb{eprint}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.202206939
+      \endverb
+      \verb{urlraw}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.202206939
+      \endverb
+      \verb{url}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.202206939
+      \endverb
+      \keyw{2D semiconductors,electronics,integrated circuit,post-Moore era,p-type}
+    \endentry
+    \entry{ly2016}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=965393cbba2d381359d11a46c818cd8f}{%
+           family={Ly},
+           familyi={L\bibinitperiod},
+           given={Thuc\bibnamedelima Hue},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=c20e95449afe664268f15e1a2dcd482b}{%
+           family={Perello},
+           familyi={P\bibinitperiod},
+           given={David\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=611f6b4fdd582dfe1f9b34f3cba724c7}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jiong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7afdd629298f5c1e058c69f68c55ee8e}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Qingming},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=591b2d1c7a7bbfa2aa9b386562212961}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=450d388c78fe075dec73e0759d72d065}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Gang\bibnamedelima Hee},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=6b0a496774e142d5dbe2130ccee7eb03}{%
+           family={Chae},
+           familyi={C\bibinitperiod},
+           given={Sang\bibnamedelima Hoon},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=42aef0756d35f79d726ed17ca4f3de36}{%
+           family={Jeong},
+           familyi={J\bibinitperiod},
+           given={Hye\bibnamedelima Yun},
+           giveni={H\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=3e27992745540d8350571e8c580e72bc}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Young\bibnamedelima Hee},
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{9707aa20d0f4361316f091cac4013820}
+      \strng{fullhash}{0dfaf29888d8c386ca48971b3467f16f}
+      \strng{fullhashraw}{0dfaf29888d8c386ca48971b3467f16f}
+      \strng{bibnamehash}{9707aa20d0f4361316f091cac4013820}
+      \strng{authorbibnamehash}{9707aa20d0f4361316f091cac4013820}
+      \strng{authornamehash}{9707aa20d0f4361316f091cac4013820}
+      \strng{authorfullhash}{0dfaf29888d8c386ca48971b3467f16f}
+      \strng{authorfullhashraw}{0dfaf29888d8c386ca48971b3467f16f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Misorientation-angle-dependent electrical transport across molybdenum disulfide grain boundaries}
+      \field{volume}{7}
+      \field{year}{2016}
+      \field{pages}{10426}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/ncomms10426
+      \endverb
+    \endentry
+    \entry{pei2016}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=05611746c497809f742da9b62e15f98c}{%
+           family={Pei},
+           familyi={P\bibinitperiod},
+           given={Jiajie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0da586c0a2b26dabebe573f2d5f4a48b}{%
+           family={Gai},
+           familyi={G\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=df7964e44c59618d377ea26520d99168}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jiong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8a5be0af234b3e29d86f958d2d9457af}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xibin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=be56827d4bd70e6b9f8b59997b3e6889}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Zongfu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9cb1883e8a1477855c39f09c7e16ade1}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Duk-Yong},
+           giveni={D\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=948178444aa48a0a816b2828656fb729}{%
+           family={Luther-Davies},
+           familyi={L\bibinithyphendelim D\bibinitperiod},
+           given={Barry},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a359e2935272151d8c7c556ddd0df04c}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Yuerui},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d4d871628d845d862ee4fe06bb94a02}
+      \strng{fullhash}{169123795c6adde1d7c42eb46ca016d3}
+      \strng{fullhashraw}{169123795c6adde1d7c42eb46ca016d3}
+      \strng{bibnamehash}{8d4d871628d845d862ee4fe06bb94a02}
+      \strng{authorbibnamehash}{8d4d871628d845d862ee4fe06bb94a02}
+      \strng{authornamehash}{8d4d871628d845d862ee4fe06bb94a02}
+      \strng{authorfullhash}{169123795c6adde1d7c42eb46ca016d3}
+      \strng{authorfullhashraw}{169123795c6adde1d7c42eb46ca016d3}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Producing air-stable monolayers of phosphorene and their defect engineering}
+      \field{volume}{7}
+      \field{year}{2016}
+      \field{pages}{10450}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/ncomms10450
+      \endverb
+    \endentry
+    \entry{kim2015}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=c19a27a68f175513c805094f99f56e6e}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Joon-Seok},
+           giveni={J\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=6995c4b3fbfd99f36419be21bcdb6cb1}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yingnan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e1002e16caf74f85679e5a0116891e82}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Weinan},
+           giveni={W\bibinitperiod}}}%
+        {{hash=596930a2898561b548737eeb1e953922}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Seohee},
+           giveni={S\bibinitperiod}}}%
+        {{hash=65027af5f4f54f2e6c7bb140253872e2}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Di},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7d8662c614478cf2aa6cdbf05fd3ec91}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=5560a2476b5fda081852d9863ed15af0}{%
+           family={Dodabalapur},
+           familyi={D\bibinitperiod},
+           given={Ananth},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bd254ae3f249eeb22bbffa5b0d63e973}{%
+           family={Lai},
+           familyi={L\bibinitperiod},
+           given={Keji},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c4308fbb2cdd3686adf12147a8490ea3}{%
+           family={Akinwande},
+           familyi={A\bibinitperiod},
+           given={Deji},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f050b93110d308a82b637557dd819ef}
+      \strng{fullhash}{fa825a734cf96e8e5484d3281e31bc20}
+      \strng{fullhashraw}{fa825a734cf96e8e5484d3281e31bc20}
+      \strng{bibnamehash}{8f050b93110d308a82b637557dd819ef}
+      \strng{authorbibnamehash}{8f050b93110d308a82b637557dd819ef}
+      \strng{authornamehash}{8f050b93110d308a82b637557dd819ef}
+      \strng{authorfullhash}{fa825a734cf96e8e5484d3281e31bc20}
+      \strng{authorfullhashraw}{fa825a734cf96e8e5484d3281e31bc20}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Toward air-stable multilayer phosphorene thin-films and transistors}
+      \field{volume}{5}
+      \field{year}{2015}
+      \field{pages}{8989}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/srep08989
+      \endverb
+    \endentry
+    \entry{he2009}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=2f666b6478e1c39a32c4c6c9991a7b2a}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={C.\bibnamedelimi L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=603d833512ff603d5298287a53e231b3}{%
+           family={F.\bibnamedelimi Zhuge},
+           familyi={F\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           given={X.\bibnamedelimi F.\bibnamedelimi Zhou},
+           giveni={X\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=51b7a1489fbf5055faca1d1cd7e29862}{%
+           family={M.\bibnamedelimi Li},
+           familyi={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={G.\bibnamedelimi C.\bibnamedelimi Zhou},
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=966b5ff14ede4ae6b195516698d26eb1}{%
+           family={Y.\bibnamedelimi W.\bibnamedelimi Liu},
+           familyi={Y\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={J.\bibnamedelimi Z.\bibnamedelimi Wang},
+           giveni={J\bibinitperiod\bibinitdelim Z\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=c078c0ec199ac3db6e1a47aa927425b8}{%
+           family={B.\bibnamedelimi Chen},
+           familyi={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={W.\bibnamedelimi J.\bibnamedelimi Su},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=22421ee1cb74321a270fb6bc76a318b5}{%
+           family={Z.\bibnamedelimi P.\bibnamedelimi Liu},
+           familyi={Z\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Y.\bibnamedelimi H.\bibnamedelimi Wu},
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=ba3d25637f3a1dc057d9934467a45e1f}{%
+           family={P.\bibnamedelimi Cui},
+           familyi={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Run-Wei\bibnamedelima Li},
+           giveni={R\bibinithyphendelim W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{410cc56ba9dfbeb35b09b5da5843ab03}
+      \strng{fullhash}{470287bc57afb63b48dc543aa4e93ee2}
+      \strng{fullhashraw}{470287bc57afb63b48dc543aa4e93ee2}
+      \strng{bibnamehash}{410cc56ba9dfbeb35b09b5da5843ab03}
+      \strng{authorbibnamehash}{410cc56ba9dfbeb35b09b5da5843ab03}
+      \strng{authornamehash}{410cc56ba9dfbeb35b09b5da5843ab03}
+      \strng{authorfullhash}{470287bc57afb63b48dc543aa4e93ee2}
+      \strng{authorfullhashraw}{470287bc57afb63b48dc543aa4e93ee2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{23}
+      \field{journaltitle}{Applied Physics Letters}
+      \field{title}{Nonvolatile resistive switching in graphene oxide thin films}
+      \field{volume}{95}
+      \field{year}{2009}
+      \verb{doi}
+      \verb https://doi.org/10.1063/1.3271177
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/aip/apl/article-abstract/95/23/232101/120918/Nonvolatile-resistive-switching-in-graphene-oxide
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/aip/apl/article-abstract/95/23/232101/120918/Nonvolatile-resistive-switching-in-graphene-oxide
+      \endverb
+    \endentry
+    \entry{wu2019}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=d549992953df81cb8353573ed356d38c}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Xiaohan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=e1484c1a530eddb0d8cad6e6afea9a44}{%
+           family={Ge},
+           familyi={G\bibinitperiod},
+           given={Ruijing},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4d4a17dd8b76410f9198e42f08a453f7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Po-An},
+           giveni={P\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=804fe9a92639062de7b8b76a9d6a454c}{%
+           family={Chou},
+           familyi={C\bibinitperiod},
+           given={Harry},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3b40028902436538accee873a3ba8c0d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhepeng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=b87ac0cae6d6578d82c25cf26688acc0}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yanfeng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=65555c132f0c50bf59bcdec555a8a154}{%
+           family={Banerjee},
+           familyi={B\bibinitperiod},
+           given={Sanjay},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c9d36d610673ea7ee475df8ed65d0ad6}{%
+           family={Chiang},
+           familyi={C\bibinitperiod},
+           given={Meng-Hsueh},
+           giveni={M\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=97df876542261a567272740bca91358c}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jack\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c4308fbb2cdd3686adf12147a8490ea3}{%
+           family={Akinwande},
+           familyi={A\bibinitperiod},
+           given={Deji},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{9629ff1a3c12fed7c2a4e8e22b4530bb}
+      \strng{fullhash}{9f6a3c7c4147f7c15aa454c2d36e6c0d}
+      \strng{fullhashraw}{9f6a3c7c4147f7c15aa454c2d36e6c0d}
+      \strng{bibnamehash}{9629ff1a3c12fed7c2a4e8e22b4530bb}
+      \strng{authorbibnamehash}{9629ff1a3c12fed7c2a4e8e22b4530bb}
+      \strng{authornamehash}{9629ff1a3c12fed7c2a4e8e22b4530bb}
+      \strng{authorfullhash}{9f6a3c7c4147f7c15aa454c2d36e6c0d}
+      \strng{authorfullhashraw}{9f6a3c7c4147f7c15aa454c2d36e6c0d}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Materials}
+      \field{number}{15}
+      \field{title}{Thinnest Nonvolatile Memory Based on Monolayer h-BN}
+      \field{volume}{31}
+      \field{year}{2019}
+      \field{pages}{1806790}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1002/adma.201806790
+      \endverb
+      \verb{eprint}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.201806790
+      \endverb
+      \verb{urlraw}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.201806790
+      \endverb
+      \verb{url}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.201806790
+      \endverb
+      \keyw{2D materials,atomristor,hexagonal boron nitride,memristor,nonvolatile resistance switching}
+    \endentry
+    \entry{wang20182d}{article}{}{}
+      \name{author}{14}{}{%
+        {{hash=b2c4577dcb949eeabe5ed6a2068b2f83}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Miao},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9f42b877bc84d366b50258496fd34ec9}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Songhua},
+           giveni={S\bibinitperiod}}}%
+        {{hash=23ec8f2a0ffc0128a2e842d77ee47d28}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e7fd4e7161a9e7a67683c5d7c66afcb5}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chenyu},
+           giveni={C\bibinitperiod}}}%
+        {{hash=156b8f282c78c70eb2d3112776889503}{%
+           family={Lian},
+           familyi={L\bibinitperiod},
+           given={Xiaojuan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b5df391f5dd237fd8e263100714f8f9b}{%
+           family={Zhuo},
+           familyi={Z\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5a5a1a00e47629ea9dc547345a2b2188}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Kang},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e8a064ff08073657915b95ac84ebaf64}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Tianjun},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e0ea1a7f840994dca0a9d86780e32eca}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Xiaoqing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=fdc3f5ec3827a80f86f6b2bd72074dd2}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Baigeng},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b35f29d116f0d38b75a01b28a4d1a668}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Shi-Jun},
+           giveni={S\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=097061c4172ddd74306566ccbc43f2fc}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={J.\bibnamedelimi Joshua},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c26cc02bbb5db725a2c79cb200894d76}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1d2bade5fea3b1055056fba99210f3e6}{%
+           family={Miao},
+           familyi={M\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6bf3fa4c61e778c512bc6ce44f3e4bb}
+      \strng{fullhash}{8d99e2d4bd4426147de3f701ae44f528}
+      \strng{fullhashraw}{8d99e2d4bd4426147de3f701ae44f528}
+      \strng{bibnamehash}{e6bf3fa4c61e778c512bc6ce44f3e4bb}
+      \strng{authorbibnamehash}{e6bf3fa4c61e778c512bc6ce44f3e4bb}
+      \strng{authornamehash}{e6bf3fa4c61e778c512bc6ce44f3e4bb}
+      \strng{authorfullhash}{8d99e2d4bd4426147de3f701ae44f528}
+      \strng{authorfullhashraw}{8d99e2d4bd4426147de3f701ae44f528}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2520-1131}
+      \field{journaltitle}{Nature Electronics}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Robust memristors based on layered two-dimensional materials}
+      \field{volume}{1}
+      \field{year}{2018}
+      \field{pages}{130\bibrangedash 136}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1038/s41928-018-0021-4
       \endverb
     \endentry
     \entry{sangwan2015gate}{article}{}{}
@@ -1236,8 +2161,8 @@
       \strng{authornamehash}{e61464416902d34cebd36bce2d610544}
       \strng{authorfullhash}{4ca0d85f0daa4d4b8c8e33103f2b7a0f}
       \strng{authorfullhashraw}{4ca0d85f0daa4d4b8c8e33103f2b7a0f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1748-3395}
@@ -1294,8 +2219,8 @@
       \strng{authornamehash}{05fb4593e3f071840bbeb1b5ac8b6c88}
       \strng{authorfullhash}{edcf7349f8fcc380baf17b995f3f78db}
       \strng{authorfullhashraw}{edcf7349f8fcc380baf17b995f3f78db}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1476-4660}
@@ -1347,8 +2272,8 @@
       \strng{authornamehash}{44605715513bf77531dedd985a27f83c}
       \strng{authorfullhash}{a894d6b304a8cf805630cb7f49e8ac8e}
       \strng{authorfullhashraw}{a894d6b304a8cf805630cb7f49e8ac8e}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Science Advances}
@@ -1415,8 +2340,8 @@
       \strng{authornamehash}{809159c708473687777690242c64a318}
       \strng{authorfullhash}{1728f05a201662e021ec665b6b77ca37}
       \strng{authorfullhashraw}{1728f05a201662e021ec665b6b77ca37}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1530-6992}
@@ -1435,6 +2360,487 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1021/nl504811s
+      \endverb
+    \endentry
+    \entry{behnam2015}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=bb572ba3bf51034c562d28df9353577f}{%
+           family={Behnam},
+           familyi={B\bibinitperiod},
+           given={Ashkan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cbdbcf87449914060ecefe3f9fb8a91d}{%
+           family={Feng\bibnamedelima Xiong},
+           familyi={F\bibinitperiod\bibinitdelim X\bibinitperiod},
+           given={Andrea\bibnamedelima Cappelli},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=392e9e4a06a256644608e86f3a4feef5}{%
+           family={Ning\bibnamedelimb C.\bibnamedelimi Wang},
+           familyi={N\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Enrique\bibnamedelimb A.\bibnamedelimi Carrion},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=27fb9c18e96133f4f2f7c81a60904323}{%
+           family={Sungduk\bibnamedelima Hong},
+           familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Yuan\bibnamedelima Dai},
+           giveni={Y\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=060c9e69adaa1b80fd22efbde1ccb5c0}{%
+           family={Austin\bibnamedelimb S.\bibnamedelimi Lyons},
+           familyi={A\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Edmond\bibnamedelimb K.\bibnamedelimi Chow},
+           giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=8171a3f5075bfe9ab29eec80bc370651}{%
+           family={Enrico\bibnamedelima Piccinini},
+           familyi={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Carlo\bibnamedelima Jacoboni},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=288efd65c91c298f33226d5b96dd3c2e}{%
+           family={Pop},
+           familyi={P\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{58c7b499da6f928de60f736b62145ff6}
+      \strng{fullhash}{0f1f205fc08302f52afba1ae6aa5b1fd}
+      \strng{fullhashraw}{0f1f205fc08302f52afba1ae6aa5b1fd}
+      \strng{bibnamehash}{58c7b499da6f928de60f736b62145ff6}
+      \strng{authorbibnamehash}{58c7b499da6f928de60f736b62145ff6}
+      \strng{authornamehash}{58c7b499da6f928de60f736b62145ff6}
+      \strng{authorfullhash}{0f1f205fc08302f52afba1ae6aa5b1fd}
+      \strng{authorfullhashraw}{0f1f205fc08302f52afba1ae6aa5b1fd}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{12}
+      \field{journaltitle}{Applied Physics Letters}
+      \field{title}{Nanoscale phase change memory with graphene ribbon electrodes}
+      \field{volume}{107}
+      \field{year}{2015}
+    \endentry
+    \entry{ahn2015}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=08e54819c3a32a6caf4e5752d437eca0}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Chiyui},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a7ba6baef8e3bd37f2332718e0ab46d4}{%
+           family={Fong},
+           familyi={F\bibinitperiod},
+           given={Scott\bibnamedelima W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=e130ad16921a5ceb888b7465203c8738}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Yongsung},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=40ecd33054de1ff58dd8461c996b8e54}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Seunghyun},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4986b81605eb90114839ee6e4263df2e}{%
+           family={Sood},
+           familyi={S\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f9d34818e94025d05d1d86c1ed9def87}{%
+           family={Neumann},
+           familyi={N\bibinitperiod},
+           given={Christopher\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=17130d990a5771fdd82ee04f62fd0cf7}{%
+           family={Asheghi},
+           familyi={A\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fa14b15c36f491c5aebc6cedd2cd1948}{%
+           family={Goodson},
+           familyi={G\bibinitperiod},
+           given={Kenneth\bibnamedelima E.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=288efd65c91c298f33226d5b96dd3c2e}{%
+           family={Pop},
+           familyi={P\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=60526d097df26e16f0535b4b1d5f7e5c}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={H.-S.\bibnamedelimi Philip},
+           giveni={H\bibinithyphendelim S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d47f92dde66e2753392a82c51d86a7d}
+      \strng{fullhash}{343d9c94652368400aaffd8cb38dcb34}
+      \strng{fullhashraw}{343d9c94652368400aaffd8cb38dcb34}
+      \strng{bibnamehash}{3d47f92dde66e2753392a82c51d86a7d}
+      \strng{authorbibnamehash}{3d47f92dde66e2753392a82c51d86a7d}
+      \strng{authornamehash}{3d47f92dde66e2753392a82c51d86a7d}
+      \strng{authorfullhash}{343d9c94652368400aaffd8cb38dcb34}
+      \strng{authorfullhashraw}{343d9c94652368400aaffd8cb38dcb34}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1530-6984}
+      \field{journaltitle}{Nano Letters}
+      \field{number}{10}
+      \field{title}{Energy-Efficient Phase-Change Memory with Graphene as a Thermal Barrier}
+      \field{volume}{15}
+      \field{year}{2015}
+      \field{pages}{6809\bibrangedash 6814}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1021/acs.nanolett.5b02661
+      \endverb
+      \verb{eprint}
+      \verb https://pubs.acs.org/nalefd/article-pdf/15/10/6809/15874076/nl5b02661.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/acs.nanolett.5b02661
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/acs.nanolett.5b02661
+      \endverb
+    \endentry
+    \entry{choi2017}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=632c7e0b1e7485c23fcc4d6a1665a9cd}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Min\bibnamedelima Sup},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=643b973cf8a4946596e129e3e4bdd92e}{%
+           family={Cheong},
+           familyi={C\bibinitperiod},
+           given={Byung-ki},
+           giveni={B\bibinithyphendelim k\bibinitperiod}}}%
+        {{hash=cf6be06d4ecc156c2838f52a68814c1d}{%
+           family={Ra},
+           familyi={R\bibinitperiod},
+           given={Chang\bibnamedelima Ho},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=d21c37b5b402ee18f2c9e4cc99935837}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Suyoun},
+           giveni={S\bibinitperiod}}}%
+        {{hash=032993e3f1571b9f0a0fbed1394a50c3}{%
+           family={Bae},
+           familyi={B\bibinitperiod},
+           given={Jee-Hwan},
+           giveni={J\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=a0aa382513cef2e1395109388386ad40}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Sungwoo},
+           giveni={S\bibinitperiod}}}%
+        {{hash=36d8d9b06ef314e3d4ad7c27426022a1}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Gun-Do},
+           giveni={G\bibinithyphendelim D\bibinitperiod}}}%
+        {{hash=9aacdb93301ef981498979e6ee4145ff}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Cheol-Woong},
+           giveni={C\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=00c1651925040335862417178201693b}{%
+           family={Hone},
+           familyi={H\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c33af26d79ebd4c4b6e7efe62149dbe7}{%
+           family={Yoo},
+           familyi={Y\bibinitperiod},
+           given={Won\bibnamedelima Jong},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0cbb83dc275853520c0f8fb39129157}
+      \strng{fullhash}{997c78f890f9888d81d3a2b05126fe30}
+      \strng{fullhashraw}{997c78f890f9888d81d3a2b05126fe30}
+      \strng{bibnamehash}{f0cbb83dc275853520c0f8fb39129157}
+      \strng{authorbibnamehash}{f0cbb83dc275853520c0f8fb39129157}
+      \strng{authornamehash}{f0cbb83dc275853520c0f8fb39129157}
+      \strng{authorfullhash}{997c78f890f9888d81d3a2b05126fe30}
+      \strng{authorfullhashraw}{997c78f890f9888d81d3a2b05126fe30}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Materials}
+      \field{number}{42}
+      \field{title}{Electrically Driven Reversible Phase Changes in Layered In2Se3 Crystalline Film}
+      \field{volume}{29}
+      \field{year}{2017}
+      \field{pages}{1703568}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1002/adma.201703568
+      \endverb
+      \verb{eprint}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.201703568
+      \endverb
+      \verb{urlraw}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.201703568
+      \endverb
+      \verb{url}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.201703568
+      \endverb
+      \keyw{indium selenides,layered materials,metal-to-insulator transition,phase changes,vacancy layers}
+    \endentry
+    \entry{lu2014}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=a3dc9bcfb5487bf8014255e1339e1a5a}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=31d3aa2a9507a512c78ed77073f12758}{%
+           family={Lipatov},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=59fe2e92f1a64a587a6e505b33371850}{%
+           family={Ryu},
+           familyi={R\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d92de92aa06ef2d93281d0b39767a719}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=5b7ae85b03c5b187088b01846c0a6d48}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0cc51ebf2aed2dd7d1824016c47ddbb7}{%
+           family={Zhuravlev},
+           familyi={Z\bibinitperiod},
+           given={M.\bibnamedelimi Y.},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=cec5d96a387a2985dc6c55ac02283402}{%
+           family={Eom},
+           familyi={E\bibinitperiod},
+           given={C.\bibnamedelimi B.},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=5544a9c9e952332b9935caf8d88da2d9}{%
+           family={Tsymbal},
+           familyi={T\bibinitperiod},
+           given={E.\bibnamedelimi Y.},
+           giveni={E\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=1e8cdc73ffa9a4bdc0bdbae50f5e0528}{%
+           family={Sinitskii},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d7592f94161a0ed8750056dd2cdb5c23}{%
+           family={Gruverman},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1b3882369f20f3eef54788d295e4dd6f}
+      \strng{fullhash}{faead6ef59180de8ad30e39816e7567d}
+      \strng{fullhashraw}{faead6ef59180de8ad30e39816e7567d}
+      \strng{bibnamehash}{1b3882369f20f3eef54788d295e4dd6f}
+      \strng{authorbibnamehash}{1b3882369f20f3eef54788d295e4dd6f}
+      \strng{authornamehash}{1b3882369f20f3eef54788d295e4dd6f}
+      \strng{authorfullhash}{faead6ef59180de8ad30e39816e7567d}
+      \strng{authorfullhashraw}{faead6ef59180de8ad30e39816e7567d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{month}{11}
+      \field{number}{1}
+      \field{title}{Ferroelectric tunnel junctions with graphene electrodes}
+      \field{volume}{5}
+      \field{year}{2014}
+      \field{pages}{5518}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/ncomms6518
+      \endverb
+    \endentry
+    \entry{xue2019}{article}{}{}
+      \name{author}{12}{}{%
+        {{hash=d5e451af503679a0c3a84dbf1c703a83}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8c6ba049f603b2bd1a05026dd9c99aac}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=5b4308aa6977c4e4994aef79fcf7a099}{%
+           family={Retamal},
+           familyi={R\bibinitperiod},
+           given={José\bibnamedelimb Ramón\bibnamedelima Durán},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=7fd0d1c50c073bf558c965f284fdda68}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=eac741c9449bec4a91177479c6469eb6}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Junwei},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9aa08c60195c6db12dfc455e5b0cdc63}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhixiong},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=3248e4769398dbb067aea1023b90f426}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Jing-Kai},
+           giveni={J\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=c6edad91f561edc954cdf9d2da50734d}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Weijin},
+           giveni={W\bibinitperiod}}}%
+        {{hash=b2a1b83075c8ca5d90c8942910a5766f}{%
+           family={Tung},
+           familyi={T\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=c265848f6936196bc3ebd8e5842bd50a}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Jr-Hau},
+           giveni={J\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=da46492ce09ca687e56cf8af2947316c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Lain-Jong},
+           giveni={L\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=06fb3b7818e6fe363667e8a15934dad2}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xixiang},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6428c439d6772fbb75222e63e0c1071}
+      \strng{fullhash}{3350435485de1a16a78379e1ff5a2781}
+      \strng{fullhashraw}{3350435485de1a16a78379e1ff5a2781}
+      \strng{bibnamehash}{e6428c439d6772fbb75222e63e0c1071}
+      \strng{authorbibnamehash}{e6428c439d6772fbb75222e63e0c1071}
+      \strng{authornamehash}{e6428c439d6772fbb75222e63e0c1071}
+      \strng{authorfullhash}{3350435485de1a16a78379e1ff5a2781}
+      \strng{authorfullhashraw}{3350435485de1a16a78379e1ff5a2781}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Materials}
+      \field{number}{29}
+      \field{title}{Gate-Tunable and Multidirection-Switchable Memristive Phenomena in a Van Der Waals Ferroelectric}
+      \field{volume}{31}
+      \field{year}{2019}
+      \field{pages}{1901300}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1002/adma.201901300
+      \endverb
+      \verb{eprint}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.201901300
+      \endverb
+      \verb{urlraw}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.201901300
+      \endverb
+      \verb{url}
+      \verb https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adma.201901300
+      \endverb
+      \keyw{ferroelectrics,gate tunability,memristors,multidirectional programming}
+    \endentry
+    \entry{wu2020}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=221cf90338a34430bc7d4f6ec2b3b79e}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jiangbin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fa37a0907d8d04a9a233375bdeab2056}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Hung-Yu},
+           giveni={H\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=d9125b7654a1ab28a3224e1f04fd09ed}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Ning},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f57bb04efb86f0cd6af01d95d6d4faa1}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e136e2a272c4345e9b6f02edf4d97295}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Xiaodong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=23ece6d05bfa973d33b2ce389c1db56c}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Fanxin},
+           giveni={F\bibinitperiod}}}%
+        {{hash=848a8addee1d6c7ae3bd3a1451f3c1e7}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Qibin},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=b4f8c983e6bebcac0500f0604a845305}{%
+           family={Ling},
+           familyi={L\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=2708e3904ad25b21a325f49b4e7e0700}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0664a31d75ae88d142a0e634df0ead4d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Han},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{f9c8aa9d07ac8ac1242f2d55f3f40665}
+      \strng{fullhash}{bdfb9ab81c113207101da769ff778dcc}
+      \strng{fullhashraw}{bdfb9ab81c113207101da769ff778dcc}
+      \strng{bibnamehash}{f9c8aa9d07ac8ac1242f2d55f3f40665}
+      \strng{authorbibnamehash}{f9c8aa9d07ac8ac1242f2d55f3f40665}
+      \strng{authornamehash}{f9c8aa9d07ac8ac1242f2d55f3f40665}
+      \strng{authorfullhash}{bdfb9ab81c113207101da769ff778dcc}
+      \strng{authorfullhashraw}{bdfb9ab81c113207101da769ff778dcc}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2520-1131}
+      \field{journaltitle}{Nature Electronics}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{High tunnelling electroresistance in a ferroelectric van der Waals heterojunction via giant barrier height modulation}
+      \field{volume}{3}
+      \field{year}{2020}
+      \field{pages}{466\bibrangedash 472}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1038/s41928-020-0441-9
       \endverb
     \endentry
     \entry{biolek2013}{misc}{}{}
@@ -1463,8 +2869,8 @@
       \strng{authornamehash}{c0851a1cdbc79f8e5eaee22ce4d38c41}
       \strng{authorfullhash}{c0851a1cdbc79f8e5eaee22ce4d38c41}
       \strng{authorfullhashraw}{c0851a1cdbc79f8e5eaee22ce4d38c41}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{physics.comp-ph}
@@ -1522,8 +2928,8 @@
       \strng{authornamehash}{db1bb4618add38dbbf518fcbd509a9a6}
       \strng{authorfullhash}{1b826f5e117cf56f903f49a691a22ca6}
       \strng{authorfullhashraw}{1b826f5e117cf56f903f49a691a22ca6}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}
@@ -1554,8 +2960,8 @@
       \strng{authornamehash}{7828376024056ed9a694e96636f77ded}
       \strng{authorfullhash}{7828376024056ed9a694e96636f77ded}
       \strng{authorfullhashraw}{7828376024056ed9a694e96636f77ded}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://pcper.com/2017/06/how-3d-xpoint-phase-change-memory-works/}
@@ -1622,8 +3028,8 @@
       \strng{authornamehash}{489c6677a7083a8d508a45efc58b8de9}
       \strng{authorfullhash}{6d4db72ab4d05ad30a236a590ac8ab0f}
       \strng{authorfullhashraw}{6d4db72ab4d05ad30a236a590ac8ab0f}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Journal on Exploratory Solid-State Computational Devices and Circuits}
@@ -1654,8 +3060,8 @@
       \strng{authornamehash}{0d74556fb379e7bc87ce8db43fc311d1}
       \strng{authorfullhash}{0d74556fb379e7bc87ce8db43fc311d1}
       \strng{authorfullhashraw}{0d74556fb379e7bc87ce8db43fc311d1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://www.eetimes.com/3d-xpoint-steps-into-the-light/}
@@ -1702,8 +3108,8 @@
       \strng{authornamehash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
       \strng{authorfullhash}{d55f721e4d7ca59f95e27ae9d8db1f4b}
       \strng{authorfullhashraw}{d55f721e4d7ca59f95e27ae9d8db1f4b}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2376-3639}
@@ -1764,8 +3170,8 @@
       \strng{authornamehash}{5b10c27c62e99c6072a364a5a5feca9a}
       \strng{authorfullhash}{3481c4475f97e632f5db75b097609221}
       \strng{authorfullhashraw}{3481c4475f97e632f5db75b097609221}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1476-4687}
@@ -1815,8 +3221,8 @@
       \strng{authornamehash}{102bf4734cdbbe464d05515ede4d1913}
       \strng{authorfullhash}{46b7a1429d6539393ee5f0ad0a161d59}
       \strng{authorfullhashraw}{46b7a1429d6539393ee5f0ad0a161d59}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2012 IEEE 30th International Conference on Computer Design (ICCD)}
@@ -1876,8 +3282,8 @@
       \strng{authorfullhash}{6215ddee8a95eff904a7596fd813af76}
       \strng{authorfullhashraw}{6215ddee8a95eff904a7596fd813af76}
       \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Very Large Scale Integration (VLSI) Systems}
@@ -3188,6 +4594,7 @@
       \strng{authornamehash}{73b31122dcd518724792164b53c110db}
       \strng{authorfullhash}{4fd57067698ea50b609c717d653620bb}
       \strng{authorfullhashraw}{4fd57067698ea50b609c717d653620bb}
+      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -4025,8 +5432,8 @@
       \strng{authornamehash}{57bd1e0125637893e5fc8c9909ca0532}
       \strng{authorfullhash}{b9b3982be1273ddf7ac6256ddadc7a71}
       \strng{authorfullhashraw}{b9b3982be1273ddf7ac6256ddadc7a71}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.NE}
