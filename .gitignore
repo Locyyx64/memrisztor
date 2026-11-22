@@ -1,4 +1,5 @@
 memristor.tex.bkp
+# LaTeX build and auxiliary files
 *.aux
 *.blg
 *.out
@@ -7,3 +8,9 @@ memristor.tex.bkp
 *.toc
 *.synctex.gz
 *.log
+*.bcf
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.pdf
