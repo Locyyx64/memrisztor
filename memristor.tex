@@ -53,6 +53,7 @@ framexleftmargin=1.5mm
 \DeclareMathOperator\KL{KL}
 
 %% Egységrendszer
+\DeclareMathOperator\ohm{\Omega}
 \DeclareMathOperator\kOhm{k\Omega}
 \DeclareMathOperator\MOhm{M\Omega}
 \DeclareMathOperator\F{F}
@@ -62,6 +63,7 @@ framexleftmargin=1.5mm
 \DeclareMathOperator\nm{nm}
 \DeclareMathOperator\ns{ns}
 \DeclareMathOperator\K{K}
+\DeclareMathOperator\mW{mW}
 \DeclareMathOperator\eV{eV}
 \DeclareMathOperator\cool{K/min}
 
@@ -109,7 +111,9 @@ framexleftmargin=1.5mm
 	$D$ & két elektród távolsága \\
 	$x$ & állapotváltozó \\
 	$\sigma$ & fajlagos vezetőképesség \\
-	$\mu$ & töltéshordozó mobilitás/mozgékonyság
+	$\mu$ & töltéshordozó mobilitás/mozgékonyság \\
+	$p(t)$ & pillanatnyi teljesítmény \\
+	$\omega$ & alapkörfrekvencia
 \end{tabular}
 \newpage
 \section{Bevezetés}
@@ -137,14 +141,94 @@ A memrisztor egy olyan ideális hálózati alkatrész, amely karakterisztikája 
 \begin{equation}\label{karakter}
 	d\phi(q) = M(q)dq 
 \end{equation}
-Tehát fennáll a $v(t) = M(q(t))i(t)$, ilyenkor M a memrisztancia elnevezést kapja, mert mivel az $q(t) = \int_{0}^{t} i(t)dt$, ezért M az áram "múltjától" is függ q(t)-n keresztül. Ugyan, megfigyelve lényegében nemlineáris ellenállásként viselkedik. Az ideális memrisztor megvalósítása eddig nem volt lehetséges, bár tulajdonságai bizonyos alkatrészek vagy rendszerek (pl.  Chua által ajánlott mutátor hálózatok) alkalmazásával közelíthetők. A memrisztor passzivitásához az szükséges, hogy $\int_{-\infty}^{t} p(\tau)d\tau > 0$ teljesüljön bármely t-re, amit a $M(q) > 0 \;\; \forall q$ biztosít. Vagyis, egy, a teljes értelmezési tartományán monoton növő $\phi-q$ görbe mellett a memrisztor passzív alkatrészként viselkedik, tehát kikapcsolás után is megtartja a memrisztancia értékét. Ezáltal, nem-felejtő memóriaként alkalmazható. Tellini et al. szerint \cite{tellini2021} a memrisztor nem egy negyedik független áramköri elem, hanem az idő-variáns ellenállás általánosítása. Ezek mellett, miután Chua és Kang általánosította a dinamikus memrisztív rendszerek fogalmát \cite{chuakang1976}: \begin{align}\dot{x} &= \vec{f}(\vec{x}, u, t) \\ y &= g(\vec{x}, u, t)u\end{align} Ez lehetővé tette egyéb memrisztív kialakítások kutatását, például a memkapacitás $q = C(\vec{x}, v, t)v$, vagy a meminduktancia $\varphi = L(\vec{x}, i, t)t$ esetét. Már Mauro et al. is kutattak memrisztív rendszert, az ún. termisztort \cite{mauro1961}\cite{chuakang1976}\cite{tellini2021}, amely esetén az "idő-variáns rezisztancia" állapotváltozója a hőmérséklet (rendellenes reaktáns komponens az impedanciában, hagyományos dinamikus komponensek nélkül). Ebben az esetben a teljes generált energia megegyezik a disszipált és a tárolt hő összegével:
+Tehát fennáll az ideális töltésvezérelt memrisztor $v-i$ karakterisztikája: 
+\begin{equation}
+	v(t) = M(q(t))i(t)
+\end{equation}
+Ilyenkor M a memrisztancia elnevezést kapja, mert mivel a 
+\begin{equation}
+	q(t) = \int_{0}^{t} i(t)dt
+\end{equation} ezért M az áram "múltjától" is függ $q(t)$-n keresztül. Ugyan, a karakterisztikáját megfigyelve lényegében nemlineáris ellenállásként viselkedik. Az ideális memrisztor megvalósítása eddig nem volt lehetséges, bár tulajdonságai bizonyos alkatrészek vagy rendszerek (pl.  Chua által ajánlott mutátor hálózatok) alkalmazásával közelíthetők. A memrisztor passzivitásához az szükséges, hogy 
+\begin{equation}
+	\int_{-\infty}^{t} p(\tau)d\tau > 0
+\end{equation} teljesüljön bármely $t$-re, amit a $M(q) > 0 \;\; \forall q$ biztosít. Vagyis, egy, a teljes értelmezési tartományán monoton növő $\phi-q$ görbe mellett a memrisztor passzív alkatrészként viselkedik, tehát kikapcsolás után is megtartja a memrisztancia értékét. Ezáltal, nem-felejtő memóriaként alkalmazható. Tellini et al. szerint \cite{tellini2021} a memrisztor nem egy negyedik független áramköri elem, hanem az idő-variáns ellenállás általánosítása. A memrisztor fogalmát Chua és Kang általánosította a dinamikus memrisztív rendszerekre\cite{chuakang1976}: 
+\begin{equation}
+	\begin{aligned}
+		\dot{x} &= \vec{f}(\vec{x}, u, t) \\ y &= g(\vec{x}, u, t)u \label{eq:allapot} 
+	\end{aligned}
+\end{equation} 
+Ezáltal egy n-edrendű töltésvezérelt memrisztív kétpólus állapotváltozós leírásának normálalakja:
+\begin{equation}
+	\begin{aligned}
+		\dot{x} &= \vec{f}(\vec{x}, i, t) \\
+		v &= R(\vec{x}, i, t)i
+	\end{aligned}
+\end{equation}
+ami fluxusvezérelt ekvivalens esetben a következő alakú:
+\begin{equation}
+	\begin{aligned}
+		\dot{x} &= \vec{f}(\vec{x}, v, t) \\
+		i &= G(\vec{x}, u, t)u
+	\end{aligned}
+\end{equation}
+ahol pl. $\vec{f}(\vec{x}, i, t)$ vagy $R(\vec{x}, i, t)$ felírható $\vec{f}(\vec{x}(t), i(t))$ és $R(\vec{x}(t), i(t))$ alakban is. Chua egy 2014-es tanulmányában három kategóriába sorolta a memrisztív rendszereket, a memrisztancia (ill. memduktancia) típusától és az állapotegyenlettől függően: ideális memrisztorok, általános memrisztorok és kiterjesztett memrisztorok\cite{chua2014}. Töltésvezérelt esetben az ideális memrisztor állapotváltozós felírása \eqref{karakter} szerint:
+\begin{equation}
+	\begin{aligned}
+		&\frac{dq}{dt} = i \\
+		&v = R(q)i
+	\end{aligned}
+\end{equation}
+Az általános töltésvezérelt memrisztor állapotváltozós leírása:
+\begin{equation}
+	\begin{aligned}
+		&\frac{d\vec{x}}{dt} = \vec{f}(\vec{x}, i) \\
+		&v = R(\vec{x})i
+	\end{aligned}
+	\label{eq:altalanos}
+\end{equation}
+Végül, a kiterjesztett memrisztor állapotváltozós leírásának alakja a \eqref{eq:allapot}-nak megfelelő.
+Mindez lehetővé tette egyéb memrisztívhez hasonló rendszerek kutatását, például a memkapacitás $q = C(\vec{x}, v, t)v$, vagy a meminduktancia $\varphi = L(\vec{x}, i, t)t$ esetét. Már 1961-ben, Mauro et al. is kutattak memrisztív rendszert, az ún. termisztort \cite{mauro1961}\cite{chuakang1976}\cite{tellini2021}, amely esetén a "variáns rezisztancia" állapotváltozója a hőmérséklet (rendellenes reaktáns komponens az impedanciában, hagyományos dinamikus komponensek nélkül). Ebben az esetben a teljes generált energia megegyezik a disszipált és a tárolt hő összegével:
  \begin{equation}
  	p(t) = v(t)i(t) = \delta(T-T_0) + C\frac{dT}{dt} 
  \end{equation}
- Illetve ezután, memrisztív rendszer lévén \cite{chuakang1976} a válasz állapotváltozós leírása: 
+ ahol $\delta$ a disszipációs állandó, $C$ a rendszer hőkapacitása és $T$ a pillanatnyi hőmérséklete. Illetve ezután, memrisztív rendszer lévén \cite{chuakang1976} a válasz állapotváltozós leírása: 
  \begin{equation}
  v = R_0(T_0)\exp{\left[\beta\left(\frac{1}{T}-\frac{1}{T_0}\right)\right]i}
  \end{equation}
+ ahol $\beta$ egy anyagi állandó, és $T_0$ a környezeti hőmérséklet. Az $R(x(t), i(t))$ memrisztanciájú invariáns kétpólus akkor passzív, ha a bármely $t > t_0$-ra $R(x, i) \geqslant 0$, ahol $t_0$ az az időpont, amelyben a rendszer energiatárolása minimális\cite{chuakang1976}, vagyis:
+ \begin{equation}
+ 	\int_{t_0}^t v(\tau)i(\tau)  = \int_{t_0}^t R(x(\tau), i(\tau))i^2(\tau)d\tau \; \geqslant 0
+ \end{equation}
+ Állandó gerjesztésen az invariáns töltésvezérelt memrisztív kétpólus akkor ekvivalens egy invariáns töltésvezérelt nemlineáris ellenállással, ha $f(x, I) = 0$-nak létezik $x = X(I)$ megoldása, hogy bármely $I \in\mathbb{R}$ esetén $x$ értelmezhető és aszimptotikusan stabilis\cite{chuakang1976}. Ez olyan alacsony frekvenciás váltakozó gerjesztés esetén is fennáll, amely periódusideje sokkal nagyobb a memrisztív rendszer időállandójánál. Egy DC gerjesztés alatt álló termisztor $v-i$ karakterisztikája hasonlít egy nemlineáris ellenálláséhoz (ld. \abra{fig:dcmemrisztor})
+ \begin{figure}[h]
+ 	\centering
+ 	\includegraphics{dccharacteristicmem}
+ 	\caption{Egy termisztor DC karakterisztikája $\beta = 3460 \K$, $\delta = 0.1 \mW/^\circ C$, $T_0 = 298 K$, $R_0(T_0) = 8000 \ohm$ paraméterek mellett\cite{chuakang1976}}
+ 	\label{fig:dcmemrisztor}
+ \end{figure}
+  \subsection{A hiszterézisgörbe}
+  Egy töltésvezérelt memrisztív kétpólus karakterisztikája váltakozóáramú gerjesztésre egy $v-i$ Lissajous-görbét mutat. Mivel egy $i(t) = I \cos\omega t$ gerjesztés esetén a \eqref{eq:allapot} állapotegyenletnek $t > t_0$ esetén létezik periodikus $x(t)$ megoldása valamilyen $x_0$ kezdeti érték mellett, ezért bármely $i\in [-I, I]$ áram értékhez a karakterisztikában két egyenértékű $v$ érték tartozik\cite{chuakang1976}. A memrisztív kétpólus állapotváltozós leírásából adódóan a hiszterézis görbe minden esetben átmegy a $(0,0)$ ponton, vagyis az origóban "összefogott" a görbe. Továbbá, hogyha a kétpólus \eqref{eq:allapot} ÁVLNA megadása mellett a kétpólus gerjesztés-állapot stabilis (bounded-input bounded-state stable\cite{chuakang1976})\footnote{Vagyis ha $\vec{f}(\vec{x}, i)$ gerjesztés-válasz (GV) stabilis.}, akkor a gerjesztés frekvenciájának növelésével a hiszterézisgörbe által bezárt terület csökken, majd a végtelenben lineárissá (bijektívvé) válik. A karakterisztika origóbeli összefogottságával, illetve a frekvenciafüggésével ellenőrizhető egy rendszerről, hogy memrisztív-e\cite{chuathefourth}. Memrisztív rendszerek például a Hodgkin-Huxley által hibásan variáns rezisztornak vélt kálium és nátrium ioncsatornák a tintahal óriás axonjában\cite{chua2014}. A karakterisztika frekvenciafüggése könnyen bizonyítható, ha figyelembe vesszük a gerjesztés-állapot stabilitást, ill. a $\vec{f}(\vec{x}, i)$ függvény folytonosságát és periodikusságát. A végtelen frekvenciában megfigyelt lineáris karakterisztika azzal a ténnyel egyenértékű, hogy ilyenkor az $\vec{x(t)}$ valamilyen konstans $\vec{x_0}(t)$-hez konvergál. Az említett feltételek miatt az $\vec{f}(\vec{x}, i)$ függvény a következő komplex Fourier-polinommal közelíthető\cite{chuakang1976}:
+  \begin{equation}
+  	\vec{f}(\vec{x}, i) = \vec{\alpha}_0 + \sum_{k = -N} ^ {k = N}\exp(jk\omega t)\vec{\alpha}_k		\;\;\;\;\;\; k \neq 0
+  \end{equation}
+  ahol $N$ egy tetsz. egész szám, $\omega$ a gerjesztés frekvenciája (alapkörfrekvencia), illetve $\vec{\alpha}_0$ és $\vec{\alpha}_k$ korlátos komplex számok. Ebből az állapotegyenlet megoldható:
+  \begin{equation}
+  	\begin{aligned}
+  		\vec{x(t)} &= \vec{x(t_0)} + \int_{t_0}^t \vec{f}(\vec{x}(\tau), i(\tau))d\tau \\
+  		&= \vec{x}_0 + \vec{\alpha}_0 (t-t_0) + \sum_{k = -N}^{k = N} \frac{\exp(jk\omega t) - \exp(jk\omega t_0)}{jk\omega}\vec{\alpha}_k
+  	\end{aligned}
+  \end{equation}
+  Mivel a gerjesztetlen $\vec{x}(t)$ zérus, ezért $\vec{\alpha}_0 = 0$, vagyis az állapotvektor egy konstans $\vec{x}_0$ értékhez konvergál $\omega \to \infty$ esetén, tehát a karakterisztika linearizálódik. Ez viszont csak általános memrisztor esetén áll fenn (ld. \eqref{eq:altalanos}), mert a kiterjesztett memrisztor $R(\vec{x}, i)$ memrisztanciájával adott karakterisztikája $\vec{x}\to\vec{x}_0$ mellett nemlineáris bijektív függvényt közelít\cite{chua2014}.
+  \begin{figure}[h]
+  	\centering
+  	\includegraphics[scale=0.8]{lissajous}
+  	\caption{Lissajous-hiszterézisgörbék frekvenciafüggése\cite{chuakang1976}}
+  \end{figure}
+  A memrisztorok passzivitási tételéből következik, hogy a Lissajous-görbe kizárólag az első és a harmadik síknegyed között helyezkedhet el, mert $R(\vec{x}, i ) > 0$ esetén:
+  \begin{equation}
+  	p(t) = v(t)i(t) = R(\vec{x}, i)i^2 > 0
+  \end{equation}
+  Ebből viszont az is következik, hogy a passzív memrisztor árama és a feszültsége közötti fáziseltolás minden esetben zérus (vagyis impedanciája tisztán valós), és nem tárolhat energiát\cite{chua2015}.
  \subsection{Ideális memrisztorok differenciálegyenletei}
  Egy általános, dinamikus kétpólus karakterisztikája a következő alakban írható fel:
  \begin{equation}\label{gendiffeq}
@@ -184,16 +268,6 @@ Tehát fennáll a $v(t) = M(q(t))i(t)$, ilyenkor M a memrisztancia elnevezést k
  &R_M(q) = -\frac{k_2}{2k_1} + \frac{\sqrt{D}}{2k_1}\mleft(1-\frac{2}{1 + e^{-\sqrt{D}(q-q_0)}}\mright)
  \end{align}
  Ahol $D$ a(z) \eqref{riccati2foku} egyenlet jobb oldalán lévő másodfokú egyenlet diszkriminánsa. (A fenti partikuláris megoldás a $D>0$ esetre érvényes)
-
-\subsection{Ideális memrisztorok energiaviszonyai}
-\subsection{A hiszterézisgörbe}
-\subsection{Nem-ideális memrisztív rendszerek}
-
-%%	Amiről még írni kell:
-%%		-hiszterézis
-%%		-teljesítmény, veszteségek, nem-ideális memrisztorok
-%%		-???
-%%
 
 \section{Nem-felejtő memóriák bemutatása}
 A nem-felejtő memóriák (NVM) fő előnye (például a DRAM memóriákkal vagy az SRAM-alapú gyorsítótárakkal szemben), hogy árammentes üzemállapotban (kikapcsolás esetén) nem történik adatvesztés. Az ilyen memóriák a rendszer memória-hierarchiájának különböző szintjeire horizontálisan vagy vertikálisan illeszthetők. A horizontális integráció azt jelenti, amikor az adott szinten lévő memóriával egyenértékű eszközként használjuk. A vertikális integráció esetén az illesztett NVM két memóriaszint között egy buffer szintet valósít meg, vagy egy megadott szint memóriáját (leginkább DRAM) gyorsítótárként használja fel. A memória-hierachiába három fő szinten integrálhatunk: processzor cache szinten (SRAM), elsődleges memória szinten (DRAM), illetve másodlagos memória szinten (merevlemez). Mindhárom szint különböző igényekkel, különböző követelményekkel rendelkezik, így egy adott nemfelejtő memóriatípus nem illeszthető bármelyik szintre. \\
@@ -591,8 +665,8 @@ A tetszőleges bementszámú NAND MAGIC kapuk is megvalósíhatók, ilyenkor a b
 	\caption{a) 2-bemenetű NOR kapu MAGIC megvalósítása, b) bemeneti kombinációk hatása $\text{out}_\text{init} = 1$ esetén, c) N-bemenetű NOR kapu\cite{kvatinskymagic}}
 	\label{fig:magicnor}
 \end{figure}
-\section{Memrisztorok további alkalmazásai}
-\subsection{Memóriánbelüli számításelmélet}
+\section{Memóriánbelüli számítás}
+\subsection{Memóriánbelüli számításelmélet alapjai}
 \label{imc}
 \par
 Az utóbbi évtizedben, különösen a mesterséges intelligencia fejlődésének köszönhetően felrobbant az érdeklődés, és az igény a költséghatékony, ultra gyors számítási rendszerekre. Kezdetben az általános CPU-k optimalizációja nyújtott lehetőséget a gyorsításra, majd a masszívan parallel GPU számítások rendkívül megnövelték a számítási teljesítményt. A processzor esetében hatalmas lassító faktor a "távoli" memóriahozzáférés, és az ebből adódó monumentális időbeli késleltetések. A 1990-es években felvetették a memóriaközeli számítási modellt (near-memory computing, NMC)\cite{sebastian2020memory}\cite{patterson1997}, amely során a monolitikus memória egységeket egyszerűen közel helyezték a processzorhoz, vagy az egyéb számítási egységhez. Ezt az ötletet a 3D heterogén integrációnál jellemző stacked-die struktúra miatt az utóbbi években ismét kutatták\cite{shulaker2017}. Az ehhez hasonló kialakításokban, akár a masszívan parallelizált processzoros rendszerekben, de az ASIC chipek esetében\cite{jouppi2017} sem kerülhető el bizonyos mértékig a memóriahozzáférésből adódó időbeli késleltetés. A GPU-k esetében a belső memória és az optimalizált parallel folyamatok nagyságrendekkel felgyorsították a számítást, de csak egy adott felső korlátig, mert a memóriák így is valamennyi késleltetést visznek a rendszerbe. Az alábbiakban tárgyalt, és az utóbbi néhány évben felkapott memóriánbelüli számítási rendszerek, az ún. nem-Neumann modellű rendszerek felhasználásával a memória késleltetése áthidalható, és a folyamat optimalizálása közel tökéletesíthető. Régóta ismert tény, hogy két szám szorzásának (mint számítási műveletnek) az energiaigénye nagyságrendekkel kisebb pl. egy külső memóriából való read művleleténél\cite{horowitz2014}. A memóriánbelüli számítás elvének középpontját alkotja a memóriák belső "mátrix" szerkezete, ami például lehetővé teszi hogy a sorokra kapcsolt megfelelő feszültségekkel és a memória "szerkezetében" található mátrixszal teljes mátrix-vektorszorzást (matrix-vector multiplication, MVM) végezzünk. Ezek mellett a crossbar-array (CBA) formában kapcsolt memrisztorhálózattal képesek vagyunk neurális háló kialakítására, mind a forward-, mind a backpropagation egyszerű műveletekkel végezhető a hálózaton egy vezérlő egység beiktatásával. A számítás és a memória közötti határok elvonatkoztatásával egy olyan rendszerhez juthatunk, ami egyrészt több szempontból költség-és energiahatékony, emellett valamilyen mértékben magát az agyi működést is modellezi (az agyban a memória és a feldolgozás mélyen összefonódott folyamatok\cite{indiveri2015}).\par\smallskip
@@ -765,11 +839,27 @@ A neuromorfikus áramkörökben alkalmazott memrisztorok több kategóriába esh
 	\includegraphics[scale=0.8]{neuropiechart}
 	\caption{Neuromorfikus számítás hardveres megvalósításainak típusai\cite{schuman2017}}
 \end{figure}
-\subsection{Egyéb alkalmazások}
+\section{Memrisztorok további alkalmazásai}
+\subsection{Gráfelméleti alkalmazás}
+\subsection{Random szám generáció}
+A gyári memrisztorok belső sztochasztikus jellege (variabilitása) miatt a nagy pontosságot igénylő rendszerekben csak korrigáló módszerekkel, közelítésekkel alkalmazhatók. Bizonyos területeken viszont, például a hardveres biztonsági feladatokban kihasználható ez a tulajdonság. Egy igazi random szám generátor (TRNG) képes torzítatlan random bitekből álló jelsorozatok létrehozására, amik például kriptográfiai algoritmusokban használhatók. A hardveres kriptográfiai rendszerek általában a termikus zajok, egyéb környezeti zajok, oszcillátorokban történő frekvenciaingadozások vagy akár radioaktív bomlások alapján működhetnek\cite{soorat2015}. A memrisztorokkal többféle TRNG rendszert is felvetettek, például egy LRS állapotban kialakuló random telegráf zaj felhasználásával\cite{huang2012} (bár ez nem teljesen független a kapcsolt feszültségtől), vagy egy Ag:SiO$_2$ ($\approx 17\%\:\text{Ag adalékolt}$) memrisztorban a fématomok diffúziójának felhasználásával\cite{jiang2017}. Az utóbbi rendszer alapja, hogy a felhasznált memrisztor HRS állapotból indulva feszültségimpulzus hatására egy sztochasztikus beállási időt követően LRS állapotba vált, majd a a gerjesztés eltávolításával rögtön visszavált. Mivel ebben az esetben nincsen szükség külön RESET folyamatra, az ilyen rendszer a korábbi memrisztor-alapú TRNG-nél energiahatékonyabb. A teljes hálózat egy memrisztorból, komparátorból, ÉS kapuból illetve egy számlálóból áll (ld. \abra{fig:trngstructure}), tehát a rendszer egyszerűségét tekintve is előnyös. Ezek mellett ez a TRNG megfelel a NIST 15 randomsági tesztjének, vagyis biztonságosan alkalmazható\cite{jiang2017}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.9]{trngjiang}
+	\caption{Jiang et al. memrisztoros TRNG rendszere\cite{jiang2017}}
+	\label{fig:trngstructure}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{trngwaveform}
+	\caption{A működés különböző fázisainak feszültség-idődiagramjai: először egy rövid feszültségimpulzust adunk a memrisztorra ($V_1$), ezután a megfigyelt véletlenszerű késleltetést követően nő a memrisztor konduktanciája és a $V_2$ kimeneti feszültség; ilyenkor a komparátor kimenete ($V_3$) logikai magassá vált, és a szolgáltatott órajelnek véletlenszerű ciklusáig számol a számláló\cite{jiang2017}}
+	\label{fig:trngwaveform}
+\end{figure}
+\subsection{Optoelektrikus memrisztorok}
+\subsection{Egyebek}
 Használhatók például dinamikus módosítható terhelésként bizonyos rendszerekben, például programozható erősítőkben\cite{prodromakis2010} minimális veszteségekkel, programozható threshold komparátorokban, vagy speciális oszcillátorokban.
 
-\section{Cutting-edge kutatási területek}
-\subsection{Fotoelektrikus memrisztorok}
+\section{Konklúzió, összefoglalás}
 \newpage
 \printbibliography[heading=bibintoc, title={Hivatkozások}]
 
