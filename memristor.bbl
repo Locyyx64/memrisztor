@@ -661,6 +661,73 @@
       \endverb
       \keyw{Random access memory;Ferroelectric films;Nonvolatile memory;Solid state circuits;Flash memory;Computer architecture;Mobile computing;Personal communication networks;Hard disks;Energy consumption;Mass storage;Design studies;Mass storage;Design studies}
     \endentry
+    \entry{wang2025}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=5c786d9afb3cf178271120f1fd926d21}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=33104fd0f457a2964af323817a9d2016}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3d1a4d754b09aefef5a59b3ceaf35365}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Wenshuo},
+           giveni={W\bibinitperiod}}}%
+        {{hash=5b9836bb5f2e5d3815d72e359020f75c}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Guorui},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0ef9c5185015b852a38b8db26de0e7f0}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Minghao},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4886e43485a285e5f617ac9289030412}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9239633d67d6e266f62df02fb241b22}
+      \strng{fullhash}{cae402c445701f802922be1940014b8e}
+      \strng{fullhashraw}{cae402c445701f802922be1940014b8e}
+      \strng{bibnamehash}{d9239633d67d6e266f62df02fb241b22}
+      \strng{authorbibnamehash}{d9239633d67d6e266f62df02fb241b22}
+      \strng{authornamehash}{d9239633d67d6e266f62df02fb241b22}
+      \strng{authorfullhash}{cae402c445701f802922be1940014b8e}
+      \strng{authorfullhashraw}{cae402c445701f802922be1940014b8e}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2050-7526}
+      \field{journaltitle}{Journal of Materials Chemistry C}
+      \field{number}{26}
+      \field{title}{SrTiO3-based memristor with a metal/oxide bilayer electrode for high recognition accuracy neuromorphic computing}
+      \field{volume}{13}
+      \field{year}{2025}
+      \field{pages}{13235\bibrangedash 13245}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1039/d5tc00406c
+      \endverb
+      \verb{eprint}
+      \verb https://pubs.rsc.org/tc/article-pdf/13/26/13235/10769735/d5tc00406c.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1039/d5tc00406c
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1039/d5tc00406c
+      \endverb
+    \endentry
     \entry{prodromakis2010}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{hash=c5c39d624e60cb2cf2b92ffd8ece9b23}{%
@@ -1206,6 +1273,92 @@
       \endverb
       \keyw{Resistive RAM,Transition-metal oxide,Extended defect,Insulator–metal transition,Electronic transport,Electrodegradation,Resistive switching}
     \endentry
+    \entry{benchchem}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=87f470dd8e7f47b4904adb8b0982c230}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={BenchChem\bibnamedelimb Technical\bibnamedelima Support},
+           giveni={B\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{87f470dd8e7f47b4904adb8b0982c230}
+      \strng{fullhash}{87f470dd8e7f47b4904adb8b0982c230}
+      \strng{fullhashraw}{87f470dd8e7f47b4904adb8b0982c230}
+      \strng{bibnamehash}{87f470dd8e7f47b4904adb8b0982c230}
+      \strng{authorbibnamehash}{87f470dd8e7f47b4904adb8b0982c230}
+      \strng{authornamehash}{87f470dd8e7f47b4904adb8b0982c230}
+      \strng{authorfullhash}{87f470dd8e7f47b4904adb8b0982c230}
+      \strng{authorfullhashraw}{87f470dd8e7f47b4904adb8b0982c230}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An In-depth Technical Guide to Magnéli Phases in Titanium Oxides}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://pdf.benchchem.com/1168/An_In_depth_Technical_Guide_to_Magn_li_Phases_in_Titanium_Oxides.pdf
+      \endverb
+      \verb{url}
+      \verb https://pdf.benchchem.com/1168/An_In_depth_Technical_Guide_to_Magn_li_Phases_in_Titanium_Oxides.pdf
+      \endverb
+    \endentry
+    \entry{szot2011}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=335475ed39e84b7c1d0ac2c929d266cb}{%
+           family={Szot},
+           familyi={S\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9d981d0c4c6a3d1918586fc0e9761e4d}{%
+           family={Rogala},
+           familyi={R\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e860d52fcdb0382a255949f3e615ea87}{%
+           family={Speier},
+           familyi={S\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=cec336fe891f42c64ccedc918b713826}{%
+           family={Klusek},
+           familyi={K\bibinitperiod},
+           given={Z},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9d795623af8c7a735581189772f7fda8}{%
+           family={Besmehn},
+           familyi={B\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c7bb6497c75eaf8a3a3a90c1b1357c5b}{%
+           family={Waser},
+           familyi={W\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c94a5bfc42d43a25032b6f59b495d0f4}
+      \strng{fullhash}{36a114313a6740fb22f98d7403500eba}
+      \strng{fullhashraw}{36a114313a6740fb22f98d7403500eba}
+      \strng{bibnamehash}{c94a5bfc42d43a25032b6f59b495d0f4}
+      \strng{authorbibnamehash}{c94a5bfc42d43a25032b6f59b495d0f4}
+      \strng{authornamehash}{c94a5bfc42d43a25032b6f59b495d0f4}
+      \strng{authorfullhash}{36a114313a6740fb22f98d7403500eba}
+      \strng{authorfullhashraw}{36a114313a6740fb22f98d7403500eba}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1361-6528}
+      \field{journaltitle}{Nanotechnology}
+      \field{number}{25}
+      \field{title}{{TiO2}--a prototypical memristive material}
+      \field{volume}{22}
+      \field{year}{2011}
+      \field{pages}{254001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0957-4484/22/25/254001
+      \endverb
+    \endentry
     \entry{li2019}{article}{}{}
       \name{author}{4}{}{%
         {{hash=1ddc80cd8205939b83d7a9245248e355}{%
@@ -1237,8 +1390,8 @@
       \strng{authornamehash}{ae1ea328a82b5befcf66308721bf5e33}
       \strng{authorfullhash}{cd4855efbcb00f1e19cd72a6ab59414e}
       \strng{authorfullhashraw}{cd4855efbcb00f1e19cd72a6ab59414e}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature}
@@ -1366,8 +1519,8 @@
       \strng{authornamehash}{54806dfeec60d64cb0e4cb0f4ed3c52a}
       \strng{authorfullhash}{54806dfeec60d64cb0e4cb0f4ed3c52a}
       \strng{authorfullhashraw}{54806dfeec60d64cb0e4cb0f4ed3c52a}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2352-9407}
@@ -1415,8 +1568,8 @@
       \strng{authornamehash}{0cb180415b1160f6e88db56e29f9e1df}
       \strng{authorfullhash}{0cb180415b1160f6e88db56e29f9e1df}
       \strng{authorfullhashraw}{0cb180415b1160f6e88db56e29f9e1df}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nanoscale}
@@ -1456,8 +1609,8 @@
       \strng{authornamehash}{dd1de70ea51408c7b72d049b653f8872}
       \strng{authorfullhash}{dd1de70ea51408c7b72d049b653f8872}
       \strng{authorfullhashraw}{dd1de70ea51408c7b72d049b653f8872}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1674-1056}
@@ -1539,8 +1692,8 @@
       \strng{authornamehash}{790dced84fc3580899b516ca3a777cc2}
       \strng{authorfullhash}{7f8acf7ce757fa10f9fb5d770bce4111}
       \strng{authorfullhashraw}{7f8acf7ce757fa10f9fb5d770bce4111}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nanoscale}
@@ -1629,8 +1782,8 @@
       \strng{authornamehash}{8991079b13cd866bd5d0b26d7372e2a1}
       \strng{authorfullhash}{820010977b49d112b815a15e9cffbde0}
       \strng{authorfullhashraw}{820010977b49d112b815a15e9cffbde0}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2045-2322}
@@ -1686,8 +1839,8 @@
       \strng{authornamehash}{8262c482a89a25cee9c1bb700bafe629}
       \strng{authorfullhash}{3ae83073d8fe72796f7a20e0a5bf9eda}
       \strng{authorfullhashraw}{3ae83073d8fe72796f7a20e0a5bf9eda}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advanced Materials}
@@ -1767,8 +1920,8 @@
       \strng{authornamehash}{9707aa20d0f4361316f091cac4013820}
       \strng{authorfullhash}{0dfaf29888d8c386ca48971b3467f16f}
       \strng{authorfullhashraw}{0dfaf29888d8c386ca48971b3467f16f}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2041-1723}
@@ -1908,8 +2061,8 @@
       \strng{authornamehash}{8f050b93110d308a82b637557dd819ef}
       \strng{authorfullhash}{fa825a734cf96e8e5484d3281e31bc20}
       \strng{authorfullhashraw}{fa825a734cf96e8e5484d3281e31bc20}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2045-2322}
@@ -1971,8 +2124,8 @@
       \strng{authornamehash}{410cc56ba9dfbeb35b09b5da5843ab03}
       \strng{authorfullhash}{470287bc57afb63b48dc543aa4e93ee2}
       \strng{authorfullhashraw}{470287bc57afb63b48dc543aa4e93ee2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{23}
@@ -2052,8 +2205,8 @@
       \strng{authorfullhash}{9f6a3c7c4147f7c15aa454c2d36e6c0d}
       \strng{authorfullhashraw}{9f6a3c7c4147f7c15aa454c2d36e6c0d}
       \field{extraname}{1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advanced Materials}
@@ -2158,9 +2311,9 @@
       \strng{authornamehash}{e6bf3fa4c61e778c512bc6ce44f3e4bb}
       \strng{authorfullhash}{8d99e2d4bd4426147de3f701ae44f528}
       \strng{authorfullhashraw}{8d99e2d4bd4426147de3f701ae44f528}
-      \field{extraname}{1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2520-1131}
@@ -2222,8 +2375,8 @@
       \strng{authornamehash}{e61464416902d34cebd36bce2d610544}
       \strng{authorfullhash}{4ca0d85f0daa4d4b8c8e33103f2b7a0f}
       \strng{authorfullhashraw}{4ca0d85f0daa4d4b8c8e33103f2b7a0f}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1748-3395}
@@ -2902,6 +3055,43 @@
       \range{pages}{7}
       \verb{doi}
       \verb 10.1038/s41928-020-0441-9
+      \endverb
+    \endentry
+    \entry{sangwan2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=fee5c1fdbc8fc28576d2c9ac72ac5d4f}{%
+           family={Sangwan},
+           familyi={S\bibinitperiod},
+           given={Vinod\bibnamedelima K.},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=59b2abb5fe45884a94edde71afa253a8}{%
+           family={Hersam},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb541d81cb237e7124545404975b48aa}
+      \strng{fullhash}{fb541d81cb237e7124545404975b48aa}
+      \strng{fullhashraw}{fb541d81cb237e7124545404975b48aa}
+      \strng{bibnamehash}{fb541d81cb237e7124545404975b48aa}
+      \strng{authorbibnamehash}{fb541d81cb237e7124545404975b48aa}
+      \strng{authornamehash}{fb541d81cb237e7124545404975b48aa}
+      \strng{authorfullhash}{fb541d81cb237e7124545404975b48aa}
+      \strng{authorfullhashraw}{fb541d81cb237e7124545404975b48aa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1748-3395}
+      \field{journaltitle}{Nature Nanotechnology}
+      \field{number}{7}
+      \field{title}{Neuromorphic nanoelectronic materials}
+      \field{volume}{15}
+      \field{year}{2020}
+      \field{pages}{517\bibrangedash 528}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1038/s41565-020-0647-z
       \endverb
     \endentry
     \entry{biolek2013}{misc}{}{}
@@ -4656,7 +4846,7 @@
       \strng{authornamehash}{73b31122dcd518724792164b53c110db}
       \strng{authorfullhash}{4fd57067698ea50b609c717d653620bb}
       \strng{authorfullhashraw}{4fd57067698ea50b609c717d653620bb}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -4789,8 +4979,8 @@
       \strng{authorfullhash}{72a1416d9cd3bf07b7b39456000a0f72}
       \strng{authorfullhashraw}{72a1416d9cd3bf07b7b39456000a0f72}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.LG}
@@ -4858,8 +5048,8 @@
       \strng{authornamehash}{9ca302c119a4ba75eb7bc63f3df58650}
       \strng{authorfullhash}{68dcb5be047d82a747094d5ecaa7d082}
       \strng{authorfullhashraw}{68dcb5be047d82a747094d5ecaa7d082}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1476-4687}
@@ -4922,8 +5112,8 @@
       \strng{authorfullhash}{d776d5b50f81ae186e989d219fb833d7}
       \strng{authorfullhashraw}{d776d5b50f81ae186e989d219fb833d7}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2021 58th ACM/IEEE Design Automation Conference (DAC)}
@@ -4970,8 +5160,8 @@
       \strng{authornamehash}{76b1b0dca7e8cdd6780ba8adb631040c}
       \strng{authorfullhash}{ecfb9276aa9c0b910b1add99536ea704}
       \strng{authorfullhashraw}{ecfb9276aa9c0b910b1add99536ea704}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9635454643}
@@ -5009,8 +5199,8 @@
       \strng{authornamehash}{3ae53fe582e8a815b118d26947eaa326}
       \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
       \strng{authorfullhashraw}{3ae53fe582e8a815b118d26947eaa326}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Deep Learning}
@@ -5141,43 +5331,6 @@
       \endverb
       \verb{url}
       \verb https://books.google.hu/books?id=-j8PAQAAMAAJ
-      \endverb
-    \endentry
-    \entry{sangwan2020}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=fee5c1fdbc8fc28576d2c9ac72ac5d4f}{%
-           family={Sangwan},
-           familyi={S\bibinitperiod},
-           given={Vinod\bibnamedelima K.},
-           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=59b2abb5fe45884a94edde71afa253a8}{%
-           family={Hersam},
-           familyi={H\bibinitperiod},
-           given={Mark\bibnamedelima C.},
-           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \strng{namehash}{fb541d81cb237e7124545404975b48aa}
-      \strng{fullhash}{fb541d81cb237e7124545404975b48aa}
-      \strng{fullhashraw}{fb541d81cb237e7124545404975b48aa}
-      \strng{bibnamehash}{fb541d81cb237e7124545404975b48aa}
-      \strng{authorbibnamehash}{fb541d81cb237e7124545404975b48aa}
-      \strng{authornamehash}{fb541d81cb237e7124545404975b48aa}
-      \strng{authorfullhash}{fb541d81cb237e7124545404975b48aa}
-      \strng{authorfullhashraw}{fb541d81cb237e7124545404975b48aa}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1748-3395}
-      \field{journaltitle}{Nature Nanotechnology}
-      \field{number}{7}
-      \field{title}{Neuromorphic nanoelectronic materials}
-      \field{volume}{15}
-      \field{year}{2020}
-      \field{pages}{517\bibrangedash 528}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1038/s41565-020-0647-z
       \endverb
     \endentry
     \entry{yang2022}{article}{}{}

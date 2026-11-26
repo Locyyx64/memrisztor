@@ -64,10 +64,11 @@ framexleftmargin=1.5mm
 \DeclareMathOperator\ns{ns}
 \DeclareMathOperator\K{K}
 \DeclareMathOperator\mW{mW}
+\DeclareMathOperator\mbar{mbar}
 \DeclareMathOperator\eV{eV}
 \DeclareMathOperator\cool{K/min}
 
-\newcommand*\mat[1]{\pmb{\mathit{#1}}}
+%\newcommand*\mat[1]{\pmb{\mathit{#1}}}
 
 \newcounter{itemnum}
 
@@ -93,7 +94,7 @@ framexleftmargin=1.5mm
 
 \maketitle\thispagestyle{fancy}
 \begin{abstract}
-	Célunk ezzel a kutatással a memrisztív rendszerek bemutatása, a modern alkalmazások felderítése és elemzése, illetve különböző karakterisztikák modellezése, fennálló források alapján. A memrisztor a negyedik ideális áramköri komponens, ami a töltés és a fluxus között definiál karakterisztikát. A múltja a 60-70-es években gyökerezik, de több évtizedig nem létezett pontos megvalósítása. A 2000-es évek elején berobbant a tudományos kutatási figyelem középpontjába, miután sikeresen valósítottak meg titán-dioxid alapú memrisztív rendszert. Ezáltal a nem-felejtő memóriák nagy népszerűségre tettek szert, kifejezetten miután az Intel és a Micron Technologies piacra dobta a 3D XPoint alapú memóriát.
+A memrisztor a negyedik ideális áramköri komponens, ami a töltés és a fluxus között definiál karakterisztikát. A múltja a 60-70-es években gyökerezik, de több évtizedig nem létezett pontos megvalósítása. A 2000-es évek elején berobbant a tudományos kutatási figyelem középpontjába, miután sikeresen valósítottak meg titán-dioxid alapú memrisztív rendszert. Ezáltal a nem-felejtő memóriák nagy népszerűségre tettek szert, kifejezetten miután az Intel és a Micron Technologies piacra dobta a 3D XPoint alapú memóriát. Az MFS csökkenésével, és a nanoméretű integrált áramkörök fejlődésével felkapott 2D technológia a memrisztorok területén is előnyösen került felhasználásra. A memrisztív rendszerek nagyon sokféle módon alkalmazhatók, különböző tudományos és technológiai ágazatokban. A legutóbbi években az AI fejlődése miatt nagy igény támadt az energiahatékony, minimális időbeli veszteséggel rendelkező rendszerekre. Erre a célra a memrisztoros crossbar-alapú rendszerek sok esetben rendkívül jó választásnak bizonyultak. A célunk ezzel a kutatással a memrisztív rendszerek bemutatása, a modern alkalmazások felderítése és elemzése, illetve különböző karakterisztikák modellezése, fennálló források alapján. 
 \end{abstract}
 \vspace{5mm}
 \tableofcontents
@@ -206,7 +207,7 @@ Mindez lehetővé tette egyéb memrisztívhez hasonló rendszerek kutatását, p
  	\caption{Egy termisztor DC karakterisztikája $\beta = 3460 \K$, $\delta = 0.1 \mW/^\circ C$, $T_0 = 298 K$, $R_0(T_0) = 8000 \ohm$ paraméterek mellett\cite{chuakang1976}}
  	\label{fig:dcmemrisztor}
  \end{figure}
-  \subsection{A hiszterézisgörbe}
+  \subsection{A hiszterézisgörbe}\label{sec:hysteresis}
   Egy töltésvezérelt memrisztív kétpólus karakterisztikája váltakozóáramú gerjesztésre egy $v-i$ Lissajous-görbét mutat. Mivel egy $i(t) = I \cos\omega t$ gerjesztés esetén a \eqref{eq:allapot} állapotegyenletnek $t > t_0$ esetén létezik periodikus $x(t)$ megoldása valamilyen $x_0$ kezdeti érték mellett, ezért bármely $i\in [-I, I]$ áram értékhez a karakterisztikában két egyenértékű $v$ érték tartozik\cite{chuakang1976}. A memrisztív kétpólus állapotváltozós leírásából adódóan a hiszterézis görbe minden esetben átmegy a $(0,0)$ ponton, vagyis az origóban "összefogott" a görbe. Továbbá, hogyha a kétpólus \eqref{eq:allapot} ÁVLNA megadása mellett a kétpólus gerjesztés-állapot stabilis (bounded-input bounded-state stable\cite{chuakang1976})\footnote{Vagyis ha $\vec{f}(\vec{x}, i)$ gerjesztés-válasz (GV) stabilis.}, akkor a gerjesztés frekvenciájának növelésével a hiszterézisgörbe által bezárt terület csökken, majd a végtelenben lineárissá (bijektívvé) válik. A karakterisztika origóbeli összefogottságával, illetve a frekvenciafüggésével ellenőrizhető egy rendszerről, hogy memrisztív-e\cite{chuathefourth}. Memrisztív rendszerek például a Hodgkin-Huxley által hibásan variáns rezisztornak vélt kálium és nátrium ioncsatornák a tintahal óriás axonjában\cite{chua2014}. A karakterisztika frekvenciafüggése könnyen bizonyítható, ha figyelembe vesszük a gerjesztés-állapot stabilitást, ill. a $\vec{f}(\vec{x}, i)$ függvény folytonosságát és periodikusságát. A végtelen frekvenciában megfigyelt lineáris karakterisztika azzal a ténnyel egyenértékű, hogy ilyenkor az $\vec{x(t)}$ valamilyen konstans $\vec{x_0}(t)$-hez konvergál. Az említett feltételek miatt az $\vec{f}(\vec{x}, i)$ függvény a következő komplex Fourier-polinommal közelíthető\cite{chuakang1976}:
   \begin{equation}
   	\vec{f}(\vec{x}, i) = \vec{\alpha}_0 + \sum_{k = -N} ^ {k = N}\exp(jk\omega t)\vec{\alpha}_k		\;\;\;\;\;\; k \neq 0
@@ -318,15 +319,15 @@ Egy FeRAM cella felépítése tulajdonképpen a DRAM-hoz hasonló, egy tranziszt
 \end{figure}
 Logikai alacsony írása a plate line-on (PL) létrehozott impulzussal érhető el, míg logikai magas írásához a bit line-on (BL) kell egy impulzust létrehoznunk (azonos feszültségen). \\
 A ferroelektromos memória legnagyobb hátránya a cellák nagysága, emiatt csak kis mértékben vagy kiegészítésként integrálható. Emellett egyik tulajdonsága, ami a többi NVM-től elkülöníti, hogy az írási és az olvasási műveletei szinte teljesen szimmetrikusak (fogyasztási, illetve latency szempontból is). Mégis, pl. elsődleges memóriával (DRAM) illesztve jobb fogyasztás fényében rosszabb teljesítmény érhető el.\cite{emerging2017} Másodlagos memóriaként például Flash SSD-vel vertikálisan integrálva lehetséges jobb teljesítmény elérése. Yoon et al. prototípusában \cite{yoon2008} az illesztett FRAM a fájlrendszer metaadatait tárolja (flash translation layer, FTL), a Flash olvasásának felgyorsítása érdekében.
-\section{Az anyagtudomány szerepe, TiO$_2$, SrTiO$_3$}
+\section{Átmenetifém-oxidok bipoláris kapcsolása}
 \subsection{Egyszerű titán-dioxid alapú ReRAM bemutatása}
-A nemfelejtő ReRAM technológia kutatása 2008-ban, a TiO$_2$ (titán-dioxid) fém-szigetelő-fém (MiM) kialakítás sikerének köszönhetően nagyobb népszerűségre tett szert. A ReRAM lényege, hogy a szigetelő anyagban feszültség hatására dinamikusan egy magas rezisztanciás (HRS), és egy alacsony rezisztanciás (LRS) állapot között váltunk az adott bit írásának megfelelően. Ilyenkor a szigetelőben egy vezető csatorna keletkezik (főként a szennyeződéseknek és az esetleges adalékolt pozitív oxigénionok hatására). Használnak még pl. cink-oxidokat, nikkel-oxidot\cite{emerging2017}, stroncium-titanátot (SrTiO$_3$), vagy akár Ag-adalékolt Si réteget\cite{prodromakis2010} A legtöbbet kutatott, titán-dioxid alapú memrisztor két darab platinum elektródból, illetve egy közöttük lévő TiO$_2$ rétegből áll. Ez utóbbi egy rendkívül vezetőképes, csökkentett oxigénkoncentrációjú rétegből (TiO$_{2-x}$), és egy kémiailag tökéletes titán-dioxid szegmensből áll. Az adalékolt TiO$_2$ és a pozitív elektród közötti távolság w. A két elektródra kapcsolt pozitív feszültség hatására a szennyezett TiO$_2$ ionjai sodródni kezdenek a pozitív elektród felé, így a w távolság csökken. A konstrukción átfolyó teljes áram a w vastagságú oxidréteg áthatolásától függ, ami rendkívül nemlineáris módon függ a w távolság nagyságától \cite{kolka2015}. Egy ilyen kialakítás dinamikus modellezésében például a w, mint állapotváltozó szerint írható fel az állapotváltozós leírás\cite{pickett2009}. Pickett et al. egy TiO$_2$ crosspoint kialakítást vizsgáltak, ahol az egyes cellák esetén a "bipoláris átkapcsolás" jelenségét az ionsodródási sebesség exponenciális függvényében, illetve a sodródási és a diffúziós hatások kölcsönhatásának vonatkozásában modellezték. A két platina elektród közé a titán-dioxidot katódporlasztással növesztették 250 \C-on, O-Ti: $2.00 \pm 0.01$ sztöchiometrikus arányban.
+A nemfelejtő ReRAM technológia kutatása 2008-ban, a TiO$_2$ (titán-dioxid) fém-szigetelő-fém (MiM) kialakítás sikerének köszönhetően nagyobb népszerűségre tett szert. A ReRAM lényege, hogy a szigetelő anyagban feszültség hatására dinamikusan egy magas rezisztanciás (HRS), és egy alacsony rezisztanciás (LRS) állapot között váltunk az adott bit írásának megfelelően. Ilyenkor a szigetelőben egy vezető csatorna keletkezik (conductive filament, CF), főként a szennyeződéseknek és a töltéshordozó-migrációnak köszönhetően (ld. következő alfejezet). Használnak még pl. cink-oxidokat, nikkel-oxidot\cite{emerging2017}, stroncium-titanátot (SrTiO$_3$)\cite{wang2025}, vagy akár Ag-adalékolt Si réteget\cite{prodromakis2010} A legtöbbet kutatott, titán-dioxid alapú memrisztor két darab platina elektródból, illetve egy közöttük lévő TiO$_2$ rétegből áll. Ez utóbbi egy rendkívül vezetőképes, csökkentett oxigénkoncentrációjú rétegből (TiO$_{2-x}$, "magnéli fázis"), és egy kémiailag semleges titán-dioxid szegmensből áll. A redukált TiO$_2$ és a pozitív elektród közötti távolság w. A két elektródra kapcsolt pozitív feszültség hatására a redukált TiO$_2$ ionjai sodródni kezdenek a pozitív elektród felé, így a w távolság csökken. A konstrukción átfolyó teljes áram a w vastagságú oxidréteg áthatolásától függ, ami rendkívül nemlineáris módon függ a w távolság nagyságától \cite{kolka2015}. Egy ilyen kialakítás dinamikus modellezésében például a $w$, mint állapotváltozó szerint írható fel az állapotváltozós leírás\cite{pickett2009}. Pickett et al. egy TiO$_2$ crosspoint kialakítást vizsgáltak, ahol az egyes cellák esetén a "bipoláris átkapcsolás" jelenségét az ionsodródási sebesség exponenciális függvényében, illetve a sodródási és a diffúziós hatások kölcsönhatásának vonatkozásában modellezték. A két platina elektród közé a titán-dioxidot katódporlasztással növesztették 250 \C-on, O-Ti: $2.00 \pm 0.01$ sztöchiometrikus arányban.
 \begin{figure}[H]
 \centering
 \includegraphics{pickett}
 \caption{Pickett et al. fém-szigetelő-fém kialakítása, az adalékolt rutil réteg ellenállása $R_s$, egyebek\cite{pickett2009}}
 \end{figure}
-A TiO$_{2-x}$ részt ún. elektroformálással hozták létre, ami az oxidban oxigén vakanciákat hozott létre, ezzel visszafordíthatatlanul lecsökkentve (nagyságrendekkel) az ellenállását. A folyamat alapvetően annyit takar, hogy 0V-ról fokozatosan +6V-ra emelik a memrisztor feszültségét, és rövid ideig ott tartják (a folyamat összesen kb. 5ms). Pickett et al. állapotegyenlete a Simmons-csatorna vastagságára (w) a csatornaáramra ($i_M$) nézve erősen nemlineáris összefüggés, mindkét csatornaáram-irány szempontjából:
+A TiO$_{2-x}$ részt ún. elektroformálással hozták létre, ami az oxid szerkezetében oxigénlyukakat hozott létre, ezzel irreverzibilis módon lecsökkentve (nagyságrendekkel) az ellenállását. A folyamat alapvetően annyit takar, hogy 0V-ról fokozatosan +6V-ra emelik a memrisztor feszültségét, és rövid ideig ott tartják (a folyamat összesen kb. 5ms). Pickett et al. állapotegyenlete a Simmons-csatorna vastagságára (w) a csatornaáramra ($i_M$) nézve erősen nemlineáris összefüggés, mindkét csatornaáram-irány szempontjából:
 \begin{equation}\label{pickettoff}
 	\frac{dw}{dt} = f_{\text{off}}\sinh\mleft(\frac{i}{i_{\text{off}}}\mright)\exp\mleft[-\exp\mleft(\frac{w-a_{\text{off}}}{w_c}-\frac{|i|}{b}\mright)-\frac{w}{w_c}\mright]
 \end{equation}
@@ -335,7 +336,7 @@ kikapcsolás esetén ($i > 0$), illetve bekapcsolás esetén ($i < 0$):
 	\frac{dw}{dt} = f_{\text{on}}\sinh\mleft(\frac{i}{i_{\text{on}}}\mright)\exp\mleft[-\exp\mleft(-\frac{w-a_{\text{on}}}{w_c}-\frac{|i|}{b}\mright)-\frac{w}{w_c}\mright]
 \end{equation}
 ahol $f_{\text{on}}$, $f_{\text{off}}$, $i_{\text{on}}$, $i_{\text{off}}$, $a_{\text{on}}$, $a_{\text{off}}$, $b$ és $w_c$ regressziós modellparaméterek.
-A bipoláris átkapcsolású memrisztív rendszerek alapvető tulajdonsága egyfajta hiszterézis az i-v görbén. Ez teszi lehetővé a "diszkrét" állapotok definiálhatóságát. Bár, a memrisztorok klasszikus értelmezésében is, váltakozóáramú gerjesztésre a i-v karakterisztika az origóban "összefogott" Lissajous-görbéket mutat\cite{chuakang1976}. Ennek oka, hogy a klasszikus értelmezésben a memrisztív rendszerek nem képesek energia tárolására. Ugyan, a gerjesztés frekvenciától függ a görbe "befogott területe", végtelen frekvencia esetén a "hiszteretikus" görbe helyett egyetlen összefüggő görbe lesz. \\
+A bipoláris átkapcsolású (resistive switching, RS) memrisztív rendszerek alapvető tulajdonsága a hiszterézis az i-v görbén. Ez teszi lehetővé a diszkrét állapotok definiálhatóságát, és ez teszi a rendszert definíció szerint memrisztívvé (ld. \ref{sec:hysteresis} fejezet). \par
 Strukov et al. a titán-dioxid ReRAM kialakítást két sorba kapcsolt ellenállásként értelmezi. \cite{strukov2008} Állapotváltozónak a w-t használták, ami náluk a szennyezett réteg hossza. \begin{align}
 	v(t) &= \left(\mathcal{R}_{ON}\frac{w(t)}{D} + \mathcal{R}_{OFF}\left(1 - \frac{w(t)}{D}\right)\right)i(t) \\
 	\frac{dw}{dt} &= \mu_v \frac{\mathcal{R}_{ON}}{D} i(t)
@@ -343,7 +344,7 @@ Strukov et al. a titán-dioxid ReRAM kialakítást két sorba kapcsolt ellenáll
 Tehát a rendszer modellezett memrisztanciája (ha $\mathcal{R}_{ON} \ll \mathcal{R}_{OFF}$): \begin{equation}
 	M(q) = \mathcal{R}_{OFF} \left(1- \frac{\mu_v \mathcal{R}_{ON}}{D^2}q(t)\right)
 \end{equation}
-Soni et al. ezt a modellt nevezi "lineáris ionsodródási modellnek"\cite{soni2022}. Nemlineáris ionsodródási modellek során az állapotváltozó kifejezéséhez egy extra $f(x)$ tényezőt is hozzárendelnek, így az állapotváltozó saját magára is kihat, ezáltal a szennyezett oxidréteg feszültségmenti növekedésének mértékére közvetlenül megadhatunk egy nemlineáris ablakfüggvényt. Ha bevezetjük az állapotváltozót a $w$ helyett a $w/D$ hányadosra, illetve kifejezzük az állapotegyenlet állandó tényezőjét:
+Soni et al. ezt a modellt nevezi "lineáris ionsodródási modellnek"\cite{soni2022}. Nemlineáris ionsodródási modellek során az állapotváltozó kifejezéséhez egy extra $f(x)$ tényezőt is hozzárendelnek, így az állapotváltozó saját magára is kihat, ezáltal a redukált oxidréteg vastagságának növekedésére közvetlenül megadhatunk egy nemlineáris ablakfüggvényt. Ha bevezetjük az állapotváltozót a $w$ helyett a $w/D$ hányadosra, illetve kifejezzük az állapotegyenlet állandó tényezőjét:
 \begin{align}
 	&x = \frac{w}{D} \\
 	&k = \frac{\mu_v R_{\text{ON}}}{D^2}
@@ -381,10 +382,10 @@ A Pickett-Simmons állapotegyenlet egyszerűbb megadását biztosítja a TEAM mo
 	\end{cases}
 \end{equation}
 Ahol $k_{\text{off}}$,  $k_{\text{on}}$,  $\alpha_{\text{off}}$, és  $\alpha_{\text{on}}$ modellparaméterek, illetve $i_{\text{off}}$ és $i_{\text{on}}$ küszöbáram értékek. \\
-Az RS (resistive switching) technológiához szükséges szigetelők kristálytani, szennyezettségi követelményeit, növesztési technológiáit, belső folyamatait és energiaviszonyait az alábbiakban tárgyaljuk. \par\smallskip
+Az RS (resistive switching) technológiához szükséges szigetelők kristálytani ill. elektromos belső folyamatait a következő alfejezetekben tárgyaljuk. \par\smallskip
 A fentebbi, klasszikus Strukov et al. tanulmány többek között olyan kritikát kapott, hogy ideális memrisztornak, illetve egy forradalmi felfedezésnek ítéli a memrisztorok megvalósításában a TiO$_2$ átmenetifém-oxid alapú memrisztort\cite{vongehr2015}. Vongehr et al. cikkje szerint az ilyen szerkezetű eszköz kutatása több évtizeddel visszanyúlik, azzal a különbséggel, hogy akkor még nem vélték L. Chua memrisztor-leírásának megvalósításaként. Felhozzák azt, hogy annak ellenére, hogy Chua az 1971-es cikkjében a memrisztornak a kvázi-sztatikus Maxwell-egyenleteken keresztül mágneses hatást is tulajdonít\cite{chua}, a Strukov-féle titán-dioxid eszköz mágnesesség nélkül is működik.\cite{souto2024}. Ezek után, egy 2014-es cikkben Chua a memrisztor jelentését minden olyan elektromos eszközre kiterjesztette, ami egy "összefogott" I-V hiszterézissel rendelkezik\cite{chua2014}.
 \subsection{Magnéli fázisok, és a rácshibák jelentősége}
-A resistive switching jelenségének vonatkozásában a legnagyobb szerepet az átmenetifém-alapú szigetelők vagy oxidok dinamikus vezetővé válása teszi lehetővé. A titán-dioxid esetén, enyhén redukálva (csak vakanciák, több dimenziós rácshibákkal külön kell számolnunk) a rendkívül vezetőképes ún. Magnéli fázis okozza, ami egy nem-sztöchiometrikus, oxigén-vakanciás anyag. (TiO$_{2-x}$) A vezetőképességet ugyan nem csak az oxigén vakanciák ($V_O$) befolyásolják, hanem egyéb kristályhibák is, például interstíciós Ti atomok, vagy Schottky-párok. A kristályhibák leírására az ún. Kröger-Vink jelölés alkalmazható\cite{szot2014}. A Frenkel-párok és a Schottky-párok figyelembe vételével egy átfogóbb képlet adható a Magnéli fázisokra. Az anyag vezetőképességét a különböző redukáló és oxidáló körülmények között a következőképpen modellezhetjük:
+A resistive switching jelenségének vonatkozásában a legnagyobb szerepet az átmenetifém-alapú szigetelők vagy oxidok dinamikus vezetővé válása teszi lehetővé. A titán-dioxid esetén, enyhén redukálva (csak vakanciákat kialakítva, több dimenziós rácshibákkal külön kell számolnunk) a rendkívül vezetőképes ún. Magnéli fázis okozza, ami egy nem-sztöchiometrikus, oxigén-vakanciás anyag (általában Ti$_n$O$_{2n-1}$, itt TiO$_{2-x}$). A vezetőképességet ugyan nem csak az oxigén vakanciák ($V_O$) befolyásolják, hanem egyéb kristályhibák is, például interstíciós Ti atomok, vagy Schottky-párok. A kristályhibák leírására az ún. Kröger-Vink jelölés alkalmazható\cite{szot2014}. A Frenkel-párok és a Schottky-párok figyelembe vételével egy átfogóbb képlet adható a Magnéli fázisokra. Az anyag vezetőképességét a különböző redukáló és oxidáló körülmények között a következőképpen modellezhetjük:
 \begin{equation}
 	\frac{1}{m_\sigma} = \frac{d\ln\sigma}{d\ln p(O_2)}
 \end{equation}
@@ -395,12 +396,24 @@ ahol $m_\sigma$ egy arányszám (a modell alapja), $p(O_2)$ az oxigén parciáli
 	\caption{A ponthibák szerepe: az erősen redukált tartományon az interstíciós Ti-k és az elektrontöbblet miatt "n" adalékoltság, oxidált tartományon "p" adalékoltság\cite{szot2014}}
 \end{figure}
 A titán-dioxidban nagyobb hibakoncentráció esetén valószínű a egy-vagy kétdimenziós hibák kialakulása is, például diszlokációk, vakancia klaszterek/oszlopok kialakulása adott kristályirány mentén. Célszerű, hogy az RS-ben használt egykristály anyag hibakoncentrációját már a kristálynövesztéstől kezdve ellenőrizzük, és megfelelően kezeljük a vezetőképesség érdekében. A növesztési felület instabilitása miatt nem alkalmazható a népszerű Czochralski-eljárás, így a TiO$_2$ növesztésére a legelterjedtebb módszerek a Verneuil-módszer és a floating-zone (FZ) módszer. Bár, a modern technológiával már a Verneuil-módszer is kifejezetten jó minőségű kristályt eredményez, kisszögű szemcsehatárok és mozaikszerű elrendezések előfordulhatnak. az SrTiO$_3$-at is Verneuil-módszerrel növesztik leggyakrabban. Általában egy megfelelő tisztaságú SrTiO$_3$ port vagy TiO$_2$ port alkalmaznak enyhe SrO többlettel. Fontos a megfelelő arányok alkalmazása, különben a titán-dioxid aránya túl magas lesz a növesztett stroncium-titanát egykristályban (>3\%), vagy pedig, magas SrO arány mellett a SrTiO$-3$-nak valamelyik ún. Ruddlesden-Popper fázisát kapjuk. A növesztett stroncium-titanátban kialakult kívánatlan hibák eltávolítása ("a kristály átlátszósítása") általában $H_2$-vel redukáló környezetben, majd hőkezeléssel történik.\cite{szot2014}\par
-A titán-dioxid tehát, magas hőmérsékleten és alacsony oxigénnyomáson kiváló vezetővé alakítható, és ez a folyamat reverzibilis. Ezt elérhetjük más módszerekkel is, például elektrodegradációval (elektroformálás), külső ion/foton gerjesztéssel, illetve fém atomok katódporlasztásával. A kristályrács lényeges megváltoztatásának az elkerülése miatt a maximális oxigénhiány a redukálás után $x = 0.001$ lehet, illetve az oxigén deszorbciójából adódó relatív tömegváltozásra:
-\begin{equation}
-	\frac{\Delta m }{m} < 0.1\%
-\end{equation}
+A titán-dioxid tehát, magas hőmérsékleten és alacsony oxigénnyomáson kiváló vezetővé alakítható, és ez a folyamat reverzibilis. Ezt elérhetjük más módszerekkel is, például elektrodegradációval (elektroformálás), külső ion/foton gerjesztéssel, illetve fém atomok katódporlasztásával.
+\subsection{Elektroformálás}
+Az elektroformálás egy irreverzibilis folyamat, mely segítségével a kezdetben szigetelő anyag konduktanciája növelhető. A folyamat paramétereinek befolyásolásával megfelelő vastagságú és vezetőképességű elektroformált kristályréteg alakítható ki. A lényege, hogy egy megfelelően alkalmazott elektromos gradienssel az oxid bizonyos részének elektromos tulajdonságait dinamikusan megváltoztatjuk, állandó termikus és egyéb elektromos és kémiai feltételek mellett\cite{szot2014}. Az elektromos potenciáltér inhomogén eloszlásából adódóan a kristály belsejében az elektromos gradiens eloszlása rendkívül egyenetlen. Az elektroformálás következtében a katód körül egy jobb vezetőképességű rész alakul ki. Mivel a rendszer kémiai kapcsolatban áll a környezetével, a kristály oxigénmigrációja elektroformálás közben nagy mértékben függ a környezet parciális oxigénnyomásától (ld. \abra{fig:partialpressure}) és hőmérsékletétől. Összességében az oxigénnyomás csökkentésével, a hőmérséklet növelésével hatékonyabbá tehető a folyamat. Alacsonyabb hőmérsékleten megfelelően nagy gerjesztő feszültség kell már ahhoz is, hogy pár mm vastagságú vezetőképes tartományt elektroformáljunk, illetve magasabb hőmérsékleten néhány Volt is elég nagy konduktanciájú szakasz kialakítására.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{partialpressure}
+	\caption{SrTiO$_3$ potenciál-(és rezisztancia-)eloszlása a katódtól való távolság függvényében különböző oxigénnyomásokon: A = $10^{-8}\mbar$,  B = $10^{-2}\mbar$, C = $1 \mbar$, D = $10 \mbar$, E, F = $100 \mbar$\cite{szot2014}}
+	\label{fig:partialpressure}
+\end{figure}
+A katód körüli nagyon erős elektromos tér miatt a közeli ponthibáknál és kiterjesztett rácshibákban az oxigén-titán kovalens kötések felszakadnak, az oxigénionok az anód felé migrálódnak. A katód körül tehát nagy potenciálesés figyelhető meg. Ennek köszönhetően a hibák kiterjedése lassan megnő, és így pl. éldiszlokációkon keresztül vezető csatornák jönnek létre. Ezek nagy konduktivitása miatt a potenciálesés határa a kristályban a kristályhibák növekedése mentén mozogni kezd, és egy "virtuális katód" (VC) jön létre, ami a vezetőképes Magnéli fázis határán található (ld. \abra{fig:electrodegradation}). A redukált kristályszakasz tehát a kristályhibák terjedésével, az oxigén migrációjával növekszik. A folyamat végén az anód körül marad egy nagy ohmos szakasz, aminek mozgatása a resistive switching reverzibilis folyamatát teszi lehetővé (anód és katód felcserélése).
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.6]{electrodegradation}
+	\caption{Az elektroformálás folyamata. Felül: a kiterjesztett rácshibák menti oxigénmigráció, magas konduktivitású szakasz növekedése. Alul: elektromos potenciál az oxidban, a potenciálesést jelző VC mozgása a kristályhibák mentén\cite{szot2014}}
+	\label{fig:electrodegradation}
+\end{figure}
 \subsection{A resistive switching jelensége}
-
+A resistive switching, vagyis a teljes TiO$_{2-x}$/TiO$_2$ oxid rezisztanciájának dinamikus változtatása külső gerjesztésre, tulajdonképpen egy reverzibilis elektrodegradáció. Elsősorban a kiterjesztett rácshibák menti n-típusú vezetés és az oxigénionok további elektromigrációja. A vezető csatornákat (CF) ezek a kiterjesztett hibák alkotják, amelyekben a Ti ionok kiálló kötései (Ti$^{3+}$ ionok és Ti$^{4+}$ ionok szabályos elrendeződése\cite{benchchem}) miatt megnő a konduktivitás\cite{szot2014}. Szot et al. tanulmánya szerint az elektroformálás után a katódnál keletkező Ti$_4$O$_7$ Magnéli fázis ($n = 4$) anóddal való rövidzáródása (vagy anód körüli magasabb konduktanciás Magnéli fázis) okozza az LRS (alacsony rezisztanciás) állapotot, és ellentétes irányú feszültség hatására az anód körüli kisebb konduktanciás Magnéli fázis (vagy egy anód körüli amorf szakasz kialakulása hő hatására\cite{szot2011}) okozza a HRS (magas rezisztanciás) állapotot\cite{szot2014}.  
 \section{2D anyagok és felhasználásuk}
 \subsection{2D anyagok bemutatása, tulajdonságaik}
 A 2D anyagok síkbeli rácsszerkezetének egyes rétegeiben az atomok tökéletesen egy síkban találhatók, az egyes rétegeket pedig a gyenge van der Waals kölcsönhatás tartja össze. Miután 2004-ben a grafént sikeresen alkalmazták nanoméretű térhatású tranzisztorban, a 2D anyagok a félvezetőkutatásban és a CMOS áramkörök kapcsán nagy népszerűségnek örvendhettek. Emellett a MOSFET technológia fokozatos miniatűrizálódása egyre inkább indokolttá tette az utóbbi években a szilíciumon kívüli egyéb szubsztrátok kutatását. Általános esetben, a nanométeres vastagságú 3D félvezetőkben a felszín egyenetlenségeiből, kiálló kötésekből adódóan a felszíni szóródás nagy mértékben csökkentheti a töltéshordozók mobilitását\cite{li2019}. Az utóbbi években sikeresen, 5nm alatti MFS-t érhettünk el különböző 2D anyagokkal, például TMD-kel (átmenetifém dikalkogenidek), illetve egy-vagy többréteges "X-énekkel", például szilicénnel vagy foszforénnel.\cite{nichols2016} Tranzisztorok zsugorítása esetén a néhány nanométeres tartományban már több problémával is szembe kell néznünk, többek között az elektroncsatornázásnak köszönhető áramszivárgással. A szilíciumban a minimum csatornaszélesség ilyen szintű csökkentése olyan problémával járhat, mint a felszíni szóródás, ami a töltéshordozók mozgékonyságát rontja. A népszerű 2D anyagok nem járnak ilyen gonddal, emellett a legtöbbjük szubsztrát-független, így sok helyen és eltérő körülmények között is alkalmazható. \par
@@ -467,7 +480,7 @@ Egy ilyen felépítésű, háromkivezetéses memrisztor "gate-tunable"\cite{sang
 Hasonló tulajdonságokkal rendelkezik egy másik tanulmányban felvetett MoO$_x$-MoS$_2$, illetve egy WO$_x$-WS$_2$ heterostruktúra.\cite{bessonov2015} Ezeknél még alacsonyabb set feszültség ($0.1-0.2\text{V}$) érhető el. Részletesebben az első esetet tárgyaljuk. Bessonov et al. egy ultravékony ($< 3\nm$) MoO$_x$ ($x < 3$) rétegből és MoS$_2$ réteg(ek)ből kialakított vdWH-t vizsgáltak, két ezüst elektróda között. Mint a fentebb említett klasszikus TiO$_2$ struktúrában, itt is anionok/kationok (mint szabad töltéshordozók) koncentrációgradiense okozza a magas vezetőképességet. Feltehetően a molibdén-diszulfid szélei menti hibák, és egyéb belső diszlokációk erős nem-sztöchiometrikus tartományokat hoznak létre, így alacsony hőmérsékleten is lehetővé teszik az oxidációt. Három óra 200\C-os hőkezelés után a molibdén-diszulfid felszíne körül egy $< 3\nm$ MoO$_x$ réteg keletkezik, főként Mo$^{6+}$ és Mo$^{5+}$ állapotokkal, így az oxigénvakanciák gradiense természetes módon ki is alakul (az oxidált rétegben alacsonyabb koncentráció). A két réteg érintkezésénél lévő ponthibák és strukturális hibák miatt a két rácsszerkezet egymástól különböző. Az oxid és az ezüst elektród közötti Schottky-gát miatt alacsony határfeszültség mellett működik az eszköz (kb. $0.1-0.2\V$). Nyitóirányú feszültség hatására az eszköz bekapcsol (LRS állapot), záróirányú feszültség hatására kikapcsol (HRS állapot). Amint látszik, az ilyen kialakítású molibdén-diszulfid eszközben elektroformálás nélkül is könnyen kialakítható egy vezetőképes réteg. Az oxidáció körülményeitől (pl. hőkezelés típusától) függően eltérő vastagságú, eltérő ionkoncentrációjú oxidréteg alakul ki. Memkapacitív hatások is megfigyelhetők, vélhetően az Ag/MoO$_x$ interfész "töltésnyelő" tulajdonságából.
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.8]{mooxstructure}
+	\includegraphics[scale=0.6]{improved_moox}
 	\caption{MoO$_x$-MoS$_2$ cella felépítése\cite{bessonov2015}}
 \end{figure}
 \begin{figure}[h]
@@ -499,6 +512,11 @@ A 2D RRAM eszközökön kívül a ferroelektromos memóriák és a PCM-ek terül
 	\label{fig:in2se3}
 \end{figure}
 A ferroelektromos memóriákban is nagy alkalmazhatósággal rendelkeznek bizonyos 2D anyagok. Az elektródok közé leválasztott nanoméretű ferroelektromos réteg lehetővé tette az apró FTJ-k kutatását. Az FTJ teljesítménye rendkívül érzékeny az elektromos határfeltételekre, ezek az elektródok megválasztásával és interfésztervezéssel optimizálhatók. Például Lu et al. bemutattak egy BaTiO$_3$/grafén interfész FRAM-ot, amelyben a grafén elektródnak köszönhetően jobb interfésztulajdonságokat, jobb TER hatást érhettek el\cite{lu2014}. Emellett az FTJ réteg 2D megvalósítása is lehetséges, pl. a ferroelektromos In$_2$Se$_3$\cite{xue2019}, vagy a CuInP$_2$S$_6$ (CIPS) felhasználásával\cite{wu2020}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.65]{2dmemcategories}
+	\caption{2D memrisztorok és anyagaik kategorizálása működés szerint\cite{sangwan2020}}
+\end{figure}
 \section{ReRAM modellezése}
 \subsection{MATLAB modellezés}
 \ref{appendix:matlab}
@@ -688,22 +706,22 @@ Memrisztorok legelterjedtebb alkalmazásai közé tartoznak például: ANN (arti
 
 \subsubsection{Előrecsatolt neurális hálózatok memrisztorokkal}
 Egy egyszerű példa a Wang et al. által megvalósított előrecsatolt, egy rejtett rétegű neurális hálózat, ami az ingatlanárak előrejelzésének céljával többváltozós regressziót hajt végre.\cite{wang2018} A többrétegű hálózat egyes processzáló elemeinek súlyait a memrisztorok a konduktanciájukban tárolják (hasonlóan a fentebb említett MVM esetén), a hálózat tanítása egyszerű backpropagationnel (BP) történik. Összesen 2 paramétermátrix, és egy paramétervektor (az eltolások vektora) áll rendelkezésre. A rejtett réteg a következő transzformációt valósítja meg: \begin{equation}
-	\mat{h} = f_1(\mat{V}\cdot\mat{X} + \mat{b}_1)
+	\mathbf{h} = f_1(\mathbf{V}\cdot\mathbf{X} + \mathbf{b}_1)
 \end{equation}
-Ahol a $\mat{V}$ mátrix a rejtett réteg súlyait, $\mat{X}$ a rejtett réteg bemeneteit, $\mat{b}_1$ pedig a rejtett réteg (fix) eltolásait tartalmazza. Ezt az affin transzformációt egy szigmoid nemlinearitáson visszük keresztül (a tetszőleges regresszióhoz szükséges a nemlineáris transzformáció):
+Ahol a $\mathbf{V}$ mátrix a rejtett réteg súlyait, $\mathbf{X}$ a rejtett réteg bemeneteit, $\mathbf{b}_1$ pedig a rejtett réteg (fix) eltolásait tartalmazza. Ezt az affin transzformációt egy szigmoid nemlinearitáson visszük keresztül (a tetszőleges regresszióhoz szükséges a nemlineáris transzformáció):
 \begin{equation}
 	f_1(x) = \sgm(x) = \frac{1}{1+e^{-x}}
 \end{equation}
 Emellett a kimeneti rétegen már lineáris transzformációval szerepel: \begin{equation}
-	\hat{y} = f_2(\mat{W}\cdot\mat{h} + \mat{b}_2)
+	\hat{y} = f_2(\mathbf{W}\cdot\mathbf{h} + \mathbf{b}_2)
 \end{equation} 
-Ahol $f_2$ egy lineáris transzformáció, $\mat{W}$ tartalmazza a kimeneti réteg súlyait, $\mat{b}_2$ pedig a kimeneti réteg eltolásait. 
+Ahol $f_2$ egy lineáris transzformáció, $\mathbf{W}$ tartalmazza a kimeneti réteg súlyait, $\mathbf{b}_2$ pedig a kimeneti réteg eltolásait. 
 \begin{figure}[h]\label{fig:ann}
 	\centering
 	\includegraphics[scale=0.45]{ann}
 	\caption{a) A kétrétegű előrecsatolt hálózat felépítése, b) a rejtett réteg felépítése, c) a kimeneti réteg felépítése\cite{wang2018}}
 \end{figure}
-Ebben a rendszerben a $V_\text{bpi}$ feszültségek a backpropagation megvalósításához szükséges feszültségek, $V_\text{xj}$ a $\mat{V}$ súlymátrix j-dik oszlopában lévő weight unitokra adott bemeneti feszültség, $V_\text{fix}$ az eltolásokra adott konstans feszültség, majd $V_\text{hi}$ a rejtett réteg i-dik processzáló elemének a kimeneti feszültsége. Ezek mellett természetesen $f_1$ és $f_2$ rendre a megvalósított transzformációk, vagyis a szigmoid és a linearitás. A weight unitok tartalmazzák az egyes memrisztorokat, illetve a rájuk eső feszültség ill. a bennük tárolt konduktancia alapján elvégzik az egyes szorzásokat. A memrisztorok konduktanciáját egy meghatározott feszültség threshold feletti bemenettel változtathatjuk (itt $0.5\V$, ez a konstans eltolási feszültségek értéke is). Kezdetben a szimmetria megtörése és a lokális konvergencia elkerülése érdekében egyenletes eloszlásból mintázott, véletlenszerű értékekkel inicializáljuk a memrisztorokat. Az egyes weight unitban található kapcsolónak, és áramdetektornak köszönhetően ha az elem kimenetére egy áramfogyasztó van kapcsolva, akkor pozitív súlyokat kapunk, hogyha pedig egy áramforrás, akkor negatív súlyokat. Ha a súly pozitív, akkor pozitív feszültség hatására növelhető a memrisztor konduktanciája (így a súly), ellenkező esetben csökkenthető. Tanítás során költségfüggvénynek az átlagos négyzethibát használták, majd a hibavisszaterjesztés után egyszerű gradient descenttel változtatják a súlyokat. 
+Ebben a rendszerben a $V_\text{bpi}$ feszültségek a backpropagation megvalósításához szükséges feszültségek, $V_\text{xj}$ a $\mathbf{V}$ súlymátrix j-dik oszlopában lévő weight unitokra adott bemeneti feszültség, $V_\text{fix}$ az eltolásokra adott konstans feszültség, majd $V_\text{hi}$ a rejtett réteg i-dik processzáló elemének a kimeneti feszültsége. Ezek mellett természetesen $f_1$ és $f_2$ rendre a megvalósított transzformációk, vagyis a szigmoid és a linearitás. A weight unitok tartalmazzák az egyes memrisztorokat, illetve a rájuk eső feszültség ill. a bennük tárolt konduktancia alapján elvégzik az egyes szorzásokat. A memrisztorok konduktanciáját egy meghatározott feszültség threshold feletti bemenettel változtathatjuk (itt $0.5\V$, ez a konstans eltolási feszültségek értéke is). Kezdetben a szimmetria megtörése és a lokális konvergencia elkerülése érdekében egyenletes eloszlásból mintázott, véletlenszerű értékekkel inicializáljuk a memrisztorokat. Az egyes weight unitban található kapcsolónak, és áramdetektornak köszönhetően ha az elem kimenetére egy áramfogyasztó van kapcsolva, akkor pozitív súlyokat kapunk, hogyha pedig egy áramforrás, akkor negatív súlyokat. Ha a súly pozitív, akkor pozitív feszültség hatására növelhető a memrisztor konduktanciája (így a súly), ellenkező esetben csökkenthető. Tanítás során költségfüggvénynek az átlagos négyzethibát használták, majd a hibavisszaterjesztés után egyszerű gradient descenttel változtatják a súlyokat. 
 \begin{figure}[H]\label{fig:weightunit}
 	\centering
 	\includegraphics{weightunit}
@@ -773,7 +791,7 @@ Egy memrisztor crossbar tartalmazhat "beégetett", gyári ún. térben korrelál
 	\end{equation}
 	Ennek egy ekvivalens alakját, an ún. evidence lower boundot (ELBO) használjuk költségfüggvény ill. veszteségfüggvényként, mert ezzel könnyebb számolni:
 	\begin{equation}
-		\text{ELBO} = \E_{q(w|\theta)}\mleft[log(P(\mathcal{D}|w))\mright]-\KL\mleft[q(w|\theta)||P(w)\mright]
+		\text{ELBO} = \E_{q(w|\theta)}\mleft[\log(P(\mathcal{D}|w))\mright]-\KL\mleft[q(w|\theta)||P(w)\mright]
 	\end{equation}
 	Az ELBO-t maximalizálni szeretnénk, vagyis valójában ennek a (-1)-szerese lesz a költségfüggvény. Ennek a $\theta$ szerinti gradiensét visszaterjesztjük, és a $\theta$ paramétereket gradient descenttel frissítjük. Amikor ezt a költségfüggvényt minimalizáljuk, az ELBO képletének második tagja egy olyan kényszert visz a tanulásba, hogy a posterior modellező eloszlás $q(w,\theta)$ megfelelő mértékben hasonló legyen a priori eloszláshoz, ehhez lehetővé téve a gyári variációk ismeretének felhasználását. A modellezett posteriori eloszlásnak a MAP becslését vesszük, és a crossbar memrisztoraira illesztjük (ld. \abra{fig:bayes1}), és az így optimalizált crossbar háló (például CNN alkalmazásában) pontosabb eredményeket idéz a megvalósított rendszer kimenetén.
 	\begin{figure}[h]
@@ -816,11 +834,18 @@ A gyári memrisztorok belső sztochasztikus jellege (variabilitása) miatt a nag
 	\caption{A működés különböző fázisainak feszültség-idődiagramjai: először egy rövid feszültségimpulzust adunk a memrisztorra ($V_1$), ezután a megfigyelt véletlenszerű késleltetést követően nő a memrisztor konduktanciája és a $V_2$ kimeneti feszültség; ilyenkor a komparátor kimenete ($V_3$) logikai magassá vált, és a szolgáltatott órajelnek véletlenszerű ciklusáig számol a számláló\cite{jiang2017}}
 	\label{fig:trngwaveform}
 \end{figure}
-\subsection{Optoelektrikus memrisztorok}
 \subsection{Egyebek}
 Használhatók például dinamikus módosítható terhelésként bizonyos rendszerekben, például programozható erősítőkben\cite{prodromakis2010} minimális veszteségekkel, programozható threshold komparátorokban, vagy speciális oszcillátorokban.
 
 \section{Konklúzió, összefoglalás}
+A memrisztorok ill. memrisztív rendszerek nagyon sok előnnyel rendelkeznek, és kutatásuk hajnalán hatalmas reményeik voltak a technológia számos területén. Az Intel Optane például megmutatta, hogy az iparban szélesebb körben is teret nyerhetnek. Ennek ellenére sok helyen túlnyomó problémákkal rendelkeznek, többek között:
+\begin{anumerate}
+	\elem Drága gyártás, megfelelő kereslet hiánya
+	\elem Magas belső zaj, pontatlanság
+	\elem Környezeti érzékenység
+\end{anumerate}
+
+
 \newpage
 \printbibliography[heading=bibintoc, title={Hivatkozások}]
 
